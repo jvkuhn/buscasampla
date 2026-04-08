@@ -11,7 +11,9 @@
       "Bash(ls app/admin/rankings app/admin/rankings/novo app/admin/rankings/[id] app/admin/banners app/admin/banners/novo app/admin/banners/[id] app/admin/paginas app/admin/paginas/nova app/admin/paginas/[id] app/admin/configuracoes)",
       "Bash(ls prisma/seed*)",
       "Bash(ls .env*)",
-      "Bash(pnpm exec:*)"
+      "Bash(pnpm exec:*)",
+      "Bash(mkdir -p \"\\(dashboard\\)\")",
+      "Bash(mv banners:*)"
     ]
   }
 }
