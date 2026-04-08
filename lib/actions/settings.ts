@@ -1,0 +1,116 @@
+"use server";
+
+import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
+import { auth } from "@/lib/auth";
+import { db } from "@/lib/db";
+import { bannerSchema, sitePageSchema, siteSettingsSchema } from "@/lib/validations";
+import { slugify } from "@/lib/utils";
+
+async function requireAdmin() {
+  const session = await auth();
+  if (!session?.user) redirect("/admin/login");
+}
+
+// ─── Banners ─────────────────────────────────────────────────────────────────
+
+export async function createBanner(formData: FormData) {
+  await requireAdmin();
+
+  const raw = Object.fromEntries(formData);
+  const parsed = bannerSchema.safeParse({
+    ...raw,
+    active: raw.active === "true" || raw.active === "on",
+    order: raw.order ?? 0,
+  });
+  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+
+  await db.banner.create({ data: parsed.data });
+  revalidatePath("/admin/banners");
+  revalidatePath("/");
+  redirect("/admin/banners");
+}
+
+export async function updateBanner(id: string, formData: FormData) {
+  await requireAdmin();
+
+  const raw = Object.fromEntries(formData);
+  const parsed = bannerSchema.safeParse({
+    ...raw,
+    active: raw.active === "true" || raw.active === "on",
+    order: raw.order ?? 0,
+  });
+  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+
+  await db.banner.update({ where: { id }, data: parsed.data });
+  revalidatePath("/admin/banners");
+  revalidatePath("/");
+  redirect("/admin/banners");
+}
+
+export async function deleteBanner(id: string) {
+  await requireAdmin();
+  await db.banner.delete({ where: { id } });
+  revalidatePath("/admin/banners");
+  revalidatePath("/");
+}
+
+// ─── Páginas ─────────────────────────────────────────────────────────────────
+
+export async function createSitePage(formData: FormData) {
+  await requireAdmin();
+
+  const raw = Object.fromEntries(formData);
+  const parsed = sitePageSchema.safeParse({
+    ...raw,
+    slug: raw.slug || slugify(raw.title as string),
+    status: raw.status ?? "DRAFT",
+  });
+  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+
+  await db.sitePage.create({ data: parsed.data });
+  revalidatePath("/admin/paginas");
+  redirect("/admin/paginas");
+}
+
+export async function updateSitePage(id: string, formData: FormData) {
+  await requireAdmin();
+
+  const raw = Object.fromEntries(formData);
+  const parsed = sitePageSchema.safeParse({
+    ...raw,
+    status: raw.status ?? "DRAFT",
+  });
+  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+
+  await db.sitePage.update({ where: { id }, data: parsed.data });
+  revalidatePath("/admin/paginas");
+  revalidatePath(`/p/${parsed.data.slug}`);
+  redirect("/admin/paginas");
+}
+
+export async function deleteSitePage(id: string) {
+  await requireAdmin();
+  await db.sitePage.delete({ where: { id } });
+  revalidatePath("/admin/paginas");
+}
+
+// ─── Configurações ────────────────────────────────────────────────────────────
+
+export async function updateSiteSettings(formData: FormData) {
+  await requireAdmin();
+
+  const raw = Object.fromEntries(formData);
+  const parsed = siteSettingsSchema.safeParse(raw);
+  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+
+  await db.siteSettings.upsert({
+    where: { id: "default" },
+    update: parsed.data,
+    create: { id: "default", ...parsed.data },
+  });
+
+  revalidatePath("/admin/configuracoes");
+  revalidatePath("/");
+  return { success: true };
+}

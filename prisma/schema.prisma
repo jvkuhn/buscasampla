@@ -1,0 +1,199 @@
+// Prisma 7 schema — provider "prisma-client", output to app/generated/prisma
+
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ─── Autenticação ────────────────────────────────────────────────────────────
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  password      String
+  role          Role      @default(ADMIN)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+enum Role {
+  ADMIN
+  EDITOR
+}
+
+// ─── Taxonomia ───────────────────────────────────────────────────────────────
+
+model Category {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  description String?
+  imageUrl    String?
+  metaTitle   String?
+  metaDesc    String?
+  status      Status    @default(PUBLISHED)
+  order       Int       @default(0)
+  rankings    Ranking[]
+  products    Product[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+// ─── Produto ─────────────────────────────────────────────────────────────────
+
+model Product {
+  id              String          @id @default(cuid())
+  name            String
+  slug            String          @unique
+  shortDesc       String?
+  longDesc        String?         @db.Text
+  imageUrl        String?
+  gallery         String[]        @default([])
+  currentPrice    Decimal?        @db.Decimal(10, 2)
+  oldPrice        Decimal?        @db.Decimal(10, 2)
+  priceRange      String?
+  rating          Decimal?        @db.Decimal(3, 1)
+  pros            String[]        @default([])
+  cons            String[]        @default([])
+  brand           String?
+  specs           Json?
+  badge           Badge?
+  status          Status          @default(DRAFT)
+  categoryId      String?
+  category        Category?       @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  affiliateLinks  AffiliateLink[]
+  rankingItems    RankingItem[]
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+}
+
+enum Badge {
+  BEST_VALUE
+  BEST_SELLER
+  PREMIUM
+  CHEAPEST
+}
+
+// ─── Links de Afiliado ───────────────────────────────────────────────────────
+
+model AffiliateLink {
+  id        String    @id @default(cuid())
+  platform  String    // "amazon", "mercadolivre", "shopee", etc.
+  url       String
+  label     String?
+  productId String
+  product   Product   @relation(fields: [productId], references: [id], onDelete: Cascade)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+// ─── Ranking ─────────────────────────────────────────────────────────────────
+
+model Ranking {
+  id          String        @id @default(cuid())
+  title       String
+  slug        String        @unique
+  subtitle    String?
+  intro       String?       @db.Text
+  conclusion  String?       @db.Text
+  coverUrl    String?
+  metaTitle   String?
+  metaDesc    String?
+  ogTitle     String?
+  ogDesc      String?
+  ogImageUrl  String?
+  status      Status        @default(DRAFT)
+  categoryId  String?
+  category    Category?     @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  items       RankingItem[]
+  faqs        FAQ[]
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+model RankingItem {
+  id         String   @id @default(cuid())
+  rankingId  String
+  ranking    Ranking  @relation(fields: [rankingId], references: [id], onDelete: Cascade)
+  productId  String
+  product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  order      Int
+  highlight  Boolean  @default(false)
+  note       String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([rankingId, productId])
+  @@unique([rankingId, order])
+}
+
+// ─── FAQ ─────────────────────────────────────────────────────────────────────
+
+model FAQ {
+  id        String   @id @default(cuid())
+  question  String
+  answer    String   @db.Text
+  order     Int      @default(0)
+  rankingId String?
+  ranking   Ranking? @relation(fields: [rankingId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ─── Banner ──────────────────────────────────────────────────────────────────
+
+model Banner {
+  id        String   @id @default(cuid())
+  title     String
+  subtitle  String?
+  imageUrl  String?
+  linkUrl   String?
+  linkLabel String?
+  position  String   @default("home_top") // home_top, home_mid, sidebar
+  active    Boolean  @default(true)
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ─── Páginas Institucionais ──────────────────────────────────────────────────
+
+model SitePage {
+  id        String   @id @default(cuid())
+  title     String
+  slug      String   @unique
+  content   String   @db.Text
+  metaTitle String?
+  metaDesc  String?
+  status    Status   @default(DRAFT)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ─── Configurações do Site ───────────────────────────────────────────────────
+
+model SiteSettings {
+  id              String   @id @default("default")
+  siteName        String   @default("Top Rankings")
+  siteDescription String?
+  siteUrl         String?
+  logoUrl         String?
+  faviconUrl      String?
+  footerText      String?
+  affiliateNotice String?
+  socialTwitter   String?
+  socialFacebook  String?
+  socialInstagram String?
+  gtmId           String?
+  updatedAt       DateTime @updatedAt
+}
+
+enum Status {
+  DRAFT
+  PUBLISHED
+}
