@@ -5,7 +5,7 @@ import { slugify } from "@/lib/utils";
 import { InputField, TextareaField, SelectField } from "./FormField";
 
 interface Props {
-  action: (formData: FormData) => Promise<unknown>;
+  action: (formData: FormData) => void | Promise<void>;
   categories: { id: string; name: string }[];
   defaultValues?: {
     title?: string;

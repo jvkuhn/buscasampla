@@ -21,11 +21,12 @@ export async function createRanking(formData: FormData) {
     status: raw.status ?? "DRAFT",
     categoryId: raw.categoryId || null,
   });
-  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
 
   const slug = parsed.data.slug || slugify(parsed.data.title);
 
-  await db.ranking.create({ data: { ...parsed.data, slug } });
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  await db.ranking.create({ data: { ...parsed.data, slug } as any });
 
   revalidatePath("/admin/rankings");
   redirect("/admin/rankings");
@@ -40,9 +41,10 @@ export async function updateRanking(id: string, formData: FormData) {
     status: raw.status ?? "DRAFT",
     categoryId: raw.categoryId || null,
   });
-  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
 
-  await db.ranking.update({ where: { id }, data: parsed.data });
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  await db.ranking.update({ where: { id }, data: parsed.data as any });
 
   revalidatePath("/admin/rankings");
   revalidatePath(`/ranking/${parsed.data.slug}`);
@@ -101,7 +103,7 @@ export async function createFAQ(rankingId: string, formData: FormData) {
 
   const raw = Object.fromEntries(formData);
   const parsed = faqSchema.safeParse({ ...raw, rankingId });
-  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
 
   await db.fAQ.create({ data: parsed.data });
   revalidatePath(`/admin/rankings/${rankingId}`);

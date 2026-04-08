@@ -36,11 +36,12 @@ export async function createProduct(formData: FormData) {
     oldPrice: raw.oldPrice || null,
     rating: raw.rating || null,
   });
-  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
 
   const slug = parsed.data.slug || slugify(parsed.data.name);
 
-  await db.product.create({ data: { ...parsed.data, slug } });
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  await db.product.create({ data: { ...parsed.data, slug } as any });
 
   revalidatePath("/admin/produtos");
   redirect("/admin/produtos");
@@ -62,9 +63,10 @@ export async function updateProduct(id: string, formData: FormData) {
     oldPrice: raw.oldPrice || null,
     rating: raw.rating || null,
   });
-  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
 
-  await db.product.update({ where: { id }, data: parsed.data });
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  await db.product.update({ where: { id }, data: parsed.data as any });
 
   revalidatePath("/admin/produtos");
   revalidatePath(`/produto/${parsed.data.slug}`);
@@ -84,7 +86,7 @@ export async function upsertAffiliateLink(
   await requireAdmin();
 
   const parsed = affiliateLinkSchema.safeParse(data);
-  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
 
   if (data.id) {
     await db.affiliateLink.update({

@@ -22,7 +22,7 @@ export async function createCategory(formData: FormData) {
     order: raw.order ?? 0,
     status: raw.status ?? "DRAFT",
   });
-  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
 
   const slug = parsed.data.slug || slugify(parsed.data.name);
 
@@ -44,7 +44,7 @@ export async function updateCategory(id: string, formData: FormData) {
     order: raw.order ?? 0,
     status: raw.status ?? "DRAFT",
   });
-  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
 
   await db.category.update({ where: { id }, data: parsed.data });
 

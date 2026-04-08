@@ -1,12 +1,12 @@
 // Prisma 7 schema — provider "prisma-client", output to app/generated/prisma
 
 generator client {
-  provider = "prisma-client"
-  output   = "../app/generated/prisma"
+  provider = "prisma-client-js"
 }
 
 datasource db {
   provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 // ─── Autenticação ────────────────────────────────────────────────────────────

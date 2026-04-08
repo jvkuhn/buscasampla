@@ -31,7 +31,7 @@ export const productSchema = z.object({
   pros: z.array(z.string()).optional(),
   cons: z.array(z.string()).optional(),
   brand: z.string().optional(),
-  specs: z.record(z.string()).optional(),
+  specs: z.record(z.string(), z.string()).optional(),
   badge: z.enum(["BEST_VALUE", "BEST_SELLER", "PREMIUM", "CHEAPEST"]).optional().nullable(),
   status: z.enum(["DRAFT", "PUBLISHED"]),
   categoryId: z.string().optional().nullable(),

@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { db } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 function getBaseUrl() {
   return (
     process.env.NEXT_PUBLIC_SITE_URL ||

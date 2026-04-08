@@ -2,6 +2,8 @@ import { PublicHeader } from "@/components/public/PublicHeader";
 import { PublicFooter } from "@/components/public/PublicFooter";
 import { db } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 export default async function PublicLayout({ children }: { children: React.ReactNode }) {
   const [categories, settings] = await Promise.all([
     db.category.findMany({

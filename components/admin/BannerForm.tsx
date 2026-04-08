@@ -3,7 +3,7 @@
 import { InputField, TextareaField, SelectField } from "./FormField";
 
 interface Props {
-  action: (formData: FormData) => Promise<unknown>;
+  action: (formData: FormData) => void | Promise<void>;
   defaultValues?: {
     title?: string;
     subtitle?: string;

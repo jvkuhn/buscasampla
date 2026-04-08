@@ -23,7 +23,7 @@ export async function createBanner(formData: FormData) {
     active: raw.active === "true" || raw.active === "on",
     order: raw.order ?? 0,
   });
-  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
 
   await db.banner.create({ data: parsed.data });
   revalidatePath("/admin/banners");
@@ -40,7 +40,7 @@ export async function updateBanner(id: string, formData: FormData) {
     active: raw.active === "true" || raw.active === "on",
     order: raw.order ?? 0,
   });
-  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
 
   await db.banner.update({ where: { id }, data: parsed.data });
   revalidatePath("/admin/banners");
@@ -66,7 +66,7 @@ export async function createSitePage(formData: FormData) {
     slug: raw.slug || slugify(raw.title as string),
     status: raw.status ?? "DRAFT",
   });
-  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
 
   await db.sitePage.create({ data: parsed.data });
   revalidatePath("/admin/paginas");
@@ -81,7 +81,7 @@ export async function updateSitePage(id: string, formData: FormData) {
     ...raw,
     status: raw.status ?? "DRAFT",
   });
-  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
 
   await db.sitePage.update({ where: { id }, data: parsed.data });
   revalidatePath("/admin/paginas");
@@ -102,7 +102,9 @@ export async function updateSiteSettings(formData: FormData) {
 
   const raw = Object.fromEntries(formData);
   const parsed = siteSettingsSchema.safeParse(raw);
-  if (!parsed.success) return { error: parsed.error.flatten().fieldErrors };
+  if (!parsed.success) {
+    throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
+  }
 
   await db.siteSettings.upsert({
     where: { id: "default" },
@@ -112,5 +114,5 @@ export async function updateSiteSettings(formData: FormData) {
 
   revalidatePath("/admin/configuracoes");
   revalidatePath("/");
-  return { success: true };
+  redirect("/admin/configuracoes");
 }
