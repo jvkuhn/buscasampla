@@ -24,8 +24,24 @@ export default async function HomePage() {
     }),
   ]);
 
+  const siteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Top Rankings",
+    url: "/",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "/busca?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white">
         <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">

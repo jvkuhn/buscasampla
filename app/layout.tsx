@@ -4,6 +4,11 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  process.env.NEXTAUTH_URL ||
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+
 export const metadata: Metadata = {
   title: {
     template: "%s | Top Rankings",
@@ -11,7 +16,8 @@ export const metadata: Metadata = {
   },
   description:
     "Comparativos e rankings dos melhores produtos em todas as categorias. Encontre o produto ideal com avaliações detalhadas e links de compra.",
-  metadataBase: new URL(process.env.NEXTAUTH_URL ?? "http://localhost:3000"),
+  metadataBase: new URL(siteUrl),
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

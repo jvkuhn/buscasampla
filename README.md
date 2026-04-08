@@ -87,12 +87,22 @@ prisma/
 - ✅ Autenticação segura (Auth.js + bcrypt) com proteção de rotas via middleware
 - ✅ CRUD admin: categorias, produtos (+ links de afiliado), rankings (+ itens ordenáveis + FAQs), banners, páginas institucionais, configurações
 - ✅ Site público: home, categorias, ranking Top 10, produto individual, busca, páginas institucionais
-- ✅ Metadata dinâmica, Open Graph, canonical, JSON-LD (ItemList, Product, FAQPage)
+- ✅ Metadata dinâmica, Open Graph, canonical
+- ✅ JSON-LD: `WebSite` + `SearchAction` na home, `ItemList` + `BreadcrumbList` + `FAQPage` no ranking, `Product` na página de produto
+- ✅ `sitemap.xml` dinâmico (`/sitemap.xml`) incluindo todos os rankings, categorias, produtos e páginas publicadas
+- ✅ `robots.txt` dinâmico (`/robots.txt`) bloqueando `/admin` e `/api`
 - ✅ Seed com dados realistas de exemplo
+
+## Checklist de produção
+
+- [ ] **Trocar a senha do admin** após o primeiro login (`admin@admin.com` / `admin123` é só pra começar). Faça isso direto no banco ou criando um novo usuário via seed customizado.
+- [ ] Definir `NEXTAUTH_URL` no Vercel com a URL final do projeto.
+- [ ] Verificar se o Google Search Console reconhece o sitemap em `https://seu-dominio.com/sitemap.xml`.
+- [ ] Revisar o aviso de afiliados em Admin → Configurações (campo "Aviso de afiliados") — obrigatório para conformidade.
 
 ## Próximos passos (pós-MVP)
 
-- `sitemap.xml` e `robots.txt` dinâmicos
-- Otimização de imagens externas via `next/image` com remotePatterns
+- Otimização de imagens externas via `next/image` com `remotePatterns` no `next.config.ts`
 - Paginação nos rankings e busca
-- Analytics (GTM já está em Configurações)
+- Analytics (GTM já está em Configurações, basta injetar no root layout)
+- Domínio custom no Vercel

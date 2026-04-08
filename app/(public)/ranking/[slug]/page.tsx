@@ -60,6 +60,28 @@ export default async function RankingPage(props: PageProps<"/ranking/[slug]">) {
     })),
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Início", item: "/" },
+      ...(ranking.category
+        ? [{
+            "@type": "ListItem",
+            position: 2,
+            name: ranking.category.name,
+            item: `/categorias/${ranking.category.slug}`,
+          }]
+        : []),
+      {
+        "@type": "ListItem",
+        position: ranking.category ? 3 : 2,
+        name: ranking.title,
+        item: `/ranking/${ranking.slug}`,
+      },
+    ],
+  };
+
   const faqJsonLd = ranking.faqs.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -75,6 +97,10 @@ export default async function RankingPage(props: PageProps<"/ranking/[slug]">) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       {faqJsonLd && (
         <script
