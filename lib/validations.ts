@@ -94,6 +94,48 @@ export const siteSettingsSchema = z.object({
   gtmId: z.string().optional(),
 });
 
+// ─── Top 10 (criação em massa) ───────────────────────────────────────────────
+
+export const top10ProductSchema = z.object({
+  name: z.string().min(2, "Nome obrigatório"),
+  brand: z.string().optional(),
+  shortDesc: z.string().max(300).optional(),
+  longDesc: z.string().optional(),
+  imageUrl: z.string().url().optional().or(z.literal("")),
+  currentPrice: z.coerce.number().positive().optional().nullable(),
+  oldPrice: z.coerce.number().positive().optional().nullable(),
+  rating: z.coerce.number().min(0).max(5).optional().nullable(),
+  pros: z.array(z.string()).optional(),
+  cons: z.array(z.string()).optional(),
+  badge: z.enum(["BEST_VALUE", "BEST_SELLER", "PREMIUM", "CHEAPEST"]).optional().nullable(),
+  amazonUrl: z.string().url().optional().or(z.literal("")),
+  mercadoLivreUrl: z.string().url().optional().or(z.literal("")),
+  shopeeUrl: z.string().url().optional().or(z.literal("")),
+});
+
+export const top10FaqSchema = z.object({
+  question: z.string().min(5),
+  answer: z.string().min(5),
+});
+
+export const top10Schema = z.object({
+  ranking: z.object({
+    title: z.string().min(3, "Título obrigatório"),
+    subtitle: z.string().optional(),
+    intro: z.string().optional(),
+    conclusion: z.string().optional(),
+    coverUrl: z.string().url().optional().or(z.literal("")),
+    metaTitle: z.string().max(70).optional(),
+    metaDesc: z.string().max(160).optional(),
+    categoryId: z.string().optional().nullable(),
+  }),
+  products: z.array(top10ProductSchema).min(1).max(20),
+  faqs: z.array(top10FaqSchema).optional(),
+});
+
+export type Top10Input = z.infer<typeof top10Schema>;
+export type Top10ProductInput = z.infer<typeof top10ProductSchema>;
+
 export type CategoryInput = z.infer<typeof categorySchema>;
 export type ProductInput = z.infer<typeof productSchema>;
 export type RankingInput = z.infer<typeof rankingSchema>;

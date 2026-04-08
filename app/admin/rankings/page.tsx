@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { db } from "@/lib/db";
-import { PageHeader } from "@/components/admin/PageHeader";
 import { DeleteButton } from "@/components/admin/DeleteButton";
 import { deleteRanking } from "@/lib/actions/rankings";
 import type { Metadata } from "next";
@@ -18,10 +17,25 @@ export default async function RankingsPage() {
 
   return (
     <div>
-      <PageHeader
-        title="Rankings Top 10"
-        action={{ href: "/admin/rankings/novo", label: "+ Novo ranking" }}
-      />
+      <div className="flex items-start justify-between mb-8">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900">Rankings Top 10</h1>
+        </div>
+        <div className="flex gap-2">
+          <Link
+            href="/admin/rankings/novo"
+            className="px-4 py-2 rounded-lg text-sm font-medium border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors"
+          >
+            + Ranking vazio
+          </Link>
+          <Link
+            href="/admin/rankings/novo-top10"
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
+          >
+            ⚡ Criar Top 10 completo
+          </Link>
+        </div>
+      </div>
 
       <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
         <table className="w-full text-sm">

@@ -13,7 +13,9 @@
       "Bash(ls .env*)",
       "Bash(pnpm exec:*)",
       "Bash(mkdir -p \"\\(dashboard\\)\")",
-      "Bash(mv banners:*)"
+      "Bash(mv banners:*)",
+      "WebFetch(domain:www.coompare.com.br)",
+      "Bash(npm run:*)"
     ]
   }
 }
