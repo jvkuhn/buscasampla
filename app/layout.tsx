@@ -6,7 +6,6 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
-  process.env.NEXTAUTH_URL ||
   (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
 
 export const metadata: Metadata = {

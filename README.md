@@ -19,7 +19,7 @@ Copie `.env.example` para `.env` e preencha:
 ```env
 DATABASE_URL="postgresql://user:password@host/database?sslmode=require"
 AUTH_SECRET="<gere com: openssl rand -base64 32>"
-NEXTAUTH_URL="http://localhost:3000"
+NEXT_PUBLIC_SITE_URL="http://localhost:3000"
 
 # Opcionais — customizam o usuário criado pelo seed
 SEED_ADMIN_EMAIL="admin@admin.com"
@@ -96,7 +96,7 @@ prisma/
 ## Checklist de produção
 
 - [ ] **Trocar a senha do admin** após o primeiro login (`admin@admin.com` / `admin123` é só pra começar). Faça isso direto no banco ou criando um novo usuário via seed customizado.
-- [ ] Definir `NEXTAUTH_URL` no Vercel com a URL final do projeto.
+- [ ] Definir `NEXT_PUBLIC_SITE_URL` no Vercel com a URL final do projeto (ex: `https://buscasampla.com.br`).
 - [ ] Verificar se o Google Search Console reconhece o sitemap em `https://seu-dominio.com/sitemap.xml`.
 - [ ] Revisar o aviso de afiliados em Admin → Configurações (campo "Aviso de afiliados") — obrigatório para conformidade.
 
