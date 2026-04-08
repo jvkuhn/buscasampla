@@ -36,6 +36,9 @@ const PRODUCT_COUNT = 10;
 export function Top10Form({ categories }: Props) {
   const [pending, startTransition] = useTransition();
   const [error, setError] = useState<string | null>(null);
+  const [showImport, setShowImport] = useState(false);
+  const [importText, setImportText] = useState("");
+  const [importError, setImportError] = useState<string | null>(null);
 
   // Ranking
   const [title, setTitle] = useState("");
@@ -75,6 +78,62 @@ export function Top10Form({ categories }: Props) {
       next[idx] = { ...next[idx], [field]: value };
       return next;
     });
+  }
+
+  function handleImportJson() {
+    setImportError(null);
+    try {
+      const parsed = JSON.parse(importText);
+      if (!parsed.ranking || !Array.isArray(parsed.products)) {
+        throw new Error("JSON inválido: precisa ter 'ranking' e 'products' (array).");
+      }
+      // Ranking
+      setTitle(parsed.ranking.title ?? "");
+      setSubtitle(parsed.ranking.subtitle ?? "");
+      setIntro(parsed.ranking.intro ?? "");
+      setConclusion(parsed.ranking.conclusion ?? "");
+      setCoverUrl(parsed.ranking.coverUrl ?? "");
+      setMetaTitle(parsed.ranking.metaTitle ?? "");
+      setMetaDesc(parsed.ranking.metaDesc ?? "");
+      setCategoryId(parsed.ranking.categoryId ?? "");
+
+      // Produtos — preenche os blocos existentes (até PRODUCT_COUNT)
+      const incoming = parsed.products as Partial<Top10Input["products"][number]>[];
+      const next = Array.from({ length: PRODUCT_COUNT }, (_, i) => {
+        const p = incoming[i];
+        if (!p) return { ...EMPTY_PRODUCT };
+        return {
+          name: p.name ?? "",
+          brand: p.brand ?? "",
+          shortDesc: p.shortDesc ?? "",
+          longDesc: p.longDesc ?? "",
+          imageUrl: p.imageUrl ?? "",
+          currentPrice: p.currentPrice != null ? String(p.currentPrice) : "",
+          oldPrice: p.oldPrice != null ? String(p.oldPrice) : "",
+          rating: p.rating != null ? String(p.rating) : "",
+          pros: Array.isArray(p.pros) ? p.pros.join("\n") : "",
+          cons: Array.isArray(p.cons) ? p.cons.join("\n") : "",
+          badge: p.badge ?? "",
+          amazonUrl: p.amazonUrl ?? "",
+          mercadoLivreUrl: p.mercadoLivreUrl ?? "",
+          shopeeUrl: p.shopeeUrl ?? "",
+        };
+      });
+      setProducts(next);
+
+      // FAQs
+      if (Array.isArray(parsed.faqs)) {
+        setFaqs(parsed.faqs.map((f: { question?: string; answer?: string }) => ({
+          question: f.question ?? "",
+          answer: f.answer ?? "",
+        })));
+      }
+
+      setShowImport(false);
+      setImportText("");
+    } catch (e) {
+      setImportError(e instanceof Error ? e.message : "JSON inválido");
+    }
   }
 
   function handleSubmit(e: React.FormEvent) {
@@ -139,6 +198,48 @@ export function Top10Form({ categories }: Props) {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-8">
+      {/* ─── Importar JSON ────────────────────────────────────────────────── */}
+      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
+        <div className="flex items-center justify-between">
+          <div>
+            <p className="text-sm font-semibold text-purple-900">📋 Importar de JSON</p>
+            <p className="text-xs text-purple-700">
+              Cole um JSON gerado por IA ou planilha pra preencher tudo automaticamente.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => setShowImport((v) => !v)}
+            className="text-xs px-3 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 font-medium"
+          >
+            {showImport ? "Fechar" : "Abrir importador"}
+          </button>
+        </div>
+
+        {showImport && (
+          <div className="mt-4 space-y-3">
+            <textarea
+              value={importText}
+              onChange={(e) => setImportText(e.target.value)}
+              rows={10}
+              className="input font-mono text-xs"
+              placeholder='{"ranking": {"title": "..."}, "products": [...], "faqs": [...]}'
+            />
+            {importError && (
+              <p className="text-xs text-red-600">{importError}</p>
+            )}
+            <button
+              type="button"
+              onClick={handleImportJson}
+              disabled={!importText.trim()}
+              className="text-sm px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 font-medium disabled:opacity-50"
+            >
+              Preencher formulário
+            </button>
+          </div>
+        )}
+      </div>
+
       {/* ─── Seção: Dados do Ranking ──────────────────────────────────────── */}
       <section className="bg-white rounded-xl border border-gray-200 p-6 space-y-5">
         <h2 className="text-base font-semibold text-gray-900 border-b pb-3">
