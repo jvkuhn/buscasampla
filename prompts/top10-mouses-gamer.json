@@ -1,0 +1,195 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Mouses Gamer até R$500 em 2026",
+    "subtitle": "Do custo-benefício ao wireless premium — os melhores mouses para jogar no Brasil.",
+    "intro": "Escolher um bom mouse gamer faz diferença real na sua performance — seja no FPS competitivo ou no RPG casual. Nesta lista comparamos os 10 melhores mouses gamer disponíveis no Brasil por até R$500, analisando sensor, DPI, peso, formato ergonômico, durabilidade dos cliques e se vale o extra pelo wireless. Tem opção para todos os estilos de jogo e tamanhos de mão.",
+    "conclusion": "Para a maioria dos jogadores, o Logitech G203 é o ponto de entrada perfeito: sensor preciso, leve e por menos de R$150. Quem quer o melhor dentro do orçamento de R$500, o Logitech G Pro X Superlight 2 ou o Razer DeathAdder V3 HyperSpeed entregam tecnologia wireless de alto nível. Lembre-se: o melhor mouse é aquele que se encaixa no seu grip e no seu estilo de jogo.",
+    "metaTitle": "Top 10 Mouses Gamer até R$500 em 2026",
+    "metaDesc": "Ranking dos 10 melhores mouses gamer até R$500: com fio, sem fio, leves e ergonômicos com prós, contras e onde comprar.",
+    "categoryId": null
+  },
+  "products": [
+    {
+      "name": "Logitech G Pro X Superlight 2",
+      "brand": "Logitech",
+      "shortDesc": "O mouse wireless mais leve e preciso da Logitech — referência entre jogadores profissionais.",
+      "longDesc": "Mouse wireless com sensor HERO 2 de 32.000 DPI, peso de apenas 60g, tecnologia LIGHTSPEED de baixa latência, bateria de até 95h e cliques mecânicos de alta durabilidade. Disponível em preto e branco.",
+      "imageUrl": "",
+      "currentPrice": 499,
+      "oldPrice": 599,
+      "rating": 4.9,
+      "pros": ["60g ultraleve", "Sensor HERO 2 sem aceleração", "95h de bateria", "Padrão profissional de e-sports"],
+      "cons": ["Preço no limite do orçamento", "Sem RGB", "Sem peso ajustável"],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=logitech+g+pro+x+superlight+2",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/logitech-g-pro-x-superlight-2",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=logitech%20g%20pro%20x%20superlight%202"
+    },
+    {
+      "name": "Razer DeathAdder V3 HyperSpeed",
+      "brand": "Razer",
+      "shortDesc": "Versão wireless do clássico DeathAdder com sensor Focus X e ergonomia perfeita para mão direita.",
+      "longDesc": "Mouse wireless ergonômico com sensor Focus X de 14.000 DPI, HyperSpeed wireless de baixa latência, peso de 77g, 235h de bateria e 6 botões programáveis. O melhor custo-benefício wireless da Razer.",
+      "imageUrl": "",
+      "currentPrice": 349,
+      "oldPrice": 429,
+      "rating": 4.7,
+      "pros": ["235h de bateria absurda", "Ergonomia clássica DeathAdder", "HyperSpeed sem latência perceptível", "Preço justo para wireless"],
+      "cons": ["Apenas para destros", "Sensor Focus X (não o topo de linha)", "Sem RGB"],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=razer+deathadder+v3+hyperspeed",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/razer-deathadder-v3-hyperspeed",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=razer%20deathadder%20v3%20hyperspeed"
+    },
+    {
+      "name": "Logitech G305 LIGHTSPEED",
+      "brand": "Logitech",
+      "shortDesc": "Mouse wireless com sensor HERO 12K e bateria de 250h por menos de R$200.",
+      "longDesc": "Mouse wireless com sensor HERO 12K de 200 a 12.000 DPI, tecnologia LIGHTSPEED, bateria de 250h com 1 pilha AA, 6 botões programáveis e peso de 99g. Um dos melhores custo-benefício wireless do mercado.",
+      "imageUrl": "",
+      "currentPrice": 199,
+      "oldPrice": 249,
+      "rating": 4.7,
+      "pros": ["250h de bateria com 1 pilha AA", "LIGHTSPEED sem latência", "Sensor HERO preciso", "Preço excelente para wireless"],
+      "cons": ["99g mais pesado que rivais modernos", "Sem recarga USB (usa pilha)", "Design básico sem RGB"],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=logitech+g305+lightspeed",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/logitech-g305-lightspeed",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=logitech%20g305%20lightspeed"
+    },
+    {
+      "name": "Logitech G203 Lightsync",
+      "brand": "Logitech",
+      "shortDesc": "O mouse gamer com fio mais vendido do Brasil — sensor preciso e RGB por menos de R$150.",
+      "longDesc": "Mouse com fio com sensor óptico de 200 a 8.000 DPI, RGB LIGHTSYNC de 3 zonas, 6 botões programáveis, peso de 90g e cabo de 2,1m trançado. Ideal para iniciantes e jogadores casuais.",
+      "imageUrl": "",
+      "currentPrice": 139,
+      "oldPrice": 179,
+      "rating": 4.6,
+      "pros": ["Preço acessível", "RGB bonito", "Sensor confiável Logitech", "Cabo longo trançado"],
+      "cons": ["Com fio", "DPI máximo de 8.000", "Peso de 90g acima da média moderna"],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=logitech+g203+lightsync",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/logitech-g203-lightsync",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=logitech%20g203%20lightsync"
+    },
+    {
+      "name": "Razer DeathAdder V3",
+      "brand": "Razer",
+      "shortDesc": "Mouse com fio ultraleve de 59g com sensor Focus Pro 30K e ergonomia premiada.",
+      "longDesc": "Mouse com fio ergonômico com sensor Focus Pro 30K DPI, 59g de peso, cliques ópticos HyperSpeed com durabilidade de 90 milhões de cliques, 6 botões e cabo SpeedFlex flexível.",
+      "imageUrl": "",
+      "currentPrice": 399,
+      "oldPrice": 479,
+      "rating": 4.8,
+      "pros": ["59g muito leve para com fio", "Sensor Focus Pro 30K top de linha", "Cliques ópticos duráveis", "Ergonomia para palmar e claw grip"],
+      "cons": ["Com fio", "Apenas para destros", "Sem RGB colorido (só logo)"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=razer+deathadder+v3+com+fio",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/razer-deathadder-v3",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=razer%20deathadder%20v3"
+    },
+    {
+      "name": "HyperX Pulsefire Haste 2",
+      "brand": "HyperX",
+      "shortDesc": "Mouse com fio ultraleve honeycomb de 53g com sensor de 26.000 DPI.",
+      "longDesc": "Mouse com fio de design vazado (honeycomb) pesando apenas 53g, sensor de 26.000 DPI, cliques com switches HyperX de 100 milhões de ciclos, 6 botões e cabo HyperFlex ultramacio.",
+      "imageUrl": "",
+      "currentPrice": 299,
+      "oldPrice": 369,
+      "rating": 4.6,
+      "pros": ["53g ultraleve", "Design honeycomb ventilado", "Sensor de 26K DPI", "Cabo muito macio"],
+      "cons": ["Design honeycomb acumula poeira", "Com fio", "Sem versão wireless acessível"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=hyperx+pulsefire+haste+2",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/hyperx-pulsefire-haste-2",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=hyperx%20pulsefire%20haste%202"
+    },
+    {
+      "name": "Redragon Cobra M711",
+      "brand": "Redragon",
+      "shortDesc": "Mouse gamer com fio RGB com 10.000 DPI e peso ajustável por menos de R$120.",
+      "longDesc": "Mouse com fio com sensor óptico de 10.000 DPI, RGB de 7 cores, 7 botões programáveis, sistema de peso ajustável com 5 pesos removíveis e grip lateral antiderrapante.",
+      "imageUrl": "",
+      "currentPrice": 119,
+      "oldPrice": null,
+      "rating": 4.4,
+      "pros": ["Peso ajustável", "RGB colorido", "Preço muito acessível", "7 botões programáveis"],
+      "cons": ["Sensor de entrada básico", "Construção plástica simples", "Software de configuração pesado"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=redragon+cobra+m711",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/redragon-cobra-m711",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=redragon%20cobra%20m711"
+    },
+    {
+      "name": "SteelSeries Rival 3",
+      "brand": "SteelSeries",
+      "shortDesc": "Mouse com fio leve e preciso da SteelSeries com sensor TrueMove Core e 6 botões.",
+      "longDesc": "Mouse com fio de 77g com sensor óptico TrueMove Core de 8.500 DPI, 6 botões programáveis, RGB de 3 zonas configurável via SteelSeries GG e durabilidade de 60 milhões de cliques.",
+      "imageUrl": "",
+      "currentPrice": 189,
+      "oldPrice": 229,
+      "rating": 4.5,
+      "pros": ["Sensor TrueMove Core preciso", "Leve (77g)", "Software GG completo", "Preço acessível para a marca"],
+      "cons": ["DPI máximo de 8.500", "Com fio", "RGB limitado a 3 zonas"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=steelseries+rival+3",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/steelseries-rival-3",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=steelseries%20rival%203"
+    },
+    {
+      "name": "Corsair Katar Pro XT",
+      "brand": "Corsair",
+      "shortDesc": "Mouse ultraleve de 73g com sensor PixArt PMW3391 de 18.000 DPI e design ambidestro.",
+      "longDesc": "Mouse com fio simétrico (ambidestro) pesando 73g, sensor PixArt PMW3391 de 18.000 DPI, 6 botões, cabo flexível e software iCUE para personalização. Ideal para quem usa com a mão esquerda.",
+      "imageUrl": "",
+      "currentPrice": 249,
+      "oldPrice": 299,
+      "rating": 4.5,
+      "pros": ["Ambidestro (mão esquerda e direita)", "Sensor PMW3391 de alta precisão", "73g leve", "Software iCUE completo"],
+      "cons": ["Com fio", "Sem RGB (apenas discreto)", "Design sem muito grip lateral"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=corsair+katar+pro+xt",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/corsair-katar-pro-xt",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=corsair%20katar%20pro%20xt"
+    },
+    {
+      "name": "Logitech G Pro Wireless",
+      "brand": "Logitech",
+      "shortDesc": "Mouse wireless profissional ambidestro com sensor HERO 25K e botões laterais trocáveis.",
+      "longDesc": "Mouse wireless LIGHTSPEED com sensor HERO 25K DPI, peso de 80g, design ambidestro com botões laterais removíveis, bateria de 48h e construção utilizada por atletas profissionais de e-sports.",
+      "imageUrl": "",
+      "currentPrice": 459,
+      "oldPrice": 549,
+      "rating": 4.8,
+      "pros": ["Ambidestro com botões trocáveis", "Sensor HERO 25K", "LIGHTSPEED wireless", "Padrão de torneios profissionais"],
+      "cons": ["48h de bateria abaixo do G305", "Preço elevado", "Design pode parecer básico para o preço"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=logitech+g+pro+wireless",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/logitech-g-pro-wireless",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=logitech%20g%20pro%20wireless"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Mouse com fio ou sem fio faz diferença no jogo competitivo?",
+      "answer": "Nos modelos modernos, praticamente não. Tecnologias como LIGHTSPEED da Logitech e HyperSpeed da Razer têm latência de 1ms, equivalente ao com fio. A diferença real está no peso e na bateria — mouses wireless de ponta chegam a 60g sem fio, algo difícil de alcançar com cabo."
+    },
+    {
+      "question": "DPI alto significa mouse melhor?",
+      "answer": "Não necessariamente. DPI (dots per inch) é a sensibilidade do sensor, não a qualidade. A maioria dos jogadores profissionais joga entre 400 e 1.600 DPI. O importante é a precisão e consistência do sensor, não o número máximo. Sensores como HERO 2 da Logitech e Focus Pro da Razer são referência independente do DPI máximo."
+    },
+    {
+      "question": "Qual o melhor grip para mouse gamer: palm, claw ou fingertip?",
+      "answer": "Palm grip: mão inteira apoia no mouse — ideal para mouses grandes e ergonômicos como DeathAdder. Claw grip: dedos arqueados — funciona com a maioria dos modelos. Fingertip grip: só os dedos tocam o mouse — pede mouses leves e menores. Mouses simétricos como o G Pro Wireless funcionam para os três."
+    },
+    {
+      "question": "Vale a pena gastar mais de R$300 em um mouse gamer?",
+      "answer": "Depende do seu nível de jogo. Para casual e semi-competitivo, um G203 ou G305 já entrega tudo. Para competitivo sério, a diferença entre um sensor básico e um premium (HERO 2, Focus Pro) é real em jogos de alta precisão como CS2 e Valorant. O salto de R$150 pra R$300 tem retorno — acima disso, é mais sobre preferência."
+    },
+    {
+      "question": "Mouse gamer funciona em qualquer superfície?",
+      "answer": "Sensores ópticos modernos funcionam bem em quase qualquer superfície, mas mousepad ainda é recomendado para máxima precisão e deslize consistente. Superfícies de vidro e espelhos ainda travam a maioria dos sensores. Se você joga muito, um bom mousepad de tecido fecha o setup."
+    }
+  ]
+}

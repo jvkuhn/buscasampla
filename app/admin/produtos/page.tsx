@@ -2,6 +2,7 @@ import Link from "next/link";
 import { db } from "@/lib/db";
 import { PageHeader } from "@/components/admin/PageHeader";
 import { DeleteButton } from "@/components/admin/DeleteButton";
+import { ProductFilter } from "@/components/admin/ProductFilter";
 import { deleteProduct } from "@/lib/actions/products";
 import { formatPrice } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -15,11 +16,19 @@ const BADGE_LABELS: Record<string, string> = {
   CHEAPEST: "Mais barato",
 };
 
-export default async function ProductsPage() {
-  const products = await db.product.findMany({
-    orderBy: { createdAt: "desc" },
-    include: { category: { select: { name: true } } },
-  });
+export default async function ProductsPage(props: {
+  searchParams: Promise<{ categoria?: string }>;
+}) {
+  const { categoria } = await props.searchParams;
+
+  const [products, categories] = await Promise.all([
+    db.product.findMany({
+      orderBy: { createdAt: "desc" },
+      where: categoria ? { categoryId: categoria } : undefined,
+      include: { category: { select: { name: true } } },
+    }),
+    db.category.findMany({ orderBy: { name: "asc" }, select: { id: true, name: true } }),
+  ]);
 
   return (
     <div>
@@ -27,6 +36,8 @@ export default async function ProductsPage() {
         title="Produtos"
         action={{ href: "/admin/produtos/novo", label: "+ Novo produto" }}
       />
+
+      <ProductFilter categories={categories} selected={categoria} />
 
       <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
         <table className="w-full text-sm">
@@ -83,7 +94,7 @@ export default async function ProductsPage() {
             {products.length === 0 && (
               <tr>
                 <td colSpan={6} className="px-4 py-8 text-center text-gray-400">
-                  Nenhum produto cadastrado.
+                  Nenhum produto {categoria ? "nessa categoria" : "cadastrado"}.
                 </td>
               </tr>
             )}

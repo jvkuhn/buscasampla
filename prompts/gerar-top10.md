@@ -8,10 +8,21 @@ REGRAS:
 2. Não invente modelos. Se não tiver certeza do código exato, use só o nome comercial.
 3. Escreva intro, conclusão, prós, contras e FAQs em português natural, persuasivo, sem soar genérico.
 4. Atribua badges com critério: 1 BEST_SELLER (mais vendido), 1 BEST_VALUE (custo-benefício), 1 PREMIUM (top de linha), 1 CHEAPEST (mais barato). Os outros 6 deixe null.
-5. Para os campos amazonUrl, mercadoLivreUrl e shopeeUrl, gere URLs de BUSCA com o nome do produto (ex: https://www.amazon.com.br/s?k=NOME+DO+PRODUTO). Não invente links de afiliado.
-6. Preços devem ser realistas e atuais (consulte se necessário).
-7. Pelo menos 4 FAQs relevantes ao tópico.
-8. Retorne APENAS o JSON, sem comentários antes ou depois.
+5. Para o campo mercadoLivreUrl, gere URL de BUSCA com o nome do produto (ex: https://lista.mercadolivre.com.br/NOME+DO+PRODUTO). Deixe amazonUrl e shopeeUrl como string vazia "". Não invente links de afiliado.
+6. Para o campo imageUrl: faça uma web search de IMAGEM para cada produto (ex: "Electrolux MTO30 imagem produto") e extraia a URL mais relevante. Priorize URLs de: fabricante oficial > lojas (KaBuM, Pichau, BuscaPé) > sites de review. Não use Mercado Livre como fonte de imagem (bloqueia).
+7. Preços devem ser realistas e atuais (consulte se necessário).
+8. Pelo menos 4 FAQs relevantes ao tópico.
+9. Além do JSON principal, gere também um arquivo de links separado (txt) com todas as URLs do Mercado Livre, listando os 10 produtos. Formato:
+
+   TOP 10 [TÓPICO] — LINKS MERCADO LIVRE
+   =======================================
+   Substitua pelos links diretos/afiliado antes de importar no JSON.
+
+   1. [Nome do produto]
+      [URL]
+   ...
+
+10. Retorne APENAS o JSON e o arquivo de links, sem comentários antes ou depois.
 
 FORMATO EXATO (siga a estrutura, não adicione nem remova campos):
 

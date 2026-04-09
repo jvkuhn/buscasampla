@@ -1,0 +1,195 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Fones Bluetooth até R$500 em 2026",
+    "subtitle": "Do custo-benefício ao premium com cancelamento de ruído — os melhores fones sem fio do Brasil.",
+    "intro": "O mercado de fones bluetooth cresceu muito nos últimos anos e hoje dá pra ter qualidade de som excelente sem gastar uma fortuna. Nesta lista comparamos os 10 melhores fones bluetooth disponíveis no Brasil por até R$500, testando qualidade de áudio, duração de bateria, conforto, microfone para chamadas e recursos extras como cancelamento de ruído ativo (ANC). Tem opção pra todos os perfis: quem quer o mais vendido, o melhor custo-benefício, ou o mais completo na faixa de preço.",
+    "conclusion": "Para a maioria das pessoas, o JBL Tune 520BT continua sendo o melhor custo-benefício da categoria — bateria absurda de 57h e som assinado JBL por menos de R$200. Quem quer cancelamento de ruído e tem um pouco mais de orçamento, o JBL Tune 770NC entrega tudo isso por menos de R$450. Lembre-se: todos os modelos desta lista precisam de Bluetooth 5.0 ou superior no seu celular para ter o melhor desempenho.",
+    "metaTitle": "Top 10 Fones Bluetooth até R$500 em 2026",
+    "metaDesc": "Ranking dos 10 melhores fones bluetooth até R$500: over-ear, on-ear e true wireless com prós, contras e onde comprar mais barato.",
+    "categoryId": null
+  },
+  "products": [
+    {
+      "name": "JBL Tune 520BT",
+      "brand": "JBL",
+      "shortDesc": "O fone bluetooth mais vendido do Brasil com 57h de bateria e som Pure Bass.",
+      "longDesc": "On-ear com Bluetooth 5.3, bateria de 57h, dobrável para transporte, multipoint para conectar 2 dispositivos ao mesmo tempo e microfone embutido para chamadas. Disponível em várias cores.",
+      "imageUrl": "",
+      "currentPrice": 199,
+      "oldPrice": 249,
+      "rating": 4.6,
+      "pros": ["57h de bateria absurda", "Multipoint (2 dispositivos)", "Leve e dobrável", "Preço imbatível"],
+      "cons": ["Sem cancelamento de ruído", "Almofadas finas a longo prazo"],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=jbl+tune+520bt",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/jbl-tune-520bt",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=jbl%20tune%20520bt"
+    },
+    {
+      "name": "Anker Soundcore Q20i",
+      "brand": "Anker",
+      "shortDesc": "Over-ear com cancelamento de ruído ativo por menos de R$250 — o melhor custo-benefício da lista.",
+      "longDesc": "Over-ear com ANC híbrido, 40h de bateria com ANC ativo, drivers de 40mm, modo transparência e aplicativo Soundcore para equalização personalizada. Bluetooth 5.0 com multipoint.",
+      "imageUrl": "",
+      "currentPrice": 229,
+      "oldPrice": 299,
+      "rating": 4.5,
+      "pros": ["ANC a preço acessível", "40h de bateria com ANC", "App de equalização", "Over-ear confortável"],
+      "cons": ["ANC menos eficiente que Sony/Bose premium", "Microfone mediano em ambientes ruidosos"],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=anker+soundcore+q20i",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/anker-soundcore-q20i",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=anker%20soundcore%20q20i"
+    },
+    {
+      "name": "JBL Tune 770NC",
+      "brand": "JBL",
+      "shortDesc": "Over-ear JBL com cancelamento de ruído adaptativo e 70h de bateria total.",
+      "longDesc": "Over-ear dobrável com ANC adaptativo, 44h de bateria com ANC ativo e 70h sem, modo ambiente, multipoint e carga rápida (10min = 3h). O melhor da JBL nessa faixa de preço.",
+      "imageUrl": "",
+      "currentPrice": 449,
+      "oldPrice": 549,
+      "rating": 4.7,
+      "pros": ["ANC adaptativo eficiente", "70h de bateria no total", "Carga rápida", "Marca e assistência confiáveis"],
+      "cons": ["Quase no limite de R$500", "Plástico predominante no acabamento"],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=jbl+tune+770nc",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/jbl-tune-770nc",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=jbl%20tune%20770nc"
+    },
+    {
+      "name": "Philips TAH5209",
+      "brand": "Philips",
+      "shortDesc": "O fone bluetooth over-ear mais barato da lista com qualidade de som surpreendente.",
+      "longDesc": "Over-ear com drivers de 40mm, 29h de bateria, dobramento compacto e microfone embutido. Sem ANC, mas entrega qualidade de som acima do esperado para o preço. Bluetooth 5.0.",
+      "imageUrl": "",
+      "currentPrice": 169,
+      "oldPrice": null,
+      "rating": 4.3,
+      "pros": ["Mais barato da lista", "Som equilibrado para o preço", "Leve e dobrável"],
+      "cons": ["Sem cancelamento de ruído", "Bateria de 29h abaixo da concorrência", "Construção simples"],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=philips+tah5209",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/philips-tah5209",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=philips%20tah5209"
+    },
+    {
+      "name": "Sony WH-CH520",
+      "brand": "Sony",
+      "shortDesc": "On-ear Sony com 50h de bateria e suporte a LDAC para áudio de alta resolução.",
+      "longDesc": "On-ear leve de 147g com Bluetooth 5.2, 50h de bateria, carga rápida (10min = 1,5h), suporte a LDAC para áudio hi-res em dispositivos compatíveis e multipoint.",
+      "imageUrl": "",
+      "currentPrice": 299,
+      "oldPrice": 369,
+      "rating": 4.5,
+      "pros": ["Levíssimo (147g)", "50h de bateria", "LDAC para áudio hi-res", "Marca Sony confiável"],
+      "cons": ["On-ear com menos isolamento passivo", "Sem ANC"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=sony+wh-ch520",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/sony-wh-ch520",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=sony%20wh-ch520"
+    },
+    {
+      "name": "Edifier WH700NB",
+      "brand": "Edifier",
+      "shortDesc": "Over-ear com ANC híbrido e aptX — boa opção pra quem busca qualidade sem pagar premium.",
+      "longDesc": "Over-ear com ANC híbrido de 38dB de atenuação, 45h de bateria com ANC ativo, modo transparência, drivers de 40mm e app Edifier Connect para configuração. Bluetooth 5.0 com aptX.",
+      "imageUrl": "",
+      "currentPrice": 349,
+      "oldPrice": 429,
+      "rating": 4.4,
+      "pros": ["ANC híbrido de qualidade", "aptX para melhor áudio", "45h de bateria", "App de configuração"],
+      "cons": ["Marca menos conhecida no Brasil", "Almofadas aquecem em uso prolongado"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=edifier+wh700nb",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/edifier-wh700nb",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=edifier%20wh700nb"
+    },
+    {
+      "name": "JBL Tune 670NC",
+      "brand": "JBL",
+      "shortDesc": "On-ear JBL com ANC a preço intermediário e 70h de bateria total.",
+      "longDesc": "On-ear dobrável com cancelamento de ruído adaptativo, 44h com ANC ativo e 70h sem, multipoint, modo ambiente e carga rápida. A versão on-ear do Tune 770NC com preço menor.",
+      "imageUrl": "",
+      "currentPrice": 379,
+      "oldPrice": 449,
+      "rating": 4.4,
+      "pros": ["ANC num on-ear acessível", "70h bateria total", "Multipoint", "Design dobrável"],
+      "cons": ["On-ear com menos conforto que over-ear em uso longo", "ANC menos eficiente que o 770NC"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=jbl+tune+670nc",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/jbl-tune-670nc",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=jbl%20tune%20670nc"
+    },
+    {
+      "name": "Motorola Pulse Escape+",
+      "brand": "Motorola",
+      "shortDesc": "On-ear Motorola resistente à água com 30h de bateria e assistente de voz integrado.",
+      "longDesc": "On-ear com certificação IPX5, 30h de bateria, drivers de 40mm, acesso rápido ao Google Assistente e Alexa e design dobrável para transporte. Bluetooth 5.0.",
+      "imageUrl": "",
+      "currentPrice": 259,
+      "oldPrice": 319,
+      "rating": 4.3,
+      "pros": ["IPX5 resistente à água", "Google Assistente integrado", "Preço acessível", "Marca conhecida"],
+      "cons": ["30h de bateria abaixo dos rivais", "Sem ANC", "Almofadas finas"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=motorola+pulse+escape",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/motorola-pulse-escape",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=motorola%20pulse%20escape"
+    },
+    {
+      "name": "Samsung Galaxy Buds2",
+      "brand": "Samsung",
+      "shortDesc": "True wireless Samsung com ANC, design compacto e integração nativa com Android.",
+      "longDesc": "Earbuds true wireless com ANC de 2 microfones, 5h de bateria no fone e 20h com estojo, resistência IPX2, modo ambiente e integração via app Galaxy Wearable.",
+      "imageUrl": "",
+      "currentPrice": 399,
+      "oldPrice": 499,
+      "rating": 4.4,
+      "pros": ["True wireless compacto", "ANC eficiente para earbuds", "Integração Android nativa", "Design premium"],
+      "cons": ["Apenas 5h por carga", "IPX2 pouco resistente", "Pior desempenho em iPhones"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=samsung+galaxy+buds2",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/samsung-galaxy-buds2",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=samsung%20galaxy%20buds2"
+    },
+    {
+      "name": "JBL Tune Flex",
+      "brand": "JBL",
+      "shortDesc": "True wireless JBL open-ear com 32h de bateria, ideal para esportes ao ar livre.",
+      "longDesc": "Earbuds true wireless de formato open sem vedação no canal, resistência IPX4, 8h de bateria no fone e 32h com estojo, modo ambient aware e acesso ao assistente de voz. Ideal para corrida e ciclismo.",
+      "imageUrl": "",
+      "currentPrice": 369,
+      "oldPrice": 429,
+      "rating": 4.3,
+      "pros": ["Open-ear seguro para esportes", "IPX4 resistente a suor", "32h de bateria total", "Leve e confortável"],
+      "cons": ["Sem isolamento acústico", "Sem ANC", "Som vaza em ambientes silenciosos"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=jbl+tune+flex",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/jbl-tune-flex",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=jbl%20tune%20flex"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Vale a pena pagar por cancelamento de ruído (ANC) em fones até R$500?",
+      "answer": "Sim, especialmente se você usa o fone no transporte público, escritório barulhento ou academia. Modelos como o Anker Q20i e JBL Tune 770NC oferecem ANC real e eficiente por menos de R$450. Não é o mesmo que um Sony XM5 de R$2.500, mas já elimina bem o ruído constante de fundo."
+    },
+    {
+      "question": "Qual a diferença entre fone over-ear, on-ear e true wireless?",
+      "answer": "Over-ear cobre toda a orelha — mais confortável e isolante, mas mais volumoso. On-ear fica sobre a orelha — mais leve e compacto, mas pode apertar em uso prolongado. True wireless (earbuds) são completamente separados, ideais para esportes e mobilidade, mas com menos bateria por carga."
+    },
+    {
+      "question": "Fone bluetooth funciona bem com qualquer celular?",
+      "answer": "Com Android e iPhone, sim. A diferença está no codec: LDAC do Sony WH-CH520 só funciona plenamente em Android compatível, e o Samsung Galaxy Buds2 integra melhor com aparelhos Samsung. No iPhone, o codec AAC já garante boa qualidade com qualquer modelo da lista."
+    },
+    {
+      "question": "Como saber se o fone tem boa qualidade de microfone para chamadas?",
+      "answer": "Procure modelos com múltiplos microfones e redução de ruído para chamadas. Os destaques desta lista para chamadas são o JBL Tune 770NC, Sony WH-CH520 e Samsung Galaxy Buds2. Para home office em ambiente silencioso, qualquer modelo da lista atende bem."
+    },
+    {
+      "question": "Qual a vida útil de um fone bluetooth?",
+      "answer": "Em média 3 a 5 anos com uso regular. A bateria de lítio degrada com o tempo. Evite deixar carregando após 100%, não exponha a calor excessivo e prefira marcas com assistência técnica no Brasil como JBL, Sony, Samsung e Motorola para garantir suporte se precisar."
+    }
+  ]
+}

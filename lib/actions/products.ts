@@ -105,3 +105,47 @@ export async function deleteAffiliateLink(id: string, productId: string) {
   await db.affiliateLink.delete({ where: { id } });
   revalidatePath(`/admin/produtos/${productId}`);
 }
+
+const PLATFORM_LABELS: Record<string, string> = {
+  amazon: "Ver na Amazon",
+  mercadolivre: "Ver no Mercado Livre",
+  shopee: "Ver na Shopee",
+};
+
+/**
+ * Atualiza imagem e links de afiliado de um produto rapidamente,
+ * sem precisar acessar a página completa de edição do produto.
+ * Chamado direto da página de edição do ranking.
+ */
+export async function quickUpdateProductMedia(
+  productId: string,
+  rankingId: string,
+  data: { imageUrl: string; amazon: string; mercadolivre: string; shopee: string }
+) {
+  await requireAdmin();
+
+  await db.product.update({
+    where: { id: productId },
+    data: { imageUrl: data.imageUrl || null },
+  });
+
+  for (const platform of ["amazon", "mercadolivre", "shopee"] as const) {
+    const url = data[platform].trim();
+    const existing = await db.affiliateLink.findFirst({ where: { productId, platform } });
+
+    if (url) {
+      if (existing) {
+        await db.affiliateLink.update({ where: { id: existing.id }, data: { url } });
+      } else {
+        await db.affiliateLink.create({
+          data: { productId, platform, url, label: PLATFORM_LABELS[platform] },
+        });
+      }
+    } else if (existing) {
+      await db.affiliateLink.delete({ where: { id: existing.id } });
+    }
+  }
+
+  revalidatePath(`/admin/rankings/${rankingId}`);
+  revalidatePath(`/admin/produtos/${productId}`);
+}

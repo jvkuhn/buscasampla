@@ -18,7 +18,16 @@ export default async function EditRankingPage(props: PageProps<"/admin/rankings/
       include: {
         items: {
           orderBy: { order: "asc" },
-          include: { product: { select: { id: true, name: true, imageUrl: true } } },
+          include: {
+            product: {
+              select: {
+                id: true,
+                name: true,
+                imageUrl: true,
+                affiliateLinks: { select: { id: true, platform: true, url: true } },
+              },
+            },
+          },
         },
         faqs: { orderBy: { order: "asc" } },
       },
@@ -61,7 +70,12 @@ export default async function EditRankingPage(props: PageProps<"/admin/rankings/
           items={ranking.items.map((it) => ({
             id: it.id,
             order: it.order,
-            product: it.product,
+            product: {
+              id: it.product.id,
+              name: it.product.name,
+              imageUrl: it.product.imageUrl,
+              affiliateLinks: it.product.affiliateLinks,
+            },
           }))}
           products={products}
         />
