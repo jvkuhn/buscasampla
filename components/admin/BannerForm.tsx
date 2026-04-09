@@ -1,6 +1,7 @@
 "use client";
 
 import { InputField, TextareaField, SelectField } from "./FormField";
+import { SubmitButton } from "./SubmitButton";
 
 interface Props {
   action: (formData: FormData) => void | Promise<void>;
@@ -73,12 +74,7 @@ export function BannerForm({ action, defaultValues = {} }: Props) {
       </div>
 
       <div className="flex gap-3">
-        <button
-          type="submit"
-          className="bg-blue-600 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-blue-700"
-        >
-          Salvar
-        </button>
+        <SubmitButton />
         <a
           href="/admin/banners"
           className="px-6 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100"

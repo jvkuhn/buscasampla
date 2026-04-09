@@ -85,7 +85,7 @@ export default async function SearchPage(props: PageProps<"/busca">) {
                     >
                       {p.imageUrl && (
                         // eslint-disable-next-line @next/next/no-img-element
-                        <img src={p.imageUrl} alt="" className="w-14 h-14 object-contain rounded bg-gray-50" />
+                        <img src={p.imageUrl} alt={p.name} className="w-14 h-14 object-contain rounded bg-gray-50" />
                       )}
                       <div className="flex-1 min-w-0">
                         <p className="font-medium text-gray-900 truncate">{p.name}</p>

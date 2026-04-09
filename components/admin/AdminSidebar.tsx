@@ -23,7 +23,7 @@ export function AdminSidebar() {
     <aside className="w-56 bg-gray-900 text-white flex flex-col">
       <div className="px-4 py-5 border-b border-gray-700">
         <p className="text-xs text-gray-400 uppercase tracking-widest">Admin</p>
-        <p className="text-white font-bold text-lg">BuscasAmpla</p>
+        <p className="text-white font-bold text-lg">{process.env.NEXT_PUBLIC_SITE_NAME || "BuscasAmpla"}</p>
       </div>
 
       <nav className="flex-1 px-2 py-4 space-y-1">

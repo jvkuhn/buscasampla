@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { useId } from "react";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
@@ -6,11 +7,15 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   hint?: string;
 }
 
-export function InputField({ label, error, hint, className, ...props }: InputProps) {
+export function InputField({ label, error, hint, className, id: externalId, ...props }: InputProps) {
+  const autoId = useId();
+  const id = externalId ?? autoId;
+
   return (
     <div className="space-y-1">
-      <label className="block text-sm font-medium text-gray-700">{label}</label>
+      <label htmlFor={id} className="block text-sm font-medium text-gray-700">{label}</label>
       <input
+        id={id}
         {...props}
         className={cn(
           "w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500",
@@ -30,11 +35,15 @@ interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement
   hint?: string;
 }
 
-export function TextareaField({ label, error, hint, className, ...props }: TextareaProps) {
+export function TextareaField({ label, error, hint, className, id: externalId, ...props }: TextareaProps) {
+  const autoId = useId();
+  const id = externalId ?? autoId;
+
   return (
     <div className="space-y-1">
-      <label className="block text-sm font-medium text-gray-700">{label}</label>
+      <label htmlFor={id} className="block text-sm font-medium text-gray-700">{label}</label>
       <textarea
+        id={id}
         {...props}
         className={cn(
           "w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y",
@@ -54,11 +63,15 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   options: { value: string; label: string }[];
 }
 
-export function SelectField({ label, error, options, className, ...props }: SelectProps) {
+export function SelectField({ label, error, options, className, id: externalId, ...props }: SelectProps) {
+  const autoId = useId();
+  const id = externalId ?? autoId;
+
   return (
     <div className="space-y-1">
-      <label className="block text-sm font-medium text-gray-700">{label}</label>
+      <label htmlFor={id} className="block text-sm font-medium text-gray-700">{label}</label>
       <select
+        id={id}
         {...props}
         className={cn(
           "w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white",

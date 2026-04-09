@@ -41,7 +41,8 @@ export function PublicHeader({ categories, settings }: Props) {
             </button>
 
             {/* Dropdown panel */}
-            <div className="absolute top-full left-0 mt-1 w-56 bg-white border border-gray-200 rounded-xl shadow-xl py-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 pointer-events-none group-hover:pointer-events-auto">
+            <div className="absolute top-full left-0 pt-2 w-56 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 pointer-events-none group-hover:pointer-events-auto">
+            <div className="bg-white border border-gray-200 rounded-xl shadow-xl py-2">
               {categories.length === 0 ? (
                 <p className="px-4 py-2 text-sm text-gray-400">Nenhuma categoria</p>
               ) : (
@@ -64,6 +65,7 @@ export function PublicHeader({ categories, settings }: Props) {
                   Ver todas as categorias →
                 </Link>
               </div>
+            </div>
             </div>
           </div>
         </nav>
