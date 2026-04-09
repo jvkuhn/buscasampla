@@ -1,0 +1,8 @@
+# Fila de geração de Top 10
+# Um tópico por linha. Linhas com # são ignoradas.
+# Tópicos processados recebem ✓ no início e não são re-processados.
+
+# Exemplos — remova o # para ativar:
+# Top 10 Aspiradores de Pó até R$500 em 2026
+# Top 10 Cafeteiras Expresso até R$800 em 2026
+# Top 10 Headsets Gamer até R$400 em 2026

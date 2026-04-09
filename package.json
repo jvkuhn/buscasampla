@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "seed": "tsx prisma/seed.ts",
+    "gerar-top10": "tsx scripts/gerar-top10.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {
