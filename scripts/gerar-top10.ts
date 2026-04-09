@@ -57,7 +57,7 @@ async function processTopic(topico: string): Promise<void> {
   const prompt = buildPrompt(topico);
 
   console.log("  📡 Chamando Claude Code com web search...");
-  const result = spawnSync("claude", ["--print", "--dangerously-skip-permissions"], {
+  const result = spawnSync("claude", ["--print", "--model", "claude-sonnet-4-6"], {
     input: prompt,
     encoding: "utf8",
     timeout: 300_000,
@@ -68,7 +68,7 @@ async function processTopic(topico: string): Promise<void> {
     throw new Error(`Erro ao chamar Claude: ${result.error.message}`);
   }
   if (result.status !== 0) {
-    throw new Error(`Claude saiu com código ${result.status}:\n${result.stderr}`);
+    throw new Error(`Claude saiu com código ${result.status}:\nstderr: ${result.stderr}\nstdout: ${result.stdout?.slice(0, 500)}`);
   }
 
   const output = result.stdout;
