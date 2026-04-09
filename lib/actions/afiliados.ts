@@ -11,9 +11,9 @@ const productConfigItemSchema = z.object({
   productId: z.string().min(1),
   mercadoLivreUrl: urlOrEmpty,
   imageUrl: urlOrEmpty,
-  amazonUrl: urlOrEmpty,
-  shopeeUrl: urlOrEmpty,
   categoryId: z.string().optional(),
+  currentPrice: z.number().positive().optional(),
+  oldPrice: z.number().positive().optional(),
 });
 
 const productConfigSchema = z.array(productConfigItemSchema);
@@ -45,15 +45,14 @@ export async function updateProductConfig(items: ProductConfigItem[]) {
   }
   const validItems = parsed.data;
 
-  for (const { productId, mercadoLivreUrl, imageUrl, categoryId, amazonUrl, shopeeUrl } of validItems) {
+  for (const { productId, mercadoLivreUrl, imageUrl, categoryId, currentPrice, oldPrice } of validItems) {
     if (mercadoLivreUrl) await upsertAffiliateLink(productId, "mercadolivre", mercadoLivreUrl, "Ver no Mercado Livre");
-    if (amazonUrl) await upsertAffiliateLink(productId, "amazon", amazonUrl, "Ver na Amazon");
-    if (shopeeUrl) await upsertAffiliateLink(productId, "shopee", shopeeUrl, "Ver na Shopee");
 
-    // Update product fields
-    const productUpdate: { imageUrl?: string; categoryId?: string } = {};
+    const productUpdate: { imageUrl?: string; categoryId?: string; currentPrice?: number; oldPrice?: number } = {};
     if (imageUrl) productUpdate.imageUrl = imageUrl;
     if (categoryId) productUpdate.categoryId = categoryId;
+    if (currentPrice) productUpdate.currentPrice = currentPrice;
+    if (oldPrice) productUpdate.oldPrice = oldPrice;
 
     if (Object.keys(productUpdate).length > 0) {
       await db.product.update({

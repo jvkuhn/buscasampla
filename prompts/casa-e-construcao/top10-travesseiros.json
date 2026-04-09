@@ -16,8 +16,8 @@
       "shortDesc": "Travesseiro premium com tecnologia viscoelástica que se adapta perfeitamente à sua cabeça e pescoço.",
       "longDesc": "O Tempur Cloud é reconhecido mundialmente como um dos melhores travesseiros premium. Utiliza a tecnologia exclusiva de espuma viscoelástica Tempur que molda perfeitamente a cabeça e o pescoço, distribuindo o peso uniformemente e aliviando pontos de pressão. Acompanha capa removível e lavável. Indicado para quem busca máximo conforto e durabilidade.",
       "imageUrl": "",
-      "currentPrice": 1899.90,
-      "oldPrice": 2299.90,
+      "currentPrice": 1899.9,
+      "oldPrice": 2299.9,
       "rating": 4.9,
       "pros": [
         "Tecnologia viscoelástica premium adaptável",
@@ -30,9 +30,7 @@
         "Pode ser muito firme para alguns"
       ],
       "badge": "PREMIUM",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Travesseiro+Tempur+Cloud",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+tempur+cloud",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Travesseiro+Tempur+Cloud"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+tempur+cloud"
     },
     {
       "name": "Travesseiro Duoflex NASA Gel Alto",
@@ -40,8 +38,8 @@
       "shortDesc": "Travesseiro NASA de espuma viscoelástica com tecnologia gel refrescante para melhor suporte cervical.",
       "longDesc": "O Duoflex NASA Gel Alto combina a tecnologia NASA viscoelástica com a inovação de gel refrescante para uma experiência de sono superior. Oferece suporte firme especialmente indicado para quem dorme de lado ou em posição cervical. A espuma se adapta ao contorno da cabeça mantendo a temperatura fresca durante toda a noite.",
       "imageUrl": "",
-      "currentPrice": 389.90,
-      "oldPrice": 499.90,
+      "currentPrice": 389.9,
+      "oldPrice": 499.9,
       "rating": 4.8,
       "pros": [
         "Tecnologia NASA com gel refrescante",
@@ -54,9 +52,7 @@
         "Altura significativa"
       ],
       "badge": "BEST_SELLER",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Duoflex+NASA+Gel+Alto",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+duoflex+nasa+gel",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Duoflex+NASA+Gel"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+duoflex+nasa+gel"
     },
     {
       "name": "Travesseiro Fibrasca Favos de Mel Massageador",
@@ -64,8 +60,8 @@
       "shortDesc": "Travesseiro com gomos massageadores que oferece conforto e estimula a circulação sanguínea.",
       "longDesc": "O Fibrasca Favos de Mel é a escolha ideal para quem busca um travesseiro com bom custo-benefício sem abrir mão da qualidade. Possui gomos em relevo que atuam como massageadores suaves, melhorando a circulação sanguínea. A fibra siliconada oferece conforto macio e é antialérgica, perfeita para quem tem sensibilidade.",
       "imageUrl": "",
-      "currentPrice": 129.90,
-      "oldPrice": 179.90,
+      "currentPrice": 129.9,
+      "oldPrice": 179.9,
       "rating": 4.6,
       "pros": [
         "Melhor custo-benefício do mercado",
@@ -78,9 +74,7 @@
         "Perde altura com o tempo"
       ],
       "badge": "BEST_VALUE",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Fibrasca+Favos+de+Mel",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+fibrasca+favos",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Fibrasca+Favos+de+Mel"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+fibrasca+favos"
     },
     {
       "name": "Travesseiro Camesa Confortável Fibra Siliconada",
@@ -88,8 +82,8 @@
       "shortDesc": "Travesseiro de fibra siliconada com excelente custo-benefício para toda a família.",
       "longDesc": "O Camesa Fibra Siliconada é um travesseiro versátil que combina conforto macio com preço acessível. A fibra siliconada oferece suporte adequado para qualquer posição de dormir e é hipoalergênica, não acumula ácaros ou mofo. Lavável em máquina, tornando a manutenção simples e prática.",
       "imageUrl": "",
-      "currentPrice": 89.90,
-      "oldPrice": 129.90,
+      "currentPrice": 89.9,
+      "oldPrice": 129.9,
       "rating": 4.4,
       "pros": [
         "Preço muito acessível",
@@ -102,9 +96,7 @@
         "Suporte menos firme"
       ],
       "badge": "CHEAPEST",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Camesa+Fibra+Siliconada",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+camesa",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Camesa+Fibra+Siliconada"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+camesa"
     },
     {
       "name": "Travesseiro Dunlopillo Latex Natural Infinity",
@@ -112,8 +104,8 @@
       "shortDesc": "Travesseiro premium de látex 100% natural com tecnologia Talalay para conforto excepcional.",
       "longDesc": "O Dunlopillo Infinity é produzido com látex natural Talalay, reconhecido mundialmente como o melhor processo de fabricação de látex. Oferece conforto superior, excelente suporte cervical e durabilidade incomparável. Recomendado para quem tem alergia a espuma viscoelástica ou prefere a elasticidade natural do látex.",
       "imageUrl": "",
-      "currentPrice": 749.90,
-      "oldPrice": 999.90,
+      "currentPrice": 749.9,
+      "oldPrice": 999.9,
       "rating": 4.8,
       "pros": [
         "Látex natural 100% Talalay",
@@ -126,9 +118,7 @@
         "Aroma característico de látex inicial"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Dunlopillo+Latex+Infinity",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+dunlopillo+latex",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Dunlopillo+Infinity"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+dunlopillo+latex"
     },
     {
       "name": "Travesseiro Ortobom Viscopur Gel Refrescante",
@@ -136,8 +126,8 @@
       "shortDesc": "Travesseiro ortopédico com gel refrescante que mantém a temperatura ideal durante o sono.",
       "longDesc": "O Ortobom Viscopur Gel é especialmente formulado para oferecer suporte ortopédico com tecnologia de gel refrescante. Mantém a temperatura fresca naturalmente, ideal para climas quentes. A espuma viscoelástica ergonômica oferece alinhamento perfeito da coluna cervical, aliviando dores no pescoço.",
       "imageUrl": "",
-      "currentPrice": 249.90,
-      "oldPrice": 349.90,
+      "currentPrice": 249.9,
+      "oldPrice": 349.9,
       "rating": 4.6,
       "pros": [
         "Gel refrescante mantém temperatura ideal",
@@ -150,9 +140,7 @@
         "Demora mais para esfriar"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Ortobom+Viscopur+Gel",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+ortobom+viscopur",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Ortobom+Viscopur+Gel"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+ortobom+viscopur"
     },
     {
       "name": "Travesseiro Castor Visco Soft Hot Cold",
@@ -160,8 +148,8 @@
       "shortDesc": "Travesseiro com tecnologia Hot Cold que aquece e esfria conforme necessário durante o sono.",
       "longDesc": "O Castor Visco Soft Hot Cold é inovador, usando uma camada especial com partículas de gel que regulam continuamente a temperatura. Oferece conforto balanceado entre firmeza e maciez, adequado para qualquer posição. A cobertura é de algodão de alta qualidade com tecido respirável.",
       "imageUrl": "",
-      "currentPrice": 279.90,
-      "oldPrice": 379.90,
+      "currentPrice": 279.9,
+      "oldPrice": 379.9,
       "rating": 4.5,
       "pros": [
         "Tecnologia Hot Cold inovadora",
@@ -174,9 +162,7 @@
         "Preço moderado-alto"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Castor+Visco+Soft+Hot+Cold",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+castor+visco+soft",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Castor+Visco+Soft"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+castor+visco+soft"
     },
     {
       "name": "Travesseiro Buddemeyer Toque de Pluma",
@@ -184,8 +170,8 @@
       "shortDesc": "Travesseiro ultramacio com enchimento em fibra de poliéster lavável em máquina.",
       "longDesc": "O Buddemeyer Toque de Pluma oferece a sensação de dormir em uma nuvem de penas macias. Feito com fibra de poliéster de alta qualidade, é completamente lavável em máquina, facilitando a limpeza e higiene. Perfeito para quem prefere um travesseiro macio e relaxante que acompanha o contorno da cabeça.",
       "imageUrl": "",
-      "currentPrice": 119.90,
-      "oldPrice": 169.90,
+      "currentPrice": 119.9,
+      "oldPrice": 169.9,
       "rating": 4.5,
       "pros": [
         "Macio como penas naturais",
@@ -198,9 +184,7 @@
         "Pode achatar com o tempo"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Buddemeyer+Toque+de+Pluma",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+buddemeyer+toque",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Buddemeyer+Toque+Pluma"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+buddemeyer+toque"
     },
     {
       "name": "Travesseiro Plumax Espuma Viscoelástica Premium",
@@ -208,8 +192,8 @@
       "shortDesc": "Travesseiro de espuma viscoelástica com tecnologia avançada para suporte superior.",
       "longDesc": "O Plumax Premium oferece espuma viscoelástica de alta densidade que oferece suporte excepcional mantendo o conforto. A tecnologia de dissipação de calor mantém a temperatura ideal. Indicado para quem sofre com dores cervicais ou procura um travesseiro que dure muitos anos com o mesmo desempenho.",
       "imageUrl": "",
-      "currentPrice": 319.90,
-      "oldPrice": 429.90,
+      "currentPrice": 319.9,
+      "oldPrice": 429.9,
       "rating": 4.7,
       "pros": [
         "Espuma viscoelástica premium",
@@ -222,9 +206,7 @@
         "Pode reter calor inicialmente"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Plumax+Espuma+Viscoelastica",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+plumax+viscoelastico",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Plumax+Viscoelastico"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+plumax+viscoelastico"
     },
     {
       "name": "Travesseiro RelaxMedic Dr Coluna com Gel",
@@ -232,8 +214,8 @@
       "shortDesc": "Travesseiro ortopédico com gel refrescante que promove alinhamento correto da coluna.",
       "longDesc": "O RelaxMedic Dr Coluna combina viscoelástica premium com gel refrescante e design ergonômico certificado. Desenvolvido com profissionais de saúde, oferece suporte ortopédico comprovado. A forma anatômica favorece o alinhamento natural da coluna e reduz tensão muscular no pescoço e ombros.",
       "imageUrl": "",
-      "currentPrice": 289.90,
-      "oldPrice": 399.90,
+      "currentPrice": 289.9,
+      "oldPrice": 399.9,
       "rating": 4.7,
       "pros": [
         "Design ergonômico certificado",
@@ -246,9 +228,7 @@
         "Preço moderado-alto"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=RelaxMedic+Dr+Coluna+Gel",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+relaxmedic+dr+coluna",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=RelaxMedic+Dr+Coluna"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/travesseiro+relaxmedic+dr+coluna"
     }
   ],
   "faqs": [

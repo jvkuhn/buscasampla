@@ -16,8 +16,8 @@
       "shortDesc": "Air fryer compacta com 6,2 litros de capacidade, tecnologia TurboStar e aquecimento rápido.",
       "longDesc": "A Philips Walita NA130 é a escolha ideal para quem busca excelente custo-benefício. Com capacidade de 6,2 litros e tecnologia TurboStar de circulação de ar quente, garante frituras uniformes e crocantes. Possui visor digital com controle de temperatura de 60 a 200°C, timer programável e construção robusta que garante durabilidade.",
       "imageUrl": "",
-      "currentPrice": 209.00,
-      "oldPrice": 249.00,
+      "currentPrice": 209,
+      "oldPrice": 249,
       "rating": 4.8,
       "pros": [
         "Excelente custo-benefício no mercado",
@@ -30,9 +30,7 @@
         "Ruído moderado durante funcionamento"
       ],
       "badge": "BEST_VALUE",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Philips+Walita+NA130",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Philips+Walita+NA130",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Philips+Walita+NA130"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Philips+Walita+NA130"
     },
     {
       "name": "Mondial AFN-40-FR",
@@ -40,8 +38,8 @@
       "shortDesc": "Fritadeira elétrica de 4 litros, a mais vendida no Brasil com excelente desempenho.",
       "longDesc": "O modelo AFN-40-FR da Mondial é campeão de vendas e aprovação no Brasil. Com 4 litros de capacidade, potência de 1400W e tecnologia Air Fry 360°, entrega frituras perfeitas com pouquíssimo óleo. Sua construção robusta e acabamento em alumínio garantem durabilidade excepcional. Ideal para famílias pequenas e médias.",
       "imageUrl": "",
-      "currentPrice": 189.90,
-      "oldPrice": 229.90,
+      "currentPrice": 189.9,
+      "oldPrice": 229.9,
       "rating": 4.9,
       "pros": [
         "Campeão de vendas no Brasil",
@@ -54,9 +52,7 @@
         "Sem visor transparente"
       ],
       "badge": "BEST_SELLER",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Mondial+AFN-40-FR",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mondial+AFN-40-FR",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Mondial+AFN-40-FR"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mondial+AFN-40-FR"
     },
     {
       "name": "WAP FW009548",
@@ -64,8 +60,8 @@
       "shortDesc": "Air fryer com 7 litros de capacidade, visor eletrônico e controle de temperatura preciso.",
       "longDesc": "A WAP FW009548 oferece capacidade de 7 litros com avaliação excepcional de 4,8 estrelas no Mercado Livre e 4,6 na Amazon. Equipada com visor eletrônico, controle de temperatura ajustável de 80 a 200°C e timer de até 60 minutos, esta air fryer entrega resultados profissionais. Seu design elegante complementa qualquer cozinha.",
       "imageUrl": "",
-      "currentPrice": 539.00,
-      "oldPrice": 599.00,
+      "currentPrice": 539,
+      "oldPrice": 599,
       "rating": 4.7,
       "pros": [
         "Grande capacidade de 7 litros",
@@ -78,9 +74,7 @@
         "Consome mais energia por maior potência"
       ],
       "badge": "PREMIUM",
-      "amazonUrl": "https://www.amazon.com.br/s?k=WAP+FW009548",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+FW009548",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=WAP+FW009548"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+FW009548"
     },
     {
       "name": "Elgin Prática Fry 3.7L",
@@ -88,8 +82,8 @@
       "shortDesc": "Air fryer compacta com 3,7 litros, perfeita para casais e famílias pequenas.",
       "longDesc": "A Elgin Prática Fry é a opção mais econômica do mercado, ideal para quem está começando no mundo das air fryers. Com 3,7 litros de capacidade, controle de temperatura ajustável e tecnologia Air Circuit 360° que garante aquecimento uniforme. Timer programável de até 60 minutos e acabamento prático que facilita a limpeza.",
       "imageUrl": "",
-      "currentPrice": 180.00,
-      "oldPrice": 210.00,
+      "currentPrice": 180,
+      "oldPrice": 210,
       "rating": 4.5,
       "pros": [
         "Preço mais acessível do mercado",
@@ -102,9 +96,7 @@
         "Menos recursos que modelos premium"
       ],
       "badge": "CHEAPEST",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Elgin+Prática+Fry+3.7L",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Elgin+Prática+Fry",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Elgin+Prática+Fry"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Elgin+Prática+Fry"
     },
     {
       "name": "Mondial Mega Family AFN-80",
@@ -113,7 +105,7 @@
       "longDesc": "A Mondial Mega Family AFN-80 é a solução perfeita para famílias numerosas. Com 8 litros de capacidade e potência de 2000W, consegue preparar grandes quantidades de alimentos simultaneamente. Design em inox com acabamento premium, controle digital intuitivo e timer de até 60 minutos. Ideal para churrascos e refeições em família.",
       "imageUrl": "",
       "currentPrice": 417.05,
-      "oldPrice": 469.90,
+      "oldPrice": 469.9,
       "rating": 4.6,
       "pros": [
         "Capacidade generosa de 8 litros",
@@ -126,9 +118,7 @@
         "Consumo energético mais elevado"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Mondial+Mega+Family+AFN-80",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mondial+Mega+Family+AFN-80",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Mondial+Mega+Family+AFN-80"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mondial+Mega+Family+AFN-80"
     },
     {
       "name": "Electrolux Preto",
@@ -136,8 +126,8 @@
       "shortDesc": "Air fryer compacta da marca tradicional, com 5 litros e design moderno em preto.",
       "longDesc": "A Electrolux Air Fryer combina tradição e inovação, oferecendo 5 litros de capacidade com design moderno e compacto. Equipada com visor digital, controle de temperatura e timer programável, a air fryer Electrolux garante alimentos crocantes e saudáveis. A marca tradicional em eletrodomésticos assegura qualidade e durabilidade comprovadas.",
       "imageUrl": "",
-      "currentPrice": 299.90,
-      "oldPrice": 349.90,
+      "currentPrice": 299.9,
+      "oldPrice": 349.9,
       "rating": 4.7,
       "pros": [
         "Marca tradicionais com excelente reputação",
@@ -150,9 +140,7 @@
         "Menos potência que modelos maiores"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Electrolux+Air+Fryer",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Electrolux+Air+Fryer",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Electrolux+Air+Fryer"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Electrolux+Air+Fryer"
     },
     {
       "name": "WAP Family",
@@ -160,8 +148,8 @@
       "shortDesc": "Air fryer versátil com 6,5 litros, controle digital e visor eletrônico de precisão.",
       "longDesc": "A WAP Family oferece capacidade de 6,5 litros com nota média de 4,7 estrelas na Amazon e impressionantes 4,9 na Mercado Livre. Equipada com visor eletrônico de alta precisão, controle de temperatura contínuo e design que alia funcionalidade ao visual elegante. Recomendada para famílias médias que buscam qualidade e confiabilidade.",
       "imageUrl": "",
-      "currentPrice": 312.00,
-      "oldPrice": 379.90,
+      "currentPrice": 312,
+      "oldPrice": 379.9,
       "rating": 4.8,
       "pros": [
         "Excelente avaliação em duas plataformas",
@@ -174,9 +162,7 @@
         "Design menos moderno que competitors"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=WAP+Family+Air+Fryer",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+Family",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=WAP+Family"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+Family"
     },
     {
       "name": "Mondial AFO-12L-FD",
@@ -184,8 +170,8 @@
       "shortDesc": "Air fryer oven com 12 litros, visor transparente e duas zonas de aquecimento independentes.",
       "longDesc": "A Mondial AFO-12L-FD é a opção oven do mercado com capacidade impressionante de 12 litros. Equipada com visor transparente que permite acompanhar o cozimento, duas zonas de aquecimento independentes e potência de 2000W. Ideal para estabelecimentos comerciais ou famílias que desejam preparar múltiplas receitas simultaneamente sem comprometer a qualidade.",
       "imageUrl": "",
-      "currentPrice": 619.90,
-      "oldPrice": 699.90,
+      "currentPrice": 619.9,
+      "oldPrice": 699.9,
       "rating": 4.5,
       "pros": [
         "Capacidade extremamente generosa de 12 litros",
@@ -199,9 +185,7 @@
         "Consumo energético muito alto"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Mondial+AFO-12L-FD",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mondial+AFO-12L-FD",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Mondial+AFO-12L-FD"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mondial+AFO-12L-FD"
     },
     {
       "name": "Philco Air Fryer PH-AF5",
@@ -209,8 +193,8 @@
       "shortDesc": "Air fryer com 5,5 litros, display LED e múltiplos programas pré-configurados.",
       "longDesc": "A Philco PH-AF5 combina facilidade de uso com capacidade versátil de 5,5 litros. Equipada com display LED intuitivo, múltiplos programas pré-configurados para diferentes alimentos e controle de temperatura ajustável. Sua potência de 1600W garante aquecimento rápido e uniforme. Excelente escolha para quem prefere praticidade sem abrir mão da qualidade.",
       "imageUrl": "",
-      "currentPrice": 249.90,
-      "oldPrice": 299.90,
+      "currentPrice": 249.9,
+      "oldPrice": 299.9,
       "rating": 4.6,
       "pros": [
         "Múltiplos programas pré-configurados",
@@ -223,9 +207,7 @@
         "Programas pré-configurados limitam customização"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Philco+PH-AF5",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Philco+PH-AF5",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Philco+PH-AF5"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Philco+PH-AF5"
     },
     {
       "name": "Oster Air Fryer Digital 6.5L",
@@ -233,8 +215,8 @@
       "shortDesc": "Air fryer digital premium com 6,5 litros, cesta não-aderente e controle preciso de temperatura.",
       "longDesc": "A Oster Air Fryer Digital oferece capacidade de 6,5 litros com visor digital de alta precisão e controle total de temperatura. Cesta com revestimento não-aderente facilita a limpeza e evita aderência de alimentos. Potência de 1700W garante aquecimento rápido. Ideal para quem busca um modelo robusto e confiável com avaliações comprovadas de satisfação.",
       "imageUrl": "",
-      "currentPrice": 379.90,
-      "oldPrice": 429.90,
+      "currentPrice": 379.9,
+      "oldPrice": 429.9,
       "rating": 4.7,
       "pros": [
         "Cesta com revestimento não-aderente",
@@ -247,9 +229,7 @@
         "Design menos moderno visualmente"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Oster+Air+Fryer+Digital",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Oster+Air+Fryer",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Oster+Air+Fryer"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Oster+Air+Fryer"
     }
   ],
   "faqs": [

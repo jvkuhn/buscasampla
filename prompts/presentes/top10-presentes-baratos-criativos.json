@@ -30,9 +30,7 @@
         "App pode ser limitado"
       ],
       "badge": "BEST_VALUE",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Xiaomi+Redmi+Buds+6+Play",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Xiaomi+Redmi+Buds+6+Play",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Xiaomi+Redmi+Buds+6+Play"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Xiaomi+Redmi+Buds+6+Play"
     },
     {
       "name": "Luminária LED RGB com Bluetooth e Despertador",
@@ -54,9 +52,7 @@
         "Pode consumir energia significativa"
       ],
       "badge": "BEST_SELLER",
-      "amazonUrl": "https://www.amazon.com.br/s?k=luminaria+bluetooth+despertador",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/luminaria+bluetooth+despertador",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=luminaria+bluetooth+despertador"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/luminaria+bluetooth+despertador"
     },
     {
       "name": "Mapa Scratch Off Mundi",
@@ -78,9 +74,7 @@
         "Raspadinha pode estragar com o tempo"
       ],
       "badge": "CHEAPEST",
-      "amazonUrl": "https://www.amazon.com.br/s?k=mapa+scratch+off+mundi",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/mapa+scratch+off",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=mapa+scratch+off+mundi"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/mapa+scratch+off"
     },
     {
       "name": "Ring Light com Espelho para Selfie",
@@ -102,9 +96,7 @@
         "Bateria pode ser limitada"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=ring+light+espelho+selfie",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/ring+light+com+espelho",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=ring+light+espelho"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/ring+light+com+espelho"
     },
     {
       "name": "Caneta Stylus Universal para Tablet",
@@ -126,9 +118,7 @@
         "Precisão inferior a canetas premium"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=caneta+stylus+universal+tablet",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/caneta+stylus+universal",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=caneta+stylus+tablet"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/caneta+stylus+universal"
     },
     {
       "name": "Capa para Celular Fidget Toy Pop It",
@@ -138,7 +128,7 @@
       "imageUrl": "",
       "currentPrice": 49,
       "oldPrice": 110,
-      "rating": 4.0,
+      "rating": 4,
       "pros": [
         "Proteção + diversão em um",
         "Alívio de stress comprovado",
@@ -150,9 +140,7 @@
         "Pode soltarse com uso intenso"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=capa+fidget+toy+pop+it+celular",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/capa+fidget+toy+pop+it",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=capa+pop+it+celular"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/capa+fidget+toy+pop+it"
     },
     {
       "name": "Almofada de Pelúcia Decorativa Formato Animal",
@@ -174,9 +162,7 @@
         "Lavagem limitada"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=almofada+pelúcia+decorativa+animal",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/almofada+pelucia+animal",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=almofada+pelucia+criativa"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/almofada+pelucia+animal"
     },
     {
       "name": "Cartão Personalizado Mapa das Estrelas",
@@ -198,9 +184,7 @@
         "Qualidade depende do vendedor"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=cartão+mapa+estrelas+personalizado",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/cartao+mapa+estrelas",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=cartao+personalizado+mapa+estrelas"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/cartao+mapa+estrelas"
     },
     {
       "name": "Caneta Personalizada com Adesivo",
@@ -222,9 +206,7 @@
         "Pedido mínimo em alguns vendedores"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=caneta+personalizada+adesivo",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/caneta+personalizada+adesivo",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=caneta+touch+screen+personalizada"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/caneta+personalizada+adesivo"
     },
     {
       "name": "Organizador de Gaveta em Silicone",
@@ -246,9 +228,7 @@
         "Tamanho pode não caber em todas gavetas"
       ],
       "badge": "PREMIUM",
-      "amazonUrl": "https://www.amazon.com.br/s?k=organizador+gaveta+silicone",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/organizador+silicone+gaveta",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=organizador+silicone+flexivel"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/organizador+silicone+gaveta"
     }
   ],
   "faqs": [

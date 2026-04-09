@@ -16,8 +16,8 @@
       "shortDesc": "Bicicleta spinning de alta performance com roda de inércia de 10kg e resistência magnética silenciosa.",
       "longDesc": "A Kikos Max-KS5 é a melhor escolha para quem busca um equipamento robusto e versátil. Com roda de inércia de 10kg, oferece fluidez incomparável durante o pedal, suportando treinos intensos de spinning. O display eletrônico mostra tempo, velocidade, calorias e distância, enquanto a resistência magnética garante movimentos silenciosos e sem impacto. Suporta usuários até 120kg.",
       "imageUrl": "",
-      "currentPrice": 3890.00,
-      "oldPrice": 4890.00,
+      "currentPrice": 3890,
+      "oldPrice": 4890,
       "rating": 4.8,
       "pros": [
         "Roda de inércia pesada de 10kg",
@@ -30,9 +30,7 @@
         "Requer mais espaço em casa"
       ],
       "badge": "BEST_SELLER",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Kikos+Max-KS5",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kikos+Max-KS5",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Kikos+Max-KS5"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kikos+Max-KS5"
     },
     {
       "name": "Dream Fitness Dream Max H",
@@ -40,8 +38,8 @@
       "shortDesc": "Bicicleta horizontal com encosto e conforto lombar, ideal para exercícios prolongados.",
       "longDesc": "A Dream Max H é perfeita para quem sofre com dores nas costas ou busca maior conforto durante os treinos. Seu design horizontal com encosto anatômico reduz o impacto na coluna vertebral, permitindo treinos mais longos e agradáveis. Com resistência regulável e sistema de tração magnética, oferece eficiência total em um pacote acessível.",
       "imageUrl": "",
-      "currentPrice": 1399.00,
-      "oldPrice": 1799.00,
+      "currentPrice": 1399,
+      "oldPrice": 1799,
       "rating": 4.6,
       "pros": [
         "Encosto ergonômico para coluna",
@@ -54,9 +52,7 @@
         "Menos adequada para spinning intenso"
       ],
       "badge": "BEST_VALUE",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Dream+Fitness+Dream+Max+H",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Dream+Fitness+Dream+Max+H",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Dream+Fitness+Dream+Max+H"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Dream+Fitness+Dream+Max+H"
     },
     {
       "name": "PodiumFit S200",
@@ -65,7 +61,7 @@
       "longDesc": "A PodiumFit S200 é reconhecida como a mais silenciosa do mercado, perfeita para apartamentos e horários noturnos. Seu sistema de transmissão por correia garante movimento fluido e extremamente silencioso, sem incômodo aos vizinhos. Com painel scan moderno que monitora tempo, velocidade, distância e calorias, oferece tudo o que você precisa em um pacote compacto e acessível.",
       "imageUrl": "",
       "currentPrice": 1214.91,
-      "oldPrice": 1499.00,
+      "oldPrice": 1499,
       "rating": 4.5,
       "pros": [
         "Extremamente silenciosa",
@@ -78,9 +74,7 @@
         "Menos adequada para usuários pesados"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=PodiumFit+S200",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/PodiumFit+S200",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=PodiumFit+S200"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/PodiumFit+S200"
     },
     {
       "name": "Gallant Elite X",
@@ -88,8 +82,8 @@
       "shortDesc": "Bicicleta spinning magnética com 8kg de inércia e resistência em 8 níveis, suporta até 120kg.",
       "longDesc": "A Gallant Elite X oferece excelente relação custo-benefício para praticantes de spinning. Com roda de inércia de 8kg e resistência magnética em 8 níveis, permite treinos variados e eficientes. O painel multifuncional monitora pulso, tempo, velocidade, distância e calorias, enquanto a estrutura em aço carbono garante durabilidade e estabilidade nos treinos mais intensos.",
       "imageUrl": "",
-      "currentPrice": 1189.00,
-      "oldPrice": 1435.00,
+      "currentPrice": 1189,
+      "oldPrice": 1435,
       "rating": 4.4,
       "pros": [
         "Ótima relação custo-benefício",
@@ -102,9 +96,7 @@
         "Menos recursos que concorrentes maiores"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Gallant+Elite+X",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Gallant+Elite+X",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Gallant+Elite+X"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Gallant+Elite+X"
     },
     {
       "name": "Polimet Nitro 4300",
@@ -112,8 +104,8 @@
       "shortDesc": "Bicicleta ergométrica magnética com tração magnética suave e display digital para monitoramento.",
       "longDesc": "A Polimet Nitro 4300 combina tecnologia magnética com preço acessível. Com sistema de tração magnética silencioso, oferece uma experiência confortável para treinos cardiovasculares. O display digital fornece informações essenciais sobre seu desempenho, enquanto a estrutura robusta em aço carbono suporta usuários até 100kg com segurança e estabilidade.",
       "imageUrl": "",
-      "currentPrice": 869.90,
-      "oldPrice": 1099.90,
+      "currentPrice": 869.9,
+      "oldPrice": 1099.9,
       "rating": 4.3,
       "pros": [
         "Preço muito acessível",
@@ -126,9 +118,7 @@
         "Menos recursos que modelos premium"
       ],
       "badge": "CHEAPEST",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Polimet+Nitro+4300",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Polimet+Nitro+4300",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Polimet+Nitro+4300"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Polimet+Nitro+4300"
     },
     {
       "name": "Acte Sports E16",
@@ -150,9 +140,7 @@
         "Capacidade até 110kg"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Acte+Sports+E16",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Acte+Sports+E16",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Acte+Sports+E16"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Acte+Sports+E16"
     },
     {
       "name": "Dream Fitness Dream Energy H",
@@ -160,8 +148,8 @@
       "shortDesc": "Bicicleta horizontal compacta com encosto, ideal para treinos confortáveis em espaço limitado.",
       "longDesc": "A Dream Energy H é a escolha perfeita para quem tem espaço limitado em casa mas não quer comprometer o conforto. Com design horizontal e encosto ajustável, oferece suporte adequado para treinos cardiovasculares eficientes. A resistência regulável permite variar a intensidade do exercício, enquanto o tamanho compacto facilita o armazenamento quando não está em uso.",
       "imageUrl": "",
-      "currentPrice": 1299.00,
-      "oldPrice": 1699.00,
+      "currentPrice": 1299,
+      "oldPrice": 1699,
       "rating": 4.1,
       "pros": [
         "Design horizontal com encosto",
@@ -174,9 +162,7 @@
         "Roda de inércia menor"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Dream+Fitness+Dream+Energy+H",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Dream+Fitness+Dream+Energy+H",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Dream+Fitness+Dream+Energy+H"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Dream+Fitness+Dream+Energy+H"
     },
     {
       "name": "Movement H2",
@@ -184,8 +170,8 @@
       "shortDesc": "Bicicleta horizontal premium com resistência magnética de 8 níveis e capacidade até 110kg.",
       "longDesc": "A Movement H2 é a solução premium para quem busca conforto supremo. Com design horizontal e encosto largo, oferece máxima estabilidade e conforto durante longos treinos. A resistência magnética com 8 níveis permite personalizar completamente sua experiência de exercício. O painel digital avançado fornece feedback completo sobre seu desempenho, ajudando a atingir seus objetivos fitness.",
       "imageUrl": "",
-      "currentPrice": 2599.00,
-      "oldPrice": 3299.00,
+      "currentPrice": 2599,
+      "oldPrice": 3299,
       "rating": 4.7,
       "pros": [
         "Design premium e confortável",
@@ -198,9 +184,7 @@
         "Requer mais espaço"
       ],
       "badge": "PREMIUM",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Movement+H2",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Movement+H2",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Movement+H2"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Movement+H2"
     },
     {
       "name": "Polimet BP-770",
@@ -208,8 +192,8 @@
       "shortDesc": "Bicicleta ergométrica de entrada com tração mecânica, suporta até 100kg, preço imbatível.",
       "longDesc": "A Polimet BP-770 é a opção mais econômica para quem quer começar a treinar em casa. Seu sistema de tração mecânica oferece resistência simples mas eficiente para exercícios cardiovasculares básicos. Embora não possua monitor digital, é extremamente confiável e durável, construída com estrutura robusta em aço carbono que garante segurança e estabilidade para usuários até 100kg.",
       "imageUrl": "",
-      "currentPrice": 579.00,
-      "oldPrice": 799.00,
+      "currentPrice": 579,
+      "oldPrice": 799,
       "rating": 3.9,
       "pros": [
         "Preço muito acessível",
@@ -223,9 +207,7 @@
         "Capacidade limitada a 100kg"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Polimet+BP-770",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Polimet+BP-770",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Polimet+BP-770"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Polimet+BP-770"
     },
     {
       "name": "Acte Sports E26",
@@ -233,8 +215,8 @@
       "shortDesc": "Bicicleta horizontal magnética com 8 intensidades de resistência, para máximo conforto e silêncio.",
       "longDesc": "A Acte Sports E26 foi desenvolvida para quem busca conforto, performance e silêncio em um único equipamento. Com resistência magnética de 8 intensidades, oferece variabilidade total nos treinos. O design horizontal com assento ajustável proporciona conforto para longas sessões de exercício, enquanto a resistência magnética garante movimentos suaves e completamente silenciosos, ideal para qualquer horário.",
       "imageUrl": "",
-      "currentPrice": 1449.00,
-      "oldPrice": 1899.00,
+      "currentPrice": 1449,
+      "oldPrice": 1899,
       "rating": 4.3,
       "pros": [
         "8 intensidades de resistência",
@@ -247,9 +229,7 @@
         "Requer espaço para armazenamento"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Acte+Sports+E26",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Acte+Sports+E26",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Acte+Sports+E26"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Acte+Sports+E26"
     }
   ],
   "faqs": [

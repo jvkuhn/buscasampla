@@ -8,7 +8,7 @@ REGRAS:
 2. Não invente modelos. Se não tiver certeza do código exato, use só o nome comercial.
 3. Escreva intro, conclusão, prós, contras e FAQs em português natural, persuasivo, sem soar genérico.
 4. Atribua badges com critério: 1 BEST_SELLER (mais vendido), 1 BEST_VALUE (custo-benefício), 1 PREMIUM (top de linha), 1 CHEAPEST (mais barato). Os outros 6 deixe null.
-5. Para o campo mercadoLivreUrl, gere URL de BUSCA com o nome do produto (ex: https://lista.mercadolivre.com.br/NOME+DO+PRODUTO). Deixe amazonUrl e shopeeUrl como string vazia "". Não invente links de afiliado.
+5. Para o campo mercadoLivreUrl, gere URL de BUSCA com o nome do produto (ex: https://lista.mercadolivre.com.br/NOME+DO+PRODUTO). Não inclua campos amazonUrl ou shopeeUrl. Não invente links de afiliado.
 6. Para o campo imageUrl: faça uma web search de IMAGEM para cada produto (ex: "Electrolux MTO30 imagem produto") e extraia a URL mais relevante. Priorize URLs de: fabricante oficial > lojas (KaBuM, Pichau, BuscaPé) > sites de review. Não use Mercado Livre como fonte de imagem (bloqueia).
 7. Preços devem ser realistas e atuais (consulte se necessário).
 8. Pelo menos 4 FAQs relevantes ao tópico.
@@ -49,9 +49,7 @@ FORMATO EXATO (siga a estrutura, não adicione nem remova campos):
       "pros": ["string", "string", "string", "string"],
       "cons": ["string", "string"],
       "badge": "BEST_SELLER" | "BEST_VALUE" | "PREMIUM" | "CHEAPEST" | null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=...",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/...",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=..."
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/..."
     }
   ],
   "faqs": [

@@ -30,9 +30,7 @@
         "Preço ainda elevado em 2026"
       ],
       "badge": "BEST_SELLER",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Samsung+990+EVO+1TB",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Samsung+990+EVO+1TB",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Samsung+990+EVO+1TB"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Samsung+990+EVO+1TB"
     },
     {
       "name": "Kingston NV2 500GB",
@@ -54,9 +52,7 @@
         "Velocidades inferiores aos modelos premium"
       ],
       "badge": "BEST_VALUE",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Kingston+NV2+500GB",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kingston+NV2+500GB",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Kingston+NV2+500GB"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kingston+NV2+500GB"
     },
     {
       "name": "Corsair MP600 CORE XT 1TB",
@@ -78,9 +74,7 @@
         "Consome mais energia"
       ],
       "badge": "PREMIUM",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Corsair+MP600+CORE+XT+1TB",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Corsair+MP600+CORE+XT+1TB",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Corsair+MP600+CORE+XT+1TB"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Corsair+MP600+CORE+XT+1TB"
     },
     {
       "name": "WD Green 1TB",
@@ -102,9 +96,7 @@
         "Sem dissipador de calor"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=WD+Green+1TB+SSD",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WD+Green+1TB",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=WD+Green+1TB"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WD+Green+1TB"
     },
     {
       "name": "Adata SU650 480GB",
@@ -126,9 +118,7 @@
         "Velocidades limitadas a 550 MB/s"
       ],
       "badge": "CHEAPEST",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Adata+SU650+480GB",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Adata+SU650+480GB",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Adata+SU650+480GB"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Adata+SU650+480GB"
     },
     {
       "name": "Kingston A400 240GB",
@@ -150,9 +140,7 @@
         "Tecnologia SATA superada"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Kingston+A400+240GB",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kingston+A400+240GB",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Kingston+A400+240GB"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kingston+A400+240GB"
     },
     {
       "name": "SanDisk Plus 1TB",
@@ -174,9 +162,7 @@
         "Calor excessivo em uso prolongado"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=SanDisk+Plus+1TB",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/SanDisk+Plus+1TB",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=SanDisk+Plus+1TB"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/SanDisk+Plus+1TB"
     },
     {
       "name": "Crucial T500 2TB",
@@ -198,9 +184,7 @@
         "Requer placa-mãe compatível"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Crucial+T500+2TB",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Crucial+T500+2TB",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Crucial+T500+2TB"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Crucial+T500+2TB"
     },
     {
       "name": "WD Black SN850X 1TB",
@@ -222,9 +206,7 @@
         "Gasta mais energia que alternativas"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=WD+Black+SN850X+1TB",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WD+Black+SN850X+1TB",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=WD+Black+SN850X+1TB"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WD+Black+SN850X+1TB"
     },
     {
       "name": "Crucial BX500 1TB",
@@ -246,9 +228,7 @@
         "Performance inferior a NVMe"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Crucial+BX500+1TB",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Crucial+BX500+1TB",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Crucial+BX500+1TB"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Crucial+BX500+1TB"
     }
   ],
   "faqs": [

@@ -31,9 +31,7 @@
         "Design simples sem recursos avançados"
       ],
       "badge": "BEST_VALUE",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Baseus+CCALL-ML01",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Baseus+CCALL-ML01",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Baseus+CCALL-ML01"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Baseus+CCALL-ML01"
     },
     {
       "name": "Geonav ES24CH",
@@ -41,8 +39,8 @@
       "shortDesc": "Carregador veicular com 2 portas USB 2.4A homologado Anatel com proteção inteligente.",
       "longDesc": "O Geonav ES24CH é um carregador veicular robusto e confiável fabricado em alumínio, com 12W de potência. Possui circuito inteligente que envia a potência correta para cada dispositivo, proteção contra curto-circuito e variação de corrente. Permite carregar dois smartphones ao mesmo tempo mantendo estabilidade.",
       "imageUrl": "",
-      "currentPrice": 35.00,
-      "oldPrice": 45.00,
+      "currentPrice": 35,
+      "oldPrice": 45,
       "rating": 4.6,
       "pros": [
         "Material alumínio premium",
@@ -56,9 +54,7 @@
         "Sem recursos de carregamento rápido"
       ],
       "badge": "CHEAPEST",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Geonav+ES24CH",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Geonav+ES24CH",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Geonav+ES24CH"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Geonav+ES24CH"
     },
     {
       "name": "Anker PowerDrive 2",
@@ -66,8 +62,8 @@
       "shortDesc": "Carregador veicular com tecnologia PowerIQ e 2 portas USB 3.0 compatível com Quick Charge 3.0.",
       "longDesc": "O Anker PowerDrive 2 é uma escolha premium com tecnologia PowerIQ que detecta automaticamente a amperage ideal para cada dispositivo. Compatível com Quick Charge 3.0, carrega até 80% em apenas 35 minutos. Possui 2 portas USB 3.0 e circuito de proteção multicamadas que protege seus aparelhos.",
       "imageUrl": "",
-      "currentPrice": 159.90,
-      "oldPrice": 189.00,
+      "currentPrice": 159.9,
+      "oldPrice": 189,
       "rating": 4.7,
       "pros": [
         "Tecnologia PowerIQ de detecção inteligente",
@@ -81,9 +77,7 @@
         "Duas portas USB-A apenas"
       ],
       "badge": "BEST_SELLER",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Anker+PowerDrive+2",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Anker+PowerDrive+2",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Anker+PowerDrive+2"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Anker+PowerDrive+2"
     },
     {
       "name": "Hrebos Premium RoadCharge",
@@ -91,8 +85,8 @@
       "shortDesc": "Carregador veicular premium 60W com USB-C PD e USB-A QC 3.0 para carregamento super rápido.",
       "longDesc": "O Hrebos Premium RoadCharge é um carregador de alta potência com 60W total, oferecendo USB-C com Power Delivery e USB-A com Quick Charge 3.0. Permite carregar um notebook, tablet e smartphone simultaneamente com segurança. Design premium com alumínio e proteção inteligente contra sobrecarga.",
       "imageUrl": "",
-      "currentPrice": 289.00,
-      "oldPrice": 349.00,
+      "currentPrice": 289,
+      "oldPrice": 349,
       "rating": 4.9,
       "pros": [
         "Potência ultra alta de 60W",
@@ -106,9 +100,7 @@
         "Pode ser excessivo para uso básico"
       ],
       "badge": "PREMIUM",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Hrebos+Premium+RoadCharge",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Hrebos+Premium+RoadCharge",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Hrebos+Premium+RoadCharge"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Hrebos+Premium+RoadCharge"
     },
     {
       "name": "Roadstar RS-107 3U BR",
@@ -116,8 +108,8 @@
       "shortDesc": "Carregador veicular bifurcado com USB-PD Type-C e USB Quick Charge 3.0 para todo tipo de dispositivo.",
       "longDesc": "O Roadstar RS-107 3U BR é um carregador veicular versátil com saída USB-PD (Power Delivery) que oferece carregamento eficiente e rápido para celulares, tablets e até notebooks. Compatível com 12V a 24V, suporta dois dispositivos simultaneamente com proteção inteligente contra variações de voltagem.",
       "imageUrl": "",
-      "currentPrice": 129.90,
-      "oldPrice": 165.00,
+      "currentPrice": 129.9,
+      "oldPrice": 165,
       "rating": 4.5,
       "pros": [
         "Compatível com USB-C Power Delivery",
@@ -131,9 +123,7 @@
         "Disponibilidade limitada em algumas regiões"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Roadstar+RS-107+3U+BR",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Roadstar+RS-107+3U+BR",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Roadstar+RS-107+3U+BR"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Roadstar+RS-107+3U+BR"
     },
     {
       "name": "Ugreen Carregador Veicular 65W",
@@ -141,7 +131,7 @@
       "shortDesc": "Carregador veicular GaN 65W com USB-C PD e USB-A, compatível com rápida carga.",
       "longDesc": "O Ugreen 65W utiliza tecnologia GaN para carregamento ultra eficiente em um tamanho compacto. Com uma porta USB-C com Power Delivery e uma porta USB-A, oferece 65W de potência total para carregar notebooks, tablets e smartphones. Proteção multicamadas e dissipação térmica otimizada.",
       "imageUrl": "",
-      "currentPrice": 199.00,
+      "currentPrice": 199,
       "oldPrice": 249.99,
       "rating": 4.7,
       "pros": [
@@ -156,9 +146,7 @@
         "Tamanho maior que carregadores básicos"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Ugreen+Carregador+Veicular+65W",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Ugreen+Carregador+Veicular+65W",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Ugreen+Carregador+Veicular+65W"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Ugreen+Carregador+Veicular+65W"
     },
     {
       "name": "Kaidi KD-302 Turbo",
@@ -166,8 +154,8 @@
       "shortDesc": "Carregador veicular turbo duplo 3.4A com entrada USB e Type-C para carregamento rápido.",
       "longDesc": "O Kaidi KD-302 é um carregador veicular confiável com saída dupla de 3.4A total, oferecendo duas entradas USB para máxima compatibilidade. Com circuito de proteção contra sobrecarga e curto-circuito, é ideal para quem precisa carregar dois dispositivos simultaneamente durante viagens.",
       "imageUrl": "",
-      "currentPrice": 45.90,
-      "oldPrice": 59.90,
+      "currentPrice": 45.9,
+      "oldPrice": 59.9,
       "rating": 4.4,
       "pros": [
         "Preço muito acessível",
@@ -181,9 +169,7 @@
         "Sem recursos de carregamento rápido"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Kaidi+KD-302+Turbo",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kaidi+KD-302+Turbo",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Kaidi+KD-302+Turbo"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kaidi+KD-302+Turbo"
     },
     {
       "name": "i2GO Turbo Power 18W",
@@ -191,8 +177,8 @@
       "shortDesc": "Carregador veicular turbo 18W com saída USB-C para carregamento rápido e compatível com todos os smartphones.",
       "longDesc": "O i2GO Turbo Power 18W oferece carregamento rápido com saída USB-C em um design compacto. Com proteção contra overvoltagem, overcorrente e superaquecimento, é ideal para viagens diárias. Detecta automaticamente o dispositivo conectado e otimiza a potência entregue para máxima eficiência.",
       "imageUrl": "",
-      "currentPrice": 79.90,
-      "oldPrice": 99.90,
+      "currentPrice": 79.9,
+      "oldPrice": 99.9,
       "rating": 4.6,
       "pros": [
         "Saída USB-C para compatibilidade futura",
@@ -206,9 +192,7 @@
         "Sem suporte a dual charging"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=i2GO+Turbo+Power+18W",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/i2GO+Turbo+Power+18W",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=i2GO+Turbo+Power+18W"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/i2GO+Turbo+Power+18W"
     },
     {
       "name": "Hrebos Turbo HS-308",
@@ -216,8 +200,8 @@
       "shortDesc": "Carregador veicular turbo com 18W de potência, design compacto e proteção contra sobrecarga.",
       "longDesc": "O Hrebos HS-308 é um carregador veicular turbo de entrada 18W que oferece carregamento rápido e confiável. Compatível com smartphones Android e iPhone, possui proteção multicamadas contra sobrecarga, curto-circuito e variação de voltagem. Design ergonômico que se encaixa confortavelmente na tomada do carro.",
       "imageUrl": "",
-      "currentPrice": 64.90,
-      "oldPrice": 89.90,
+      "currentPrice": 64.9,
+      "oldPrice": 89.9,
       "rating": 4.5,
       "pros": [
         "Carregamento turbo de 18W",
@@ -231,9 +215,7 @@
         "Disponibilidade variável"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Hrebos+Turbo+HS-308",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Hrebos+Turbo+HS-308",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Hrebos+Turbo+HS-308"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Hrebos+Turbo+HS-308"
     },
     {
       "name": "Roadstar RS-109 2U BR",
@@ -241,8 +223,8 @@
       "shortDesc": "Carregador veicular bifurcado bivolt com 2 portas USB para carregamento simultâneo de dois dispositivos.",
       "longDesc": "O Roadstar RS-109 2U BR é um carregador veicular bifurcado que oferece duas portas USB para carregamento simultâneo. Bivolt compatível com 12V a 24V, é perfeito para quem precisa carregar múltiplos dispositivos durante viagens longas. Construção resistente com proteção inteligente integrada.",
       "imageUrl": "",
-      "currentPrice": 52.90,
-      "oldPrice": 69.90,
+      "currentPrice": 52.9,
+      "oldPrice": 69.9,
       "rating": 4.4,
       "pros": [
         "Duas portas USB",
@@ -256,9 +238,7 @@
         "Design simples"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Roadstar+RS-109+2U+BR",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Roadstar+RS-109+2U+BR",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Roadstar+RS-109+2U+BR"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Roadstar+RS-109+2U+BR"
     }
   ],
   "faqs": [

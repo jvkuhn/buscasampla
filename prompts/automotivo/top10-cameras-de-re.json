@@ -17,7 +17,7 @@
       "longDesc": "A Tech One Mini Tartaruga é a escolha de quem procura excelente custo-benefício. Dotada de visão noturna com LEDs infravermelhos, oferece imagem colorida nítida mesmo em condições de pouca luz. Seu design ajustável permite instalação em praticamente qualquer veículo, e a resistência IP67 garante funcionamento perfeito em chuva forte. Com ângulo de 150° e resolução de 420p, ela cobre toda a traseira do carro.",
       "imageUrl": "",
       "currentPrice": 132.21,
-      "oldPrice": 189.90,
+      "oldPrice": 189.9,
       "rating": 4.5,
       "pros": [
         "Preço extremamente competitivo",
@@ -31,9 +31,7 @@
         "Imagem em preto e branco à noite"
       ],
       "badge": "CHEAPEST",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Tech+One+Mini+Tartaruga+Ajustavel",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-tech-one",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Tech+One+camera+re"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-tech-one"
     },
     {
       "name": "Faaftech FT-CAM-TL Tartaruga",
@@ -41,8 +39,8 @@
       "shortDesc": "Câmera tartaruga universal com resolução HD 1280x720, ângulo 189° e visão noturna.",
       "longDesc": "A Faaftech FT-CAM-TL é uma tartaruga universal de alta qualidade com resolução HD 1280x720. Seu ângulo de visão de 189° graus oferece cobertura praticamente completa da traseira do veículo. Possui certificação IP68, tornando-a completamente à prova d'água e resistente a poeira. Com cabos RCA blindados e conector universal, oferece instalação simples em qualquer modelo de carro.",
       "imageUrl": "",
-      "currentPrice": 180.00,
-      "oldPrice": 249.90,
+      "currentPrice": 180,
+      "oldPrice": 249.9,
       "rating": 4.4,
       "pros": [
         "Ângulo de visão muito amplo (189°)",
@@ -56,9 +54,7 @@
         "Instalação requer cabos adicionais"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Faaftech+FT-CAM-TL+camera+re",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-de-re-tartaruga",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Faaftech+camera+re+tartaruga"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-de-re-tartaruga"
     },
     {
       "name": "Leadership Borboleta com LED",
@@ -66,8 +62,8 @@
       "shortDesc": "Câmera borboleta universal com LED para visão noturna e linhas de guia integradas.",
       "longDesc": "A câmera Leadership em formato borboleta é perfeita para quem busca instalação sem furar o para-choque. Equipada com LEDs infravermelhos para visão noturna clara, oferece linhas de guia fixas que ajudam na manobra. Seu design discreto não interfere na estética do veículo, e a compatibilidade universal a torna adequada para praticamente qualquer carro. A resistência à água garante durabilidade em qualquer clima.",
       "imageUrl": "",
-      "currentPrice": 195.50,
-      "oldPrice": 279.90,
+      "currentPrice": 195.5,
+      "oldPrice": 279.9,
       "rating": 4.3,
       "pros": [
         "Design compacto não interfere na estética",
@@ -81,9 +77,7 @@
         "Visão noturna em preto e branco"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Leadership+camera+borboleta+re",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-leadership",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Leadership+camera+re+borboleta"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-leadership"
     },
     {
       "name": "Roadstar RS501BR Espelho com Tela",
@@ -91,8 +85,8 @@
       "shortDesc": "Kit retrovisor com tela LCD 4.3 polegadas integrada e câmera de ré HD com conexão automática.",
       "longDesc": "O Roadstar RS501BR é um kit completo que substitui o retrovisor original por um modelo com tela LCD de 4.3 polegadas. A câmera HD ativada automaticamente ao engatar marcha ré oferece imagem nítida e estável. A tela fotocrômica escurece com luz solar, protegendo os olhos do motorista. Com compatibilidade PAL/NTSC e fácil instalação, é ideal para quem quer uma solução integrada e moderna.",
       "imageUrl": "",
-      "currentPrice": 299.00,
-      "oldPrice": 449.90,
+      "currentPrice": 299,
+      "oldPrice": 449.9,
       "rating": 4.6,
       "pros": [
         "Solução integrada com tela inclusa",
@@ -106,9 +100,7 @@
         "Sem suporte para câmera frontal"
       ],
       "badge": "BEST_SELLER",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Roadstar+RS501BR+retrovisor+camera",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-roadstar",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Roadstar+RS501BR"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-roadstar"
     },
     {
       "name": "Multilaser AU012 Universal",
@@ -116,8 +108,8 @@
       "shortDesc": "Câmera universal com ângulo 150°, instalação versátil em GPS, som e retrovisor.",
       "longDesc": "A Multilaser AU012 é uma solução versátil que pode ser instalada em múltiplas localizações: embutida em GPS, integrada ao som automotivo ou no retrovisor. Oferece ângulo de visão de 150° e linhas de guia coloridas para estacionamento preciso. Com qualidade de imagem confiável e compatibilidade com diversos sistemas, é a escolha de quem quer flexibilidade. Preço acessível e marca consolidada garantem confiabilidade.",
       "imageUrl": "",
-      "currentPrice": 165.00,
-      "oldPrice": 234.90,
+      "currentPrice": 165,
+      "oldPrice": 234.9,
       "rating": 4.2,
       "pros": [
         "Instalação versátil em múltiplos locais",
@@ -131,9 +123,7 @@
         "Pode não ser compatível com todos os GPS"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Multilaser+AU012+camera+re",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-multilaser",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Multilaser+AU012"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-multilaser"
     },
     {
       "name": "Positron AC300",
@@ -141,8 +131,8 @@
       "shortDesc": "Câmera de ré Positron com resolução nítida, instalação fácil e resistência total à água.",
       "longDesc": "A Positron AC300 é famosa no mercado pela facilidade de instalação e preço justo. Oferece resistência certificada à água, garantindo funcionamento em qualquer condição climática. Com qualidade de imagem confiável e linhas de guia integradas, é ideal para o motorista que busca praticidade. O suporte técnico Positron está sempre disponível para dúvidas e problemas pós-venda.",
       "imageUrl": "",
-      "currentPrice": 198.50,
-      "oldPrice": 289.90,
+      "currentPrice": 198.5,
+      "oldPrice": 289.9,
       "rating": 4.1,
       "pros": [
         "Instalação extremamente simples",
@@ -156,9 +146,7 @@
         "Ângulo de visão convencional"
       ],
       "badge": "BEST_VALUE",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Positron+AC300+camera+re",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-positron",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Positron+AC300"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-positron"
     },
     {
       "name": "Knup KP-S103 Retrovisor Dual",
@@ -166,8 +154,8 @@
       "shortDesc": "Espelho retrovisor com tela LCD 4.3 polegadas, câmera frontal DVR e câmera de ré com gravação.",
       "longDesc": "O Knup KP-S103 é o topo de linha para quem quer máxima segurança. Este retrovisor eletrônico integra tela LCD de 4.3 polegadas, câmera frontal DVR 1080p que grava todo o trajeto, e câmera de ré com ativação automática. Possui sensor CMOS, visão noturna com 4 LEDs, ângulo frontal de 170° e traseiro de 140°. Sistema fotocrômico e gravação em AVI/30Fps completam o pacote premium.",
       "imageUrl": "",
-      "currentPrice": 599.90,
-      "oldPrice": 899.90,
+      "currentPrice": 599.9,
+      "oldPrice": 899.9,
       "rating": 4.8,
       "pros": [
         "Câmera frontal DVR com gravação contínua",
@@ -181,9 +169,7 @@
         "Pode aquecer com uso prolongado"
       ],
       "badge": "PREMIUM",
-      "amazonUrl": "https://www.amazon.com.br/s?k=Knup+KP-S103+retrovisor+camera",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-knup-kp-s103",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Knup+KP-S103"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-knup-kp-s103"
     },
     {
       "name": "Pioneer Vrec-100CH Dashcam",
@@ -191,8 +177,8 @@
       "shortDesc": "Dashcam automotiva com sensor CMOS 3MP, tela 2.7 polegadas, resolução até 1296p e ângulo 125°.",
       "longDesc": "A Pioneer Vrec-100CH é uma dashcam profissional de alta qualidade que oferece gravação contínua com sensor CMOS de 3 megapixels. Sua tela LCD de 2.7 polegadas permite visualização em tempo real. Com resolução de 1296p, 1080p e 720p configurável, captura detalhes importantes em qualquer situação. Sensor-G integrado detecta impactos, e suporta cartão microSD até 128GB. Inclui Time-Lapse e Sistema de Aviso de Faixa (LDWS).",
       "imageUrl": "",
-      "currentPrice": 470.00,
-      "oldPrice": 699.90,
+      "currentPrice": 470,
+      "oldPrice": 699.9,
       "rating": 4.7,
       "pros": [
         "Qualidade profissional Pioneer",
@@ -206,9 +192,7 @@
         "Sofware pode ser lento em carros antigos"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Pioneer+Vrec-100CH+dashcam",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-veicular-pioneer",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Pioneer+Vrec-100CH"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-veicular-pioneer"
     },
     {
       "name": "Tech One Tartaruga com Sensor de Curva",
@@ -216,8 +200,8 @@
       "shortDesc": "Câmera tartaruga com sensor inteligente de curva que ajusta a trajetória durante a manobra.",
       "longDesc": "A Tech One Tartaruga com Sensor de Curva oferece um diferencial importante: o sensor de curva adapta as guias dinâmicas de acordo com o ângulo de esterçamento. Isso significa que ao virar o volante, a câmera mostra exatamente para onde o carro irá. Resolução HD, visão noturna LED e instalação universal completam um pacote inovador. Ideal para quem frequenta ruas ou estacionamentos complexos.",
       "imageUrl": "",
-      "currentPrice": 245.00,
-      "oldPrice": 349.90,
+      "currentPrice": 245,
+      "oldPrice": 349.9,
       "rating": 4.5,
       "pros": [
         "Sensor de curva inteligente e inovador",
@@ -231,9 +215,7 @@
         "Dependência de calibragem correta"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Tech+One+camera+re+sensor+curva",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-tech-one",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Tech+One+sensor+curva"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-tech-one"
     },
     {
       "name": "Intelbras IC5 Câmera Veicular",
@@ -241,8 +223,8 @@
       "shortDesc": "Câmera veicular Intelbras com resolução Full HD, visão noturna infravermelha e aplicativo móvel.",
       "longDesc": "A Intelbras IC5 é uma câmera veicular moderna com suporte a aplicativo móvel, permitindo visualizar imagens ao vivo no smartphone. Possui resolução Full HD, visão noturna com LEDs infravermelhos de longo alcance e ângulo de visão de 160°. Detecção de movimento integrada, gravação em nuvem e suporte a cartão microSD oferecem segurança completa. Compatível com iOS e Android, é ideal para quem deseja monitoramento remoto.",
       "imageUrl": "",
-      "currentPrice": 380.00,
-      "oldPrice": 549.90,
+      "currentPrice": 380,
+      "oldPrice": 549.9,
       "rating": 4.6,
       "pros": [
         "Aplicativo móvel para visualização remota",
@@ -256,9 +238,7 @@
         "App pode ser lento em conexões fracas"
       ],
       "badge": null,
-      "amazonUrl": "https://www.amazon.com.br/s?k=Intelbras+IC5+camera+veicular",
-      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-intelbras",
-      "shopeeUrl": "https://shopee.com.br/search?keyword=Intelbras+IC5"
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-intelbras"
     }
   ],
   "faqs": [

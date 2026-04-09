@@ -14,6 +14,8 @@ type Product = {
   name: string;
   imageUrl: string | null;
   categoryId: string | null;
+  currentPrice: number | bigint | null;
+  oldPrice: number | bigint | null;
   affiliateLinks: AffiliateLink[];
   category: { name: string } | null;
 };
@@ -27,8 +29,8 @@ type FieldValues = {
   mercadoLivreUrl: string;
   imageUrl: string;
   categoryId: string;
-  amazonUrl: string;
-  shopeeUrl: string;
+  currentPrice: string;
+  oldPrice: string;
 };
 
 function getRequiredCount(product: Product, fields: FieldValues | undefined): { filled: number; total: number } {
@@ -66,8 +68,8 @@ export function ConfigurarProdutosManager({
         mercadoLivreUrl: "",
         imageUrl: "",
         categoryId: "",
-        amazonUrl: "",
-        shopeeUrl: "",
+        currentPrice: "",
+        oldPrice: "",
       };
       return {
         ...prev,
@@ -85,7 +87,7 @@ export function ConfigurarProdutosManager({
       if (!f) continue;
 
       const hasChanges =
-        f.mercadoLivreUrl || f.imageUrl || f.categoryId || f.amazonUrl || f.shopeeUrl;
+        f.mercadoLivreUrl || f.imageUrl || f.categoryId || f.currentPrice || f.oldPrice;
       if (!hasChanges) continue;
 
       payload.push({
@@ -93,8 +95,8 @@ export function ConfigurarProdutosManager({
         mercadoLivreUrl: f.mercadoLivreUrl || undefined,
         imageUrl: f.imageUrl || undefined,
         categoryId: f.categoryId || undefined,
-        amazonUrl: f.amazonUrl || undefined,
-        shopeeUrl: f.shopeeUrl || undefined,
+        currentPrice: f.currentPrice ? Number(f.currentPrice) : undefined,
+        oldPrice: f.oldPrice ? Number(f.oldPrice) : undefined,
       });
     }
 
@@ -144,20 +146,18 @@ export function ConfigurarProdutosManager({
           <thead className="bg-gray-50 border-b border-gray-200">
             <tr>
               <th className="px-3 py-2 text-left font-medium text-gray-500 w-8">#</th>
-              <th className="px-3 py-2 text-left font-medium text-gray-500">Produto</th>
+              <th className="px-3 py-2 text-left font-medium text-gray-500 w-[25%]">Produto</th>
               <th className="px-3 py-2 text-left font-medium text-gray-500">Categoria</th>
               <th className="px-3 py-2 text-left font-medium text-gray-500">Link ML</th>
               <th className="px-3 py-2 text-left font-medium text-gray-500">Imagem URL</th>
-              <th className="px-3 py-2 text-left font-medium text-gray-500">Amazon</th>
-              <th className="px-3 py-2 text-left font-medium text-gray-500">Shopee</th>
+              <th className="px-3 py-2 text-left font-medium text-gray-500 w-[100px]">Preço atual</th>
+              <th className="px-3 py-2 text-left font-medium text-gray-500 w-[100px]">Preço antigo</th>
               <th className="px-3 py-2 text-left font-medium text-gray-500 w-20">Status</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100">
             {products.map((product, idx) => {
               const mlLink = product.affiliateLinks.find((l) => l.platform === "mercadolivre");
-              const amazonLink = product.affiliateLinks.find((l) => l.platform === "amazon");
-              const shopeeLink = product.affiliateLinks.find((l) => l.platform === "shopee");
               const f = fields[product.id];
               const { filled, total } = getRequiredCount(product, f);
               const allFilled = filled === total;
@@ -165,8 +165,8 @@ export function ConfigurarProdutosManager({
               return (
                 <tr key={product.id} className="hover:bg-gray-50">
                   <td className="px-3 py-2 text-gray-400 text-xs">{idx + 1}</td>
-                  <td className="px-3 py-2 font-medium text-gray-900 max-w-[160px]">
-                    <span className="truncate block">{product.name}</span>
+                  <td className="px-3 py-2 font-medium text-gray-900">
+                    <span className="block">{product.name}</span>
                   </td>
                   <td className="px-3 py-2">
                     <select
@@ -225,20 +225,22 @@ export function ConfigurarProdutosManager({
                   </td>
                   <td className="px-3 py-2">
                     <input
-                      type="url"
-                      placeholder={amazonLink?.url ? amazonLink.url.slice(0, 25) + "..." : "https://amazon.com.br/..."}
-                      value={f?.amazonUrl ?? ""}
-                      onChange={(e) => setField(product.id, "amazonUrl", e.target.value)}
-                      className="w-full min-w-[160px] text-xs border border-gray-200 rounded px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500 placeholder:text-gray-300"
+                      type="number"
+                      step="0.01"
+                      placeholder={product.currentPrice ? String(Number(product.currentPrice)) : "0.00"}
+                      value={f?.currentPrice ?? ""}
+                      onChange={(e) => setField(product.id, "currentPrice", e.target.value)}
+                      className="w-full text-xs border border-gray-300 rounded px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500"
                     />
                   </td>
                   <td className="px-3 py-2">
                     <input
-                      type="url"
-                      placeholder={shopeeLink?.url ? shopeeLink.url.slice(0, 25) + "..." : "https://shopee.com.br/..."}
-                      value={f?.shopeeUrl ?? ""}
-                      onChange={(e) => setField(product.id, "shopeeUrl", e.target.value)}
-                      className="w-full min-w-[160px] text-xs border border-gray-200 rounded px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500 placeholder:text-gray-300"
+                      type="number"
+                      step="0.01"
+                      placeholder={product.oldPrice ? String(Number(product.oldPrice)) : "0.00"}
+                      value={f?.oldPrice ?? ""}
+                      onChange={(e) => setField(product.id, "oldPrice", e.target.value)}
+                      className="w-full text-xs border border-gray-300 rounded px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500"
                     />
                   </td>
                   <td className="px-3 py-2 text-center">
