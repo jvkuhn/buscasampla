@@ -1,135 +1,54 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
-import { auth } from "@/lib/auth";
+import { requireAdmin } from "@/lib/auth-guard";
 import { db } from "@/lib/db";
+import { z } from "zod";
 
-async function requireAdmin() {
-  const session = await auth();
-  if (!session?.user) redirect("/admin/login");
-}
+const urlOrEmpty = z.string().url().or(z.literal("")).optional();
 
-export type AfiliadoItem = {
-  productId: string;
-  mercadoLivreUrl?: string;
-  imageUrl?: string;
-};
+const productConfigItemSchema = z.object({
+  productId: z.string().min(1),
+  mercadoLivreUrl: urlOrEmpty,
+  imageUrl: urlOrEmpty,
+  amazonUrl: urlOrEmpty,
+  shopeeUrl: urlOrEmpty,
+  categoryId: z.string().optional(),
+});
 
-export type ProductConfigItem = {
-  productId: string;
-  mercadoLivreUrl?: string;
-  imageUrl?: string;
-  categoryId?: string;
-  amazonUrl?: string;
-  shopeeUrl?: string;
-};
+const productConfigSchema = z.array(productConfigItemSchema);
 
-export async function updateRankingAfiliados(items: AfiliadoItem[]) {
-  await requireAdmin();
+export type ProductConfigItem = z.infer<typeof productConfigItemSchema>;
 
-  for (const { productId, mercadoLivreUrl, imageUrl } of items) {
-    if (mercadoLivreUrl) {
-      const existing = await db.affiliateLink.findFirst({
-        where: { productId, platform: "mercadolivre" },
-      });
-      if (existing) {
-        await db.affiliateLink.update({
-          where: { id: existing.id },
-          data: { url: mercadoLivreUrl },
-        });
-      } else {
-        await db.affiliateLink.create({
-          data: {
-            platform: "mercadolivre",
-            url: mercadoLivreUrl,
-            label: "Ver no Mercado Livre",
-            productId,
-          },
-        });
-      }
-    }
-    if (imageUrl) {
-      await db.product.update({
-        where: { id: productId },
-        data: { imageUrl },
-      });
-    }
+async function upsertAffiliateLink(productId: string, platform: string, url: string, label: string) {
+  const existing = await db.affiliateLink.findFirst({
+    where: { productId, platform },
+  });
+  if (existing) {
+    await db.affiliateLink.update({
+      where: { id: existing.id },
+      data: { url },
+    });
+  } else {
+    await db.affiliateLink.create({
+      data: { platform, url, label, productId },
+    });
   }
-
-  revalidatePath("/admin/listaconfigurar");
-  revalidatePath("/admin/rankings");
 }
 
 export async function updateProductConfig(items: ProductConfigItem[]) {
   await requireAdmin();
 
-  for (const { productId, mercadoLivreUrl, imageUrl, categoryId, amazonUrl, shopeeUrl } of items) {
-    // Update mercadolivre link
-    if (mercadoLivreUrl) {
-      const existing = await db.affiliateLink.findFirst({
-        where: { productId, platform: "mercadolivre" },
-      });
-      if (existing) {
-        await db.affiliateLink.update({
-          where: { id: existing.id },
-          data: { url: mercadoLivreUrl },
-        });
-      } else {
-        await db.affiliateLink.create({
-          data: {
-            platform: "mercadolivre",
-            url: mercadoLivreUrl,
-            label: "Ver no Mercado Livre",
-            productId,
-          },
-        });
-      }
-    }
+  const parsed = productConfigSchema.safeParse(items);
+  if (!parsed.success) {
+    throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten()));
+  }
+  const validItems = parsed.data;
 
-    // Update amazon link
-    if (amazonUrl) {
-      const existing = await db.affiliateLink.findFirst({
-        where: { productId, platform: "amazon" },
-      });
-      if (existing) {
-        await db.affiliateLink.update({
-          where: { id: existing.id },
-          data: { url: amazonUrl },
-        });
-      } else {
-        await db.affiliateLink.create({
-          data: {
-            platform: "amazon",
-            url: amazonUrl,
-            label: "Ver na Amazon",
-            productId,
-          },
-        });
-      }
-    }
-
-    // Update shopee link
-    if (shopeeUrl) {
-      const existing = await db.affiliateLink.findFirst({
-        where: { productId, platform: "shopee" },
-      });
-      if (existing) {
-        await db.affiliateLink.update({
-          where: { id: existing.id },
-          data: { url: shopeeUrl },
-        });
-      } else {
-        await db.affiliateLink.create({
-          data: {
-            platform: "shopee",
-            url: shopeeUrl,
-            label: "Ver na Shopee",
-            productId,
-          },
-        });
-      }
-    }
+  for (const { productId, mercadoLivreUrl, imageUrl, categoryId, amazonUrl, shopeeUrl } of validItems) {
+    if (mercadoLivreUrl) await upsertAffiliateLink(productId, "mercadolivre", mercadoLivreUrl, "Ver no Mercado Livre");
+    if (amazonUrl) await upsertAffiliateLink(productId, "amazon", amazonUrl, "Ver na Amazon");
+    if (shopeeUrl) await upsertAffiliateLink(productId, "shopee", shopeeUrl, "Ver na Shopee");
 
     // Update product fields
     const productUpdate: { imageUrl?: string; categoryId?: string } = {};

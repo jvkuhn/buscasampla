@@ -17,7 +17,7 @@ async function main() {
     update: {},
     create: { email, password: hashed, name: "Admin", role: "ADMIN" },
   });
-  console.log(`✔ Admin: ${email} / ${password}`);
+  console.log(`✔ Admin: ${email}`);
 
   // ─── Site settings ──────────────────────────────────────────────────────────
   await db.siteSettings.upsert({

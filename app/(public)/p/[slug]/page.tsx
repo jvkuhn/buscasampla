@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { db } from "@/lib/db";
+import DOMPurify from "isomorphic-dompurify";
 import type { Metadata } from "next";
 
 export async function generateMetadata(
@@ -25,7 +26,7 @@ export default async function SitePageRoute(props: PageProps<"/p/[slug]">) {
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">{page.title}</h1>
       <div
         className="prose prose-gray max-w-none text-gray-700 leading-relaxed whitespace-pre-wrap"
-        dangerouslySetInnerHTML={{ __html: page.content }}
+        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(page.content) }}
       />
     </article>
   );

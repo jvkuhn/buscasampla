@@ -9,6 +9,7 @@
     "lint": "eslint",
     "seed": "tsx prisma/seed.ts",
     "gerar-top10": "tsx scripts/gerar-top10.ts",
+    "importar-top10": "tsx scripts/importar-top10.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {
@@ -17,6 +18,7 @@
     "bcryptjs": "^3.0.3",
     "clsx": "^2.1.1",
     "dotenv": "^17.4.1",
+    "isomorphic-dompurify": "^3.8.0",
     "next": "16.2.2",
     "next-auth": "5.0.0-beta.30",
     "prisma": "^6.16.2",
