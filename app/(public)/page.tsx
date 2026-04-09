@@ -3,7 +3,7 @@ import { db } from "@/lib/db";
 import { RankingCard } from "@/components/public/RankingCard";
 
 export default async function HomePage() {
-  const [categoriesWithRankings, uncategorizedRankings, topBanner] = await Promise.all([
+  const [categoriesWithRankings, uncategorizedRankings, topBanner, settings] = await Promise.all([
     db.category.findMany({
       where: { status: "PUBLISHED" },
       orderBy: { order: "asc" },
@@ -32,6 +32,7 @@ export default async function HomePage() {
       where: { active: true, position: "home_top" },
       orderBy: { order: "asc" },
     }),
+    db.siteSettings.findUnique({ where: { id: "default" } }),
   ]);
 
   const categoriesWithContent = categoriesWithRankings.filter((c) => c.rankings.length > 0);
@@ -41,7 +42,7 @@ export default async function HomePage() {
   const siteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Top Rankings",
+    name: settings?.siteName ?? "BuscasAmpla",
     url: "/",
     potentialAction: {
       "@type": "SearchAction",

@@ -11,7 +11,7 @@ export default async function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900">
       <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-sm">
-        <h1 className="text-2xl font-bold text-gray-900 mb-1">Top Rankings</h1>
+        <h1 className="text-2xl font-bold text-gray-900 mb-1">BuscasAmpla</h1>
         <p className="text-sm text-gray-500 mb-6">Painel Administrativo</p>
 
         <form

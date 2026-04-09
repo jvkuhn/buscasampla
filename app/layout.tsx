@@ -10,8 +10,8 @@ const siteUrl =
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Top Rankings",
-    default: "Top Rankings — Melhores produtos em listas Top 10",
+    template: "%s | BuscasAmpla",
+    default: "BuscasAmpla — Melhores produtos em listas Top 10",
   },
   description:
     "Comparativos e rankings dos melhores produtos em todas as categorias. Encontre o produto ideal com avaliações detalhadas e links de compra.",
