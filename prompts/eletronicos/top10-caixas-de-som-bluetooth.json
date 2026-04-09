@@ -1,0 +1,276 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Caixas de Som Bluetooth 2026",
+    "subtitle": "As melhores caixas de som portáteis para música, festas e uso ao ar livre",
+    "intro": "Uma boa caixa de som Bluetooth é o companheiro perfeito para churrascos, praias, festas e até para elevar o som do seu home office. Em 2026, o mercado brasileiro tem opções para todos os gostos e bolsos, desde modelos compactos que cabem na palma da mão até potentes caixas que animam qualquer ambiente. Avaliamos qualidade sonora, potência, resistência à água, bateria e portabilidade para selecionar as 10 melhores caixas de som Bluetooth disponíveis no Brasil.",
+    "conclusion": "Para quem quer portabilidade máxima com som surpreendente, a JBL Go 3 e a Sony SRS-XB13 são escolhas certeiras por menos de R$ 300. Se o objetivo é animar festas e churrascos, a JBL Charge 5 e a JBL Flip 6 entregam o melhor equilíbrio entre potência, bateria e resistência à água. E para audiófilos que querem som premium em casa, a Marshall Stanmore III e a Harman Kardon Onyx Studio 8 são referências absolutas.",
+    "metaTitle": "Top 10 Melhores Caixas de Som Bluetooth 2026 | Guia",
+    "metaDesc": "Confira as 10 melhores caixas de som Bluetooth de 2026. JBL, Sony, Marshall e mais com preços, reviews e comparações para você escolher.",
+    "categoryId": null,
+    "categoryName": "Eletrônicos"
+  },
+  "products": [
+    {
+      "name": "JBL Flip 6",
+      "brand": "JBL",
+      "shortDesc": "Caixa de som portátil com som potente, IP67, 12 horas de bateria e o icônico JBL Pro Sound.",
+      "longDesc": "A JBL Flip 6 é a caixa de som Bluetooth mais popular do Brasil e uma das mais vendidas do mundo por bons motivos. Com driver racetrack exclusivo e radiador passivo duplo, entrega graves profundos e agudos claros com potência impressionante para o tamanho. A certificação IP67 garante resistência total a poeira e submersão em água, perfeita para piscina e praia. Bateria de 12 horas e recurso PartyBoost para conectar várias caixas JBL.",
+      "imageUrl": "",
+      "currentPrice": 599,
+      "oldPrice": 749,
+      "rating": 4.8,
+      "pros": [
+        "Som JBL Pro Sound potente e equilibrado",
+        "IP67 à prova de poeira e submersão",
+        "12 horas de bateria confiável",
+        "PartyBoost para conectar múltiplas caixas"
+      ],
+      "cons": [
+        "Sem entrada auxiliar P2",
+        "Não serve como powerbank como a Charge 5"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=JBL+Flip+6",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/JBL+Flip+6",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=JBL+Flip+6"
+    },
+    {
+      "name": "JBL Charge 5",
+      "brand": "JBL",
+      "shortDesc": "Caixa de som potente com 20 horas de bateria, powerbank integrado e IP67 para festas sem fim.",
+      "longDesc": "A JBL Charge 5 é a escolha definitiva para quem quer som potente o dia inteiro sem se preocupar com bateria. Com 20 horas de autonomia e função powerbank que carrega seu celular via USB-A, ela é companheira perfeita para acampamentos e festas na piscina. O driver JBL Pro Sound com tweeter separado e radiador passivo duplo entrega som completo e encorpado com graves que você sente no peito.",
+      "imageUrl": "",
+      "currentPrice": 899,
+      "oldPrice": 1099,
+      "rating": 4.7,
+      "pros": [
+        "20 horas de bateria — a melhor da categoria",
+        "Função powerbank para carregar celular",
+        "IP67 totalmente à prova d'água",
+        "Som potente com tweeter dedicado"
+      ],
+      "cons": [
+        "Maior e mais pesada que a Flip 6",
+        "Preço elevado para caixa portátil"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=JBL+Charge+5",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/JBL+Charge+5",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=JBL+Charge+5"
+    },
+    {
+      "name": "JBL Go 3",
+      "brand": "JBL",
+      "shortDesc": "Mini caixa de som ultracompacta com IP67, 5 horas de bateria e som surpreendente para o tamanho.",
+      "longDesc": "A JBL Go 3 cabe na palma da mão mas entrega som que surpreende pelo volume e qualidade. Com design colorido e arredondado, alça integrada e certificação IP67, é perfeita para levar para qualquer lugar — do banheiro à trilha. A bateria de 5 horas é suficiente para uma tarde de uso, e o carregamento via USB-C é rápido e prático.",
+      "imageUrl": "",
+      "currentPrice": 189,
+      "oldPrice": 249,
+      "rating": 4.5,
+      "pros": [
+        "Ultracompacta e leve — cabe em qualquer bolso",
+        "IP67 à prova d'água e poeira",
+        "Design colorido com várias opções de cor",
+        "Preço acessível para marca JBL"
+      ],
+      "cons": [
+        "Bateria de apenas 5 horas",
+        "Graves limitados pelo tamanho compacto"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=JBL+Go+3",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/JBL+Go+3",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=JBL+Go+3"
+    },
+    {
+      "name": "Sony SRS-XB100",
+      "brand": "Sony",
+      "shortDesc": "Caixa de som compacta com Sound Diffusion Processor, IP67, 16 horas de bateria e alça integrada.",
+      "longDesc": "A Sony SRS-XB100 impressiona pela potência sonora compactada em um corpo minúsculo. O Sound Diffusion Processor exclusivo da Sony dispersa o som em 360° para preencher o ambiente uniformemente, algo raro em caixas deste tamanho. Com 16 horas de bateria — muito acima da média compacta — e IP67, é a companheira ideal para viagens e aventuras ao ar livre.",
+      "imageUrl": "",
+      "currentPrice": 299,
+      "oldPrice": 379,
+      "rating": 4.6,
+      "pros": [
+        "16 horas de bateria impressionante para o tamanho",
+        "Som 360° com Sound Diffusion Processor",
+        "IP67 totalmente resistente à água",
+        "Alça integrada para pendurar em mochilas"
+      ],
+      "cons": [
+        "Graves discretos pelo tamanho compacto",
+        "Volume máximo inferior à JBL Flip 6"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Sony+SRS-XB100",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Sony+SRS-XB100",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Sony+SRS-XB100"
+    },
+    {
+      "name": "Marshall Stanmore III",
+      "brand": "Marshall",
+      "shortDesc": "Caixa de som premium com design icônico rock'n'roll, som audiófilo e controles analógicos de EQ.",
+      "longDesc": "A Marshall Stanmore III é para quem não faz concessões em qualidade sonora e estética. Com o design icônico Marshall que lembra amplificadores de guitarra clássicos, controles analógicos de grave, agudo e volume no topo, e som audiófilo com Dynamic Loudness, ela é uma peça de decoração que também entrega o melhor som da categoria. Ideal para salas, escritórios e estúdios onde som e estilo importam igualmente.",
+      "imageUrl": "",
+      "currentPrice": 1999,
+      "oldPrice": 2399,
+      "rating": 4.8,
+      "pros": [
+        "Design icônico Marshall premium",
+        "Som audiófilo com controles analógicos de EQ",
+        "Dynamic Loudness para som consistente em qualquer volume",
+        "Bluetooth 5.2 com codec aptX"
+      ],
+      "cons": [
+        "Não é portátil — precisa de tomada",
+        "Preço elevado no mercado brasileiro"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Marshall+Stanmore+III",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Marshall+Stanmore+III",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Marshall+Stanmore+III"
+    },
+    {
+      "name": "Harman Kardon Onyx Studio 8",
+      "brand": "Harman Kardon",
+      "shortDesc": "Caixa de som premium com som estéreo 360°, design elegante e 8 horas de bateria para ambientes sofisticados.",
+      "longDesc": "A Harman Kardon Onyx Studio 8 é sinônimo de elegância e qualidade sonora premium. Com design circular sofisticado e alça em tecido, ela dispersa som estéreo em 360° pelo ambiente com fidelidade impressionante. Dois tweeters e um woofer dedicado criam um soundstage amplo e detalhado, ideal para jazz, clássica e qualquer gênero que valorize nuances sonoras. Bateria de 8 horas e carregamento USB-C.",
+      "imageUrl": "",
+      "currentPrice": 1599,
+      "oldPrice": 1899,
+      "rating": 4.7,
+      "pros": [
+        "Som estéreo 360° de altíssima qualidade",
+        "Design premium e elegante",
+        "Soundstage amplo com detalhes impressionantes",
+        "Alça em tecido para transporte"
+      ],
+      "cons": [
+        "Sem certificação IP — não resiste a água",
+        "Bateria de 8 horas abaixo da concorrência"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Harman+Kardon+Onyx+Studio+8",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Harman+Kardon+Onyx+Studio+8",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Harman+Kardon+Onyx+Studio+8"
+    },
+    {
+      "name": "JBL Boombox 3",
+      "brand": "JBL",
+      "shortDesc": "A caixa de som mais potente da JBL com graves monstruosos, 24 horas de bateria e IP67.",
+      "longDesc": "A JBL Boombox 3 é a arma pesada para quem quer som de verdade ao ar livre. Com dois woofers de 20cm e dois tweeters, entrega graves que você sente no corpo e volume que anima qualquer festa. A bateria de 24 horas garante o dia inteiro sem preocupações, e a certificação IP67 permite uso na piscina, praia ou chuva. O PartyBoost conecta várias caixas JBL para criar um sistema de som épico.",
+      "imageUrl": "",
+      "currentPrice": 2499,
+      "oldPrice": 2999,
+      "rating": 4.7,
+      "pros": [
+        "Potência sonora absurda para caixa portátil",
+        "24 horas de bateria",
+        "IP67 — pode mergulhar na piscina",
+        "PartyBoost para sistema multi-caixas"
+      ],
+      "cons": [
+        "Peso de 6.7kg — portátil mas pesada",
+        "Preço muito elevado"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=JBL+Boombox+3",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/JBL+Boombox+3",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=JBL+Boombox+3"
+    },
+    {
+      "name": "UE Wonderboom 3",
+      "brand": "Ultimate Ears",
+      "shortDesc": "Caixa de som compacta e ultra resistente com som 360°, IP67 e design que flutua na água.",
+      "longDesc": "A UE Wonderboom 3 é a caixa de som mais resistente da lista — além de IP67, ela flutua na água e sobrevive a quedas de até 1.5 metro. O som 360° preenche o ambiente de forma uniforme e os graves são surpreendentes para o formato compacto. Com 14 horas de bateria e possibilidade de parear duas Wonderboom para som estéreo, é perfeita para aventureiros e uso outdoor radical.",
+      "imageUrl": "",
+      "currentPrice": 499,
+      "oldPrice": 599,
+      "rating": 4.5,
+      "pros": [
+        "Flutua na água — perfeita para piscina",
+        "Ultra resistente a quedas de 1.5m",
+        "Som 360° equilibrado",
+        "14 horas de bateria"
+      ],
+      "cons": [
+        "Sem entrada auxiliar",
+        "Volume máximo poderia ser maior"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=UE+Wonderboom+3",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/UE+Wonderboom+3",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=UE+Wonderboom+3"
+    },
+    {
+      "name": "Marshall Emberton II",
+      "brand": "Marshall",
+      "shortDesc": "Caixa de som portátil Marshall com design icônico, som 360°, IP67 e 30 horas de bateria.",
+      "longDesc": "A Marshall Emberton II leva o design e a qualidade sonora Marshall para um formato portátil e resistente. Com IP67, som True Stereophonic 360° e bateria de 30 horas, é a companheira perfeita para quem quer estilo e substância. O controle multidirecional no topo permite ajustar volume e faixas sem tirar o celular do bolso, e o som é marcante com graves presentes e médios claros.",
+      "imageUrl": "",
+      "currentPrice": 799,
+      "oldPrice": 999,
+      "rating": 4.6,
+      "pros": [
+        "Design Marshall icônico e portátil",
+        "30 horas de bateria excepcionais",
+        "IP67 — pode molhar sem medo",
+        "Controle multidirecional prático"
+      ],
+      "cons": [
+        "Preço premium para caixa compacta",
+        "App Marshall limitado em recursos"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Marshall+Emberton+II",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Marshall+Emberton+II",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Marshall+Emberton+II"
+    },
+    {
+      "name": "JBL Clip 5",
+      "brand": "JBL",
+      "shortDesc": "Mini caixa de som com mosquetão integrado, IP67, 15 horas de bateria e Auracast para múltiplas caixas.",
+      "longDesc": "A JBL Clip 5 é a caixa de som mais versátil para quem está sempre em movimento. O mosquetão embutido prende em mochilas, cintos, bicicletas e qualquer lugar que você imaginar. Com IP67, 15 horas de bateria e som surpreendente com driver racetrack, entrega muito mais do que o tamanho sugere. A novidade é o Auracast, que permite conectar um número praticamente ilimitado de caixas compatíveis.",
+      "imageUrl": "",
+      "currentPrice": 399,
+      "oldPrice": 499,
+      "rating": 4.5,
+      "pros": [
+        "Mosquetão integrado ultraprátic para prender em qualquer lugar",
+        "15 horas de bateria excelentes",
+        "IP67 resistente a água e poeira",
+        "Auracast para conectar múltiplas caixas"
+      ],
+      "cons": [
+        "Graves limitados pelo tamanho compacto",
+        "Mosquetão não é ideal para peso acima do fone"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=JBL+Clip+5",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/JBL+Clip+5",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=JBL+Clip+5"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "O que significa IP67 em caixas de som Bluetooth?",
+      "answer": "IP67 é uma certificação de resistência onde o '6' indica proteção total contra poeira e o '7' indica resistência à submersão em até 1 metro de água por 30 minutos. Na prática, uma caixa IP67 pode cair na piscina, tomar chuva, ser usada na praia com areia e ser lavada na torneira sem problemas. Para uso ao ar livre, é altamente recomendado escolher um modelo com pelo menos IPX7."
+    },
+    {
+      "question": "Quantos watts preciso na caixa de som para festas?",
+      "answer": "A potência em watts não é o único fator que determina o volume — a qualidade dos drivers e o design acústico importam tanto quanto. Para ambientes pequenos como quartos e escritórios, 5-10W são suficientes. Para salas e churrascos com até 20 pessoas, modelos como a JBL Flip 6 (30W) entregam volume adequado. Para festas maiores ao ar livre, considere a JBL Charge 5 (40W) ou Boombox 3 (80W+)."
+    },
+    {
+      "question": "Vale a pena comprar caixas de som Marshall ou Harman Kardon?",
+      "answer": "Sim, se qualidade sonora e estética são prioridades. Marshall e Harman Kardon são marcas premium que usam componentes superiores e têm engenharia acústica mais refinada, resultando em som mais detalhado e fiel. A diferença é mais perceptível em músicas com muitos instrumentos, vocais e nuances. Para quem só quer volume alto para festas, modelos JBL oferecem melhor custo-benefício. Para audiófilos, o investimento premium se justifica."
+    },
+    {
+      "question": "Posso conectar duas caixas de som Bluetooth ao mesmo tempo?",
+      "answer": "Sim, a maioria das marcas oferece esta funcionalidade. A JBL tem o PartyBoost que conecta múltiplas caixas JBL compatíveis. A UE tem o PartyUp. A Marshall conecta pares para som estéreo. O novo Auracast (Bluetooth 5.3+) promete conexão universal entre marcas diferentes. Conectar duas caixas em estéreo (uma como canal esquerdo e outra como direito) melhora significativamente a experiência sonora e cria um soundstage amplo."
+    },
+    {
+      "question": "Caixa de som portátil ou fixa: qual escolher?",
+      "answer": "Depende do seu uso principal. Portáteis com bateria são ideais para quem leva a caixa para diferentes ambientes — praia, churrasco, parques, viagens. Fixas como a Marshall Stanmore III precisam de tomada mas entregam som muito superior, com mais potência, graves profundos e qualidade audiófila. Se 80% do uso será em casa ou escritório, uma fixa é melhor investimento. Se mobilidade é essencial, portátil é a escolha certa."
+    }
+  ]
+}

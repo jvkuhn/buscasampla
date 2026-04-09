@@ -1,0 +1,272 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Halteres Ajustáveis de 2026",
+    "subtitle": "Comparativo completo dos halteres com pesos reguláveis mais vendidos no Brasil",
+    "intro": "Halteres ajustáveis são a solução perfeita para quem busca versátilidade, economia de espaço e praticidade no treino em casa. Selecionamos os 10 melhores modelos disponíveis no mercado brasileiro em 2026, considerando qualidade, preço, avaliações de usuários e variedade de pesos. Descubra qual é o ideal para seus objetivos de fitness.",
+    "conclusion": "Os halteres ajustáveis oferecem excelente custo-benefício comparado aos kits convencionais. Escolha conforme seu orçamento e meta de ganho de força: iniciantes podem começar com modelos de até 15kg, enquanto atletas experientes encontram opções até 50kg. Invista em equipamento de qualidade para garantir segurança e durabilidade nos seus treinos.",
+    "metaTitle": "Top 10 Melhores Halteres Ajustáveis Brasil 2026",
+    "metaDesc": "Ranking dos 10 melhores halteres ajustáveis de 2026. Compare preços, marcas e especificações no Mercado Livre, Amazon e Shopee.",
+    "categoryId": null,
+    "categoryName": "Esportes e Lazer"
+  },
+  "products": [
+    {
+      "name": "Halter Ajustável AHEAD SPORTS 2.5-24kg",
+      "brand": "AHEAD SPORTS",
+      "shortDesc": "Sistema automático de ajuste de carga com 15 combinações de peso, perfeito para treinos progressivos.",
+      "longDesc": "O Halter Ajustável AHEAD SPORTS é um dos mais vendidos no Brasil com sistema de seletor giratório que permite escolher pesos entre 2,5kg e 24kg em incrementos graduais. Fabricado com ferro fundido revestido em borracha, oferece durabilidade e segurança. Suas alças ergonômicas antideslizantes garantem conforto durante treinos intensos. Ideal para progressão muscular constante.",
+      "imageUrl": "",
+      "currentPrice": 349.90,
+      "oldPrice": 599.90,
+      "rating": 4.7,
+      "pros": [
+        "Sistema de ajuste rápido e intuitivo",
+        "Excelente custo-benefício",
+        "Mais de 10 mil vendas confirmadas",
+        "Alças antideslizantes e ergonômicas"
+      ],
+      "cons": [
+        "Peso máximo limitado a 24kg",
+        "Requerem espaço para armazenamento horizontal"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=halter+ajustavel+AHEAD+SPORTS",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/halter+ajustavel+AHEAD+SPORTS",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=halter+AHEAD+SPORTS"
+    },
+    {
+      "name": "Halter Ajustável OCCY 2.5-24kg",
+      "brand": "OCCY",
+      "shortDesc": "Modelo versátil com seletor de peso, ideal para iniciantes e praticantes intermediários.",
+      "longDesc": "OCCY é uma marca consolidada no mercado brasileiro de fitness com avaliação 4.8 e mais de 1000 vendas. Seu halter ajustável oferece 15 níveis de peso entre 2,5kg e 24kg, com sistema de ajuste por seletor. A construção robusta em ferro fundido e revestimento de borracha garante durabilidade. As alças grossas proporcionam melhor aderência durante exercícios variados.",
+      "imageUrl": "",
+      "currentPrice": 299.90,
+      "oldPrice": 549.90,
+      "rating": 4.8,
+      "pros": [
+        "Excelente relação preço-peso",
+        "Mais de 1.000 vendas e avaliação alta",
+        "Várias opções de peso",
+        "Construção em ferro fundido resistente"
+      ],
+      "cons": [
+        "Limitado a 24kg por unidade",
+        "Não inclui base de apoio"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=halter+ajustavel+OCCY",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/halter+ajustavel+OCCY",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=OCCY+halteres"
+    },
+    {
+      "name": "Halter Ajustável UPLIFT 2.5-24kg com Base",
+      "brand": "UPLIFT",
+      "shortDesc": "Premium com 48kg total (par) e base de apoio incluída para treinos estáveis.",
+      "longDesc": "O Halter Ajustável UPLIFT representa a opção premium com cada unidade variando de 2,5kg a 24kg, totalizando 48kg para o par. Fabricado com ferro fundido de alta qualidade e revestido com polipropileno (PP) durável. Inclui base de apoio profissional e alças ergonômicas com relevo antideslizante. Sistema de seletor smooth e preciso para mudanças rápidas entre séries.",
+      "imageUrl": "",
+      "currentPrice": 899.90,
+      "oldPrice": 1299.90,
+      "rating": 4.8,
+      "pros": [
+        "Inclui base de apoio profissional",
+        "Acabamento em polipropileno premium",
+        "Par com 48kg total muito versátil",
+        "Avaliação 4.8 e mais de 100 vendas"
+      ],
+      "cons": [
+        "Preço mais elevado",
+        "Requer espaço considerável"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=halter+ajustavel+UPLIFT+24kg",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/halter+ajustavel+UPLIFT",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=UPLIFT+halteres+ajustaveis"
+    },
+    {
+      "name": "Halter Ajustável GALLANT Elite Pro 5-40kg",
+      "brand": "GALLANT",
+      "shortDesc": "Modelo robusto com alcance de 5kg a 40kg, ideal para atletas avançados.",
+      "longDesc": "O Halter Ajustável GALLANT Elite Pro oferece capacidade de carga entre 5kg e 40kg com incrementos bem definidos. Fabricado com ferro fundido de primeira qualidade e revestimento de borracha antiderrapante. Design ergonômico com alças proporciona controle máximo em exercícios complexos. Perfeito para quem busca progressão além do iniciante.",
+      "imageUrl": "",
+      "currentPrice": 1149.90,
+      "oldPrice": 1699.90,
+      "rating": 4.6,
+      "pros": [
+        "Peso máximo até 40kg por unidade",
+        "Ideal para ganho de força",
+        "Construção muito robusta",
+        "Revestimento de borracha durável"
+      ],
+      "cons": [
+        "Preço elevado para iniciantes",
+        "Peso mínimo começa em 5kg"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=halter+GALLANT+Elite+Pro",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/halter+GALLANT+Elite",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=GALLANT+halteres"
+    },
+    {
+      "name": "Halter Ajustável MedPoint 2.5-24kg",
+      "brand": "MedPoint",
+      "shortDesc": "Sistema de seletor giratório com 15 combinações de peso, compacto e eficiente.",
+      "longDesc": "MedPoint oferece halter ajustável funcional com seletor giratório que permite escolher entre 2,5kg até 24kg em 15 combinações diferentes. Basta girar o seletor para ajustar a carga desejada rapidamente. Material resistente em ferro fundido com acabamento em borracha proporciona segurança durante movimentos explosivos. Excelente para home gyms com espaço limitado.",
+      "imageUrl": "",
+      "currentPrice": 329.90,
+      "oldPrice": 599.90,
+      "rating": 4.5,
+      "pros": [
+        "15 opções de peso diferentes",
+        "Seletor giratório muito preciso",
+        "Compacto e economiza espaço",
+        "Preço competitivo"
+      ],
+      "cons": [
+        "Capacidade máxima de 24kg",
+        "Menos informações de avaliação no mercado"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=halter+MedPoint+ajustavel",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/halter+MedPoint",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=MedPoint+halteres"
+    },
+    {
+      "name": "Halter Ajustável EBUY Sports 2.5-24kg",
+      "brand": "EBUY SPORTS",
+      "shortDesc": "Modelo robusto com altíssima avaliação (4.9 estrelas) e mais de 50 vendas comprovadas.",
+      "longDesc": "EBUY SPORTS é uma marca que rapidamente ganhou destaque no mercado com rating 4.9 de 5 estrelas e mais de 50 vendas confirmadas. Seu halter ajustável oferece pesos entre 2,5kg e 24kg com sistema de seletor intuitivo. Fabricado com ferro fundido de qualidade e revestimento em borracha, promete durabilidade excepcional. As alças ergonômicas proporcionam segurança em todos os movimentos.",
+      "imageUrl": "",
+      "currentPrice": 319.90,
+      "oldPrice": 579.90,
+      "rating": 4.9,
+      "pros": [
+        "Avaliação 4.9 (mais alta do mercado)",
+        "Construção robusta e durável",
+        "Preço justo para qualidade",
+        "Alças ergonômicas antideslizantes"
+      ],
+      "cons": [
+        "Marca menos conhecida",
+        "Peso máximo 24kg"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=halter+EBUY+Sports",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/halter+EBUY+Sports",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=EBUY+Sports+halteres"
+    },
+    {
+      "name": "Kit Halteres Ajustáveis YANGFIT 25kg",
+      "brand": "YANGFIT",
+      "shortDesc": "Kit econômico com barras, anilhas e presilhas, ótima opção para iniciantes.",
+      "longDesc": "YANGFIT é especializada em equipamentos de treinamento funcional e oferece kit completo de 25kg com 12 anilhas (4 de 1,5kg, 4 de 2kg, 4 de 2,5kg), 2 barras tipo halter, barra central com espuma de 5mm e 7 presilhas. A construção em tubo de aço com revestimento ABS proporciona durabilidade. Ideal para quem está começando e quer um kit versátil por preço acessível.",
+      "imageUrl": "",
+      "currentPrice": 279.90,
+      "oldPrice": 449.90,
+      "rating": 4.4,
+      "pros": [
+        "Kit completo com vários componentes",
+        "Preço muito econômico",
+        "Barras com revestimento de espuma confortável",
+        "Marca consolidada em equipamentos funcionais"
+      ],
+      "cons": [
+        "Limite de 25kg total",
+        "Requer mais espaço para armazenamento de peças"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=kit+halteres+YANGFIT+25kg",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/kit+halteres+YANGFIT",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=YANGFIT+halteres"
+    },
+    {
+      "name": "Halter Ajustável Pegada 3.5-19kg",
+      "brand": "PEGADA",
+      "shortDesc": "Opção compacta com 5 pesos diferentes (3,5kg, 7kg, 11kg, 15kg, 19kg) e avaliação 5.0.",
+      "longDesc": "Pegada oferece halter ajustável com sistema de mudança de peso simples e eficiente. Oferece 5 opções de carga: 3,5kg, 7kg, 11kg, 15kg e 19kg, permitindo progressão moderada ideal para iniciantes e pessoas em recuperação. Com avaliação perfeita de 5.0 e mais de 25 vendas, demonstra confiabilidade. Fabricado com materiais resistentes e revestimento antiderrapante.",
+      "imageUrl": "",
+      "currentPrice": 189.90,
+      "oldPrice": 349.90,
+      "rating": 5.0,
+      "pros": [
+        "Avaliação perfeita 5.0 estrelas",
+        "Preço muito acessível",
+        "Ideal para iniciantes e reabilitação",
+        "Design compacto e leve"
+      ],
+      "cons": [
+        "Peso máximo de apenas 19kg",
+        "Menos versátil para atletas avançados"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=halter+Pegada+ajustavel",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/halter+Pegada",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Pegada+halteres"
+    },
+    {
+      "name": "Halter Ajustável Powerblock Elite 5-25kg",
+      "brand": "Powerblock",
+      "shortDesc": "Design inovador com blocos que se encaixam, sistema seguro e compacto.",
+      "longDesc": "Powerblock é marca internacional reconhecida que oferece halter ajustável com sistema de blocos encaixáveis. Varia de 5kg a 25kg com mudança rápida de peso. O design inovador ocupa menos espaço que modelos tradicionais e oferece segurança máxima com alças de qualidade premium. Muito utilizado em home gyms profissionais.",
+      "imageUrl": "",
+      "currentPrice": 799.90,
+      "oldPrice": 1299.90,
+      "rating": 4.7,
+      "pros": [
+        "Design inovador e compacto",
+        "Marca internacional consolidada",
+        "Sistema seguro de encaixe",
+        "Excelente qualidade de acabamento"
+      ],
+      "cons": [
+        "Preço elevado",
+        "Menos opções de peso (10 vs 15)"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Powerblock+Elite+halter",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Powerblock+halter",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Powerblock+halteres"
+    },
+    {
+      "name": "Halter Ajustável Snode 2.5-24kg",
+      "brand": "SNODE",
+      "shortDesc": "Modelo versátil com sistema de rotação fácil e design ergonômico.",
+      "longDesc": "Snode apresenta halter ajustável com sistema de rotação da alça para mudança de peso de forma intuitiva. Oferece pesos de 2,5kg a 24kg em 15 combinações. Fabricado com ferro fundido e revestimento de borracha antideslizante, garante segurança em treinos intensos. As alças largas proporcionam conforto durante exercícios variados. Ótimo custo-benefício comparado aos concorrentes.",
+      "imageUrl": "",
+      "currentPrice": 369.90,
+      "oldPrice": 649.90,
+      "rating": 4.6,
+      "pros": [
+        "Sistema de rotação muito intuitivo",
+        "Alças largas e confortáveis",
+        "15 opções de peso",
+        "Preço competitivo"
+      ],
+      "cons": [
+        "Revestimento pode desgastar com uso intenso",
+        "Peso máximo 24kg"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=halter+Snode+ajustavel",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/halter+Snode",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Snode+halteres+ajustaveis"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual é a diferença entre halteres ajustáveis com seletor e com anilhas?",
+      "answer": "Halteres com seletor giratório (como AHEAD SPORTS, OCCY e UPLIFT) são mais convenientes para mudanças rápidas de peso entre séries, ocupam menos espaço e são mais seguros. Halteres com anilhas soltas (como o kit YANGFIT) oferecem mais peso total, menor custo inicial, mas exigem mais tempo e cuidado para montar/desmontar. Iniciantes geralmente preferem seletores, enquanto levantadores experientes apreciam kits."
+    },
+    {
+      "question": "Qual peso máximo de halter ajustável é ideal para iniciantes?",
+      "answer": "Para iniciantes, recomendamos começar com halteres ajustáveis que variem entre 2,5kg e 15kg. Modelos como o Pegada (até 19kg) e OCCY (até 24kg) são excelentes escolhas. Comece com o peso mínimo (2,5kg) e aumente gradualmente a cada 1-2 semanas conforme sua força progrida. Isso evita lesões e permite consolidar a técnica correta."
+    },
+    {
+      "question": "Os halteres ajustáveis são seguros para treinos pesados?",
+      "answer": "Sim, halteres ajustáveis de qualidade (como AHEAD SPORTS, GALLANT e UPLIFT) são completamente seguros para treinos pesados. Verifique se o modelo possui alças antideslizantes, revestimento de borracha resistente e avaliações positivas. O peso máximo varia conforme o modelo (máximo 40kg na GALLANT Elite Pro). Escolha um modelo com capacidade acima de seu peso máximo de treino para garantir segurança."
+    },
+    {
+      "question": "Qual halter ajustável oferece melhor custo-benefício em 2026?",
+      "answer": "OCCY e AHEAD SPORTS oferecem melhor custo-benefício com preços entre R$ 299-349, avaliações acima de 4.7 e mais de 1000 vendas confirmadas. Para quem busca a opção mais barata, YANGFIT (R$ 279) é um kit completo. Para opção premium com base incluída, UPLIFT (R$ 899) é excelente. Considere seu orçamento e necessidade de peso máximo na escolha."
+    }
+  ]
+}

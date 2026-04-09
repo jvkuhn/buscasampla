@@ -1,0 +1,276 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Teclados Mecânicos 2026",
+    "subtitle": "Os melhores teclados mecânicos para gaming, digitação e produtividade no Brasil",
+    "intro": "Teclados mecânicos oferecem uma experiência de digitação e gaming incomparável, com respostas táteis precisas, durabilidade superior e personalização que teclados de membrana não conseguem alcançar. Em 2026, o mercado brasileiro tem opções para todos os gostos e bolsos, desde teclados de entrada com switches Outemu por menos de R$ 200 até modelos premium wireless com switches ópticos. Reunimos os 10 melhores teclados mecânicos disponíveis no Brasil, avaliando switches, build quality, iluminação, software e custo-benefício.",
+    "conclusion": "O mercado de teclados mecânicos no Brasil está mais acessível do que nunca. Para quem está começando, o Redragon Kumara e o Redragon Lakshmi oferecem excelente qualidade por menos de R$ 250. Para gamers e profissionais que querem o melhor, o Razer BlackWidow V4 e o SteelSeries Apex Pro TKL entregam tecnologia de ponta. E para quem busca versatilidade wireless com hot-swap, o Royal Kludge RK84 e o Akko 3098B Plus são escolhas inteligentes.",
+    "metaTitle": "Top 10 Melhores Teclados Mecânicos 2026 | Guia Completo",
+    "metaDesc": "Confira os 10 melhores teclados mecânicos de 2026 no Brasil. Redragon, Razer, Logitech, HyperX e mais com preços e análises detalhadas.",
+    "categoryId": null,
+    "categoryName": "Eletrônicos"
+  },
+  "products": [
+    {
+      "name": "Redragon Kumara K552 RGB",
+      "brand": "Redragon",
+      "shortDesc": "Teclado mecânico TKL mais vendido do Brasil com switches Outemu, RGB e construção robusta por preço imbatível.",
+      "longDesc": "O Redragon Kumara K552 é o teclado mecânico mais popular do Brasil por uma razão simples: entrega qualidade sólida por um preço que cabe em qualquer orçamento. Com layout TKL (sem numérico) que economiza espaço na mesa, switches Outemu Blue com click tátil satisfatório, iluminação RGB por tecla e construção em metal, ele aguenta anos de uso intenso. É a porta de entrada perfeita para o mundo dos teclados mecânicos.",
+      "imageUrl": "",
+      "currentPrice": 179,
+      "oldPrice": 229,
+      "rating": 4.6,
+      "pros": [
+        "Preço mais baixo para teclado mecânico RGB de qualidade",
+        "Construção com placa metálica resistente",
+        "Layout TKL compacto economiza espaço",
+        "Switches Outemu duráveis com 50 milhões de toques"
+      ],
+      "cons": [
+        "Switches Outemu Blue são barulhentos",
+        "Sem software para personalização avançada"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Redragon+Kumara+K552+RGB",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Redragon+Kumara+K552+RGB",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Redragon+Kumara+K552+RGB"
+    },
+    {
+      "name": "Royal Kludge RK84 RGB",
+      "brand": "Royal Kludge",
+      "shortDesc": "Teclado mecânico 75% wireless tri-mode com hot-swap, RGB e switches intercambiáveis por preço justo.",
+      "longDesc": "O Royal Kludge RK84 é o melhor custo-benefício em teclados mecânicos wireless do Brasil. Com layout 75% compacto, conexão tri-mode (Bluetooth 5.1, 2.4GHz e USB-C), hot-swap para trocar switches sem solda e bateria de 3.750mAh que dura semanas, ele oferece flexibilidade incomparável. Os switches RK Brown são suaves e silenciosos, e o hot-swap permite experimentar Cherry MX, Gateron ou qualquer switch MX-compatible.",
+      "imageUrl": "",
+      "currentPrice": 349,
+      "oldPrice": 449,
+      "rating": 4.5,
+      "pros": [
+        "Tri-mode wireless com Bluetooth, 2.4GHz e USB-C",
+        "Hot-swap para trocar switches facilmente",
+        "Layout 75% com teclas de função dedicadas",
+        "Bateria de 3.750mAh de longa duração"
+      ],
+      "cons": [
+        "Software RK disponível apenas para Windows",
+        "Keycaps de material ABS desgastam mais rápido"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Royal+Kludge+RK84+RGB",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Royal+Kludge+RK84+RGB",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Royal+Kludge+RK84+RGB"
+    },
+    {
+      "name": "HyperX Alloy Origins Core",
+      "brand": "HyperX",
+      "shortDesc": "Teclado mecânico TKL gaming com switches HyperX Red, corpo em alumínio e RGB por tecla.",
+      "longDesc": "O HyperX Alloy Origins Core é a escolha de gamers competitivos que valorizam velocidade e durabilidade. Com switches HyperX Red lineares de atuação rápida, corpo em alumínio aircraft-grade e cabo USB-C removível, é construído para performance. A iluminação RGB per-key é personalizável pelo software HyperX NGENUITY, e o perfil baixo das teclas favorece digitação rápida durante gameplay intenso.",
+      "imageUrl": "",
+      "currentPrice": 499,
+      "oldPrice": 599,
+      "rating": 4.7,
+      "pros": [
+        "Corpo em alumínio aircraft-grade premium",
+        "Switches HyperX Red rápidos e suaves",
+        "Cabo USB-C removível para portabilidade",
+        "Software HyperX NGENUITY completo"
+      ],
+      "cons": [
+        "Preço acima de concorrentes com mesmos switches",
+        "Sem hot-swap — switches são soldados"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=HyperX+Alloy+Origins+Core",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/HyperX+Alloy+Origins+Core",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=HyperX+Alloy+Origins+Core"
+    },
+    {
+      "name": "Logitech G Pro Mechanical Gaming",
+      "brand": "Logitech",
+      "shortDesc": "Teclado mecânico TKL profissional com switches GX Blue, RGB LIGHTSYNC e design aprovado por esports.",
+      "longDesc": "O Logitech G Pro é o teclado usado por jogadores profissionais de esports em torneios ao redor do mundo. Com layout TKL compacto para maximizar o espaço do mouse, switches GX Blue clicky com feedback tátil preciso, e iluminação RGB LIGHTSYNC personalizável, é projetado para performance competitiva. O cabo micro-USB removível facilita transporte para eventos, e o software Logitech G HUB permite personalização profunda de macros e iluminação.",
+      "imageUrl": "",
+      "currentPrice": 599,
+      "oldPrice": 749,
+      "rating": 4.6,
+      "pros": [
+        "Usado por jogadores profissionais de esports",
+        "Switches GX com feedback preciso",
+        "Software Logitech G HUB completo",
+        "Design compacto aprovado por competitivos"
+      ],
+      "cons": [
+        "Cabo micro-USB em vez de USB-C",
+        "Preço elevado para switches GX"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Logitech+G+Pro+Mechanical+Gaming",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Logitech+G+Pro+Mechanical+Gaming",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Logitech+G+Pro+Mechanical+Gaming"
+    },
+    {
+      "name": "Razer BlackWidow V4",
+      "brand": "Razer",
+      "shortDesc": "Teclado mecânico full-size premium com switches Razer Green, macro keys, dial e RGB Chroma.",
+      "longDesc": "O Razer BlackWidow V4 é o teclado mecânico mais completo da Razer, com layout full-size incluindo 6 teclas de macro dedicadas, dial multifunção e apoio de pulso magnético. Os switches Razer Green oferecem click tátil satisfatório com durabilidade de 100 milhões de toques, e a iluminação Razer Chroma RGB é a mais personalizável do mercado com integração com jogos. O software Razer Synapse permite macros, perfis e iluminação avançada.",
+      "imageUrl": "",
+      "currentPrice": 1099,
+      "oldPrice": 1299,
+      "rating": 4.7,
+      "pros": [
+        "6 teclas de macro dedicadas + dial multifunção",
+        "Switches Razer Green com 100M toques de durabilidade",
+        "Razer Chroma RGB com integração com jogos",
+        "Apoio de pulso magnético incluso"
+      ],
+      "cons": [
+        "Preço premium elevado",
+        "Layout full-size ocupa muito espaço na mesa"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Razer+BlackWidow+V4",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Razer+BlackWidow+V4",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Razer+BlackWidow+V4"
+    },
+    {
+      "name": "Corsair K70 RGB Pro",
+      "brand": "Corsair",
+      "shortDesc": "Teclado mecânico full-size com Cherry MX Red, frame em alumínio, polling rate de 8000Hz e iCUE RGB.",
+      "longDesc": "O Corsair K70 RGB Pro é um clássico reinventado, combinando switches Cherry MX Red genuínos com polling rate de 8000Hz para a resposta mais rápida possível em games competitivos. O frame em alumínio escovado é premium e durável, e o apoio de pulso em couro sintético acolchoado garante conforto. O software iCUE permite sincronizar iluminação RGB com todo o ecossistema Corsair e integrar com jogos.",
+      "imageUrl": "",
+      "currentPrice": 899,
+      "oldPrice": 1099,
+      "rating": 4.7,
+      "pros": [
+        "Switches Cherry MX Red genuínos",
+        "Polling rate de 8000Hz — o mais rápido",
+        "Frame em alumínio escovado premium",
+        "Software iCUE com ecossistema Corsair"
+      ],
+      "cons": [
+        "Preço alto para teclado com fio",
+        "Sem hot-swap para trocar switches"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Corsair+K70+RGB+Pro",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Corsair+K70+RGB+Pro",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Corsair+K70+RGB+Pro"
+    },
+    {
+      "name": "Redragon Lakshmi K606",
+      "brand": "Redragon",
+      "shortDesc": "Teclado mecânico 60% ultracompacto com switches Red silenciosos, RGB e preço acessível para iniciantes.",
+      "longDesc": "O Redragon Lakshmi K606 é a opção mais acessível para quem quer um teclado mecânico 60% compacto e silencioso. Com switches Redragon Red lineares que não fazem barulho, é ideal para escritórios e ambientes compartilhados. O layout 60% ocupa mínimo espaço na mesa, e a iluminação RGB por tecla adiciona estilo. Perfeito para quem quer experimentar o formato compacto sem investir alto.",
+      "imageUrl": "",
+      "currentPrice": 169,
+      "oldPrice": 219,
+      "rating": 4.4,
+      "pros": [
+        "Preço mais baixo para mecânico 60%",
+        "Switches Red silenciosos para escritório",
+        "Ultracompacto — máximo espaço para mouse",
+        "RGB por tecla personalizável"
+      ],
+      "cons": [
+        "Sem teclas de função e setas dedicadas",
+        "Curva de aprendizado do layout 60%"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Redragon+Lakshmi+K606",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Redragon+Lakshmi+K606",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Redragon+Lakshmi+K606"
+    },
+    {
+      "name": "SteelSeries Apex Pro TKL (2023)",
+      "brand": "SteelSeries",
+      "shortDesc": "Teclado mecânico TKL premium com switches OmniPoint 2.0 ajustáveis, tela OLED e rapidez extrema.",
+      "longDesc": "O SteelSeries Apex Pro TKL é o teclado mais tecnologicamente avançado do ranking, com switches magnéticos OmniPoint 2.0 que permitem ajustar o ponto de atuação de 0.2mm a 3.8mm por tecla individualmente. Isso significa que você pode ter teclas ultra sensíveis para gaming e outras com atuação profunda para digitação no mesmo teclado. A tela OLED integrada exibe informações úteis, e o polling rate de 1000Hz garante resposta rápida.",
+      "imageUrl": "",
+      "currentPrice": 1299,
+      "oldPrice": 1499,
+      "rating": 4.8,
+      "pros": [
+        "Switches ajustáveis de 0.2mm a 3.8mm por tecla",
+        "Tela OLED integrada para informações",
+        "Tecnologia mais avançada do mercado",
+        "Frame em alumínio de alta qualidade"
+      ],
+      "cons": [
+        "Preço muito elevado",
+        "Switches não são compatíveis com keycaps Cherry MX padrão"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=SteelSeries+Apex+Pro+TKL+2023",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/SteelSeries+Apex+Pro+TKL+2023",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=SteelSeries+Apex+Pro+TKL+2023"
+    },
+    {
+      "name": "Akko 3098B Plus",
+      "brand": "Akko",
+      "shortDesc": "Teclado mecânico 98% wireless com hot-swap, keycaps PBT, switches Akko e múltiplos temas estéticos.",
+      "longDesc": "O Akko 3098B Plus é a escolha dos entusiastas que valorizam personalização e estética. Com layout 98% que mantém o numérico em corpo compacto, hot-swap 5-pin para trocar switches sem solda, keycaps PBT double-shot duráveis e conexão tri-mode (Bluetooth 5.0, 2.4GHz, USB-C), oferece versatilidade premium. Disponível em múltiplos temas visuais inspirados em anime, retro e minimalismo, cada versão é uma obra de arte.",
+      "imageUrl": "",
+      "currentPrice": 499,
+      "oldPrice": 599,
+      "rating": 4.6,
+      "pros": [
+        "Hot-swap 5-pin para personalização total",
+        "Keycaps PBT double-shot duráveis e bonitos",
+        "Tri-mode wireless com bateria de 3000mAh",
+        "Layout 98% — compacto com numérico"
+      ],
+      "cons": [
+        "Software Akko Cloud limitado",
+        "Disponibilidade irregular no Brasil"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Akko+3098B+Plus",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Akko+3098B+Plus",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Akko+3098B+Plus"
+    },
+    {
+      "name": "Razer Huntsman Mini",
+      "brand": "Razer",
+      "shortDesc": "Teclado mecânico 60% com switches ópticos Razer, RGB Chroma e design ultracompacto para gaming.",
+      "longDesc": "O Razer Huntsman Mini combina o formato ultracompacto 60% com os switches ópticos exclusivos da Razer, que usam luz em vez de contato físico para registrar teclas — resultando em atuação mais rápida e durabilidade de 100 milhões de toques. Disponível com switches Clicky (Purple) ou Linear (Red), a atuação óptica é perceptivelmente mais rápida que switches mecânicos tradicionais. O Razer Chroma RGB e o cabo USB-C removível completam o pacote.",
+      "imageUrl": "",
+      "currentPrice": 599,
+      "oldPrice": 749,
+      "rating": 4.5,
+      "pros": [
+        "Switches ópticos ultrarrápidos da Razer",
+        "100 milhões de toques de durabilidade",
+        "Formato 60% máximo espaço para mouse",
+        "Cabo USB-C removível"
+      ],
+      "cons": [
+        "Layout 60% exige adaptação",
+        "Keycaps ABS tendem a brilhar com uso"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Razer+Huntsman+Mini",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Razer+Huntsman+Mini",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Razer+Huntsman+Mini"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual a diferença entre switches Blue, Red e Brown?",
+      "answer": "Switches Blue são clicky — fazem um 'click' audível a cada toque, dando feedback sonoro e tátil forte. São satisfatórios mas barulhentos, não ideais para escritórios. Switches Red são lineares — não têm bump nem click, com atuação suave e silenciosa, preferidos por gamers que precisam de pressionamentos rápidos. Switches Brown são táteis — têm um bump sutil sem click, oferecendo o meio-termo entre feedback e silêncio. Para gaming puro: Red. Para digitação: Blue ou Brown. Para escritório: Brown ou Red."
+    },
+    {
+      "question": "O que é hot-swap e por que é importante?",
+      "answer": "Hot-swap é a capacidade de trocar os switches do teclado sem precisar dessoldar — basta puxar o switch antigo e encaixar o novo. Isso permite experimentar diferentes tipos de switch (linear, tátil, clicky) no mesmo teclado, trocar switches desgastados individualmente e personalizar teclas específicas com switches diferentes. Para entusiastas que gostam de personalização, hot-swap é essencial. Para quem só quer plugar e usar, não faz diferença."
+    },
+    {
+      "question": "Teclado 60%, 75%, TKL ou full-size: qual layout escolher?",
+      "answer": "Full-size (100%) tem todas as teclas incluindo numérico — ideal para quem usa planilhas e precisa digitar números constantemente. TKL (80%) remove o numérico, economizando espaço para o mouse — o mais popular para gaming. 75% mantém teclas de função e setas em corpo compacto. 60% remove tudo exceto as teclas principais — máximo espaço mas exige combinações Fn para teclas ausentes. Para a maioria dos usuários, TKL ou 75% são as melhores escolhas."
+    },
+    {
+      "question": "Vale a pena investir em um teclado mecânico caro?",
+      "answer": "Depende do uso. Se você digita ou joga mais de 4 horas por dia, um teclado mecânico de qualidade melhora significativamente o conforto, a velocidade e a precisão, além de durar 5-10 anos. Para uso casual, um Redragon de R$ 170-200 já entrega 90% da experiência. Teclados acima de R$ 800 se justificam para profissionais, gamers competitivos ou entusiastas que valorizam switches premium, wireless, hot-swap e materiais superiores."
+    },
+    {
+      "question": "Keycaps ABS ou PBT: qual a diferença?",
+      "answer": "ABS (Acrilonitrila Butadieno Estireno) é o plástico mais comum em keycaps — é mais barato mas tende a ficar brilhoso e liso com o uso após alguns meses. PBT (Polibutileno Tereftalato) é mais resistente, mantém a textura por muito mais tempo e não fica brilhoso. Keycaps PBT double-shot são os mais duráveis: as legendas nunca desbotam pois são moldadas com dois plásticos diferentes. Se possível, prefira PBT."
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Carregadores Veiculares 2026",
+    "subtitle": "Descubra os carregadores de carro mais rápidos e confiáveis para carregar seu celular em qualquer trajeto",
+    "intro": "Os carregadores veiculares são acessórios essenciais para quem passa muito tempo na estrada. Com a tecnologia avançando, surgiram opções com carregamento rápido, múltiplas portas e compatibilidade universal com iPhone, Android e tablets. Neste ranking, você encontrará os 10 melhores carregadores veiculares disponíveis no mercado brasileiro em 2026, selecionados por desempenho, durabilidade e custo-benefício.",
+    "conclusion": "Investir em um bom carregador veicular é fundamental para garantir que seus dispositivos não fiquem sem bateria durante viagens. Os modelos listados oferecem excelente relação entre preço e performance, com proteção contra sobrecarga e compatibilidade garantida com todos os seus aparelhos.",
+    "metaTitle": "Top 10 Carregadores Veiculares 2026 - Guia Completo",
+    "metaDesc": "Veja os 10 melhores carregadores veiculares 2026. Rápidos, seguros e com melhor preço. Compatíveis com iPhone e Android.",
+    "categoryId": null,
+    "categoryName": "Automotivo"
+  },
+  "products": [
+    {
+      "name": "Baseus CCALL-ML01 Grain",
+      "brand": "Baseus",
+      "shortDesc": "Carregador veicular compacto com 2 portas USB 3.1A de carregamento simultâneo.",
+      "longDesc": "O Baseus Grain é um carregador veicular ultra compacto que se encaixa perfeitamente na tomada do carro. Com 2 portas USB 3.1A, permite carregar dois dispositivos ao mesmo tempo. Fabricado em plástico ABS resistente e homologado Anatel, oferece excelente relação custo-benefício para viagens diárias.",
+      "imageUrl": "",
+      "currentPrice": 94.91,
+      "oldPrice": 123.27,
+      "rating": 4.8,
+      "pros": [
+        "Muito compacto e discreto",
+        "Carrega dois dispositivos simultaneamente",
+        "Preço acessível",
+        "Compatível com todos os celulares"
+      ],
+      "cons": [
+        "Potência limitada a 3.1A",
+        "Sem suporte a carregamento rápido",
+        "Design simples sem recursos avançados"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Baseus+CCALL-ML01",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Baseus+CCALL-ML01",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Baseus+CCALL-ML01"
+    },
+    {
+      "name": "Geonav ES24CH",
+      "brand": "Geonav",
+      "shortDesc": "Carregador veicular com 2 portas USB 2.4A homologado Anatel com proteção inteligente.",
+      "longDesc": "O Geonav ES24CH é um carregador veicular robusto e confiável fabricado em alumínio, com 12W de potência. Possui circuito inteligente que envia a potência correta para cada dispositivo, proteção contra curto-circuito e variação de corrente. Permite carregar dois smartphones ao mesmo tempo mantendo estabilidade.",
+      "imageUrl": "",
+      "currentPrice": 35.00,
+      "oldPrice": 45.00,
+      "rating": 4.6,
+      "pros": [
+        "Material alumínio premium",
+        "Circuito inteligente de proteção",
+        "Homologado Anatel",
+        "Preço muito econômico"
+      ],
+      "cons": [
+        "Potência básica de 2.4A",
+        "Apenas portas USB-A",
+        "Sem recursos de carregamento rápido"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Geonav+ES24CH",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Geonav+ES24CH",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Geonav+ES24CH"
+    },
+    {
+      "name": "Anker PowerDrive 2",
+      "brand": "Anker",
+      "shortDesc": "Carregador veicular com tecnologia PowerIQ e 2 portas USB 3.0 compatível com Quick Charge 3.0.",
+      "longDesc": "O Anker PowerDrive 2 é uma escolha premium com tecnologia PowerIQ que detecta automaticamente a amperage ideal para cada dispositivo. Compatível com Quick Charge 3.0, carrega até 80% em apenas 35 minutos. Possui 2 portas USB 3.0 e circuito de proteção multicamadas que protege seus aparelhos.",
+      "imageUrl": "",
+      "currentPrice": 159.90,
+      "oldPrice": 189.00,
+      "rating": 4.7,
+      "pros": [
+        "Tecnologia PowerIQ de detecção inteligente",
+        "Compatível com Quick Charge 3.0",
+        "Carregamento ultra rápido",
+        "Excelentes avaliações de clientes"
+      ],
+      "cons": [
+        "Preço mais elevado",
+        "Sem suporte USB-C",
+        "Duas portas USB-A apenas"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Anker+PowerDrive+2",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Anker+PowerDrive+2",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Anker+PowerDrive+2"
+    },
+    {
+      "name": "Hrebos Premium RoadCharge",
+      "brand": "Hrebos",
+      "shortDesc": "Carregador veicular premium 60W com USB-C PD e USB-A QC 3.0 para carregamento super rápido.",
+      "longDesc": "O Hrebos Premium RoadCharge é um carregador de alta potência com 60W total, oferecendo USB-C com Power Delivery e USB-A com Quick Charge 3.0. Permite carregar um notebook, tablet e smartphone simultaneamente com segurança. Design premium com alumínio e proteção inteligente contra sobrecarga.",
+      "imageUrl": "",
+      "currentPrice": 289.00,
+      "oldPrice": 349.00,
+      "rating": 4.9,
+      "pros": [
+        "Potência ultra alta de 60W",
+        "USB-C com Power Delivery",
+        "Carregamento simultâneo múltiplo",
+        "Design premium em alumínio"
+      ],
+      "cons": [
+        "Preço elevado",
+        "Maior tamanho e peso",
+        "Pode ser excessivo para uso básico"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Hrebos+Premium+RoadCharge",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Hrebos+Premium+RoadCharge",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Hrebos+Premium+RoadCharge"
+    },
+    {
+      "name": "Roadstar RS-107 3U BR",
+      "brand": "Roadstar",
+      "shortDesc": "Carregador veicular bifurcado com USB-PD Type-C e USB Quick Charge 3.0 para todo tipo de dispositivo.",
+      "longDesc": "O Roadstar RS-107 3U BR é um carregador veicular versátil com saída USB-PD (Power Delivery) que oferece carregamento eficiente e rápido para celulares, tablets e até notebooks. Compatível com 12V a 24V, suporta dois dispositivos simultaneamente com proteção inteligente contra variações de voltagem.",
+      "imageUrl": "",
+      "currentPrice": 129.90,
+      "oldPrice": 165.00,
+      "rating": 4.5,
+      "pros": [
+        "Compatível com USB-C Power Delivery",
+        "Quick Charge 3.0 suportado",
+        "Bivolt 12V/24V",
+        "Preço moderado com bom desempenho"
+      ],
+      "cons": [
+        "Design menos compacto",
+        "Potência média comparado aos tops",
+        "Disponibilidade limitada em algumas regiões"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Roadstar+RS-107+3U+BR",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Roadstar+RS-107+3U+BR",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Roadstar+RS-107+3U+BR"
+    },
+    {
+      "name": "Ugreen Carregador Veicular 65W",
+      "brand": "Ugreen",
+      "shortDesc": "Carregador veicular GaN 65W com USB-C PD e USB-A, compatível com rápida carga.",
+      "longDesc": "O Ugreen 65W utiliza tecnologia GaN para carregamento ultra eficiente em um tamanho compacto. Com uma porta USB-C com Power Delivery e uma porta USB-A, oferece 65W de potência total para carregar notebooks, tablets e smartphones. Proteção multicamadas e dissipação térmica otimizada.",
+      "imageUrl": "",
+      "currentPrice": 199.00,
+      "oldPrice": 249.99,
+      "rating": 4.7,
+      "pros": [
+        "Potência máxima de 65W",
+        "Tecnologia GaN compacta",
+        "USB-C com Power Delivery",
+        "Compatível com múltiplos dispositivos"
+      ],
+      "cons": [
+        "Preço elevado para carregador veicular",
+        "Pode ser excessivo para uso comum",
+        "Tamanho maior que carregadores básicos"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Ugreen+Carregador+Veicular+65W",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Ugreen+Carregador+Veicular+65W",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Ugreen+Carregador+Veicular+65W"
+    },
+    {
+      "name": "Kaidi KD-302 Turbo",
+      "brand": "Kaidi",
+      "shortDesc": "Carregador veicular turbo duplo 3.4A com entrada USB e Type-C para carregamento rápido.",
+      "longDesc": "O Kaidi KD-302 é um carregador veicular confiável com saída dupla de 3.4A total, oferecendo duas entradas USB para máxima compatibilidade. Com circuito de proteção contra sobrecarga e curto-circuito, é ideal para quem precisa carregar dois dispositivos simultaneamente durante viagens.",
+      "imageUrl": "",
+      "currentPrice": 45.90,
+      "oldPrice": 59.90,
+      "rating": 4.4,
+      "pros": [
+        "Preço muito acessível",
+        "Carrega dois dispositivos",
+        "Proteção confiável",
+        "Marca renomada"
+      ],
+      "cons": [
+        "Potência limitada",
+        "Design simples",
+        "Sem recursos de carregamento rápido"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Kaidi+KD-302+Turbo",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kaidi+KD-302+Turbo",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Kaidi+KD-302+Turbo"
+    },
+    {
+      "name": "i2GO Turbo Power 18W",
+      "brand": "i2GO",
+      "shortDesc": "Carregador veicular turbo 18W com saída USB-C para carregamento rápido e compatível com todos os smartphones.",
+      "longDesc": "O i2GO Turbo Power 18W oferece carregamento rápido com saída USB-C em um design compacto. Com proteção contra overvoltagem, overcorrente e superaquecimento, é ideal para viagens diárias. Detecta automaticamente o dispositivo conectado e otimiza a potência entregue para máxima eficiência.",
+      "imageUrl": "",
+      "currentPrice": 79.90,
+      "oldPrice": 99.90,
+      "rating": 4.6,
+      "pros": [
+        "Saída USB-C para compatibilidade futura",
+        "Potência de 18W para carregamento rápido",
+        "Proteção completa do dispositivo",
+        "Design compacto e leve"
+      ],
+      "cons": [
+        "Apenas uma porta USB",
+        "Compatibilidade limitada com aparelhos antigos",
+        "Sem suporte a dual charging"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=i2GO+Turbo+Power+18W",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/i2GO+Turbo+Power+18W",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=i2GO+Turbo+Power+18W"
+    },
+    {
+      "name": "Hrebos Turbo HS-308",
+      "brand": "Hrebos",
+      "shortDesc": "Carregador veicular turbo com 18W de potência, design compacto e proteção contra sobrecarga.",
+      "longDesc": "O Hrebos HS-308 é um carregador veicular turbo de entrada 18W que oferece carregamento rápido e confiável. Compatível com smartphones Android e iPhone, possui proteção multicamadas contra sobrecarga, curto-circuito e variação de voltagem. Design ergonômico que se encaixa confortavelmente na tomada do carro.",
+      "imageUrl": "",
+      "currentPrice": 64.90,
+      "oldPrice": 89.90,
+      "rating": 4.5,
+      "pros": [
+        "Carregamento turbo de 18W",
+        "Design ergonômico",
+        "Proteção completa garantida",
+        "Compatível com todos os celulares"
+      ],
+      "cons": [
+        "Apenas uma porta",
+        "Potência média",
+        "Disponibilidade variável"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Hrebos+Turbo+HS-308",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Hrebos+Turbo+HS-308",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Hrebos+Turbo+HS-308"
+    },
+    {
+      "name": "Roadstar RS-109 2U BR",
+      "brand": "Roadstar",
+      "shortDesc": "Carregador veicular bifurcado bivolt com 2 portas USB para carregamento simultâneo de dois dispositivos.",
+      "longDesc": "O Roadstar RS-109 2U BR é um carregador veicular bifurcado que oferece duas portas USB para carregamento simultâneo. Bivolt compatível com 12V a 24V, é perfeito para quem precisa carregar múltiplos dispositivos durante viagens longas. Construção resistente com proteção inteligente integrada.",
+      "imageUrl": "",
+      "currentPrice": 52.90,
+      "oldPrice": 69.90,
+      "rating": 4.4,
+      "pros": [
+        "Duas portas USB",
+        "Carregamento simultâneo",
+        "Bivolt versátil",
+        "Preço competitivo"
+      ],
+      "cons": [
+        "Potência limitada",
+        "Sem carregamento rápido",
+        "Design simples"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Roadstar+RS-109+2U+BR",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Roadstar+RS-109+2U+BR",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Roadstar+RS-109+2U+BR"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual é a diferença entre carregadores com Quick Charge e Power Delivery?",
+      "answer": "Quick Charge (QC) é uma tecnologia de carregamento rápido desenvolvida pela Qualcomm, ideal para dispositivos Android. Power Delivery (PD) é um padrão universal via USB-C que funciona com qualquer dispositivo compatível, incluindo iPhones recentes, tablets e notebooks. A escolha depende dos seus dispositivos: use QC para Android puro, ou PD se tiver múltiplos tipos de aparelhos."
+    },
+    {
+      "question": "É seguro usar carregador veicular para carregar smartphones durante viagens longas?",
+      "answer": "Sim, é completamente seguro se você usar um carregador de qualidade certificado. Os carregadores listados neste ranking possuem proteção contra sobrecarga, curto-circuito e superaquecimento. Recomenda-se usar carregadores homologados Anatel (certificação brasileira) e de marcas renomadas. Evite deixar o telefone em local muito quente dentro do carro durante o carregamento."
+    },
+    {
+      "question": "Quanto tempo leva para carregar um smartphone completamente em um carregador veicular?",
+      "answer": "O tempo varia conforme a potência do carregador e capacidade da bateria. Carregadores básicos de 5W levam cerca de 3-4 horas para carregar um smartphone de 3000mAh. Carregadores turbo de 18W reduzem para 1,5-2 horas, enquanto carregadores rápidos de 45-65W carregam em 45 minutos a 1 hora. Para resultados mais rápidos, escolha modelos com Quick Charge ou Power Delivery."
+    },
+    {
+      "question": "Posso usar qualquer carregador veicular para carregar iPhone e Android ao mesmo tempo?",
+      "answer": "A maioria dos carregadores veiculares com múltiplas portas USB funciona com qualquer dispositivo. No entanto, se o seu carregador tem apenas USB-A, você pode encontrar limitações com iPhones recentes que usam USB-C. Recomendamos escolher modelos com suporte a Power Delivery (USB-C) se tiver múltiplos tipos de aparelhos para garantir compatibilidade e carregamento otimizado."
+    },
+    {
+      "question": "Qual carregador veicular é melhor para viajar em carro com voltagem 12V e 24V?",
+      "answer": "Carregadores bivolt como o Roadstar RS-107 e RS-109 são ideais, pois funcionam em qualquer tipo de veículo. A maioria dos carregadores modernos já suporta ambas as voltagens automaticamente. Verifique as especificações antes de comprar se pretende usar em diferentes tipos de veículos (carros com 12V e caminhões/ônibus com 24V)."
+    }
+  ]
+}

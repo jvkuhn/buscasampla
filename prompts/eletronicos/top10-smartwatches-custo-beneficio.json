@@ -1,0 +1,276 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Smartwatches Custo-Benefício 2026",
+    "subtitle": "Os melhores relógios inteligentes para saúde, fitness e produtividade no Brasil",
+    "intro": "Smartwatches deixaram de ser luxo e se tornaram ferramentas essenciais para quem quer monitorar saúde, acompanhar treinos e manter a produtividade no pulso. Em 2026, o mercado brasileiro oferece desde smart bands por menos de R$ 200 até relógios premium com ECG e GPS de alta precisão. Selecionamos os 10 melhores smartwatches custo-benefício disponíveis no Brasil, considerando funcionalidades de saúde, qualidade da tela, bateria, ecossistema e preço justo.",
+    "conclusion": "O mercado de smartwatches em 2026 está mais acessível e diversificado do que nunca. Para monitoramento básico de saúde e notificações, a Xiaomi Smart Band 8 e a Amazfit Bip 5 são imbatíveis em custo-benefício. Para quem quer um relógio completo com GPS preciso e ecossistema robusto, o Samsung Galaxy Watch 6 e o Apple Watch SE oferecem as melhores experiências nas suas respectivas plataformas.",
+    "metaTitle": "Top 10 Smartwatches Custo-Benefício 2026 | Guia Completo",
+    "metaDesc": "Descubra os 10 melhores smartwatches custo-benefício de 2026 no Brasil. Xiaomi, Samsung, Apple, Amazfit e mais com preços e análises.",
+    "categoryId": null,
+    "categoryName": "Eletrônicos"
+  },
+  "products": [
+    {
+      "name": "Samsung Galaxy Watch 6 40mm",
+      "brand": "Samsung",
+      "shortDesc": "Smartwatch completo com tela Super AMOLED, Wear OS, GPS, monitoramento avançado de saúde e bisel touch.",
+      "longDesc": "O Samsung Galaxy Watch 6 é o smartwatch mais completo para usuários Android, rodando Wear OS com a interface One UI Watch que dá acesso à Google Play Store. Com tela Super AMOLED de 1.3\", sensor BioActive que mede frequência cardíaca, SpO2, composição corporal e até ECG, é um mini laboratório de saúde no pulso. O GPS integrado é preciso para corridas, e a integração com smartphones Galaxy é imbatível.",
+      "imageUrl": "",
+      "currentPrice": 1299,
+      "oldPrice": 1699,
+      "rating": 4.7,
+      "pros": [
+        "Tela Super AMOLED brilhante e nítida",
+        "Wear OS com acesso à Google Play Store",
+        "Sensor BioActive com ECG e composição corporal",
+        "GPS preciso para esportes ao ar livre"
+      ],
+      "cons": [
+        "Bateria dura apenas 1-2 dias com uso intenso",
+        "Melhor experiência apenas com smartphones Samsung"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Samsung+Galaxy+Watch+6+40mm",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Samsung+Galaxy+Watch+6+40mm",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Samsung+Galaxy+Watch+6+40mm"
+    },
+    {
+      "name": "Amazfit GTS 4",
+      "brand": "Amazfit",
+      "shortDesc": "Smartwatch fino e elegante com tela AMOLED, GPS duplo, 150+ modos esportivos e 8 dias de bateria.",
+      "longDesc": "O Amazfit GTS 4 oferece uma das melhores relações custo-benefício do mercado, com recursos que rivalizam com smartwatches duas vezes mais caros. A tela AMOLED de 1.75\" é vibrante e responsiva, o GPS de banda dupla com 5 satélites garante precisão extrema para corridas e ciclismo, e a bateria dura até 8 dias com uso típico. Com mais de 150 modos esportivos, monitoramento de SpO2, estresse e sono, é completo para saúde e fitness.",
+      "imageUrl": "",
+      "currentPrice": 699,
+      "oldPrice": 899,
+      "rating": 4.6,
+      "pros": [
+        "GPS de banda dupla com precisão excepcional",
+        "Tela AMOLED vibrante de 1.75\"",
+        "8 dias de bateria com uso típico",
+        "150+ modos esportivos para qualquer atividade"
+      ],
+      "cons": [
+        "Ecossistema de apps limitado comparado ao Wear OS",
+        "Notificações não permitem resposta em Android"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Amazfit+GTS+4",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Amazfit+GTS+4",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Amazfit+GTS+4"
+    },
+    {
+      "name": "Apple Watch SE 2ª Geração 40mm",
+      "brand": "Apple",
+      "shortDesc": "O smartwatch Apple mais acessível com chip S8, detecção de queda, SOS emergência e ecossistema iOS completo.",
+      "longDesc": "O Apple Watch SE 2ª geração é a porta de entrada para o ecossistema Apple Watch, oferecendo os recursos essenciais do watchOS por um preço significativamente menor que a Series 9. Com chip S8, detecção de queda e acidente de carro, SOS emergência, GPS preciso e integração total com iPhone, é o smartwatch definitivo para usuários Apple. A tela Retina OLED é nítida e o design é idêntico aos modelos premium.",
+      "imageUrl": "",
+      "currentPrice": 2199,
+      "oldPrice": 2699,
+      "rating": 4.8,
+      "pros": [
+        "Ecossistema watchOS com milhares de apps",
+        "Detecção de queda e acidente de carro",
+        "Integração perfeita com iPhone",
+        "Design premium idêntico à Series 9"
+      ],
+      "cons": [
+        "Funciona apenas com iPhone",
+        "Sem tela always-on display"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Apple+Watch+SE+2+geracao+40mm",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Apple+Watch+SE+2+geracao+40mm",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Apple+Watch+SE+2+geracao+40mm"
+    },
+    {
+      "name": "Xiaomi Smart Band 8",
+      "brand": "Xiaomi",
+      "shortDesc": "Smart band mais vendida do Brasil com tela AMOLED, 150+ modos esportivos e 16 dias de bateria por preço imbatível.",
+      "longDesc": "A Xiaomi Smart Band 8 continua sendo o dispositivo vestível mais popular do Brasil pelo preço irresistível e funcionalidades surpreendentes. Com tela AMOLED de 1.62\", monitoramento de frequência cardíaca e SpO2 24/7, mais de 150 modos esportivos e bateria que dura até 16 dias, entrega tudo que a maioria das pessoas precisa por uma fração do preço de um smartwatch. A pulseira é intercambiável e existem centenas de watch faces disponíveis.",
+      "imageUrl": "",
+      "currentPrice": 159,
+      "oldPrice": 219,
+      "rating": 4.6,
+      "pros": [
+        "Preço imbatível por menos de R$ 200",
+        "16 dias de bateria extraordinária",
+        "Tela AMOLED colorida e nítida",
+        "Leve e confortável para uso 24/7"
+      ],
+      "cons": [
+        "Sem GPS integrado — depende do celular",
+        "Tela pequena limita interações complexas"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Xiaomi+Smart+Band+8",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Xiaomi+Smart+Band+8",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Xiaomi+Smart+Band+8"
+    },
+    {
+      "name": "Amazfit T-Rex Ultra",
+      "brand": "Amazfit",
+      "shortDesc": "Smartwatch militar com GPS de banda dupla, 20 dias de bateria, 10ATM e certificação militar MIL-STD-810G.",
+      "longDesc": "O Amazfit T-Rex Ultra é o smartwatch mais resistente do ranking, projetado para aventureiros e esportistas radicais. Com certificação militar MIL-STD-810G, resistência a 10ATM (100 metros de profundidade) e GPS de banda dupla com 5 sistemas de satélite, sobrevive a qualquer condição extrema. A bateria de 20 dias em uso típico garante autonomia para trilhas de vários dias, e a tela AMOLED de 1.39\" é legível até sob sol forte.",
+      "imageUrl": "",
+      "currentPrice": 1499,
+      "oldPrice": 1899,
+      "rating": 4.7,
+      "pros": [
+        "Certificação militar MIL-STD-810G ultra resistente",
+        "10ATM — mergulho livre até 100 metros",
+        "20 dias de bateria para expedições longas",
+        "GPS de banda dupla com 5 sistemas de satélite"
+      ],
+      "cons": [
+        "Design robusto e grande pode incomodar no dia a dia",
+        "Peso de 89g acima da média"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Amazfit+T-Rex+Ultra",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Amazfit+T-Rex+Ultra",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Amazfit+T-Rex+Ultra"
+    },
+    {
+      "name": "Haylou RS5",
+      "brand": "Haylou",
+      "shortDesc": "Smartwatch acessível com tela AMOLED 1.43\", GPS integrado, 100+ modos esportivos e 10 dias de bateria.",
+      "longDesc": "O Haylou RS5 é uma surpresa positiva para quem busca um smartwatch completo sem gastar muito. Com tela AMOLED de 1.43\" com always-on display, GPS integrado, mais de 100 modos esportivos e bateria de até 10 dias, entrega funcionalidades que normalmente exigem investimento muito maior. O monitoramento de saúde inclui frequência cardíaca, SpO2, estresse e qualidade do sono.",
+      "imageUrl": "",
+      "currentPrice": 299,
+      "oldPrice": 399,
+      "rating": 4.3,
+      "pros": [
+        "GPS integrado por menos de R$ 300",
+        "Tela AMOLED com always-on display",
+        "10 dias de bateria",
+        "Chamadas Bluetooth pelo relógio"
+      ],
+      "cons": [
+        "App Haylou Fun limitado em recursos",
+        "Precisão do GPS inferior a marcas premium"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Haylou+RS5+smartwatch",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Haylou+RS5+smartwatch",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Haylou+RS5+smartwatch"
+    },
+    {
+      "name": "Huawei Watch GT 4 46mm",
+      "brand": "Huawei",
+      "shortDesc": "Smartwatch premium com design elegante, tela AMOLED 1.43\", GPS preciso e 14 dias de bateria.",
+      "longDesc": "O Huawei Watch GT 4 combina design sofisticado com funcionalidades avançadas de saúde e fitness. A tela AMOLED de 1.43\" com resolução de 466x466 pixels é uma das mais nítidas do mercado, e o acabamento em aço inoxidável transmite qualidade premium. Com GPS de alta precisão, monitoramento contínuo de frequência cardíaca e SpO2, mais de 100 modos esportivos e bateria de até 14 dias, é completo e elegante.",
+      "imageUrl": "",
+      "currentPrice": 1199,
+      "oldPrice": 1499,
+      "rating": 4.6,
+      "pros": [
+        "Design premium em aço inoxidável",
+        "Tela AMOLED de altíssima resolução",
+        "14 dias de bateria impressionante",
+        "GPS preciso com múltiplos satélites"
+      ],
+      "cons": [
+        "HarmonyOS com ecossistema limitado de apps",
+        "Sem Google Play Store ou apps de terceiros"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Huawei+Watch+GT+4+46mm",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Huawei+Watch+GT+4+46mm",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Huawei+Watch+GT+4+46mm"
+    },
+    {
+      "name": "Amazfit Bip 5",
+      "brand": "Amazfit",
+      "shortDesc": "Smartwatch acessível com tela grande de 1.91\", GPS integrado, chamadas Bluetooth e 10 dias de bateria.",
+      "longDesc": "O Amazfit Bip 5 é o smartwatch de entrada mais completo, com tela ultra grande de 1.91\" que facilita a leitura de notificações e métricas. Com GPS de 4 satélites integrado, chamadas Bluetooth, Alexa integrada, mais de 120 modos esportivos e bateria de até 10 dias, oferece funcionalidades de modelos duas vezes mais caros. É a escolha inteligente para quem quer mais que uma smart band sem gastar muito.",
+      "imageUrl": "",
+      "currentPrice": 349,
+      "oldPrice": 449,
+      "rating": 4.4,
+      "pros": [
+        "Tela grande de 1.91\" para fácil leitura",
+        "GPS integrado com 4 sistemas de satélite",
+        "Chamadas Bluetooth pelo relógio",
+        "Alexa integrada para comandos de voz"
+      ],
+      "cons": [
+        "Tela LCD em vez de AMOLED",
+        "Design plástico sem aparência premium"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Amazfit+Bip+5",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Amazfit+Bip+5",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Amazfit+Bip+5"
+    },
+    {
+      "name": "Samsung Galaxy Watch FE 40mm",
+      "brand": "Samsung",
+      "shortDesc": "Versão acessível do Galaxy Watch com Wear OS, BioActive sensor, GPS e design clássico Samsung.",
+      "longDesc": "O Samsung Galaxy Watch FE traz a experiência Wear OS da Samsung por um preço mais acessível, utilizando o mesmo sensor BioActive avançado dos modelos premium para monitoramento de frequência cardíaca, SpO2 e composição corporal. Com tela Super AMOLED de 1.2\", GPS integrado e acesso à Google Play Store, oferece o essencial do ecossistema Galaxy Watch por menos. Ideal para quem quer um smartwatch Samsung completo sem pagar pelo modelo mais recente.",
+      "imageUrl": "",
+      "currentPrice": 899,
+      "oldPrice": 1199,
+      "rating": 4.5,
+      "pros": [
+        "Sensor BioActive avançado da Samsung",
+        "Wear OS com Google Play Store",
+        "Preço mais acessível que o Galaxy Watch 6",
+        "Design elegante e discreto"
+      ],
+      "cons": [
+        "Chip Exynos W920 mais antigo — menor fluidez",
+        "Bateria de 1-1.5 dias apenas"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Samsung+Galaxy+Watch+FE+40mm",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Samsung+Galaxy+Watch+FE+40mm",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Samsung+Galaxy+Watch+FE+40mm"
+    },
+    {
+      "name": "Xiaomi Watch S3",
+      "brand": "Xiaomi",
+      "shortDesc": "Smartwatch com tela AMOLED 1.43\", GPS de banda dupla, HyperOS e biseis intercambiáveis.",
+      "longDesc": "O Xiaomi Watch S3 é o smartwatch mais completo da Xiaomi, rodando HyperOS com design moderno de biseis intercambiáveis que permitem personalizar o visual do relógio. Com tela AMOLED de 1.43\", GPS de banda dupla com 5 sistemas de satélite, mais de 150 modos esportivos e bateria de até 15 dias, oferece funcionalidades premium por preço intermediário. O monitoramento de saúde inclui frequência cardíaca, SpO2 e sono com análise detalhada.",
+      "imageUrl": "",
+      "currentPrice": 799,
+      "oldPrice": 999,
+      "rating": 4.5,
+      "pros": [
+        "Biseis intercambiáveis para personalização",
+        "GPS de banda dupla preciso",
+        "15 dias de bateria",
+        "HyperOS com interface fluida"
+      ],
+      "cons": [
+        "Ecossistema de apps limitado",
+        "Pagamento por NFC não disponível no Brasil"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Xiaomi+Watch+S3",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Xiaomi+Watch+S3",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Xiaomi+Watch+S3"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Smartwatch ou smart band: qual a diferença e qual escolher?",
+      "answer": "Smart bands como a Xiaomi Smart Band 8 são pulseiras finas com tela menor, focadas em monitoramento básico de saúde e notificações, com bateria longa (10-16 dias) e preço baixo. Smartwatches têm tela maior, GPS integrado, mais sensores, possibilidade de instalar apps e fazer chamadas. Se você quer apenas contar passos, monitorar sono e ver notificações, uma smart band é suficiente. Se quer GPS para corridas, apps, responder mensagens e funcionalidades avançadas de saúde, escolha um smartwatch."
+    },
+    {
+      "question": "Smartwatch funciona com qualquer celular?",
+      "answer": "Depende do modelo. Apple Watch funciona APENAS com iPhone — não tem compatibilidade com Android. Samsung Galaxy Watch funciona melhor com Samsung mas é compatível com qualquer Android via Wear OS. Amazfit, Xiaomi, Huawei e Haylou funcionam com Android e iPhone através de seus respectivos apps, embora algumas funções possam ser limitadas no iPhone. Antes de comprar, verifique a compatibilidade com seu smartphone."
+    },
+    {
+      "question": "O monitoramento de saúde do smartwatch é confiável?",
+      "answer": "Os sensores de frequência cardíaca e SpO2 dos smartwatches modernos são razoavelmente precisos para uso cotidiano e acompanhamento de tendências, mas não substituem equipamentos médicos. Recursos como ECG (disponível no Galaxy Watch e Apple Watch) são certificados por órgãos reguladores e podem detectar irregularidades cardíacas. Para monitoramento de treinos e acompanhamento geral de saúde, os dados são confiáveis e úteis. Para diagnóstico médico, sempre consulte um profissional."
+    },
+    {
+      "question": "Quanto tempo dura a bateria de um smartwatch?",
+      "answer": "Varia enormemente por modelo e uso. Apple Watch e Samsung Galaxy Watch duram 1-2 dias com uso normal — são os que mais consomem por rodarem sistemas operacionais completos. Amazfit e Huawei duram 7-14 dias por usarem sistemas mais leves. Smart bands duram 10-20 dias. O GPS ativo drena bateria rapidamente — uma corrida de 1 hora com GPS pode consumir 10-15% da bateria. Se bateria longa é prioridade, opte por Amazfit ou Huawei."
+    },
+    {
+      "question": "Posso nadar com meu smartwatch?",
+      "answer": "Depende da certificação de resistência à água. Modelos com 5ATM (Samsung Galaxy Watch, Apple Watch SE, Amazfit GTS 4) são adequados para natação em piscina. O Amazfit T-Rex Ultra com 10ATM suporta até mergulho livre. A Xiaomi Smart Band 8 com 5ATM também pode ser usada na piscina. IMPORTANTE: resistência à água se degrada com o tempo e impactos, e nenhuma certificação cobre água quente (sauna, banheira). Sempre enxágue com água doce após uso em água salgada ou com cloro."
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Presentes para Mulher em 2026",
+    "subtitle": "Ideias de presentes que toda mulher deseja receber",
+    "intro": "Escolher o presente perfeito para uma mulher pode ser desafiador, mas neste ranking mostramos as 10 melhores opções que combinam qualidade, estilo e utilidade. Desde perfumes sofisticados até smartwatches modernos, cada item foi selecionado para oferecer a melhor experiência. Explore produtos que vão fazer qualquer mulher se sentir especial e apreciada.",
+    "conclusion": "Os presentes listados neste ranking oferecem desde o melhor custo-benefício até as opções premium mais cobiçadas. Independentemente do seu orçamento, há sempre um presente perfeito para demonstrar carinho e atenção. Invista em qualidade e bom gosto com estas escolhas que conquistam todas as mulheres.",
+    "metaTitle": "Top 10 Melhores Presentes para Mulher 2026",
+    "metaDesc": "Descubra os 10 melhores presentes para mulher. Perfumes, bolsas, smartwatch e muito mais. Presentes que toda mulher deseja receber.",
+    "categoryId": null,
+    "categoryName": "Presentes"
+  },
+  "products": [
+    {
+      "name": "Perfume Floratta Rose Bouquet",
+      "brand": "O Boticário",
+      "shortDesc": "Perfume floral e sofisticado que encanta com suas notas de rosas e jasmim.",
+      "longDesc": "O Perfume Floratta Rose Bouquet é uma criação sofisticada com notas florais que refletem elegância e feminilidade. Com fixação de até 8 horas, é o presente perfeito para mulheres que apreciam fragrâncias clássicas e duradouras. Sua embalagem luxuosa o torna um presente de excelente apresentação para qualquer ocasião.",
+      "imageUrl": "",
+      "currentPrice": 189.90,
+      "oldPrice": 229.90,
+      "rating": 4.8,
+      "pros": [
+        "Fixação duradoura de até 8 horas",
+        "Embalagem sofisticada e elegante",
+        "Aroma inconfundível e envolvente",
+        "Preço justo com bom custo-benefício"
+      ],
+      "cons": [
+        "Nem todas mulheres gostam de perfumes florais",
+        "Frasco com tamanho padrão pode ser considerado pequeno"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Perfume+Floratta+Rose+Bouquet",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Perfume+Floratta+Rose+Bouquet",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Perfume+Floratta+Rose+Bouquet"
+    },
+    {
+      "name": "Smartwatch Samsung Galaxy Fit 3",
+      "brand": "Samsung",
+      "shortDesc": "Smartwatch compacto e elegante com monitoramento de saúde e exercícios.",
+      "longDesc": "O Samsung Galaxy Fit 3 é a escolha perfeita para mulheres ativas que desejam acompanhar sua saúde e rotina de exercícios. Com design minimalista e cores femininas, oferece monitoramento de frequência cardíaca, qualidade do sono e até 100+ modos de treino. A bateria dura até 13 dias, garantindo praticidade no dia a dia.",
+      "imageUrl": "",
+      "currentPrice": 298.00,
+      "oldPrice": 349.90,
+      "rating": 4.7,
+      "pros": [
+        "Bateria durável de até 13 dias",
+        "Design compacto e confortável",
+        "Monitoramento completo de saúde",
+        "Compatível com iPhone e Android"
+      ],
+      "cons": [
+        "Tela pequena pode dificultar leitura",
+        "Sem aplicativos nativos para muitos serviços"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Smartwatch+Samsung+Galaxy+Fit+3",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Smartwatch+Samsung+Galaxy+Fit+3",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Smartwatch+Samsung+Galaxy+Fit+3"
+    },
+    {
+      "name": "Bolsa Tiracolo Feminina de Couro",
+      "brand": "Santa Lolla",
+      "shortDesc": "Bolsa versátil em couro com design moderno que combina com qualquer look.",
+      "longDesc": "A Bolsa Tiracolo Feminina Santa Lolla é confeccionada em couro genuíno, oferecendo durabilidade e estilo. Com compartimentos funcionais e alça ajustável, é perfeita para o dia a dia. Seu design atemporal a torna uma peça que toda mulher aprecia no guarda-roupa, combinando elegância com praticidade.",
+      "imageUrl": "",
+      "currentPrice": 249.90,
+      "oldPrice": 329.90,
+      "rating": 4.6,
+      "pros": [
+        "Couro genuíno de alta qualidade",
+        "Compartimentos bem distribuídos",
+        "Alça ajustável para diferentes estilos",
+        "Design versátil e timeless"
+      ],
+      "cons": [
+        "Requer manutenção regular do couro",
+        "Pode amassofácilmente se carregada com muito peso"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Bolsa+Tiracolo+Feminina+Couro+Santa+Lolla",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Bolsa+Tiracolo+Feminina+Couro+Santa+Lolla",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Bolsa+Tiracolo+Feminina+Couro+Santa+Lolla"
+    },
+    {
+      "name": "Kit Spa Completo para Casa",
+      "brand": "Natura Ekos",
+      "shortDesc": "Kit de spa com sabonetes, sais de banho e óleos relaxantes para autocuidado.",
+      "longDesc": "O Kit Spa Completo Natura Ekos oferece a experiência de spa no conforto da casa. Inclui sabonetes artesanais, sais de banho, óleo para massagem e velas aromáticas. É o presente ideal para mulheres que buscam relaxamento e bem-estar, criando momentos de autocuidado e tranquilidade.",
+      "imageUrl": "",
+      "currentPrice": 149.90,
+      "oldPrice": 189.90,
+      "rating": 4.7,
+      "pros": [
+        "Ingredientes naturais e sustentáveis",
+        "Múltiplos produtos em um kit completo",
+        "Embalagem premium e presenteável",
+        "Aromas envolventes e relaxantes"
+      ],
+      "cons": [
+        "Quantidade limitada de cada produto",
+        "Alguns componentes podem ser acabados rapidamente"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Kit+Spa+Completo+Natura+Ekos",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kit+Spa+Completo+Natura+Ekos",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Kit+Spa+Completo+Natura+Ekos"
+    },
+    {
+      "name": "Relógio Feminino Elegante",
+      "brand": "Technos",
+      "shortDesc": "Relógio de pulso minimalista com design elegante e resistência à água.",
+      "longDesc": "O Relógio Feminino Technos é um acessório clássico que combina estilo e funcionalidade. Com design minimalista, vidro de safira e resistência à água de até 30m, é perfeito para o dia a dia e eventos sociais. A pulseira em aço inoxidável garante durabilidade e um acabamento sofisticado.",
+      "imageUrl": "",
+      "currentPrice": 329.90,
+      "oldPrice": 429.90,
+      "rating": 4.8,
+      "pros": [
+        "Design clássico e versátil",
+        "Vidro de safira resistente a riscos",
+        "Resistência à água adequada",
+        "Pulseira de aço inoxidável durável"
+      ],
+      "cons": [
+        "Pode ser considerado tradicional demais para algumas",
+        "Manutenção periódica necessária"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Relógio+Feminino+Technos",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Relógio+Feminino+Technos",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Relógio+Feminino+Technos"
+    },
+    {
+      "name": "Kit Maquiagem Premium Huda Beauty",
+      "brand": "Huda Beauty",
+      "shortDesc": "Kit de maquiagem com paleta de sombras, batom e demais produtos essenciais.",
+      "longDesc": "O Kit de Maquiagem Huda Beauty oferece produtos de alta qualidade para criar looks diversos e sofisticados. Inclui paleta de sombras com múltiplas tonalidades, batons de longa duração e demais essenciais. É o presente perfeito para quem ama maquiagem e busca qualidade profissional.",
+      "imageUrl": "",
+      "currentPrice": 389.90,
+      "oldPrice": 549.90,
+      "rating": 4.9,
+      "pros": [
+        "Produtos de alta qualidade e durabilidade",
+        "Paleta versátil com múltiplas tonalidades",
+        "Aplicação fácil e resultado profissional",
+        "Marca reconhecida internacionalmente"
+      ],
+      "cons": [
+        "Preço elevado comparado a outras marcas",
+        "Requer conhecimento de maquiagem para melhores resultados"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Kit+Maquiagem+Huda+Beauty",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kit+Maquiagem+Huda+Beauty",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Kit+Maquiagem+Huda+Beauty"
+    },
+    {
+      "name": "Colônia Feminina Positiva",
+      "brand": "Natura",
+      "shortDesc": "Colônia com aroma leve e fresco que transmite energia e otimismo.",
+      "longDesc": "A Colônia Feminina Positiva Natura é uma fragrância alegre e energizante com notas de frutas cítricas e flores leves. Ideal para o uso diário, oferece aroma envolvente que dura até 4 horas. Sua fórmula é dermatologicamente testada e adequada para todos os tipos de pele, sendo um presente acessível e encantador.",
+      "imageUrl": "",
+      "currentPrice": 79.90,
+      "oldPrice": 99.90,
+      "rating": 4.5,
+      "pros": [
+        "Preço acessível e democrático",
+        "Aroma fresco e leve",
+        "Ideal para uso diário",
+        "Fórmula dermatologicamente testada"
+      ],
+      "cons": [
+        "Duração menor que perfumes tradicionais",
+        "Aroma pode não agradar quem prefere notas florais mais fortes"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Colônia+Feminina+Positiva+Natura",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Colônia+Feminina+Positiva+Natura",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Colônia+Feminina+Positiva+Natura"
+    },
+    {
+      "name": "Fone de Ouvido Sem Fio Beats Solo Pro",
+      "brand": "Beats by Dre",
+      "shortDesc": "Fone premium com cancelamento de ruído ativo e som de alta qualidade.",
+      "longDesc": "Os Beats Solo Pro são fones de ouvido sem fio que combinam design elegante com tecnologia de ponta. O cancelamento de ruído ativo oferece uma experiência auditiva cristalina, ideal para trabalho e entretenimento. Com 40 horas de bateria e compatibilidade universal, é um presente para mulheres que apreciam tecnologia de qualidade.",
+      "imageUrl": "",
+      "currentPrice": 1199.90,
+      "oldPrice": 1499.90,
+      "rating": 4.7,
+      "pros": [
+        "Cancelamento de ruído ativo eficiente",
+        "Bateria com duração excepcional",
+        "Design elegante e confortável",
+        "Compatibilidade universal com dispositivos"
+      ],
+      "cons": [
+        "Preço muito elevado",
+        "Alguns usuários acham o design grande demais"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Fone+Beats+Solo+Pro",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Fone+Beats+Solo+Pro",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Fone+Beats+Solo+Pro"
+    },
+    {
+      "name": "Colar com Pingente Delicado de Ouro",
+      "brand": "Rommanel",
+      "shortDesc": "Colar em ouro 18k com pingente sutil e elegante para uso diário.",
+      "longDesc": "O Colar com Pingente Delicado Rommanel é confeccionado em ouro 18k puro, oferecendo qualidade e durabilidade. Seu design minimalista e sofisticado o torna apropriado para qualquer ocasião, desde o dia a dia até eventos especiais. É um presente que será apreciado por anos, representando elegância atemporal.",
+      "imageUrl": "",
+      "currentPrice": 459.90,
+      "oldPrice": 599.90,
+      "rating": 4.8,
+      "pros": [
+        "Ouro 18k de qualidade comprovada",
+        "Design elegante e timeless",
+        "Ideal para qualquer ocasião",
+        "Investimento em joias que valorizam"
+      ],
+      "cons": [
+        "Preço elevado para uma peça de joalheria",
+        "Requer limpeza e manutenção periódica"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Colar+Pingente+Ouro+Rommanel",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Colar+Pingente+Ouro+Rommanel",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Colar+Pingente+Ouro+Rommanel"
+    },
+    {
+      "name": "Scarpin Feminino Confortável",
+      "brand": "Arezzo",
+      "shortDesc": "Sapato de salto com design moderno e conforto para longas jornadas.",
+      "longDesc": "O Scarpin Feminino Arezzo combina moda e conforto com seu design inovador e materiais premium. A sola ergonômica reduz o desconforto típico de sapatos de salto, permitindo usar a noite toda sem dor. É o presente perfeito para mulheres que apreciam estilo sofisticado e buscam qualidade e conforto na moda.",
+      "imageUrl": "",
+      "currentPrice": 299.90,
+      "oldPrice": 399.90,
+      "rating": 4.6,
+      "pros": [
+        "Salto confortável com sola ergonômica",
+        "Design sofisticado e moderno",
+        "Materiais premium de qualidade",
+        "Versatilidade para diferentes ocasiões"
+      ],
+      "cons": [
+        "Pode variar em tamanho entre lotes",
+        "Alguns clientes relatam break-in inicial"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Scarpin+Feminino+Arezzo",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Scarpin+Feminino+Arezzo",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Scarpin+Feminino+Arezzo"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual é o presente mais versátil para qualquer mulher?",
+      "answer": "O perfume é considerado um dos presentes mais versáteis, pois oferece múltiplas opções de aromas para diferentes personalidades e ocasiões. O Floratta Rose Bouquet, por exemplo, agrada desde mulheres jovens até mais maduras com seu aroma clássico e sofisticado."
+    },
+    {
+      "question": "Qual presentes combina melhor com um orçamento limitado?",
+      "answer": "A Colônia Feminina Positiva Natura é a melhor opção dentro de presentes de qualidade com preço acessível (R$ 79,90). Também existem kits de spa que oferecem ótimo custo-benefício por volta de R$ 149,90, proporcionando uma experiência luxuosa sem gastar muito."
+    },
+    {
+      "question": "Quais presentes são ideais para mulheres que trabalham ou estudam?",
+      "answer": "Smartwatch Samsung Galaxy Fit 3 (R$ 298,00) é perfeito para mulheres ativas, permitindo monitorar saúde e exercícios durante a rotina. Os Beats Solo Pro (R$ 1.199,90) também são excelentes para trabalho remoto e entretenimento, com cancelamento de ruído ativo."
+    },
+    {
+      "question": "Onde posso comprar esses produtos com melhor preço?",
+      "answer": "Todos os produtos estão disponíveis nas principais plataformas: Mercado Livre, Amazon Brasil e Shopee. Recomendamos comparar preços entre as plataformas, pois frequentemente há promoções e descontos exclusivos. Aproveite períodos como Black Friday e eventos sazonais para melhores preços."
+    },
+    {
+      "question": "Como escolher o melhor presente baseado na personalidade da mulher?",
+      "answer": "Observe os hábitos e preferências: se ela gosta de se cuidar, escolha kits de spa ou produtos de maquiagem; se é ativa e saudável, um smartwatch é ideal; se aprecia estilo e elegância, bolsas, relógios ou joias são excelentes escolhas. Sempre considere o estilo pessoal dela para um presente que realmente será apreciado."
+    }
+  ]
+}

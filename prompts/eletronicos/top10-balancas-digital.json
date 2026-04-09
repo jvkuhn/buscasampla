@@ -1,0 +1,280 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Balanças Digitais de 2026",
+    "subtitle": "As melhores balanças corporais digitais para monitorar seu peso e saúde em casa",
+    "intro": "Manter o controle do peso corporal ficou muito mais fácil com as balanças digitais modernas, que vão muito além de simplesmente mostrar o número na balança — os modelos mais avançados medem gordura corporal, massa muscular, hidratação e até gordura visceral com precisão impressionante. Seja para acompanhar uma dieta, um programa de treinos ou apenas cuidar da saúde no dia a dia, existe uma balança digital ideal para cada necessidade e bolso. Reunimos os 10 melhores modelos disponíveis no mercado brasileiro em 2026, com opções que vão de R$ 50 a mais de R$ 500, para que você faça a escolha mais inteligente.",
+    "conclusion": "As balanças digitais evoluíram muito nos últimos anos e hoje oferecem recursos que antes eram exclusivos de clínicas médicas. Se você quer apenas controlar o peso, modelos simples como a G-Tech BALGL10 ou a Multilaser HC411 entregam ótima precisão pelo menor custo. Para quem deseja análise corporal completa com app, a Xiaomi Mi Body Composition Scale 2 continua sendo o melhor custo-benefício do mercado, enquanto a Relaxmedic BodyScan Pro e a Omron HBF-222T são as escolhas premium para quem não abre mão do máximo em tecnologia.",
+    "metaTitle": "Top 10 Melhores Balanças Digitais de 2026 | BuscasAmpla",
+    "metaDesc": "Descubra as 10 melhores balanças digitais corporais de 2026 no Brasil. Comparamos modelos simples e com bioimpedância para você escolher a ideal.",
+    "categoryId": null,
+    "categoryName": "Eletrônicos"
+  },
+  "products": [
+    {
+      "name": "Xiaomi Mi Body Composition Scale 2",
+      "brand": "Xiaomi",
+      "shortDesc": "A melhor balança com bioimpedância custo-benefício do mercado, com análise de 13 indicadores corporais e conexão Bluetooth.",
+      "longDesc": "A Xiaomi Mi Body Composition Scale 2 é referência absoluta quando se trata de custo-benefício no segmento de balanças inteligentes. Com chip BIA de alta precisão, ela mede 13 parâmetros corporais, incluindo percentual de gordura, massa muscular, gordura visceral, taxa metabólica basal e hidratação, tudo sincronizado com o aplicativo Mi Fit via Bluetooth 5.0. Suporta até 180 kg, armazena 16 perfis de usuários, diferencia adultos de crianças e tem graduação de 50 gramas — a mais precisa da categoria.",
+      "imageUrl": "",
+      "currentPrice": 219.90,
+      "oldPrice": 279.90,
+      "rating": 4.8,
+      "pros": [
+        "Mede 13 indicadores corporais com alta precisão",
+        "Graduação de 50g, a mais precisa da categoria",
+        "Armazena até 16 perfis de usuários",
+        "Ótimo custo-benefício para as funcionalidades oferecidas"
+      ],
+      "cons": [
+        "Requer smartphone para visualizar todos os dados completos",
+        "App em inglês/chinês com tradução parcial para português"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Xiaomi+Mi+Body+Composition+Scale+2",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Xiaomi+Mi+Body+Composition+Scale+2",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Xiaomi+Mi+Body+Composition+Scale+2"
+    },
+    {
+      "name": "Relaxmedic BodyScan Pro",
+      "brand": "Relaxmedic",
+      "shortDesc": "Balança premium brasileira com 8 sensores de alta precisão, display TFT colorido e análise corporal segmentada completa.",
+      "longDesc": "A Relaxmedic BodyScan Pro é o top de linha da marca brasileira no segmento de análise corporal, equipada com 8 sensores de alta sensibilidade (4 nos pés e 4 na barra de mãos) para medição segmentada de braços, pernas e tronco separadamente. Possui display TFT colorido, carregamento via USB-C, tecnologia de dupla frequência (20kHz + 100kHz) para maior precisão, e conecta-se ao aplicativo Fitdays, compatível com Android e iOS. Suporta de 6 a 180 kg e memoriza até 24 usuários.",
+      "imageUrl": "",
+      "currentPrice": 499.90,
+      "oldPrice": 599.90,
+      "rating": 4.7,
+      "pros": [
+        "8 sensores para análise corporal segmentada por membros",
+        "Display TFT colorido de alta qualidade",
+        "Carregamento USB-C com bateria recarregável",
+        "Tecnologia de dupla frequência para maior precisão"
+      ],
+      "cons": [
+        "Preço elevado comparado à concorrência",
+        "Necessita de suporte com as mãos, o que pode incomodar alguns usuários"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Relaxmedic+BodyScan+Pro",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Relaxmedic+BodyScan+Pro",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Relaxmedic+BodyScan+Pro"
+    },
+    {
+      "name": "G-Tech BALGL10",
+      "brand": "G-Tech",
+      "shortDesc": "A balança digital mais vendida do Brasil, com plataforma em vidro temperado, visor LCD grande e excelente durabilidade.",
+      "longDesc": "A G-Tech BALGL10 é consistentemente uma das balanças digitais mais vendidas na Amazon Brasil, conquistando os consumidores pela combinação de simplicidade, precisão e ótimo preço. Conta com plataforma em vidro temperado de 8 mm resistente, capacidade de até 150 kg, visor LCD de grandes dimensões para leitura fácil e acionamento automático por toque. Funciona com uma bateria CR2032 incluída na embalagem e tem desligamento automático para economizar energia.",
+      "imageUrl": "",
+      "currentPrice": 89.90,
+      "oldPrice": 119.90,
+      "rating": 4.6,
+      "pros": [
+        "Extremamente popular e bem avaliada pelos consumidores brasileiros",
+        "Plataforma em vidro temperado de 8mm resistente",
+        "Visor LCD grande de fácil leitura",
+        "Bateria CR2032 já inclusa na embalagem"
+      ],
+      "cons": [
+        "Mede apenas peso, sem recursos de bioimpedância",
+        "Capacidade limitada a 150 kg"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=G-Tech+BALGL10+balança+digital",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/G-Tech+BALGL10+balança+digital",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=G-Tech+BALGL10+balança+digital"
+    },
+    {
+      "name": "Omron HBF-222T",
+      "brand": "Omron",
+      "shortDesc": "Balança inteligente com Bluetooth e bioimpedância da marca líder mundial em equipamentos de saúde domiciliar.",
+      "longDesc": "A Omron HBF-222T une a reconhecida qualidade construtiva da marca japonesa com conectividade Bluetooth e análise avançada de composição corporal. Mede 6 parâmetros essenciais — peso, percentual de gordura corporal, gordura visceral, taxa muscular, massa óssea e metabolismo basal — sincronizando tudo com o aplicativo Omron Connect. Permite o cadastro de até 4 perfis e tem capacidade para até 150 kg, sendo especialmente recomendada para quem segue protocolos de saúde que exigem dados confiáveis.",
+      "imageUrl": "",
+      "currentPrice": 389.90,
+      "oldPrice": 449.90,
+      "rating": 4.6,
+      "pros": [
+        "Marca com credibilidade reconhecida na área de saúde",
+        "Bluetooth com app Omron Connect bem desenvolvido",
+        "Mede gordura visceral, importante indicador de saúde",
+        "Design sóbrio e profissional"
+      ],
+      "cons": [
+        "Preço relativamente alto para os 6 parâmetros medidos",
+        "Capacidade máxima de 150 kg, menor que concorrentes"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Omron+HBF-222T+balança+bioimpedância",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Omron+HBF-222T+balança",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Omron+HBF-222T+balança"
+    },
+    {
+      "name": "Multilaser Saúde HC411",
+      "brand": "Multilaser",
+      "shortDesc": "Balança digital slim com carregamento USB, capacidade de até 180 kg e design moderno para uso diário.",
+      "longDesc": "A Multilaser HC411 se destaca pelo design ultrafino e pelo diferencial prático do carregamento via cabo USB, eliminando a necessidade de trocar pilhas. Com capacidade robusta de até 180 kg e plataforma em vidro temperado, ela combina modernidade e praticidade no monitoramento diário do peso. O visor digital de alta resolução garante leitura clara e precisa, enquanto a função de memória exibe a última pesagem para fácil comparação.",
+      "imageUrl": "",
+      "currentPrice": 129.90,
+      "oldPrice": 159.90,
+      "rating": 4.4,
+      "pros": [
+        "Carregamento via USB, sem necessidade de pilhas",
+        "Capacidade de 180 kg, acima da média da categoria",
+        "Design slim e moderno",
+        "Boa relação custo-benefício para quem quer só pesagem"
+      ],
+      "cons": [
+        "Não possui recursos de bioimpedância",
+        "Bateria interna pode reduzir vida útil a longo prazo"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Multilaser+Saúde+HC411+balança+digital",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Multilaser+HC411+balança+digital",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Multilaser+HC411+balança+digital"
+    },
+    {
+      "name": "Multilaser BioHealth HC059",
+      "brand": "Multilaser",
+      "shortDesc": "Balança de bioimpedância acessível com análise de 5 parâmetros corporais e design elegante em vidro temperado.",
+      "longDesc": "A Multilaser BioHealth HC059 é uma das opções de entrada mais completas para quem quer começar a monitorar a composição corporal sem gastar muito. Utilizando tecnologia de bioimpedância, ela mede peso, percentual de gordura corporal, taxa muscular, massa óssea e nível de hidratação, exibindo tudo em um visor LCD claro. O design em vidro temperado é elegante e resistente, com capacidade para até 150 kg e memória para múltiplos usuários.",
+      "imageUrl": "",
+      "currentPrice": 169.90,
+      "oldPrice": 199.90,
+      "rating": 4.3,
+      "pros": [
+        "Bioimpedância a um preço acessível",
+        "Mede 5 parâmetros corporais essenciais",
+        "Design elegante em vidro temperado",
+        "Marca brasileira com boa assistência técnica nacional"
+      ],
+      "cons": [
+        "Sem conectividade Bluetooth ou app",
+        "Precisão inferior às opções mais caras da categoria"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Multilaser+BioHealth+HC059+balança+bioimpedância",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Multilaser+BioHealth+HC059+balança",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Multilaser+BioHealth+HC059+balança"
+    },
+    {
+      "name": "Black+Decker BK60",
+      "brand": "Black+Decker",
+      "shortDesc": "Balança digital com visual minimalista e moderno, ideal para quem busca precisão no monitoramento diário do peso.",
+      "longDesc": "A Black+Decker BK60 traz o reconhecido padrão de qualidade da marca para o segmento de balanças pessoais, com um design minimalista que se integra perfeitamente a qualquer ambiente do banheiro. A plataforma em vidro temperado é robusta e fácil de limpar, o visor digital mostra o peso com clareza e o sensor de alta sensibilidade garante leituras consistentes até 150 kg. Uma escolha confiável para quem prefere simplicidade sem abrir mão da qualidade.",
+      "imageUrl": "",
+      "currentPrice": 99.90,
+      "oldPrice": 129.90,
+      "rating": 4.4,
+      "pros": [
+        "Design minimalista e sofisticado",
+        "Marca reconhecida mundialmente pela qualidade",
+        "Plataforma em vidro temperado fácil de limpar",
+        "Leitura precisa e consistente"
+      ],
+      "cons": [
+        "Apenas medição de peso, sem bioimpedância",
+        "Preço ligeiramente acima de concorrentes com mesma funcionalidade"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Black+Decker+BK60+balança+digital",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Black+Decker+BK60+balança+digital",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Black+Decker+BK60+balança+digital"
+    },
+    {
+      "name": "Mondial Smart BL-05",
+      "brand": "Mondial",
+      "shortDesc": "Balança digital compacta e confiável da marca brasileira Mondial, com plataforma antiderrapante e ótima relação custo-benefício.",
+      "longDesc": "A Mondial Smart BL-05 é uma solução simples e confiável para o monitoramento diário do peso, produzida por uma das marcas de eletrodomésticos mais conhecidas do Brasil. Conta com plataforma em material antiderrapante para maior segurança no uso, visor digital com iluminação de fácil leitura e capacidade de até 150 kg. O design compacto facilita o armazenamento e o acionamento é automático ao pisar na balança.",
+      "imageUrl": "",
+      "currentPrice": 79.90,
+      "oldPrice": 99.90,
+      "rating": 4.2,
+      "pros": [
+        "Marca brasileira com boa rede de assistência técnica",
+        "Design compacto fácil de guardar",
+        "Plataforma antiderrapante para maior segurança",
+        "Preço acessível"
+      ],
+      "cons": [
+        "Sem recursos de bioimpedância",
+        "Design menos sofisticado que concorrentes"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Mondial+Smart+BL-05+balança+digital",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mondial+Smart+BL-05+balança",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Mondial+Smart+BL-05+balança+digital"
+    },
+    {
+      "name": "Relaxmedic BodyScan Vision",
+      "brand": "Relaxmedic",
+      "shortDesc": "Balança inteligente intermediária com display TFT colorido, 8 sensores e app Fitdays para análise corporal completa.",
+      "longDesc": "A Relaxmedic BodyScan Vision entrega um conjunto impressionante de recursos por um preço mais acessível que sua irmã Pro: 8 sensores de alta precisão, display TFT colorido, Bluetooth com app Fitdays, bateria recarregável via USB-C e capacidade de 6 a 180 kg. Mede mais de 20 indicadores corporais incluindo gordura segmentada, massa muscular, hidratação, gordura visceral e idade metabólica, com suporte a até 24 usuários. É a opção ideal para quem quer análise profissional sem pagar pelo modelo topo de linha.",
+      "imageUrl": "",
+      "currentPrice": 339.90,
+      "oldPrice": 399.90,
+      "rating": 4.5,
+      "pros": [
+        "Display TFT colorido com visualização intuitiva",
+        "Mais de 20 indicadores corporais medidos",
+        "Carregamento USB-C conveniente",
+        "Suporte a 24 usuários, ideal para famílias"
+      ],
+      "cons": [
+        "Preço ainda elevado comparado à concorrência chinesa",
+        "Análise segmentada menos detalhada que o modelo Pro"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Relaxmedic+BodyScan+Vision+balança",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Relaxmedic+BodyScan+Vision+balança",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Relaxmedic+BodyScan+Vision+balança"
+    },
+    {
+      "name": "Davely Fitness Balança Digital",
+      "brand": "Davely",
+      "shortDesc": "A balança digital mais barata com bioimpedância do mercado brasileiro, surpreendendo pela precisão e funcionalidades.",
+      "longDesc": "A Davely Fitness é a prova de que não é preciso gastar muito para ter acesso à tecnologia de bioimpedância. Com apenas R$ 36 a R$ 60 no Mercado Livre, este modelo oferece medição de peso, IMC, gordura corporal, massa muscular e gordura visceral através de 4 eletrodos de alta precisão, com visor digital iluminado e capacidade de até 140 kg. Com nota de 4.8 estrelas acumuladas por milhares de avaliações, é uma escolha surpreendentemente boa para quem está começando a monitorar a composição corporal.",
+      "imageUrl": "",
+      "currentPrice": 49.90,
+      "oldPrice": null,
+      "rating": 4.5,
+      "pros": [
+        "O menor preço com bioimpedância disponível no Brasil",
+        "Nota altíssima de 4.8 estrelas nas avaliações dos usuários",
+        "Mede 5 indicadores corporais incluindo gordura visceral",
+        "Boa opção para iniciantes no monitoramento corporal"
+      ],
+      "cons": [
+        "Marca pouco conhecida sem histórico consolidado no mercado",
+        "Capacidade máxima de 140 kg, menor que a maioria dos concorrentes"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Davely+Fitness+balança+digital+bioimpedância",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Davely+Fitness+balança+digital",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Davely+Fitness+balança+digital"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Vale a pena pagar mais por uma balança com bioimpedância?",
+      "answer": "Depende do seu objetivo. Se você apenas quer controlar o peso no dia a dia, uma balança simples como a G-Tech BALGL10 faz o trabalho perfeitamente por menos de R$ 100. Mas se você está em processo de emagrecimento, ganho de massa muscular ou precisa monitorar sua saúde de forma mais completa, a bioimpedância é um diferencial relevante: ela mostra se você está perdendo gordura ou músculo, o que o número do peso sozinho não revela. Para quem treina ou está fazendo acompanhamento médico/nutricional, o investimento extra se justifica."
+    },
+    {
+      "question": "Qual o melhor horário para se pesar na balança digital?",
+      "answer": "O ideal é sempre se pesar no mesmo horário e nas mesmas condições para ter comparações confiáveis. A recomendação mais comum é logo pela manhã, após acordar, ir ao banheiro e antes de comer ou beber qualquer coisa. Essa é a condição em que seu corpo está mais 'neutro', com menos variações por hidratação, alimentação ou retenção de líquidos. Evite se pesar após exercícios, grandes refeições ou no período pré-menstrual, quando o corpo tende a reter mais líquidos e os números podem variar bastante."
+    },
+    {
+      "question": "A balança digital com bioimpedância é precisa para medir gordura corporal?",
+      "answer": "As balanças de bioimpedância domésticas são boas para acompanhar tendências ao longo do tempo, mas não são tão precisas quanto métodos profissionais como a DEXA ou a pesagem hidrostática. A margem de erro pode variar de 3 a 5 pontos percentuais dependendo do modelo. O importante é sempre usar a balança nas mesmas condições (mesmo horário, nível de hidratação semelhante) para que as variações reflitam mudanças reais no corpo, não apenas flutuações de hidratação. Para diagnóstico preciso, consulte sempre um médico ou nutricionista."
+    },
+    {
+      "question": "Qual a diferença entre balança com 4 e 8 sensores?",
+      "answer": "As balanças com 4 sensores (apenas nos pés) medem a composição corporal da cintura para baixo com mais precisão, mas estimam os valores do tronco e membros superiores por equações matemáticas. Já as balanças com 8 sensores (4 nos pés e 4 na barra de mãos, como a Relaxmedic BodyScan Pro) realizam a medição por corpo inteiro, permitindo análise segmentada real de braços, pernas e tronco separadamente. O modelo de 8 sensores é mais preciso e fornece dados muito mais detalhados, mas custa significativamente mais."
+    },
+    {
+      "question": "Quanto uma balança digital de banheiro suporta de peso normalmente?",
+      "answer": "A maioria das balanças digitais pessoais disponíveis no Brasil suporta entre 150 kg e 180 kg. Modelos básicos como a G-Tech BALGL10 e a Omron HBF-222T têm capacidade de 150 kg, enquanto opções como a Xiaomi Mi Body Composition Scale 2, a Relaxmedic BodyScan e a Multilaser HC411 suportam até 180 kg. Se você estiver próximo ou acima do limite máximo indicado, sempre opte por um modelo com capacidade superior ao seu peso para garantir precisão e durabilidade da balança."
+    },
+    {
+      "question": "Como conectar a balança digital ao celular pelo Bluetooth?",
+      "answer": "O processo varia por modelo, mas geralmente segue estes passos: baixe o aplicativo indicado pelo fabricante (Mi Fit para Xiaomi, Fitdays para Relaxmedic, Omron Connect para Omron), crie sua conta com dados como altura, idade e sexo, ative o Bluetooth no celular, abra o app e siga as instruções de pareamento. Na maioria dos modelos, basta pisar na balança com o app aberto para que a conexão aconteça automaticamente e os dados sejam sincronizados. Mantenha o celular próximo durante a pesagem para garantir a transmissão dos dados."
+    }
+  ]
+}

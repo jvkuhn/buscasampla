@@ -1,0 +1,290 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Lavadoras de Alta Pressão em 2026",
+    "subtitle": "Encontre a melhor lavadora de alta pressão para suas necessidades",
+    "intro": "As lavadoras de alta pressão são essenciais para limpeza eficiente de fachadas, pisos, veículos e áreas externas. Neste ranking, selecionamos os 10 melhores modelos disponíveis no mercado brasileiro em 2026, considerando performance, durabilidade, relação custo-benefício e avaliações de clientes. Desde opções econômicas até equipamentos profissionais, você encontrará a máquina ideal para suas necessidades de limpeza.",
+    "conclusion": "Escolher a lavadora certa depende do seu volume de uso e orçamento. Modelos como a WAP Ousada Plus 2200 equilibram potência e eficiência energética, enquanto a WAP Combate Turbo 2600 oferece performance profissional com excelente custo-benefício. Invista em uma marca confiável e aproveite os benefícios de uma limpeza profunda e duradoura.",
+    "metaTitle": "Top 10 Lavadoras de Alta Pressão Brasil 2026",
+    "metaDesc": "Descubra as 10 melhores lavadoras de alta pressão do mercado brasileiro. Modelos WAP, Kärcher, Makita e mais com preços reais e reviews.",
+    "categoryId": null,
+    "categoryName": "Casa e Construção"
+  },
+  "products": [
+    {
+      "name": "WAP Ousada Plus 2200",
+      "brand": "WAP",
+      "shortDesc": "Lavadora de excelente custo-benefício com 1750 PSI, ideal para uso doméstico e limpeza de quintais.",
+      "longDesc": "A WAP Ousada Plus 2200 é a escolha mais balanceada para quem busca eficiência sem gastar muito. Com 1500W de potência, pressão de 1750 PSI e vazão de 342 L/h, esta lavadora é perfeita para limpeza de calçadas, veículos, paredes e áreas externas. Possui jatos reguláveis (leque e concentrado), mangueira de 5 metros e bico ajustável para diferentes tipos de limpeza. É durável, confiável e oferece excelente relação custo-benefício.",
+      "imageUrl": "",
+      "currentPrice": 425,
+      "oldPrice": 580,
+      "rating": 4.5,
+      "pros": [
+        "Excelente custo-benefício do mercado",
+        "Potência suficiente para uso doméstico intenso",
+        "Jatos reguláveis leque e concentrado",
+        "Mangueira de 5 metros incluída"
+      ],
+      "cons": [
+        "Pressão menor comparada a modelos premium",
+        "Não acompanha aplicador de detergente em alguns lotes"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=WAP+Ousada+Plus+2200",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+Ousada+Plus+2200",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=WAP+Ousada+Plus+2200"
+    },
+    {
+      "name": "WAP Combate Turbo 2600",
+      "brand": "WAP",
+      "shortDesc": "A melhor lavadora com motor de indução para limpeza profissional com 2100 PSI de pressão máxima.",
+      "longDesc": "O modelo WAP Combate Turbo 2600 é considerado a melhor lavadora de indução residencial do mercado. Com impressionantes 2100 PSI de pressão e 1700W de potência, oferece performance profissional para limpeza pesada de calçadas, pisos, veículos e fachadas. Motor de indução garante durabilidade e eficiência, vem com bico turbo, jatos leque e concentrado. Mangueira de 5 metros, sistema de parada total e aplicador de detergente integrado. Ideal para quem demanda performance superior.",
+      "imageUrl": "",
+      "currentPrice": 781,
+      "oldPrice": 1050,
+      "rating": 4.7,
+      "pros": [
+        "Maior pressão no segmento residencial",
+        "Motor de indução mais durável",
+        "Bico turbo para limpeza profunda",
+        "Perfeito para uso ocasional intensivo"
+      ],
+      "cons": [
+        "Consumo de energia mais elevado",
+        "Peso um pouco superior aos competidores"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=WAP+Combate+Turbo+2600",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+Combate+Turbo+2600",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=WAP+Combate+Turbo+2600"
+    },
+    {
+      "name": "Kärcher K5",
+      "brand": "Kärcher",
+      "shortDesc": "Lavadora premium alemã com 2100 PSI e 1900W de potência para limpeza profissional e residencial.",
+      "longDesc": "A Kärcher K5 é símbolo de qualidade e confiabilidade no segmento de lavadoras de alta pressão. Com pressão de 2100 PSI, vazão de 380 L/h e motor de indução de 1900W, oferece performance excepcional. Sistema de parada total protege o motor, mangueira de alta qualidade de 5 metros, e acessórios premium inclusos. Construída com padrões europeus de qualidade, é a escolha de quem não abre mão de durabilidade e performance. Ideal para uso residencial e comercial leve.",
+      "imageUrl": "",
+      "currentPrice": 915,
+      "oldPrice": 1320,
+      "rating": 4.8,
+      "pros": [
+        "Qualidade europeia de fabricação",
+        "Excelente durabilidade e confiabilidade",
+        "Potência e pressão equilibradas",
+        "Acessórios premium de alta qualidade"
+      ],
+      "cons": [
+        "Preço mais elevado que concorrentes",
+        "Menos modelos de acessórios disponíveis no Brasil"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Karcher+K5",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Karcher+K5",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Karcher+K5"
+    },
+    {
+      "name": "Electrolux Power Wash Eco EWS30",
+      "brand": "Electrolux",
+      "shortDesc": "Lavadora econômica com 1800 PSI, ideal para limpeza residencial e ambientes com restrição de energia.",
+      "longDesc": "A Electrolux Power Wash Eco EWS30 é a melhor opção para quem busca economia de energia sem sacrificar performance. Com 1450W de potência e pressão de 1800 PSI, atinge 300 L/h de vazão. Possui jatos reguláveis (leque e concentrado), mangueira de alta qualidade e design compacto que facilita o armazenamento. Perfeita para limpeza de veículos, motos, quintal e áreas externas. Oferece excelente custo-benefício com a confiabilidade de marca renomada.",
+      "imageUrl": "",
+      "currentPrice": 653,
+      "oldPrice": 890,
+      "rating": 4.3,
+      "pros": [
+        "Menor consumo de energia",
+        "Preço acessível com qualidade",
+        "Jatos ajustáveis para diferentes superfícies",
+        "Marca confiável e com suporte técnico"
+      ],
+      "cons": [
+        "Vazão de água um pouco inferior",
+        "Potência menor para limpezas pesadas"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Electrolux+Power+Wash+Eco+EWS30",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Electrolux+Power+Wash+Eco+EWS30",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Electrolux+Power+Wash+Eco+EWS30"
+    },
+    {
+      "name": "Makita HW101",
+      "brand": "Makita",
+      "shortDesc": "Lavadora compacta e poderosa com 1450 PSI, perfeita para garagens e pequenos espaços.",
+      "longDesc": "A Makita HW101 é reconhecida por sua robustez e portabilidade. Com 1300W de potência e 1450 PSI de pressão, atinge 360 L/h de vazão. Seu design compacto facilita o manuseio e armazenamento, ideal para quem tem espaço limitado. Manutenção fácil com peças acessíveis, motor durável e bicos reguláveis para diferentes tipos de limpeza. Excelente para manutenção doméstica, carros e áreas pequenas a médias.",
+      "imageUrl": "",
+      "currentPrice": 629,
+      "oldPrice": 899,
+      "rating": 4.4,
+      "pros": [
+        "Equipamento compacto e portátil",
+        "Excelente pressão para o tamanho",
+        "Peças reposição fácil de encontrar",
+        "Construção robusta e durável"
+      ],
+      "cons": [
+        "Potência menor para limpeza profunda",
+        "Mangueira mais curta em alguns modelos"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Makita+HW101",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Makita+HW101",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Makita+HW101"
+    },
+    {
+      "name": "Black+Decker BEPW1800T",
+      "brand": "Black+Decker",
+      "shortDesc": "Lavadora de entrada com 1810 PSI, ótima para iniciantes e uso ocasional.",
+      "longDesc": "A Black+Decker BEPW1800T oferece um excelente ponto de partida para quem está começando com lavadoras de alta pressão. Com 1700W de potência e 1810 PSI de pressão, é versátil para vários tipos de limpeza. Inclui bico concentrado e leque, mangueira de 5 metros, e sistema de segurança com trava. Fabricada pela marca confiável Black+Decker, é robusta e oferece bom custo-benefício para uso doméstico ocasional.",
+      "imageUrl": "",
+      "currentPrice": 450,
+      "oldPrice": 680,
+      "rating": 4.2,
+      "pros": [
+        "Preço muito acessível",
+        "Marca confiável e reconhecida",
+        "Potência adequada para uso doméstico",
+        "Fácil de usar para iniciantes"
+      ],
+      "cons": [
+        "Menos durável para uso intenso",
+        "Pressão menor que modelos WAP",
+        "Suporte técnico limitado"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Black+Decker+BEPW1800T",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Black+Decker+BEPW1800T",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Black+Decker+BEPW1800T"
+    },
+    {
+      "name": "Tramontina Master 1800W",
+      "brand": "Tramontina",
+      "shortDesc": "Lavadora robusta com 1900 PSI e mangueira de 5 metros, ideal para uso moderado.",
+      "longDesc": "A Tramontina Master 1800W é uma lavadora confiável com 1800W de potência e impressionantes 1900 PSI de pressão. Com vazão de 350 L/h, é ideal para limpeza de pisos, veículos, fachadas e áreas externas. Mangueira de alta pressão de 5 metros de qualidade, jato regulável (concentrado e leque) e trava de segurança na pistola. Marca brasileira com suporte técnico local e peças reposição acessíveis. Ótimo custo-benefício para uso moderado.",
+      "imageUrl": "",
+      "currentPrice": 568,
+      "oldPrice": 755,
+      "rating": 4.4,
+      "pros": [
+        "Marca brasileira com suporte local",
+        "Excelente pressão para limpeza pesada",
+        "Mangueira de 5 metros robusta",
+        "Peças reposição fácil de encontrar"
+      ],
+      "cons": [
+        "Peso um pouco elevado",
+        "Menos modelos de acessórios disponíveis"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Tramontina+Master+1800W",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Tramontina+Master+1800W",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Tramontina+Master+1800W"
+    },
+    {
+      "name": "WAP Ágil 1800",
+      "brand": "WAP",
+      "shortDesc": "Lavadora econômica com 1400 PSI, perfeita para limpeza leve e orçamento apertado.",
+      "longDesc": "A WAP Ágil 1800 é a melhor opção para quem busca uma lavadora básica mas confiável. Com 1200W de potência e 1400 PSI de pressão, é ideal para limpeza leve de pisos, motos, bicicletas e áreas pequenas. Compacta e leve, facilita o manuseio diário. Mangueira de 3 metros, jatos leque e concentrado, e design simples que prioriza eficiência. Excelente para primeira compra ou uso eventual.",
+      "imageUrl": "",
+      "currentPrice": 289,
+      "oldPrice": 420,
+      "rating": 4.1,
+      "pros": [
+        "Preço mais barato do mercado",
+        "Tamanho compacto e leve",
+        "Confiabilidade da marca WAP",
+        "Ideal para uso eventual leve"
+      ],
+      "cons": [
+        "Pressão baixa para limpeza pesada",
+        "Mangueira mais curta",
+        "Não recomendado para uso intenso"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=WAP+Agil+1800",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+Agil+1800",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=WAP+Agil+1800"
+    },
+    {
+      "name": "Lavor Fast Extra 135",
+      "brand": "Lavor",
+      "shortDesc": "Lavadora profissional com 1800 PSI, para quem demanda maior durabilidade e performance.",
+      "longDesc": "A Lavor Fast Extra 135 é uma lavadora profissional que oferece performance excepcional para limpeza intensiva. Com 1800 PSI de pressão e motor robusto, é ideal para empresas de limpeza, condomínios e uso comercial leve. Construída com materiais de qualidade industrial, oferece durabilidade superior. Disponível em 127V e 220V. Manutenção facilitada e peças reposição acessíveis através da rede Lavor.",
+      "imageUrl": "",
+      "currentPrice": 815,
+      "oldPrice": 1100,
+      "rating": 4.6,
+      "pros": [
+        "Qualidade de construção profissional",
+        "Motor durável para uso intensivo",
+        "Excelente suporte técnico Lavor",
+        "Disponível em 127V e 220V"
+      ],
+      "cons": [
+        "Preço mais elevado",
+        "Menos modelos de acessórios que WAP"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Lavor+Fast+Extra+135",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Lavor+Fast+Extra+135",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Lavor+Fast+Extra+135"
+    },
+    {
+      "name": "WAP Eco Smart 2200",
+      "brand": "WAP",
+      "shortDesc": "Lavadora econômica e sustentável com 1700 PSI para limpeza doméstica eficiente.",
+      "longDesc": "A WAP Eco Smart 2200 combina tecnologia econômica com performance confiável. Com 1750W de potência e 1700 PSI de pressão, oferece um bom equilíbrio entre eficiência energética e poder de limpeza. Ideal para limpeza doméstica regular de pisos, veículos e áreas externas. Jatos reguláveis, mangueira de 5 metros e design moderno. A série Eco Smart da WAP é conhecida por consumir menos energia sem comprometer a qualidade.",
+      "imageUrl": "",
+      "currentPrice": 499,
+      "oldPrice": 680,
+      "rating": 4.5,
+      "pros": [
+        "Consumo energético reduzido",
+        "Performance adequada para doméstico",
+        "Design moderno e compacto",
+        "Preço competitivo na categoria"
+      ],
+      "cons": [
+        "Pressão menor que Combate Turbo",
+        "Menos potência para limpeza profissional"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=WAP+Eco+Smart+2200",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+Eco+Smart+2200",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=WAP+Eco+Smart+2200"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual a melhor lavadora de alta pressão para uso doméstico?",
+      "answer": "Para uso doméstico, a WAP Ousada Plus 2200 é a melhor escolha em 2026. Oferece excelente equilíbrio entre potência (1750 PSI), eficiência e preço. Se você busca performance superior, a WAP Combate Turbo 2600 com seus 2100 PSI é imbatível. Para quem quer marca premium, a Kärcher K5 europeia é referência em qualidade e durabilidade."
+    },
+    {
+      "question": "Qual a diferença entre PSI e pressão em bar?",
+      "answer": "PSI (pounds per square inch) e bar são unidades de medida de pressão. A conversão é: 1 bar equivale a aproximadamente 14,5 PSI. Exemplo: uma lavadora de 2100 PSI tem pressão de cerca de 145 bar. Ambas as medidas servem o mesmo propósito, apenas usam escalas diferentes. Procure sempre especificações em PSI, pois é a unidade mais comum no Brasil."
+    },
+    {
+      "question": "Quanto custa em média uma boa lavadora de alta pressão?",
+      "answer": "Lavadoras de alta pressão básicas custam de R$ 250 a R$ 500. Modelos com melhor custo-benefício ficam entre R$ 500 a R$ 900. Equipamentos profissionais ou premium custam acima de R$ 900. Para compra online, é comum encontrar descontos de 20% a 30% em plataformas como Mercado Livre, Amazon e Shopee. Compare preços antes de comprar."
+    },
+    {
+      "question": "Como escolher entre 127V e 220V?",
+      "answer": "A voltagem depende da instalação elétrica da sua casa. 127V é padrão em muitas residências brasileiras e menos exigente com fiação. 220V oferece mais potência e melhor desempenho, ideal para uso intensivo ou áreas comerciais. Verifique sua voltagem disponível antes de comprar. Algumas lojas oferecem ambas as versões do mesmo modelo."
+    },
+    {
+      "question": "Quantos litros por hora uma lavadora de alta pressão consome?",
+      "answer": "O consumo de água varia conforme o modelo. Lavadoras comuns consomem entre 300 a 400 litros por hora de água. Por exemplo, a WAP Ousada Plus 2200 consome 342 L/h. Este consumo é consideravelmente menor que mangueiras tradicionais (1000+ L/h) ou lavagem sem pressão. Modelos eficientes ajudam a economizar água mantendo excelente limpeza."
+    },
+    {
+      "question": "Qual a vida útil média de uma lavadora de alta pressão?",
+      "answer": "Uma lavadora de qualidade bem mantida dura 5 a 10 anos. Marcas como Kärcher, WAP e Tramontina com bom histórico duram mais. Durabilidade depende de: frequência de uso, manutenção regular (limpeza do filtro, verificação de mangueiras) e armazenamento adequado. Use detergente próprio quando necessário e evite deixar parada por longos períodos cheias de água."
+    },
+    {
+      "question": "Preciso de manutenção especial para minha lavadora?",
+      "answer": "Sim, manutenção básica garante longevidade. Após cada uso: ligue sem aplicador para expelir água da mangueira, limpe o filtro de ar regularmente, verifique se há trincas na mangueira. A cada 6 meses: revise jatos, limpe interior do motor e guarde em local seco. Passe por revisão profissional anualmente se usar frequentemente. Siga o manual do fabricante para instruções específicas."
+    },
+    {
+      "question": "Posso usar detergente comum na minha lavadora?",
+      "answer": "Não recomendado. Use apenas detergente específico para lavadoras de alta pressão, que é biodegradável e não danifica o motor. Detergente comum pode prejudicar o equipamento e contaminar o solo. Muitos modelos vêm com bico aplicador específico para detergente. Consulte o manual para saber qual tipo é compatível com seu modelo. A maioria das marcas vende seus próprios detergentes."
+    }
+  ]
+}

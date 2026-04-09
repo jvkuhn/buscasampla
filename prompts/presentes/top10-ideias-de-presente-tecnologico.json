@@ -1,0 +1,280 @@
+{
+  "ranking": {
+    "title": "Top 10 Ideias de Presente Tecnológico",
+    "subtitle": "Os melhores gadgets e dispositivos smart para presentear em 2026",
+    "intro": "Procurando o presente tech perfeito? Este ranking reúne os 10 melhores gadgets e dispositivos inteligentes disponíveis no Brasil em 2026. Desde acessórios de áudio até automação residencial, temos opções para todos os orçamentos e preferências. Descubra qual será o presente que vai impressionar seu amigo ou familiar.",
+    "conclusion": "Presentear com tecnologia nunca foi tão acessível e prático! Com as opções deste ranking, você encontra desde gadgets inovadores até dispositivos smart que realmente transformam a rotina. Aproveite as ofertas nas principais plataformas brasileiras e escolha o presente que melhor combina com quem você ama.",
+    "metaTitle": "Top 10 Presentes Tecnológicos Brasil 2026 | Gadgets e Smart Devices",
+    "metaDesc": "Descubra os 10 melhores presentes tecnológicos de 2026. Gadgets inovadores, smartwatches, smart home e acessórios tech com os melhores preços.",
+    "categoryId": null,
+    "categoryName": "Presentes"
+  },
+  "products": [
+    {
+      "name": "Smartwatch AMOLED Amazfit Bip 6",
+      "brand": "Amazfit",
+      "shortDesc": "Relógio inteligente com tela AMOLED de 1,97\", GPS e bateria de até duas semanas.",
+      "longDesc": "O Amazfit Bip 6 é a escolha ideal para quem busca um smartwatch completo sem gastar muito. Com tela AMOLED de 1,97 polegadas, GPS integrado com cinco sistemas de satélite, mais de 140 modos esportivos e bateria que dura até duas semanas, ele oferece tudo que você precisa em um relógio inteligente. Compatível com Android e iOS, possui monitoramento de saúde 24/7, incluindo frequência cardíaca e qualidade do sono.",
+      "imageUrl": "",
+      "currentPrice": 549,
+      "oldPrice": 649,
+      "rating": 4.8,
+      "pros": [
+        "Tela AMOLED com cores vibrantes e excelente legibilidade",
+        "Bateria duradoura com até 2 semanas de autonomia",
+        "GPS integrado com 5 sistemas de satélite",
+        "Mais de 140 modos de exercício diferentes"
+      ],
+      "cons": [
+        "Sem suporte a pagamentos móveis",
+        "Aplicativo pode ter travamentos ocasionais"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Amazfit+Bip+6",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Amazfit+Bip+6",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Amazfit+Bip+6"
+    },
+    {
+      "name": "Fone de Ouvido TWS com Power Bank",
+      "brand": "Loop Way",
+      "shortDesc": "Fones Bluetooth 5.3 com cancelamento de ruído e estojo que carrega o smartphone.",
+      "longDesc": "Os fones TWS com power bank integrado combinam praticidade e qualidade de áudio. Com Bluetooth 5.3, cancelamento ativo de ruído (ANC) e estojo de carga de 1200mAh que funciona como carregador portátil, são perfeitos para quem está sempre em movimento. Oferem até 6 horas de reprodução contínua com o ANC ativado, e o estojo estende a bateria para até 30 horas.",
+      "imageUrl": "",
+      "currentPrice": 99.90,
+      "oldPrice": 149.90,
+      "rating": 4.5,
+      "pros": [
+        "Estojo com função de power bank para carregar celular",
+        "Cancelamento ativo de ruído de qualidade",
+        "Bluetooth 5.3 com conexão estável",
+        "Preço acessível com bom custo-benefício"
+      ],
+      "cons": [
+        "Design menos premium que concorrentes",
+        "Sem resistência à água (IPX)"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Fone+TWS+Power+Bank",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Fone+de+Ouvido+Bluetooth+Power+Bank",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Fone+TWS+Power+Bank"
+    },
+    {
+      "name": "Mini Projetor Portátil Magcubic HY300",
+      "brand": "Magcubic",
+      "shortDesc": "Projetor compacto com suporte 4K Full HD e Android 11 integrado.",
+      "longDesc": "O Magcubic HY300 é um mini projetor que traz a experiência de cinema para sua casa de forma prática e portátil. Com resolução Full HD nativa, suporte a vídeos 4K, Android 11 integrado e tamanho compacto (facilmente transportável), projeta imagens de até 200 polegadas. Possui várias portas de conexão (HDMI, USB, AV) e bateria recarregável, tornando-o ideal para festas, apresentações e diversão em qualquer lugar.",
+      "imageUrl": "",
+      "currentPrice": 209,
+      "oldPrice": 299,
+      "rating": 4.6,
+      "pros": [
+        "Tamanho muito compacto e leve",
+        "Android 11 integrado para apps diretos",
+        "Suporte a resolução 4K",
+        "Várias opções de entrada (HDMI, USB, AV)"
+      ],
+      "cons": [
+        "Brilho moderado em ambientes iluminados",
+        "Ventilação pode ser um pouco ruidosa"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Mini+Projetor+Magcubic+HY300",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mini+Projetor+Magcubic+HY300",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Mini+Projetor+Magcubic"
+    },
+    {
+      "name": "Echo Dot 5ª Geração",
+      "brand": "Amazon",
+      "shortDesc": "Smart speaker com Alexa, som melhorado e design em forma de esfera.",
+      "longDesc": "O Echo Dot é a porta de entrada para a casa inteligente. Com seu novo design em forma de esfera, som muito melhorado em relação às gerações anteriores, e integração completa com Alexa, permite controlar iluminação, tomadas inteligentes, câmeras e muito mais com apenas comandos de voz. Compatível com centenas de dispositivos smart, é ideal para quem quer começar a automação residencial sem grandes investimentos.",
+      "imageUrl": "",
+      "currentPrice": 420,
+      "oldPrice": 549,
+      "rating": 4.7,
+      "pros": [
+        "Som significativamente melhorado vs versões anteriores",
+        "Design atraente e elegante",
+        "Integração perfeita com ecossistema Amazon",
+        "Preço acessível para entrada em smart home"
+      ],
+      "cons": [
+        "Privacidade: sempre conectado à Amazon",
+        "Requer conexão WiFi estável"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Echo+Dot+5+geracao",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Echo+Dot+5",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Echo+Dot+5"
+    },
+    {
+      "name": "Microfone de Lapela Sem Fio",
+      "brand": "Boya",
+      "shortDesc": "Microfone sem fio para smartphone com qualidade profissional para conteúdo.",
+      "longDesc": "Perfeito para criadores de conteúdo, jornalistas e profissionais em home office, o microfone de lapela sem fio Boya oferece qualidade de áudio profissional com facilidade de uso. Conecta-se diretamente ao smartphone via Bluetooth, oferece alcance de até 10 metros e vem com transmissor/receptor compactos. Ideal para gravações de vídeo, lives, entrevistas e aulas online com áudio cristalino e sem interferência.",
+      "imageUrl": "",
+      "currentPrice": 181,
+      "oldPrice": 249,
+      "rating": 4.6,
+      "pros": [
+        "Qualidade de áudio profissional e cristalina",
+        "Fácil de usar, conecta direto no smartphone",
+        "Alcance de até 10 metros",
+        "Compacto e portátil"
+      ],
+      "cons": [
+        "Pode captar vento se usado sem protetor",
+        "Bateria requer carregamento frequente"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Microfone+Lapela+Boya",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Microfone+de+Lapela+Sem+Fio",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Microfone+Lapela+Sem+Fio"
+    },
+    {
+      "name": "Robô Aspirador Inteligente Xiaomi S40C",
+      "brand": "Xiaomi",
+      "shortDesc": "Robô aspirador com mapeamento inteligente e poder de sucção de até 4000 Pa.",
+      "longDesc": "O Xiaomi Robot Vacuum S40C oferece a melhor relação custo-benefício em robôs aspiradores para automação residencial. Com sistema de mapeamento LiDAR que cria mapas precisos da casa, 4000 Pa de potência de sucção, bateria que dura até 150 minutos e controle via aplicativo ou comandos de voz, ele limpa sua casa enquanto você faz outras coisas. Compatível com Alexa e Google Assistant.",
+      "imageUrl": "",
+      "currentPrice": 1425,
+      "oldPrice": 1799,
+      "rating": 4.7,
+      "pros": [
+        "Excelente mapeamento e planejamento de rotas",
+        "Potência de sucção muito boa",
+        "Bateria de longa duração",
+        "Aplicativo intuitivo e funcionalidades avançadas"
+      ],
+      "cons": [
+        "Pode ter dificuldade com tapetes finos",
+        "Ruído moderado durante funcionamento"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Xiaomi+Robot+Vacuum+S40C",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Xiaomi+S40C",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Xiaomi+S40C"
+    },
+    {
+      "name": "Lâmpada Inteligente WiFi Positivo",
+      "brand": "Positivo",
+      "shortDesc": "Lâmpada LED inteligente com WiFi, 16 milhões de cores RGB e voz.",
+      "longDesc": "A lâmpada inteligente Positivo oferece iluminação versátil para qualquer ambiente. Com 16 milhões de cores RGB, controle via aplicativo ou comandos de voz (compatível com Alexa e Google Assistant), agendamento automático e até geolocalização, você pode transformar a iluminação da casa com um toque. Consumo energético reduzido com tecnologia LED, oferecendo economia de até 80% em relação a lâmpadas tradicionais.",
+      "imageUrl": "",
+      "currentPrice": 49,
+      "oldPrice": 79,
+      "rating": 4.8,
+      "pros": [
+        "Preço extremamente acessível",
+        "16 milhões de cores para personalizar ambientes",
+        "Compatível com Alexa e Google Assistant",
+        "Baixo consumo energético"
+      ],
+      "cons": [
+        "Conexão WiFi pode ser instável às vezes",
+        "Aplicativo poderia ser mais intuitivo"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Lampada+Inteligente+Positivo",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Lampada+Inteligente+Positivo",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Lampada+Inteligente+Positivo"
+    },
+    {
+      "name": "Câmera de Segurança WiFi Intelbras IM4",
+      "brand": "Intelbras",
+      "shortDesc": "Câmera Full HD com visão noturna, função babá eletrônica e comandos por voz.",
+      "longDesc": "A câmera Intelbras IM4 é a melhor opção custo-benefício em câmeras inteligentes no Brasil. Com resolução Full HD, visão noturna infravermelha, função babá eletrônica para monitorar o quarto das crianças, áudio bidirecional e integração com Alexa e Google Assistant, oferece segurança profissional com preço acessível. Acesso remoto via aplicativo permite monitorar sua casa em tempo real de qualquer lugar.",
+      "imageUrl": "",
+      "currentPrice": 189,
+      "oldPrice": 249,
+      "rating": 4.6,
+      "pros": [
+        "Excelente relação preço e qualidade",
+        "Visão noturna clara e eficiente",
+        "Função babá eletrônica prática",
+        "Compatível com Alexa e Google"
+      ],
+      "cons": [
+        "Conexão WiFi requer sinal forte",
+        "Armazenamento em nuvem é pago"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Camera+Intelbras+IM4",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Camera+Intelbras+IM4",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Camera+Intelbras+IM4"
+    },
+    {
+      "name": "Gimbal Estabilizador Hohem iSteady X",
+      "brand": "Hohem",
+      "shortDesc": "Estabilizador de smartphone com 3 eixos e visão panorâmica 360º.",
+      "longDesc": "Ideal para criadores de conteúdo e vloggers, o Hohem iSteady X estabiliza vídeos com precisão profissional. Com 3 eixos de rotação, detecção de rosto automática, visão panorâmica 360º e modo de objeto seguidor, transforma videos caseiros em produção de qualidade cinema. Bateria que dura até 30 horas, peso de apenas 284g e compatibilidade com a maioria dos smartphones modernos.",
+      "imageUrl": "",
+      "currentPrice": 409,
+      "oldPrice": 549,
+      "rating": 4.7,
+      "pros": [
+        "Estabilização muito suave e precisa",
+        "Detecção de rosto automática",
+        "Modo seguidor de objeto inteligente",
+        "Bateria de longa duração"
+      ],
+      "cons": [
+        "Curva de aprendizado para maximizar recursos",
+        "Pode ser um pouco pesado para uso prolongado"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Gimbal+Hohem+iSteady+X",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Gimbal+Hohem+iSteady+X",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Gimbal+Hohem+iSteady"
+    },
+    {
+      "name": "Carregador Rápido USB-C 65W GaN",
+      "brand": "Geonav",
+      "shortDesc": "Carregador super rápido com tecnologia GaN, Power Delivery 3.0 e 2 portas.",
+      "longDesc": "O carregador Geonav com tecnologia GaN oferece carregamento ultra-rápido para smartphones, tablets e notebooks. Com 65W de potência, suporte a Power Delivery 3.0, duas portas USB-C simultâneas e design compacto, consegue carregar dois dispositivos flagships ao mesmo tempo. Compatível com praticamente todos os aparelhos modernos, oferece segurança com proteção contra sobrecarga e superaquecimento.",
+      "imageUrl": "",
+      "currentPrice": 159,
+      "oldPrice": 219,
+      "rating": 4.6,
+      "pros": [
+        "Carregamento rápido com tecnologia GaN avançada",
+        "Duas portas USB-C para carregar simultaneamente",
+        "Design muito compacto e portátil",
+        "Compatibilidade universal com major brands"
+      ],
+      "cons": [
+        "Pode ficar um pouco quente durante uso intenso",
+        "Requer uso com cabo USB-C de qualidade"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Carregador+USB-C+GaN+65W",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Carregador+Rapido+USB-C",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Carregador+USB-C+GaN"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual é o melhor presente tech para quem está começando com casa inteligente?",
+      "answer": "O Echo Dot 5ª Geração é a escolha perfeita para iniciantes. Com preço acessível (por volta de R$ 420), compatibilidade com centenas de dispositivos smart e controle por voz, é a porta de entrada ideal para automação residencial. Você pode começar com o Echo Dot e ir adicionando lâmpadas inteligentes, câmeras e outros dispositivos conforme necessário."
+    },
+    {
+      "question": "Qual smartwatch oferece a melhor bateria?",
+      "answer": "O Amazfit Bip 6 é campeão em duração de bateria, com até 2 semanas de autonomia sem necessidade de carregamento. Essa vantagem o torna perfeito para quem viaja muito ou não quer se preocupar com carregamentos frequentes. Apesar da longa duração, não abre mão de funcionalidades como GPS integrado e monitoramento de saúde 24/7."
+    },
+    {
+      "question": "Quais são os melhores gadgets para criadores de conteúdo?",
+      "answer": "Para quem cria vídeos e conteúdo, recomendamos a combinação de: Gimbal Hohem iSteady X (para estabilização profissional), Microfone de Lapela Boya (para áudio cristalino), Mini Projetor Magcubic HY300 (para apresentações) e Carregador GaN (para manter equipamentos carregados). Essa combo transforma qualidade da produção de conteúdo de forma significativa."
+    },
+    {
+      "question": "Vale a pena investir em automação residencial em 2026?",
+      "answer": "Sim! A automação residencial ficou muito mais acessível em 2026. Começando com um Echo Dot (R$ 420) e uma lâmpada inteligente (R$ 49), você consegue sua primeira casa smart por menos de R$ 500. Os benefícios incluem conforto (sem levantar para ligar/desligar coisas), economia de energia (até 80% com LEDs inteligentes) e segurança (câmeras e sensores). O ROI acontece rápido com economia de energia."
+    },
+    {
+      "question": "Qual é o melhor fone de ouvido tech com power bank?",
+      "answer": "O Loop Way TWS com Power Bank oferece a melhor relação custo-benefício. Por apenas R$ 99,90 você ganha fones com Bluetooth 5.3, cancelamento de ruído ativo, e um estojo que carrega seu smartphone. Perfecto para viagens, exercício e uso diário, permite carregar o celular enquanto aproveita música de qualidade."
+    },
+    {
+      "question": "Como escolher um robô aspirador?",
+      "answer": "Na hora de escolher, considere: (1) Tipo de piso - algoritmo de mapeamento (2) Tamanho da casa - duração de bateria (3) Orçamento - Xiaomi S40C oferece melhor custo-benefício (4) Recursos extras - que funcionalidades são importantes. O Xiaomi S40C por R$ 1.425 é nosso principal recomendado por oferecer as melhores features no seu preço."
+    }
+  ]
+}

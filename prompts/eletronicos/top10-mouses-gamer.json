@@ -1,0 +1,276 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Mouses Gamer 2026",
+    "subtitle": "Os melhores mouses para gaming competitivo, casual e produtividade no Brasil",
+    "intro": "O mouse é uma das peças mais importantes do setup gamer — ele traduz seus reflexos em ações precisas na tela, e a diferença entre um mouse genérico e um gamer dedicado é sentida imediatamente. Em 2026, o mercado brasileiro oferece opções incríveis desde modelos ultraeconômicos por menos de R$ 100 até mouses wireless ultraleves usados por jogadores profissionais. Selecionamos os 10 melhores mouses gamer disponíveis no Brasil, avaliando sensor, peso, ergonomia, switches, conectividade e custo-benefício.",
+    "conclusion": "Para gamers casuais e quem está começando, o Redragon Cobra M711 e o SteelSeries Rival 3 entregam desempenho sólido por preço acessível. Para competitivos que querem o melhor sem fio, o Logitech G Pro X Superlight 2 e o Razer Viper V3 Pro são referências absolutas em leveza e precisão. E para quem busca versatilidade, o Logitech G502 X Plus oferece o melhor equilíbrio entre recursos e performance.",
+    "metaTitle": "Top 10 Melhores Mouses Gamer 2026 | Guia de Compra",
+    "metaDesc": "Confira os 10 melhores mouses gamer de 2026 no Brasil. Logitech, Razer, Redragon e mais com preços, sensores e análises completas.",
+    "categoryId": null,
+    "categoryName": "Eletrônicos"
+  },
+  "products": [
+    {
+      "name": "Logitech G502 X Plus",
+      "brand": "Logitech",
+      "shortDesc": "Mouse gamer wireless premium com sensor HERO 25K, switches óptico-mecânicos LIGHTFORCE e scroll infinito.",
+      "longDesc": "O Logitech G502 X Plus é a evolução do mouse gamer mais icônico de todos os tempos. Com sensor HERO 25K de 25.600 DPI, switches óptico-mecânicos LIGHTFORCE que combinam velocidade óptica com click tátil mecânico, scroll duplo (trava e infinito) e LIGHTSPEED wireless com menos de 1ms de latência, é a escolha perfeita para quem quer tudo em um único mouse. Os 13 botões programáveis e o software G HUB permitem personalização total.",
+      "imageUrl": "",
+      "currentPrice": 649,
+      "oldPrice": 799,
+      "rating": 4.8,
+      "pros": [
+        "Sensor HERO 25K de precisão extrema",
+        "Switches LIGHTFORCE óptico-mecânicos",
+        "Scroll infinito + trava para dual mode",
+        "LIGHTSPEED wireless < 1ms de latência"
+      ],
+      "cons": [
+        "Peso de 106g acima da tendência ultraleve",
+        "Preço elevado no mercado brasileiro"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Logitech+G502+X+Plus",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Logitech+G502+X+Plus",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Logitech+G502+X+Plus"
+    },
+    {
+      "name": "Logitech G305 Lightspeed",
+      "brand": "Logitech",
+      "shortDesc": "Mouse gamer wireless acessível com sensor HERO 12K, LIGHTSPEED e 250 horas de bateria com 1 pilha AA.",
+      "longDesc": "O Logitech G305 é o mouse wireless gamer com melhor custo-benefício do mercado. Com sensor HERO 12K de nível profissional, tecnologia LIGHTSPEED com latência de 1ms e bateria que dura até 250 horas com uma única pilha AA, entrega performance wireless premium por preço de mouse com fio. O peso de 99g com pilha é competitivo, e o design ambidestro confortável serve para qualquer grip style.",
+      "imageUrl": "",
+      "currentPrice": 199,
+      "oldPrice": 259,
+      "rating": 4.7,
+      "pros": [
+        "Melhor custo-benefício wireless do mercado",
+        "Sensor HERO 12K de nível profissional",
+        "250 horas de bateria com 1 pilha AA",
+        "LIGHTSPEED wireless de 1ms"
+      ],
+      "cons": [
+        "Design simples sem iluminação RGB",
+        "Usa pilha AA em vez de bateria recarregável"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Logitech+G305+Lightspeed",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Logitech+G305+Lightspeed",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Logitech+G305+Lightspeed"
+    },
+    {
+      "name": "Razer Viper V3 Pro",
+      "brand": "Razer",
+      "shortDesc": "Mouse gamer wireless ultraleve de 54g com sensor Focus Pro 35K, polling rate de 8000Hz e autonomia de 95 horas.",
+      "longDesc": "O Razer Viper V3 Pro é o mouse gamer mais avançado da Razer e um dos mais leves do mundo com apenas 54 gramas. O sensor Focus Pro 35K Gen-2 com 35.000 DPI oferece tracking perfeito em qualquer superfície, e o polling rate de 8000Hz via HyperPolling reduz a latência a níveis imperceptíveis. A bateria dura até 95 horas e o formato simétrico é versátil para qualquer grip style. É o mouse de escolha de muitos jogadores profissionais de FPS.",
+      "imageUrl": "",
+      "currentPrice": 799,
+      "oldPrice": 949,
+      "rating": 4.9,
+      "pros": [
+        "Ultraleve com apenas 54g",
+        "Sensor Focus Pro 35K Gen-2 de precisão extrema",
+        "Polling rate de 8000Hz — o mais rápido",
+        "95 horas de bateria wireless"
+      ],
+      "cons": [
+        "Preço muito elevado",
+        "Sem iluminação RGB para manter o peso baixo"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Razer+Viper+V3+Pro",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Razer+Viper+V3+Pro",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Razer+Viper+V3+Pro"
+    },
+    {
+      "name": "Redragon Cobra M711",
+      "brand": "Redragon",
+      "shortDesc": "Mouse gamer com sensor Pixart 3325, 10.000 DPI, 7 botões e RGB por preço imbatível.",
+      "longDesc": "O Redragon Cobra M711 é o mouse gamer mais vendido do Brasil na faixa de entrada, oferecendo sensor Pixart 3325 de 10.000 DPI, 7 botões programáveis, switches de 10 milhões de cliques e iluminação RGB por um preço que desafia qualquer concorrente. O formato ergonômico para mão direita é confortável para sessões longas, e o cabo trançado de 1.8m é flexível e durável. É a prova de que não precisa gastar muito para ter um mouse gamer competente.",
+      "imageUrl": "",
+      "currentPrice": 84,
+      "oldPrice": 119,
+      "rating": 4.5,
+      "pros": [
+        "Preço mais baixo para mouse gamer de qualidade",
+        "Sensor Pixart 3325 preciso para a categoria",
+        "7 botões programáveis via software",
+        "Cabo trançado durável"
+      ],
+      "cons": [
+        "Sensor de 10.000 DPI limitado vs concorrência",
+        "Switches com durabilidade menor (10M cliques)"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Redragon+Cobra+M711",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Redragon+Cobra+M711",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Redragon+Cobra+M711"
+    },
+    {
+      "name": "Razer DeathAdder V3",
+      "brand": "Razer",
+      "shortDesc": "Mouse gamer ergonômico lendário com sensor Focus Pro 30K, 59g ultraleve e formato icônico refinado.",
+      "longDesc": "O Razer DeathAdder V3 é a mais recente evolução do mouse gamer mais vendido de todos os tempos, com mais de 15 milhões de unidades vendidas na franquia. Com formato ergonômico icônico refinado para palm grip perfeito, sensor Focus Pro 30K, peso de apenas 59g e switches ópticos Gen-3 de 90 milhões de cliques, é a escolha segura para quem prioriza conforto e precisão. O cabo Razer Speedflex de ultra baixo arrasto simula a sensação wireless.",
+      "imageUrl": "",
+      "currentPrice": 549,
+      "oldPrice": 699,
+      "rating": 4.8,
+      "pros": [
+        "Formato ergonômico lendário para palm grip",
+        "Ultraleve com apenas 59g",
+        "Sensor Focus Pro 30K de alta precisão",
+        "Switches ópticos Gen-3 com 90M cliques"
+      ],
+      "cons": [
+        "Com fio apenas — sem versão wireless neste modelo",
+        "Formato ergonômico não serve para canhotos"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Razer+DeathAdder+V3",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Razer+DeathAdder+V3",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Razer+DeathAdder+V3"
+    },
+    {
+      "name": "HyperX Pulsefire Haste 2",
+      "brand": "HyperX",
+      "shortDesc": "Mouse gamer ultraleve de 53g com sensor 26K, switches TTC Gold, grip tape e cabo flexível.",
+      "longDesc": "O HyperX Pulsefire Haste 2 pesa apenas 53 gramas sem furos no corpo, usando construção híbrida de materiais leves para manter o peso mínimo com durabilidade. O sensor de 26.000 DPI é preciso e consistente, os switches TTC Gold de 100 milhões de cliques são satisfatórios, e o cabo HyperFlex é tão flexível que simula wireless. Grip tapes extras na caixa permitem personalizar a textura do mouse.",
+      "imageUrl": "",
+      "currentPrice": 299,
+      "oldPrice": 399,
+      "rating": 4.6,
+      "pros": [
+        "Ultraleve 53g sem furos no corpo",
+        "Switches TTC Gold com 100M cliques",
+        "Grip tapes inclusos para personalização",
+        "Cabo HyperFlex ultra flexível"
+      ],
+      "cons": [
+        "Com fio apenas nesta versão",
+        "Formato simétrico pode não agradar quem prefere ergonômico"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=HyperX+Pulsefire+Haste+2",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/HyperX+Pulsefire+Haste+2",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=HyperX+Pulsefire+Haste+2"
+    },
+    {
+      "name": "SteelSeries Rival 3",
+      "brand": "SteelSeries",
+      "shortDesc": "Mouse gamer leve de 77g com sensor TrueMove Core, 6 botões e iluminação RGB Prism por preço justo.",
+      "longDesc": "O SteelSeries Rival 3 é a porta de entrada para o ecossistema SteelSeries, oferecendo sensor TrueMove Core com tracking de 8.500 DPI verdadeiros, switches mecânicos de 60 milhões de cliques e peso de 77g em formato confortável para qualquer grip. A iluminação RGB Prism é personalizável pelo SteelSeries GG Engine, e os pés de PTFE deslizam suavemente em qualquer superfície. Excelente para quem quer upgrade do mouse genérico.",
+      "imageUrl": "",
+      "currentPrice": 149,
+      "oldPrice": 199,
+      "rating": 4.4,
+      "pros": [
+        "Sensor TrueMove Core preciso e consistente",
+        "Peso de 77g leve e confortável",
+        "Switches de 60 milhões de cliques",
+        "Software SteelSeries GG completo"
+      ],
+      "cons": [
+        "DPI máximo de 8.500 abaixo da concorrência",
+        "Apenas 6 botões programáveis"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=SteelSeries+Rival+3",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/SteelSeries+Rival+3",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=SteelSeries+Rival+3"
+    },
+    {
+      "name": "Logitech G Pro X Superlight 2",
+      "brand": "Logitech",
+      "shortDesc": "Mouse gamer wireless profissional de 60g com sensor HERO 2, LIGHTSPEED e polling 2000Hz.",
+      "longDesc": "O Logitech G Pro X Superlight 2 é o mouse de escolha de dezenas de jogadores profissionais de CS2, Valorant e outros FPS competitivos. Com peso de apenas 60g, sensor HERO 2 de 32.000 DPI, LIGHTSPEED wireless com latência sub-milissegundo e bateria de 95 horas, é a combinação perfeita de leveza, precisão e autonomia. Os pés de PTFE de larga área garantem glide ultra suave em qualquer mousepad.",
+      "imageUrl": "",
+      "currentPrice": 599,
+      "oldPrice": 749,
+      "rating": 4.8,
+      "pros": [
+        "60g ultraleve para movimentos ágeis",
+        "Sensor HERO 2 de 32.000 DPI profissional",
+        "95 horas de bateria wireless",
+        "Usado por jogadores profissionais de esports"
+      ],
+      "cons": [
+        "Apenas 5 botões — sem botões extras laterais",
+        "Sem iluminação RGB"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Logitech+G+Pro+X+Superlight+2",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Logitech+G+Pro+X+Superlight+2",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Logitech+G+Pro+X+Superlight+2"
+    },
+    {
+      "name": "Razer Basilisk V3",
+      "brand": "Razer",
+      "shortDesc": "Mouse gamer ergonômico com scroll HyperScroll inclinável, sensor Focus Pro 26K e 11 botões programáveis.",
+      "longDesc": "O Razer Basilisk V3 é a resposta da Razer ao G502, oferecendo scroll HyperScroll com inclinação lateral, sensor Focus Pro 26K, 11 botões programáveis incluindo um sniper button para reduzir DPI instantaneamente, e iluminação Razer Chroma RGB com 11 zonas. O formato ergonômico com apoio de polegar embutido garante conforto para sessões longas, e os switches ópticos Gen-2 eliminam debounce para clicks mais rápidos.",
+      "imageUrl": "",
+      "currentPrice": 349,
+      "oldPrice": 449,
+      "rating": 4.6,
+      "pros": [
+        "HyperScroll com inclinação lateral",
+        "11 botões programáveis incluindo sniper",
+        "Switches ópticos Gen-2 sem debounce",
+        "Razer Chroma RGB com 11 zonas"
+      ],
+      "cons": [
+        "Peso de 101g não é ultraleve",
+        "Com fio apenas nesta versão"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Razer+Basilisk+V3",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Razer+Basilisk+V3",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Razer+Basilisk+V3"
+    },
+    {
+      "name": "Redragon Storm Elite M988",
+      "brand": "Redragon",
+      "shortDesc": "Mouse gamer com sensor Pixart 3389, 16.000 DPI, peso ajustável e 9 botões por preço de entrada.",
+      "longDesc": "O Redragon Storm Elite M988 surpreende por trazer o sensor Pixart 3389 — o mesmo usado em mouses premium de R$ 500+ — por um preço de entrada. Com 16.000 DPI verdadeiros, peso ajustável com pesos removíveis, 9 botões programáveis e iluminação RGB, oferece especificações de mouse premium a preço de entrada. O formato ergonômico com textura lateral anti-slip garante controle firme durante gameplay intenso.",
+      "imageUrl": "",
+      "currentPrice": 139,
+      "oldPrice": 179,
+      "rating": 4.4,
+      "pros": [
+        "Sensor Pixart 3389 de nível profissional",
+        "Peso ajustável com pesos removíveis",
+        "9 botões programáveis",
+        "Preço irrisório para o sensor oferecido"
+      ],
+      "cons": [
+        "Cabo rígido não trançado em alguns lotes",
+        "Software Redragon básico"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Redragon+Storm+Elite+M988",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Redragon+Storm+Elite+M988",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Redragon+Storm+Elite+M988"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual DPI usar no mouse gamer?",
+      "answer": "Apesar de muitos mouses oferecerem 25.000+ DPI, a maioria dos jogadores profissionais usa entre 400 e 1600 DPI. DPI alto demais torna o cursor instável e dificulta mira precisa. Para FPS competitivos como CS2 e Valorant, 400-800 DPI é o padrão. Para jogos de ação e RPG, 800-1600 DPI funciona bem. Para produtividade em monitores de alta resolução, 1200-2400 DPI é confortável. O DPI máximo do sensor importa mais como indicador de qualidade do que para uso prático."
+    },
+    {
+      "question": "Mouse wireless tem atraso? Vale a pena para gaming?",
+      "answer": "Em 2026, os melhores mouses wireless gamer têm latência igual ou menor que mouses com fio. Tecnologias como Logitech LIGHTSPEED e Razer HyperSpeed oferecem latência sub-milissegundo, imperceptível até para jogadores profissionais. Mouses wireless com dongle 2.4GHz dedicado são tão rápidos quanto com fio. A vantagem do wireless é a liberdade de movimento e ausência de arrasto do cabo. A única desvantagem é o preço maior e a necessidade de carregar a bateria."
+    },
+    {
+      "question": "Peso leve ou pesado: qual é melhor para gaming?",
+      "answer": "A tendência atual é de mouses ultraleves (abaixo de 70g), pois permitem movimentos mais rápidos e reduzem fadiga em sessões longas. Para FPS competitivos onde você move o mouse constantemente, leve é melhor. Para jogos que exigem precisão lenta como estratégia ou MMO, peso maior pode dar mais estabilidade. Mouses com peso ajustável como o Redragon Storm Elite permitem encontrar seu ponto ideal. Experimente: se seu braço cansa, o mouse provavelmente é pesado demais."
+    },
+    {
+      "question": "O que são switches ópticos no mouse?",
+      "answer": "Switches ópticos usam um feixe de luz infravermelha para detectar o click, em vez do contato físico de metal dos switches mecânicos tradicionais. Vantagens: não sofrem double-click (problema comum em switches mecânicos após uso prolongado), têm tempo de resposta mais rápido e durabilidade superior (100M+ cliques). Desvantagens: o feedback tátil pode parecer diferente do mecânico tradicional. Razer e outras marcas premium já adotaram switches ópticos como padrão."
+    },
+    {
+      "question": "Palm grip, claw grip ou fingertip grip: qual é o meu?",
+      "answer": "Palm grip: toda a palma da mão repousa sobre o mouse — é o mais confortável para uso prolongado, ideal para mouses ergonômicos grandes como DeathAdder e G502. Claw grip: apenas a palma toca o mouse, com dedos curvados como garras — oferece mais agilidade nos clicks, ideal para mouses de tamanho médio. Fingertip grip: apenas as pontas dos dedos tocam o mouse — máxima agilidade mas menos controle, ideal para mouses pequenos e ultraleves. Não existe grip 'melhor' — use o que for mais natural para você e escolha o mouse adequado."
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "ranking": {
+    "title": "Top 10 Climatizadores 2026",
+    "subtitle": "Os melhores climatizadores evaporativos para refrescar sua casa",
+    "intro": "Enfrentar o calor brasileiro exige soluções eficientes e econômicas. Neste ranking, selecionamos os 10 melhores climatizadores disponíveis no mercado em 2026, considerando desempenho, capacidade, consumo de energia e avaliações de clientes. Todos os produtos listados oferecem excellent custo-benefício e tecnologia evaporativa, consumindo até 90% menos energia que ar-condicionado tradicional. Descubra qual é a melhor opção para seu ambiente.",
+    "conclusion": "Os climatizadores evaporativos representam a melhor solução para quem busca conforto térmico sem gastar uma fortuna com energia. Com modelos para todos os tamanhos de ambientes e orçamentos, desde os portáteis compactos até os industriais de 200 litros, você certamente encontrará a opção ideal. Invista em um climatizador de qualidade e aproveite o verão com muito mais conforto e economia.",
+    "metaTitle": "Top 10 Climatizadores 2026 - Melhores Marcas Brasileiras",
+    "metaDesc": "Descubra os 10 melhores climatizadores de ar em 2026. Comparação completa com preços, marcas e avaliações.",
+    "categoryId": null,
+    "categoryName": "Casa e Construção"
+  },
+  "products": [
+    {
+      "name": "Midea AKAF2",
+      "brand": "Midea",
+      "shortDesc": "Climatizador multifuncional 3 em 1 com design moderno e economia de energia.",
+      "longDesc": "O Midea AKAF2 é um climatizador versátil que combina ventilação, umidificação e purificação em um único aparelho. Com tecnologia eficiente de evaporação, oferece desempenho superior e consumo energético reduzido. Ideal para salas, quartos e ambientes de até 30 m², o AKAF2 é um dos mais vendidos da Amazon Brasil graças ao seu excelente custo-benefício e múltiplas funcionalidades.",
+      "imageUrl": "",
+      "currentPrice": 589,
+      "oldPrice": 649,
+      "rating": 4.7,
+      "pros": [
+        "Versátil com 3 funções principais",
+        "Consumo de energia reduzido",
+        "Design moderno e compacto",
+        "Ótimo custo-benefício"
+      ],
+      "cons": [
+        "Reservatório pequeno para ambientes grandes",
+        "Requer recargas frequentes em dias muito quentes"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Midea+AKAF2",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Midea+AKAF2",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Midea+AKAF2"
+    },
+    {
+      "name": "Britânia BCL05FI",
+      "brand": "Britânia",
+      "shortDesc": "Climatizador 5 em 1 com ionizador, purificador e design premium.",
+      "longDesc": "O Britânia BCL05FI é o climatizador mais completo do mercado, oferecendo ventilação, umidificação, purificação, ionização e aromatização em um só aparelho. Com capacidade de 3,2 litros e design robusto, ele elimina vírus e bactérias através da tecnologia Virus Protect, tornando o ar mais saudável. Perfeito para proteger a saúde da família durante todo o ano.",
+      "imageUrl": "",
+      "currentPrice": 269,
+      "oldPrice": 349,
+      "rating": 4.5,
+      "pros": [
+        "5 funções em um só aparelho",
+        "Tecnologia Virus Protect certificada",
+        "Ionizador elimina impurezas",
+        "Preço muito acessível"
+      ],
+      "cons": [
+        "Capacidade do tanque limitada",
+        "Nível de ruído um pouco elevado na velocidade máxima"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Britania+BCL05FI",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Britania+BCL05FI",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Britania+BCL05FI"
+    },
+    {
+      "name": "Midea AKAP1",
+      "brand": "Midea",
+      "shortDesc": "Climatizador vertical slim com purificação avançada e design elegante.",
+      "longDesc": "O Midea AKAP1 é um climatizador premium com design vertical slim que ocupa pouco espaço. Com apenas 27,5 cm de largura, é ideal para ambientes compactos. Oferece ventilação, umidificação e purificação avançada do ar, com sistema inteligente que mantém o ambiente fresco e saudável. Consumo energético reduzido e funcionamento silencioso.",
+      "imageUrl": "",
+      "currentPrice": 799,
+      "oldPrice": 899,
+      "rating": 4.8,
+      "pros": [
+        "Design slim e elegante",
+        "Perfeito para ambientes pequenos",
+        "Purificação avançada do ar",
+        "Operação muito silenciosa"
+      ],
+      "cons": [
+        "Preço mais elevado que concorrentes",
+        "Requer espaço vertical"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Midea+AKAP1",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Midea+AKAP1",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Midea+AKAP1"
+    },
+    {
+      "name": "Amvox ACL 9022",
+      "brand": "Amvox",
+      "shortDesc": "Climatizador industrial potente com 90 litros para ambientes grandes.",
+      "longDesc": "O Amvox ACL 9022 é um climatizador profissional com capacidade de 90 litros, ideal para ambientes comerciais e residenciais de grande porte. Com potência de 230W e vazão de ar de 5.000 m³/h, resfria áreas de até 40 m² com eficiência. Oferece 3 velocidades ajustáveis e sistema evaporativo avançado. Perfeito para salas de estar, escritórios e ambientes comerciais.",
+      "imageUrl": "",
+      "currentPrice": 918,
+      "oldPrice": 1099,
+      "rating": 4.4,
+      "pros": [
+        "Capacidade gigantesca de 90L",
+        "Cobertura para ambientes muito grandes",
+        "Potência superior ao mercado",
+        "Excelente para uso comercial"
+      ],
+      "cons": [
+        "Tamanho grande requer espaço adequado",
+        "Consumo energético mais elevado"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Amvox+ACL+9022",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Amvox+ACL+9022",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Amvox+ACL+9022"
+    },
+    {
+      "name": "WAP Air Fresh 4 em 1",
+      "brand": "WAP",
+      "shortDesc": "Climatizador portátil 4 em 1 com aromatização e filtro de mel.",
+      "longDesc": "O WAP Air Fresh é um climatizador multifuncional que ventila, umidifica, oscila e aromatiza o ar em um único aparelho. Com filtro tipo colmeia, tank removível de 3 litros e 2 caixas de gelo acopladas, oferece resfriamento eficiente e discreto. Ideal para quem busca versatilidade e tranquilidade térmica em ambientes pequenos e médios.",
+      "imageUrl": "",
+      "currentPrice": 529,
+      "oldPrice": 599,
+      "rating": 4.6,
+      "pros": [
+        "4 funções incluindo aromatização",
+        "Muito silencioso e discreto",
+        "Filtro honeycomb eficiente",
+        "Dois ice boxes para resfriamento extra"
+      ],
+      "cons": [
+        "Sem controle remoto",
+        "Requer atenção para desligar umidificador"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=WAP+Air+Fresh",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+Air+Fresh",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=WAP+Air+Fresh"
+    },
+    {
+      "name": "Ventisol CLI0601",
+      "brand": "Ventisol",
+      "shortDesc": "Climatizador econômico com 45 litros, ideal para iniciantes.",
+      "longDesc": "O Ventisol CLI0601 é a opção mais econômica do mercado, oferecendo excelente relação custo-benefício. Com capacidade de 45 litros, potência de 170W e sistema evaporativo tipo colmeia, ele resfria ambientes de até 30 m² com eficiência. Perfeito para quem está começando ou busca uma solução de entrada no mundo dos climatizadores evaporativos.",
+      "imageUrl": "",
+      "currentPrice": 247,
+      "oldPrice": 299,
+      "rating": 4.1,
+      "pros": [
+        "Preço extremamente acessível",
+        "Capacidade adequada para ambientes médios",
+        "Sistema evaporativo eficiente",
+        "Baixo consumo de energia"
+      ],
+      "cons": [
+        "Menos funcionalidades que competitors",
+        "Desempenho inferior em dias muito quentes"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Ventisol+CLI0601",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Ventisol+CLI0601",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Ventisol+CLI0601"
+    },
+    {
+      "name": "Sixxis SX060 Prime",
+      "brand": "Sixxis",
+      "shortDesc": "Climatizador digital com 9 níveis de velocidade e economia garantida.",
+      "longDesc": "O Sixxis SX060 Prime é um climatizador moderno com capacidade de 60 litros e tecnologia digital touch screen. Com 9 níveis de velocidade, é 90% mais econômico que ar-condicionado tradicional. Ideal para salas, escritórios e ambientes comerciais de médio porte. Acompanha garantia de 12 meses e controle remoto.",
+      "imageUrl": "",
+      "currentPrice": 649,
+      "oldPrice": 799,
+      "rating": 4.5,
+      "pros": [
+        "9 níveis de controle fino",
+        "Tecnologia digital moderna",
+        "Economia de até 90% em energia",
+        "Controle remoto incluído"
+      ],
+      "cons": [
+        "Tamanho um pouco grande",
+        "Requer espaço adequate para instalação"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Sixxis+SX060+Prime",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Sixxis+SX060+Prime",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Sixxis+SX060+Prime"
+    },
+    {
+      "name": "Elgin FCE 7.5L",
+      "brand": "Elgin",
+      "shortDesc": "Climatizador compacto com 7.5 litros, timer e 3 velocidades.",
+      "longDesc": "O Elgin FCE 7.5L é um climatizador portátil com design compacto e capacidade de 7.5 litros. Oferece 3 velocidades, timer, função de oscilação e reservatório removível. É uma opção prática para quem busca mobilidade e facilidade de uso. Marca brasileira tradicional com mais de 70 anos no mercado de eletrônicos.",
+      "imageUrl": "",
+      "currentPrice": 389,
+      "oldPrice": 459,
+      "rating": 4.3,
+      "pros": [
+        "Design compacto e portátil",
+        "Timer inteligente",
+        "Função de oscilação",
+        "Marca brasileira confiável"
+      ],
+      "cons": [
+        "Capacidade limitada para ambientes grandes",
+        "Menos funcionalidades que modelos premium"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Elgin+FCE+7.5L",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Elgin+FCE+7.5L",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Elgin+FCE+7.5L"
+    },
+    {
+      "name": "Elgin Smart 3.5L",
+      "brand": "Elgin",
+      "shortDesc": "Climatizador ultrapequeno e inteligente para espaços reduzidos.",
+      "longDesc": "O Elgin Smart 3.5L é o climatizador mais compacto da Elgin, perfeito para apartamentos, quartos e salas pequenas. Oferece ventilação, umidificação, purificação e ionização em um aparelho que cabe em qualquer lugar. Com tecnologia smart, elimina fungos, ácaros, vírus e bactérias até 99%. Leve e fácil de transportar.",
+      "imageUrl": "",
+      "currentPrice": 286,
+      "oldPrice": 349,
+      "rating": 4.2,
+      "pros": [
+        "Ultracompacto e leve",
+        "Fácil de transportar",
+        "Ionizador elimina impurezas",
+        "Preço muito acessível"
+      ],
+      "cons": [
+        "Capacidade muito pequena",
+        "Requer recargas frequentes"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Elgin+Smart+3.5L",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Elgin+Smart+3.5L",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Elgin+Smart+3.5L"
+    },
+    {
+      "name": "Sixxis SX200 Prime",
+      "brand": "Sixxis",
+      "shortDesc": "Climatizador industrial com 200 litros para máxima cobertura.",
+      "longDesc": "O Sixxis SX200 Prime é o climatizador mais potente da linha premium Sixxis, com impressionantes 200 litros de capacidade. Ideal para galpões, lojas, restaurantes e ambientes comerciais de grande porte. Oferece 50 níveis de controle fino de velocidade, potência de 1100W e eficiência energética superior. Acompanha garantia de 12 meses.",
+      "imageUrl": "",
+      "currentPrice": 1899,
+      "oldPrice": 2299,
+      "rating": 4.6,
+      "pros": [
+        "Capacidade máxima de 200L",
+        "50 níveis de velocidade",
+        "Potência profissional de 1100W",
+        "Excelente para uso comercial intenso"
+      ],
+      "cons": [
+        "Tamanho muito grande",
+        "Requer espaço considerable"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Sixxis+SX200+Prime",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Sixxis+SX200+Prime",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Sixxis+SX200+Prime"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual é a diferença entre climatizador e ar-condicionado?",
+      "answer": "O climatizador evaporativo utiliza a evaporação de água para resfriar o ar, consumindo até 90% menos energia que um ar-condicionado tradicional. No entanto, funciona melhor em climas secos. O ar-condicionado remove umidade do ar e é mais eficiente em climas úmidos. Para economia, o climatizador é imbatível; para controle de umidade em locais muito úmidos, o ar-condicionado é superior."
+    },
+    {
+      "question": "Qual tamanho de climatizador devo escolher para meu ambiente?",
+      "answer": "O tamanho do climatizador depende da área que você deseja resfriar. Climatizadores com 3-5 litros são ideais para quartos pequenos (até 15 m²). Para salas e ambientes médios (15-30 m²), escolha modelos com 45-60 litros. Para espaços maiores (30-40 m²), opte por climatizadores com 90 litros ou mais. A Amvox ACL 9022 com 90 litros é perfeita para ambientes grandes."
+    },
+    {
+      "question": "Quanto custa manter um climatizador ligado por mês?",
+      "answer": "Um climatizador típico consome entre 170W a 230W, custando aproximadamente R$ 15 a R$ 30 por mês se utilizado 8 horas diárias. Comparado com um ar-condicionado de 1.5 toneladas que custa cerca de R$ 150-200 por mês, o climatizador oferece economia extraordinária. Modelos como o Ventisol CLI0601 (170W) são os mais econômicos do mercado."
+    },
+    {
+      "question": "Em quais situações o climatizador não funciona bem?",
+      "answer": "Climatizadores evaporativos funcionam melhor em climas secos. Em regiões com umidade relativa do ar acima de 60%, a eficiência diminui significativamente. Durante períodos de chuva intensa ou em cidades litorâneas muito úmidas, o desempenho é reduzido. Para climas muito úmidos, um ar-condicionado tradicional é mais apropriado, apesar do maior consumo energético."
+    },
+    {
+      "question": "Preciso usar gelo nas caixas de gelo para melhorar a refrigeração?",
+      "answer": "Sim, usar gelo nas caixas acopladas ao climatizador (como no WAP Air Fresh) pode melhorar o desempenho em dias muito quentes. O gelo aumenta a capacidade de resfriamento do aparelho. No entanto, não é essencial para o funcionamento básico. Em dias normais, apenas água no reservatório é suficiente. Use gelo quando a temperatura estiver acima de 35°C para máxima eficiência."
+    }
+  ]
+}

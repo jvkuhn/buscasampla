@@ -1,0 +1,291 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Furadeiras de 2026",
+    "subtitle": "Guia completo para escolher a furadeira perfeita para seus projetos",
+    "intro": "Encontrar a furadeira ideal pode ser desafiador com tantas opções disponíveis no mercado. Este ranking apresenta as 10 melhores furadeiras de 2026, desde modelos compactos para uso doméstico até furadeiras profissionais potentes. Cada produto foi selecionado pela qualidade, durabilidade, melhor custo-benefício e avaliações reais de usuários brasileiros.",
+    "conclusion": "Quer você seja um profissional experiente ou um entusiasta do DIY, nossa seleção oferece opções para todos os orçamentos e necessidades. As furadeiras listadas aqui oferecem o melhor equilíbrio entre potência, versatilidade e preço no mercado brasileiro de 2026. Investir em uma ferramenta de qualidade garante resultados profissionais em seus projetos.",
+    "metaTitle": "Top 10 Melhores Furadeiras 2026 | Guia Completo",
+    "metaDesc": "Descubra as 10 melhores furadeiras de 2026 com preços reais, especificações e onde comprar. Guia completo para profissionais e amadores.",
+    "categoryId": null,
+    "categoryName": "Casa e Construção"
+  },
+  "products": [
+    {
+      "name": "Bosch GSB 550 RE",
+      "brand": "Bosch",
+      "shortDesc": "Furadeira de impacto profissional com 550W, reversível e com excelente custo-benefício.",
+      "longDesc": "A Bosch GSB 550 RE é a escolha ideal para profissionais que procuram uma ferramenta confiável com potência de 550W. Com sistema de impacto, velocidade variável e reversão, perfura alvenaria, madeira e metal com precisão. Seu design ergonômico de apenas 1,7kg garante conforto durante longas jornadas de trabalho. Inclui 34 acessórios e maleta de transporte.",
+      "imageUrl": "",
+      "currentPrice": 293.54,
+      "oldPrice": 350,
+      "rating": 4.7,
+      "pros": [
+        "Excelente custo-benefício",
+        "550W de potência constante",
+        "Reversível e com velocidade variável",
+        "Inclusos 34 acessórios profissionais"
+      ],
+      "cons": [
+        "Com fio limita mobilidade",
+        "Adequada mais para profissionais",
+        "Ruído moderado durante operação"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Bosch+GSB+550+RE",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Bosch+GSB+550+RE",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Bosch+GSB+550+RE"
+    },
+    {
+      "name": "WAP BPF 12K3",
+      "brand": "WAP",
+      "shortDesc": "Parafusadeira e furadeira a bateria 12V com excelente desempenho e preço imbatível.",
+      "longDesc": "A WAP BPF 12K3 é líder de vendas na Amazon por ser praticamente imbatível em preço. Esta furadeira e parafusadeira a bateria 12V vem com kit completo de 13 acessórios, maleta profissional e empunhadura emborrachada anti-derrapante. Ideal para pequenos reparos domésticos, manutenção e projetos amadores, oferecendo versatilidade em um único equipamento.",
+      "imageUrl": "",
+      "currentPrice": 119.99,
+      "oldPrice": 180,
+      "rating": 4.5,
+      "pros": [
+        "Preço excepcional",
+        "Bateria 12V com autonomia adequada",
+        "Kit completo com 13 acessórios",
+        "Peso leve e portátil"
+      ],
+      "cons": [
+        "Potência limitada para trabalhos pesados",
+        "Bateria de menor capacidade",
+        "Não recomendado para profissionais"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=WAP+BPF+12K3",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+BPF+12K3",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=WAP+BPF+12K3"
+    },
+    {
+      "name": "Makita HP1640",
+      "brand": "Makita",
+      "shortDesc": "Furadeira profissional de impacto 760W ideal para profissionais exigentes e construtoras.",
+      "longDesc": "A Makita HP1640 é a furadeira de impacto profissional mais respeitada no mercado brasileiro. Com motor de 760W e capacidade para perfuração em concreto até 16mm, aço até 13mm e madeira até 30mm, oferece 44.800 impactos por minuto. Construída para durabilidade e desempenho consistente em ambientes de trabalho intenso, é a escolha de construtoras e profissionais.",
+      "imageUrl": "",
+      "currentPrice": 416.90,
+      "oldPrice": 520,
+      "rating": 4.8,
+      "pros": [
+        "Potência profissional 760W",
+        "44.800 impactos por minuto",
+        "Durabilidade comprovada em campo",
+        "Suporte técnico Makita excelente"
+      ],
+      "cons": [
+        "Preço mais elevado",
+        "Peso considerável",
+        "Com fio requer extensão longa"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Makita+HP1640",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Makita+HP1640",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Makita+HP1640"
+    },
+    {
+      "name": "Black+Decker BCD704C1",
+      "brand": "Black+Decker",
+      "shortDesc": "Furadeira de impacto a bateria 20V com 97% de aprovação em custo-benefício.",
+      "longDesc": "A Black+Decker BCD704C1 é uma furadeira de impacto a bateria 20V que conquistou o mercado brasileiro com seu excelente custo-benefício. Com bateria de 1,5Ah, 2 velocidades (0-400 e 0-1400 RPM), torque até 45Nm e 11 posições de torque, oferece precisão em trabalhos variados. A bateria lithium mantém a carga por mais tempo e recarrega rapidamente.",
+      "imageUrl": "",
+      "currentPrice": 499.00,
+      "oldPrice": 599,
+      "rating": 4.6,
+      "pros": [
+        "Bateria 20V potente",
+        "Duas velocidades para versatilidade",
+        "Excelente custo-benefício",
+        "Sem fio e versátil"
+      ],
+      "cons": [
+        "Bateria pode ser limitada em uso contínuo",
+        "Tempo de recarga é moderado",
+        "Acessórios limitados na caixa"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Black+Decker+BCD704C1",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Black+Decker+BCD704C1",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Black+Decker+BCD704C1"
+    },
+    {
+      "name": "Bosch GSB 16 RE",
+      "brand": "Bosch",
+      "shortDesc": "Furadeira de impacto profissional 850W com potência superior e garantia Bosch.",
+      "longDesc": "A Bosch GSB 16 RE é a evolução da série GSB com 850W de potência, oferecendo desempenho profissional superior. Com sistema de impacto 3.500 RPM, reversão, velocidade variável e mandril de 16mm, é ideal para profissionais que demandam máximo desempenho. Acompanha maleta de transporte e 34 acessórios. Garantia estendida e assistência técnica Bosch em todo Brasil.",
+      "imageUrl": "",
+      "currentPrice": 506.90,
+      "oldPrice": 650,
+      "rating": 4.7,
+      "pros": [
+        "Potência profissional 850W",
+        "Construção robusta e durável",
+        "Maleta completa com acessórios",
+        "Assistência técnica Bosch confiável"
+      ],
+      "cons": [
+        "Peso considerável",
+        "Com fio exige extensão",
+        "Preço alto para amadores"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Bosch+GSB+16+RE",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Bosch+GSB+16+RE",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Bosch+GSB+16+RE"
+    },
+    {
+      "name": "DeWalt DW508S",
+      "brand": "DeWalt",
+      "shortDesc": "Furadeira de impacto profissional 800W com maior potência do mercado.",
+      "longDesc": "A DeWalt DW508S é a furadeira com maior potência disponível no mercado, com impressionantes 800W. Perfeita para profissionais de construção civil, marcenarias, oficinas e prestadores de serviço que precisam de máximo desempenho. Com sistema de impacto, reversão, velocidade variável e mandril de 16mm, oferece 51.000 impactos por minuto para trabalhos intensos.",
+      "imageUrl": "",
+      "currentPrice": 522.51,
+      "oldPrice": 680,
+      "rating": 4.8,
+      "pros": [
+        "Maior potência 800W do mercado",
+        "51.000 impactos por minuto",
+        "Construção profissional resistente",
+        "Desempenho superior em concreto"
+      ],
+      "cons": [
+        "Preço elevado",
+        "Muito pesada para uso prolongado",
+        "Com fio limita mobilidade"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=DeWalt+DW508S",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/DeWalt+DW508S",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=DeWalt+DW508S"
+    },
+    {
+      "name": "Bosch GSR 1000 Smart 12V",
+      "brand": "Bosch",
+      "shortDesc": "Parafusadeira e furadeira compacta 12V com tecnologia Smart para uso doméstico.",
+      "longDesc": "A Bosch GSR 1000 Smart é a parafusadeira e furadeira mais compacta da linha Bosch, pesando apenas 0,9kg e medindo 17cm de comprimento. Ideal para manutenção leve, pequenos reparos e projetos domésticos. A bateria 12V lithium oferece até 600 parafusagens por carga e carregamento rápido. Design ergonômico e leve torna fácil trabalhar em locais de difícil acesso.",
+      "imageUrl": "",
+      "currentPrice": 307.95,
+      "oldPrice": 400,
+      "rating": 4.4,
+      "pros": [
+        "Extremamente compacta e leve",
+        "Bateria 12V com tecnologia Smart",
+        "Carregador rápido bivolt",
+        "Perfeita para manutenção doméstica"
+      ],
+      "cons": [
+        "Potência limitada",
+        "Não recomendada para furação profunda",
+        "Bateria de menor capacidade"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Bosch+GSR+1000+Smart",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Bosch+GSR+1000+Smart",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Bosch+GSR+1000+Smart"
+    },
+    {
+      "name": "Vonder PFV 238",
+      "brand": "Vonder",
+      "shortDesc": "Parafusadeira e furadeira a bateria 20V com excelente custo-benefício nacional.",
+      "longDesc": "A Vonder PFV 238 é uma parafusadeira e furadeira a bateria 20V que oferece excelente equilíbrio entre potência e preço. Com bateria de 1,5Ah lithium, mandril de 10mm de aperto rápido e 18 posições de torque ajustável, perfura até 10mm em aço e 20mm em madeira. Inclui maleta de transporte, acessórios e carregador bivolt automático.",
+      "imageUrl": "",
+      "currentPrice": 239.90,
+      "oldPrice": 350,
+      "rating": 4.5,
+      "pros": [
+        "Preço competitivo 20V",
+        "18 posições de torque ajustável",
+        "Bateria 1,5Ah com bom desempenho",
+        "Kit completo com maleta"
+      ],
+      "cons": [
+        "Marca menos conhecida",
+        "Assistência técnica limitada",
+        "Tempo de recarga moderado"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Vonder+PFV+238",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Vonder+PFV+238",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Vonder+PFV+238"
+    },
+    {
+      "name": "Intech Machine DB16",
+      "brand": "Intech Machine",
+      "shortDesc": "Furadeira de bancada profissional para oficinas e trabalhos de precisão em metal.",
+      "longDesc": "A Intech Machine DB16 é uma furadeira de bancada com 373W e mandril de 16mm, indicada para profissionais que trabalham com metal, madeira e plástico. Com 9 velocidades variáveis de 550 a 2.850 RPM, mesa de apoio de ferro fundido giratória e inclinável até 360 graus, oferece máxima precisão. Ideal para hobistas iniciantes, marcenarias e pequenas oficinas.",
+      "imageUrl": "",
+      "currentPrice": 650.00,
+      "oldPrice": 820,
+      "rating": 4.3,
+      "pros": [
+        "Precisão excelente para metal",
+        "9 velocidades variáveis",
+        "Mesa de apoio robusta de ferro fundido",
+        "Ideal para trabalhos repetitivos"
+      ],
+      "cons": [
+        "Não é portátil",
+        "Requer espaço dedicado",
+        "Específica para trabalho de bancada"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Intech+Machine+DB16",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Intech+Machine+DB16",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Intech+Machine+DB16"
+    },
+    {
+      "name": "Mondial FI-09",
+      "brand": "Mondial",
+      "shortDesc": "Furadeira de impacto compacta 550W com preço ultra acessível para iniciantes.",
+      "longDesc": "A Mondial FI-09 é a furadeira de impacto mais acessível do mercado brasileiro, perfeita para iniciantes e uso ocasional doméstico. Com 550W de potência, 2.800 RPM e mandril de 10mm, oferece desempenho básico para furação em madeira, alvenaria e metal. Seu preço imbatível a torna ideal para quem busca uma primeira furadeira para pequenos reparos.",
+      "imageUrl": "",
+      "currentPrice": 118.66,
+      "oldPrice": 200,
+      "rating": 4.0,
+      "pros": [
+        "Preço ultra acessível",
+        "Potência 550W razoável",
+        "Compacta e fácil manejo",
+        "Ideal para iniciantes"
+      ],
+      "cons": [
+        "Construção mais básica",
+        "Durabilidade questionável em uso intenso",
+        "Sem reversão",
+        "Acessórios limitados"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Mondial+FI-09",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mondial+FI-09",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Mondial+FI-09"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual é a melhor furadeira para um profissional?",
+      "answer": "Para profissionais, recomendamos a Makita HP1640 ou DeWalt DW508S. A Makita oferece excelente equilíbrio entre potência (760W) e confiabilidade, enquanto a DeWalt DW508S é ideal se você precisa máxima potência (800W). Ambas têm 44.800+ impactos por minuto e são construídas para durabilidade em trabalhos intensos de construção civil e marcenaria."
+    },
+    {
+      "question": "Qual furadeira é melhor custo-benefício em 2026?",
+      "answer": "A Bosch GSB 550 RE oferece o melhor custo-benefício profissional por R$293,54, combinando 550W de potência constante com 34 acessórios inclusos. Para uso doméstico, a WAP BPF 12K3 por R$119,99 é imbatível, incluindo kit com 13 acessórios. A escolha depende do tipo de trabalho que você realizará."
+    },
+    {
+      "question": "Furadeira com ou sem fio? Qual é melhor?",
+      "answer": "Furadeiras com fio (GSB 550 RE, HP1640, DW508S) oferecem maior potência contínua e não requerem recarga. Ideais para profissionais e trabalhos intensos. Furadeiras a bateria (WAP BPF 12K3, Black+Decker BCD704C1, Vonder PFV 238) oferecem mobilidade e são ideais para manutenção doméstica. A escolha ideal é ter ambas, mas se limitado, profissionais preferem com fio."
+    },
+    {
+      "question": "Preciso de impacto em uma furadeira?",
+      "answer": "Sim, o sistema de impacto é essencial para furação em alvenaria e concreto. Todas as furadeiras deste ranking possuem função impacto. O impacto aumenta a velocidade de penetração em materiais duros. Para trabalhos em madeira e metal, pode-se desativar o impacto se necessário. Profissionais sempre escolhem furadeiras com impacto por versatilidade."
+    },
+    {
+      "question": "Quanto custa manutenção de uma furadeira?",
+      "answer": "A manutenção básica envolve limpeza, lubrificação e verificação de desgaste. Custos variam de R$50-R$150 por serviço, dependendo do dano. Marcas como Bosch, Makita e DeWalt têm assistência técnica autorizada em todo Brasil com preços tabelados. Para evitar manutenção cara, limpe a ferramenta regularmente e use em sua capacidade nominal."
+    },
+    {
+      "question": "Qual é a voltagem ideal - 110V ou 220V?",
+      "answer": "A voltagem depende de sua instalação elétrica residencial ou comercial. A maioria das furadeiras profissionais vem em 220V, oferecendo melhor desempenho e consumo otimizado. Modelos bivolt (que funcionam em 110V e 220V) são mais versáteis se você trabalha em diversos locais. Verifique sua voltagem antes da compra para máxima performance."
+    }
+  ]
+}

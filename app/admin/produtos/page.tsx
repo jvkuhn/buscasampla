@@ -37,9 +37,10 @@ export default async function ProductsPage(props: {
         <table className="w-full text-sm">
           <thead className="bg-gray-50 border-b border-gray-200">
             <tr>
-              <th className="px-4 py-3 text-left font-medium text-gray-600">Produto</th>
+              <th className="px-4 py-3 text-left font-medium text-gray-600 w-[40%]">Produto</th>
               <th className="px-4 py-3 text-left font-medium text-gray-600">Categoria</th>
-              <th className="px-4 py-3 text-left font-medium text-gray-600">Preço</th>
+              <th className="px-4 py-3 text-right font-medium text-gray-600">Preço atual</th>
+              <th className="px-4 py-3 text-right font-medium text-gray-600">Preço antigo</th>
               <th className="px-4 py-3 text-center font-medium text-gray-600">Nota</th>
               <th className="px-4 py-3 text-center font-medium text-gray-600">Status</th>
               <th className="px-4 py-3 text-right font-medium text-gray-600">Ações</th>
@@ -57,8 +58,11 @@ export default async function ProductsPage(props: {
                   )}
                 </td>
                 <td className="px-4 py-3 text-gray-500 text-xs">{p.category?.name ?? "—"}</td>
-                <td className="px-4 py-3 text-gray-700">
+                <td className="px-4 py-3 text-right text-gray-900 font-medium">
                   {p.currentPrice ? formatPrice(Number(p.currentPrice)) : "—"}
+                </td>
+                <td className="px-4 py-3 text-right text-gray-400 line-through text-xs">
+                  {p.oldPrice ? formatPrice(Number(p.oldPrice)) : "—"}
                 </td>
                 <td className="px-4 py-3 text-center text-gray-600">
                   {p.rating ? `${p.rating}/5` : "—"}
@@ -87,7 +91,7 @@ export default async function ProductsPage(props: {
             ))}
             {products.length === 0 && (
               <tr>
-                <td colSpan={6} className="px-4 py-8 text-center text-gray-400">
+                <td colSpan={7} className="px-4 py-8 text-center text-gray-400">
                   Nenhum produto {categoria ? "nessa categoria" : "cadastrado"}.
                 </td>
               </tr>

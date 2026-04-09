@@ -1,0 +1,280 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Multimídias Automotivas 2026",
+    "subtitle": "As melhores centrais multimídia para seu carro com tecnologia, conectividade e qualidade de som",
+    "intro": "Encontre a melhor central multimídia para transformar a experiência no seu carro com tecnologia de ponta, Android Auto, Apple CarPlay e som de qualidade. Este ranking apresenta os 10 melhores modelos disponíveis no mercado brasileiro, testados e avaliados pelos usuários.",
+    "conclusion": "Investir em uma boa central multimídia é essencial para modernizar seu veículo com conectividade total, navegação GPS precisa e entretenimento de qualidade. Escolha conforme seu orçamento e necessidades: premium para o melhor desempenho, ou modelos econômicos para quem busca ótimo custo-benefício.",
+    "metaTitle": "Top 10 Melhores Multimídias Automotivas 2026 | Ranking",
+    "metaDesc": "Descubra as 10 melhores multimídias automotivas 2026: centrais com Android Auto, Apple CarPlay, GPS e som premium. Comparação de preços e modelos.",
+    "categoryId": null,
+    "categoryName": "Automotivo"
+  },
+  "products": [
+    {
+      "name": "Central Multimídia Pioneer DMH-Z5380TV",
+      "brand": "Pioneer",
+      "shortDesc": "A mais completa do mercado com TV digital integrada, tela de 6.8 polegadas capacitiva e conectividade Wi-Fi 5GHz.",
+      "longDesc": "A Pioneer DMH-Z5380TV é a melhor opção para quem busca qualidade premium. Oferece tela de 6.8 polegadas capacitiva com resolução HD, Apple CarPlay, Android Auto, TV digital integrada, conexão Wi-Fi 5GHz para mirroring sem fio, e som de alta fidelidade. O processador octa-core com 4GB de RAM garante fluidez em qualquer situação.",
+      "imageUrl": "",
+      "currentPrice": 2499,
+      "oldPrice": 2799,
+      "rating": 4.8,
+      "pros": [
+        "Tela capacitiva de 6.8 polegadas com qualidade HD",
+        "Conectividade Wi-Fi 5GHz para mirroring sem fio",
+        "TV digital integrada e som de alta qualidade",
+        "Processador octa-core com 4GB de RAM"
+      ],
+      "cons": [
+        "Preço elevado em comparação com outras marcas",
+        "Instalação complexa em alguns modelos de carro"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Pioneer+DMH-Z5380TV",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Pioneer+DMH-Z5380TV",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Pioneer+DMH-Z5380TV"
+    },
+    {
+      "name": "Central Multimídia Roadstar RS-908BR Prime",
+      "brand": "Roadstar",
+      "shortDesc": "Tela de 9 polegadas com Android 13, 4GB RAM, CarPlay e Android Auto, ideal para veículos maiores.",
+      "longDesc": "A Roadstar RS-908BR Prime é a campeã de vendas com tela IPS de 9 polegadas, sistema Android 13 nativo, 4GB de RAM, 64GB de memória interna, Apple CarPlay e Android Auto. Oferece GPS integrado, conectividade Bluetooth 5.0, USB-C e suporte a vídeos 4K. A capacidade de instalar qualquer app da Google Play torna-a muito versátil.",
+      "imageUrl": "",
+      "currentPrice": 1299,
+      "oldPrice": 1599,
+      "rating": 4.7,
+      "pros": [
+        "Tela grande de 9 polegadas com excelente visibilidade",
+        "Android nativo com acesso ao Google Play Store",
+        "Processador quad-core rápido e responsivo",
+        "Melhor preço-custo dentre as opções premium"
+      ],
+      "cons": [
+        "Bluetooth ocasionalmente instável em modelos antigos",
+        "Aquecimento em uso prolongado"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Roadstar+RS-908BR",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Roadstar+RS-908BR",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Roadstar+RS-908BR"
+    },
+    {
+      "name": "Central Multimídia Roadstar RS-815BR Prime",
+      "brand": "Roadstar",
+      "shortDesc": "Tela 7 polegadas IPS com Android 13, CarPlay, Android Auto, botões RGB iluminados e design moderno.",
+      "longDesc": "A Roadstar RS-815BR Prime oferece tela touchscreen de 7 polegadas com painel IPS, Android 13, 2GB de RAM, 32GB de armazenamento, Apple CarPlay e Android Auto. Possui botões RGB iluminados, Bluetooth 5.0, GPS integrado e interface intuitiva. Perfeita para carros compactos e intermediários com excelente custo-benefício.",
+      "imageUrl": "",
+      "currentPrice": 899,
+      "oldPrice": 1199,
+      "rating": 4.6,
+      "pros": [
+        "Tela touchscreen responsiva com cores vibrantes",
+        "Botões RGB iluminados com design moderno",
+        "GPS de alta precisão com atualização de mapas",
+        "Ótimo custo-benefício para o segmento"
+      ],
+      "cons": [
+        "Processador menos potente que modelos 9 polegadas",
+        "Memória interna limitada para muitos apps"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Roadstar+RS-815BR",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Roadstar+RS-815BR",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Roadstar+RS-815BR"
+    },
+    {
+      "name": "Central Multimídia Positron SP8920 NAV",
+      "brand": "Positron",
+      "shortDesc": "Tela touchscreen 6.2 polegadas com mirror connect, TV digital, Bluetooth, USB, SD e GPS navegador.",
+      "longDesc": "A Positron SP8920 NAV é uma excelente opção intermediária com tela LCD touchscreen de 6.2 polegadas, mirror connect para Android e iPhone, TV digital integrada, Bluetooth, entradas USB e SD, além de GPS com banco de dados atualizado. Processador dual-core com interface simples e intuitiva.",
+      "imageUrl": "",
+      "currentPrice": 649,
+      "oldPrice": 799,
+      "rating": 4.4,
+      "pros": [
+        "Tela clear com bom ângulo de visão",
+        "TV digital integrada para assistir em paradas",
+        "Mirror connect prático para mirroring rápido",
+        "Preço acessível"
+      ],
+      "cons": [
+        "Processador menos rápido que modelos Android full",
+        "Sem acesso ao Google Play Store"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Positron+SP8920+NAV",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Positron+SP8920",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Positron+SP8920"
+    },
+    {
+      "name": "Central Multimídia Aiwa AWS-CA-DD-01",
+      "brand": "Aiwa",
+      "shortDesc": "2DIN com tela 7 polegadas HD, 100W RMS, Bluetooth, espelhamento, rádio FM, USB e microSD.",
+      "longDesc": "A central multimídia Aiwa AWS-CA-DD-01 é uma solução prática com tela touchscreen 7 polegadas em resolução HD (1024x600), potência de 100W RMS, Bluetooth integrado, suporte para espelhamento de smartphone, rádio FM/AM, entradas USB e microSD. Design moderno com controles intuitivos.",
+      "imageUrl": "",
+      "currentPrice": 449,
+      "oldPrice": 599,
+      "rating": 4.3,
+      "pros": [
+        "Tela grande de 7 polegadas com resolução HD",
+        "Potência sonora de 100W RMS",
+        "Espelhamento para Android e iOS via Bluetooth",
+        "Preço muito acessível"
+      ],
+      "cons": [
+        "Não possui Android nativo, apenas mirroring",
+        "Processador modesto"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Aiwa+AWS-CA-DD-01",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Aiwa+AWS-CA-DD-01",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Aiwa+AWS-CA-DD-01"
+    },
+    {
+      "name": "Som Automotivo Pioneer MVH-S218BT",
+      "brand": "Pioneer",
+      "shortDesc": "1DIN com Bluetooth, USB, rádio FM/AM, saída pré-amplificada para subwoofer e controle de equalização.",
+      "longDesc": "O Pioneer MVH-S218BT é o melhor custo-benefício em som automotivo com Bluetooth integrado, USB para carregamento de celular, rádio FM/AM com 18 presets, saída pré-amplificada para subwoofer, controle de equalização de 5 bandas e design robusto. Ideal para quem busca som de qualidade sem complexidade.",
+      "imageUrl": "",
+      "currentPrice": 329,
+      "oldPrice": 449,
+      "rating": 4.5,
+      "pros": [
+        "Bluetooth confiável e estável",
+        "Interface simples e intuitiva",
+        "Saída para subwoofer de alta qualidade",
+        "Carregamento via USB"
+      ],
+      "cons": [
+        "Sem tela para visualização",
+        "Controle remoto pequeno"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Pioneer+MVH-S218BT",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Pioneer+MVH-S218BT",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Pioneer+MVH-S218BT"
+    },
+    {
+      "name": "Central Multimídia Multilaser GP348",
+      "brand": "Multilaser",
+      "shortDesc": "Tela 7 polegadas com Mirror Link, rádio FM, Bluetooth, USB, microSD e 18 presets de estações.",
+      "longDesc": "A Multilaser GP348 oferece tela LCD de 7 polegadas com touchscreen responsivo, Mirror Link para espelhamento de smartphone, Bluetooth, entradas USB e microSD, rádio FM com 18 presets memorizado, potência de 4x45W e interface amigável para usuários. Ótimo custo-benefício para veículos compactos.",
+      "imageUrl": "",
+      "currentPrice": 399,
+      "oldPrice": 549,
+      "rating": 4.2,
+      "pros": [
+        "Tela de 7 polegadas com boa qualidade de imagem",
+        "Mirror Link prático e rápido",
+        "Memória para 18 estações de rádio",
+        "Preço econômico"
+      ],
+      "cons": [
+        "Processador moderado",
+        "Sem Android nativo"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Multilaser+GP348",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Multilaser+GP348",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Multilaser+GP348"
+    },
+    {
+      "name": "Módulo Amplificador Taramps DS800X4",
+      "brand": "Taramps",
+      "shortDesc": "Amplificador classe D 4 canais com 200W RMS por canal, tecnologia PWM avançada e dissipação de calor eficiente.",
+      "longDesc": "O Taramps DS800X4 é o amplificador mais vendido do Brasil com tecnologia Classe D moderna, oferecendo 200W RMS por canal em 4 canais (total 800W), baixo consumo de energia, dimensões compactas e excelente dissipação de calor. Suporta subwoofer e tweeter com crossover ajustável. Ideal para sistemas de som automotivo de qualidade.",
+      "imageUrl": "",
+      "currentPrice": 369,
+      "oldPrice": 499,
+      "rating": 4.6,
+      "pros": [
+        "Potência de 200W RMS por canal",
+        "Tecnologia Classe D eficiente",
+        "Tamanho compacto fácil de instalar",
+        "Melhor custo-benefício em amplificadores"
+      ],
+      "cons": [
+        "Requer fonte de poder adequada",
+        "Instalação profissional recomendada"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Taramps+DS800X4",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Taramps+DS800X4",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Taramps+DS800X4"
+    },
+    {
+      "name": "Câmera de Ré Roadstar RS180 BR Plus",
+      "brand": "Roadstar",
+      "shortDesc": "Câmera com visão de 180 graus, resolução 480p, linhas de guia, aviso sonoro e fácil instalação.",
+      "longDesc": "A câmera de ré Roadstar RS180 BR Plus oferece visão frontal e traseira com ângulo de 180 graus, resolução de 480p para imagem clara, linhas de guia inteligentes para baliza, aviso sonoro ao ré, IP67 à prova d'água e kit completo de instalação. Compatível com a maioria das centrais multimídia.",
+      "imageUrl": "",
+      "currentPrice": 199,
+      "oldPrice": 299,
+      "rating": 4.4,
+      "pros": [
+        "Visão grande com ângulo de 180 graus",
+        "Linhas de guia inteligentes para baliza",
+        "Imagem clara em resolução 480p",
+        "À prova d'água e durável"
+      ],
+      "cons": [
+        "Instalação requer furos na lataria do carro",
+        "Pode precisar de adaptadores para central específica"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Roadstar+RS180+camera",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Roadstar+RS180",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Roadstar+RS180"
+    },
+    {
+      "name": "Carregador Veicular Turbo 60W Dual USB",
+      "brand": "Multilaser",
+      "shortDesc": "Carregador rápido 60W com 2 portas USB 3.0 + USB-C, QC 3.0, tecnologia Turbo Flash Charge.",
+      "longDesc": "O carregador veicular Multilaser oferece potência de 60W com duas portas USB 3.0 e uma porta USB-C, tecnologia QC 3.0 para carregamento rápido, suporte para Turbo Flash Charge e design compacto. Carrega simultaneamente smartphone, tablet e outros dispositivos. Proteção contra sobrecarga e superaquecimento integrada.",
+      "imageUrl": "",
+      "currentPrice": 89,
+      "oldPrice": 129,
+      "rating": 4.5,
+      "pros": [
+        "Carregamento muito rápido com QC 3.0",
+        "Três portas para carregar múltiplos dispositivos",
+        "Design compacto e elegante",
+        "Proteção completa contra sobrecarga"
+      ],
+      "cons": [
+        "Pode esquentar em uso prolongado",
+        "Compatibilidade limitada com alguns cabos"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=carregador+veicular+60W",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/carregador+veicular+60W",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=carregador+veicular+60W"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual é a melhor central multimídia para carros antigos?",
+      "answer": "Para carros antigos, recomenda-se a Roadstar RS-815BR Prime ou Positron SP8920 NAV, ambas com tela de 7 polegadas. Elas oferecem compatibilidade com a maioria dos encaixes 2DIN e não requerem processador super potente. A instalação é direta e o custo-benefício excelente."
+    },
+    {
+      "question": "Android Auto e Apple CarPlay funcionam em todas as centrais?",
+      "answer": "Não. Apenas centrais com Android nativo (como Roadstar RS-908BR e RS-815BR) ou aquelas com espelhamento Bluetooth/WiFi (como Aiwa e Positron) suportam CarPlay e Android Auto. Centrais 1DIN básicas não possuem essas funcionalidades."
+    },
+    {
+      "question": "Preciso de amplificador separado se usar central multimídia?",
+      "answer": "Depende do seu objetivo sonoro. Centrais multimídia possuem amplificador integrado (geralmente 4x25W a 4x50W), suficiente para som ambiente. Para som potente com subwoofer, recomenda-se adicionar um módulo amplificador como o Taramps DS800X4 que oferece 200W por canal."
+    },
+    {
+      "question": "Qual é a diferença entre tela capacitiva e LCD?",
+      "answer": "Tela capacitiva (como Pioneer DMH-Z5380TV) responde ao toque do dedo com mais precisão e é mais responsiva. Tela LCD (como Multilaser GP348) é mais simples e durável, mas requer pressão mais firme. Capacitiva é melhor para condução, mas capacitivas são mais caras."
+    },
+    {
+      "question": "Vale a pena instalar câmera de ré junto com a central multimídia?",
+      "answer": "Sim! A câmera de ré (como Roadstar RS180) funciona perfeitamente com a maioria das centrais modernas, oferecendo segurança na baliza. O investimento é mínimo comparado à segurança adicionada, especialmente em veículos que não possuem essa funcionalidade de fábrica."
+    },
+    {
+      "question": "Como escolher entre telas de 7, 8 ou 9 polegadas?",
+      "answer": "Depende do tamanho do seu carro: carros compactos (Gol, Onix) usam 7 polegadas confortavelmente; carros intermediários (Civic, Tiggo) aproveitam bem 8 polegadas; SUVs e carros maiores (Tucson, Santa Fé) ganham com 9 polegadas. Maior não é sempre melhor se não couber bem no painel."
+    }
+  ]
+}

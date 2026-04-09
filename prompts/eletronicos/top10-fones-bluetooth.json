@@ -1,0 +1,276 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Fones Bluetooth 2026",
+    "subtitle": "Os melhores fones de ouvido sem fio para música, chamadas e esportes",
+    "intro": "Fones Bluetooth se tornaram acessórios essenciais no dia a dia, seja para ouvir música no transporte, fazer chamadas no trabalho ou treinar na academia. Em 2026, o mercado brasileiro oferece opções impressionantes em todas as faixas de preço, desde earbuds por menos de R$ 100 até headphones premium com cancelamento de ruído ativo de última geração. Selecionamos os 10 melhores fones Bluetooth disponíveis no Brasil, avaliando qualidade sonora, conforto, bateria, recursos e custo-benefício.",
+    "conclusion": "O mercado de fones Bluetooth nunca esteve tão competitivo no Brasil. Para quem busca economia sem abrir mão da qualidade, o QCY T13 e o Edifier X3 são escolhas certeiras por menos de R$ 200. Para audiófilos e profissionais que precisam de cancelamento de ruído premium, o Sony WH-1000XM5 e o AirPods Pro 2 continuam imbatíveis, justificando o investimento maior pela experiência sonora superior.",
+    "metaTitle": "Top 10 Melhores Fones Bluetooth 2026 | Guia de Compra",
+    "metaDesc": "Descubra os 10 melhores fones Bluetooth de 2026. Earbuds e headphones com os melhores preços, qualidade sonora e cancelamento de ruído no Brasil.",
+    "categoryId": null,
+    "categoryName": "Eletrônicos"
+  },
+  "products": [
+    {
+      "name": "JBL Tune 520BT",
+      "brand": "JBL",
+      "shortDesc": "Headphone on-ear Bluetooth com som JBL Pure Bass, 57 horas de bateria e conexão multipoint.",
+      "longDesc": "O JBL Tune 520BT é o fone over-ear mais vendido do Brasil pela combinação imbatível de som potente, bateria absurda e preço justo. Com a assinatura sonora JBL Pure Bass, entrega graves encorpados e agudos claros que agradam a maioria dos ouvidos. A bateria de 57 horas é quase surreal — carregue uma vez e use por mais de uma semana. A conexão multipoint permite alternar entre celular e notebook sem desconectar.",
+      "imageUrl": "",
+      "currentPrice": 249,
+      "oldPrice": 329,
+      "rating": 4.6,
+      "pros": [
+        "Bateria impressionante de 57 horas",
+        "Som JBL Pure Bass encorpado e envolvente",
+        "Conexão multipoint para dois dispositivos",
+        "Microfone integrado para chamadas"
+      ],
+      "cons": [
+        "Sem cancelamento de ruído ativo",
+        "Design on-ear pode incomodar após horas de uso"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=JBL+Tune+520BT",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/JBL+Tune+520BT",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=JBL+Tune+520BT"
+    },
+    {
+      "name": "Edifier X3",
+      "brand": "Edifier",
+      "shortDesc": "Earbuds TWS com som equilibrado, Bluetooth 5.3, IP55 e preço acessível para uso diário.",
+      "longDesc": "Os Edifier X3 são a prova de que não precisa gastar muito para ter earbuds de qualidade. Com drivers de 8mm, Bluetooth 5.3 e certificação IP55 contra água e suor, entregam som equilibrado e claro que supera concorrentes mais caros. A bateria dura 6 horas nos fones mais 18 horas no case, e o ajuste ergonômico é confortável para uso prolongado.",
+      "imageUrl": "",
+      "currentPrice": 159,
+      "oldPrice": 199,
+      "rating": 4.5,
+      "pros": [
+        "Som equilibrado com graves controlados",
+        "IP55 resistente a água e suor",
+        "Bluetooth 5.3 estável e econômico",
+        "Ótima relação custo-benefício"
+      ],
+      "cons": [
+        "Sem cancelamento de ruído ativo",
+        "Controles por toque pouco responsivos"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Edifier+X3+earbuds",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Edifier+X3+earbuds",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Edifier+X3+earbuds"
+    },
+    {
+      "name": "Sony WH-1000XM5",
+      "brand": "Sony",
+      "shortDesc": "Headphone premium com o melhor cancelamento de ruído do mercado, som Hi-Res e 30 horas de bateria.",
+      "longDesc": "O Sony WH-1000XM5 é unanimidade como o melhor headphone Bluetooth do mundo, e no Brasil não é diferente. Com cancelamento de ruído ativo líder de mercado, som Hi-Res com LDAC, 30 horas de bateria e conforto excepcional para uso o dia inteiro, é o sonho de consumo de qualquer audiófilo. O Speak-to-Chat pausa a música automaticamente quando você fala, e o multipoint conecta dois dispositivos simultaneamente.",
+      "imageUrl": "",
+      "currentPrice": 2299,
+      "oldPrice": 2699,
+      "rating": 4.9,
+      "pros": [
+        "Melhor cancelamento de ruído ativo do mercado",
+        "Som Hi-Res com codec LDAC excepcional",
+        "30 horas de bateria com carga rápida",
+        "Conforto premium para uso prolongado"
+      ],
+      "cons": [
+        "Preço muito elevado no Brasil",
+        "Não dobra mais como o XM4, ocupa mais espaço"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Sony+WH-1000XM5",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Sony+WH-1000XM5",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Sony+WH-1000XM5"
+    },
+    {
+      "name": "QCY T13 ANC 2",
+      "brand": "QCY",
+      "shortDesc": "Earbuds TWS ultra acessíveis com cancelamento de ruído ativo, Bluetooth 5.3 e 30 horas de bateria total.",
+      "longDesc": "Os QCY T13 ANC 2 são possivelmente os earbuds com melhor custo-benefício absoluto do Brasil. Por menos de R$ 100, oferecem cancelamento de ruído ativo, modo transparência, Bluetooth 5.3, drivers de 10mm e até 30 horas de bateria com o case. O ANC não compete com modelos premium, mas reduz ruído ambiente notavelmente para o preço. Ideal para quem quer experimentar ANC sem investir alto.",
+      "imageUrl": "",
+      "currentPrice": 89,
+      "oldPrice": 129,
+      "rating": 4.3,
+      "pros": [
+        "Cancelamento de ruído ativo por menos de R$ 100",
+        "30 horas de bateria total com case",
+        "Bluetooth 5.3 estável",
+        "App para equalização personalizada"
+      ],
+      "cons": [
+        "ANC básico, não bloqueia tanto ruído",
+        "Qualidade de construção simples"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=QCY+T13+ANC+2",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/QCY+T13+ANC+2",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=QCY+T13+ANC+2"
+    },
+    {
+      "name": "Samsung Galaxy Buds FE",
+      "brand": "Samsung",
+      "shortDesc": "Earbuds Samsung com ANC, som AKG, IPX2 e integração perfeita com smartphones Galaxy.",
+      "longDesc": "Os Galaxy Buds FE trazem a qualidade sonora assinada pela AKG com cancelamento de ruído ativo eficiente a um preço mais acessível que os Buds Pro. Com drivers de 6.5mm, codec Samsung Scalable e até 30 horas de bateria com o case, entregam experiência premium para usuários Samsung. A integração com Galaxy é imbatível: troca automática entre dispositivos, áudio 360 e comandos por voz.",
+      "imageUrl": "",
+      "currentPrice": 399,
+      "oldPrice": 499,
+      "rating": 4.5,
+      "pros": [
+        "ANC eficiente com modo ambiente",
+        "Som AKG com graves marcantes",
+        "Integração total com ecossistema Galaxy",
+        "30 horas de bateria total"
+      ],
+      "cons": [
+        "Resistência apenas IPX2, não ideal para esportes intensos",
+        "Recursos limitados fora do ecossistema Samsung"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Samsung+Galaxy+Buds+FE",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Samsung+Galaxy+Buds+FE",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Samsung+Galaxy+Buds+FE"
+    },
+    {
+      "name": "JBL Tune Buds",
+      "brand": "JBL",
+      "shortDesc": "Earbuds JBL com cancelamento de ruído ativo, som Pure Bass e 48 horas de bateria total.",
+      "longDesc": "Os JBL Tune Buds são a evolução dos populares earbuds da JBL, agora com cancelamento de ruído ativo e bateria monstruosa de até 48 horas com o case. O som Pure Bass característico da JBL entrega graves potentes que agradam quem curte música com impacto. Com IP54 para resistência a suor e respingos, são versáteis para academia, trabalho e lazer.",
+      "imageUrl": "",
+      "currentPrice": 349,
+      "oldPrice": 429,
+      "rating": 4.5,
+      "pros": [
+        "ANC eficiente para a faixa de preço",
+        "48 horas de bateria total absurdas",
+        "Som JBL Pure Bass envolvente",
+        "IP54 resistente a suor e respingos"
+      ],
+      "cons": [
+        "Design pode ficar grande para orelhas menores",
+        "ANC não compete com modelos premium"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=JBL+Tune+Buds",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/JBL+Tune+Buds",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=JBL+Tune+Buds"
+    },
+    {
+      "name": "Apple AirPods Pro 2 (USB-C)",
+      "brand": "Apple",
+      "shortDesc": "Earbuds premium da Apple com ANC adaptativo, áudio espacial e integração perfeita com iPhone.",
+      "longDesc": "Os AirPods Pro 2 com USB-C são os earbuds definitivos para usuários Apple, com cancelamento de ruído adaptativo que se ajusta automaticamente ao ambiente, áudio espacial personalizado com rastreamento de cabeça, e o chip H2 que entrega latência ultrabaixa. O modo transparência é tão natural que parece não estar usando fone. Bateria de 6 horas com ANC e 30 horas com o case.",
+      "imageUrl": "",
+      "currentPrice": 1899,
+      "oldPrice": 2199,
+      "rating": 4.8,
+      "pros": [
+        "ANC adaptativo de referência no mercado",
+        "Áudio espacial com rastreamento de cabeça",
+        "Integração perfeita com ecossistema Apple",
+        "Modo transparência extremamente natural"
+      ],
+      "cons": [
+        "Preço elevadíssimo no Brasil",
+        "Recursos limitados fora do ecossistema Apple"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Apple+AirPods+Pro+2+USB-C",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Apple+AirPods+Pro+2+USB-C",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Apple+AirPods+Pro+2+USB-C"
+    },
+    {
+      "name": "Edifier W820NB Plus",
+      "brand": "Edifier",
+      "shortDesc": "Headphone over-ear com ANC híbrido, Hi-Res Audio, 49 horas de bateria e som audiófilo por preço justo.",
+      "longDesc": "O Edifier W820NB Plus é a joia escondida do mercado de headphones, oferecendo cancelamento de ruído híbrido, certificação Hi-Res Audio e bateria de 49 horas por um preço que faz os concorrentes parecerem absurdos. O som é equilibrado e detalhado, com suporte a codec LDAC para streaming de alta qualidade. O conforto dos ear cushions de proteína permite uso prolongado sem desconforto.",
+      "imageUrl": "",
+      "currentPrice": 449,
+      "oldPrice": 549,
+      "rating": 4.7,
+      "pros": [
+        "ANC híbrido eficiente pelo preço",
+        "Hi-Res Audio com codec LDAC",
+        "49 horas de bateria impressionantes",
+        "Conforto excepcional para uso prolongado"
+      ],
+      "cons": [
+        "Marca menos conhecida que JBL e Sony no Brasil",
+        "ANC inferior ao Sony XM5 em ambientes muito barulhentos"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Edifier+W820NB+Plus",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Edifier+W820NB+Plus",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Edifier+W820NB+Plus"
+    },
+    {
+      "name": "JBL Live Pro 2 TWS",
+      "brand": "JBL",
+      "shortDesc": "Earbuds premium JBL com ANC adaptativo, som True Adaptive e 40 horas de bateria total.",
+      "longDesc": "Os JBL Live Pro 2 são os earbuds topo de linha da JBL, com cancelamento de ruído adaptativo que se ajusta em tempo real ao ambiente ao redor. O som True Adaptive oferece personalização automática baseada no formato da sua orelha, e os drivers de 11mm entregam a assinatura sonora JBL com qualidade superior. Com IPX5 e 40 horas de bateria total, são versáteis para qualquer situação.",
+      "imageUrl": "",
+      "currentPrice": 699,
+      "oldPrice": 899,
+      "rating": 4.6,
+      "pros": [
+        "ANC adaptativo inteligente",
+        "Drivers de 11mm com som superior",
+        "IPX5 para esportes e chuva",
+        "40 horas de bateria total"
+      ],
+      "cons": [
+        "Preço alto para earbuds JBL",
+        "Case volumoso para o bolso"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=JBL+Live+Pro+2+TWS",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/JBL+Live+Pro+2+TWS",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=JBL+Live+Pro+2+TWS"
+    },
+    {
+      "name": "Haylou W1",
+      "brand": "Haylou",
+      "shortDesc": "Headphone over-ear acessível com ANC, 60 horas de bateria e som surpreendente para o preço.",
+      "longDesc": "O Haylou W1 é uma das maiores surpresas do mercado de áudio brasileiro, entregando ANC, 60 horas de bateria e som competente por um preço que desafia a lógica. Os drivers de 40mm produzem som equilibrado com graves presentes, e o ANC reduz notavelmente o ruído ambiente para a faixa de preço. O conforto é adequado para uso de várias horas, com ear cushions macios e headband acolchoada.",
+      "imageUrl": "",
+      "currentPrice": 179,
+      "oldPrice": 229,
+      "rating": 4.3,
+      "pros": [
+        "60 horas de bateria — recorde na categoria",
+        "ANC funcional por preço irrisório",
+        "Conforto adequado para uso prolongado",
+        "Bluetooth 5.2 estável"
+      ],
+      "cons": [
+        "ANC básico, inferior a marcas premium",
+        "Qualidade de construção simples"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Haylou+W1+headphone",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Haylou+W1+headphone",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Haylou+W1+headphone"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Earbuds ou headphone: qual tipo de fone Bluetooth escolher?",
+      "answer": "Earbuds (in-ear) são mais portáteis, leves e discretos, ideais para academia, transporte público e uso durante o dia. Headphones (over-ear) oferecem som geralmente superior, melhor cancelamento de ruído e mais conforto para sessões longas, sendo ideais para home office e ouvir música em casa. Para esportes, earbuds com IPX4 ou superior são a melhor escolha. Para trabalho com chamadas e foco, headphones com ANC fazem mais diferença."
+    },
+    {
+      "question": "Cancelamento de ruído (ANC) vale a pena em fones baratos?",
+      "answer": "O ANC em fones abaixo de R$ 200 funciona, mas de forma limitada — reduz ruídos constantes como ar condicionado e motor de ônibus, mas não bloqueia conversas ou barulhos intensos como os modelos premium. Para quem nunca usou ANC, a diferença é perceptível e agradável. Porém, se você trabalha em ambientes muito barulhentos ou viaja de avião frequentemente, vale investir em modelos a partir de R$ 400 para ANC realmente eficiente."
+    },
+    {
+      "question": "Quanto tempo dura a bateria de fones Bluetooth em 2026?",
+      "answer": "A duração varia muito por modelo e tipo. Earbuds duram de 5 a 8 horas sozinhos, com 20 a 40 horas adicionais no case. Headphones duram de 20 a 60 horas com uma única carga. O ANC ativo reduz a bateria em 20-30%. Na prática, qualquer fone moderno dura facilmente um dia inteiro de uso, e a maioria tem carga rápida: 10-15 minutos na tomada dão 1-2 horas de uso."
+    },
+    {
+      "question": "Posso usar fones Bluetooth para jogar no celular ou PC?",
+      "answer": "Sim, mas com ressalvas. O Bluetooth padrão tem uma latência de 100-200ms, perceptível em jogos competitivos como shooters. Fones com codec aptX Low Latency ou o chip H2 da Apple reduzem isso para 40-80ms, aceitável para a maioria dos jogos. Para jogos casuais no celular, qualquer fone Bluetooth serve. Para PC gaming competitivo, fones com fio ou headsets wireless com dongle dedicado (2.4GHz) ainda são superiores."
+    },
+    {
+      "question": "Fones de marcas chinesas como QCY e Haylou são confiáveis?",
+      "answer": "Sim, marcas como QCY, Haylou, Edifier e Xiaomi têm qualidade comprovada e presença consolidada no mercado brasileiro. Muitas dessas marcas fabricam componentes para marcas premium e aplicam a mesma tecnologia em seus próprios produtos. A principal diferença para marcas premium é na qualidade de construção (materiais), no ANC e no ecossistema de software. Para o preço cobrado, o valor entregue é excelente."
+    }
+  ]
+}

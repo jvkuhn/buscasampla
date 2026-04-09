@@ -10,5 +10,47 @@
 
 ✓ Top 10 TELEVISOES / Eletrônicos
 ✓ Top 10 cadeiras de escritorio / Escritório
-Top 10 kits de churrasco / Casa
-Top 10 bicicleta ergometrica / Esporte e Lazer
+✓ Top 10 kits de churrasco / Casa e Construção
+✓ Top 10 bicicleta ergometrica / Esportes e Lazer
+✓ Top 10 kits de ferramenta / Casa e Construção
+✓ Top 10 balanças de cozinha / Cozinha
+✓ Top 10 balanças digital / Eletrônicos
+✓ Top 10 furadeiras / Casa e Construção
+✓ Top 10 parafusadeiras / Casa e Construção
+✓ Top 10 caixas de ferramentas / Casa e Construção
+✓ Top 10 lavadoras de alta pressão / Casa e Construção
+✓ Top 10 escadas dobráveis / Casa e Construção
+✓ Top 10 air fryer / Cozinha
+✓ Top 10 panelas antiaderentes / Cozinha
+✓ Top 10 jogos de panelas / Cozinha
+✓ Top 10 liquidificadores / Cozinha
+✓ Top 10 cafeteiras elétricas / Cozinha
+✓ Top 10 bicicletas ergométricas / Esportes e Lazer
+✓ Top 10 esteiras elétricas / Esportes e Lazer
+✓ Top 10 halteres ajustáveis / Esportes e Lazer
+✓ Top 10 cordas de pular profissionais / Esportes e Lazer
+✓ Top 10 tapetes de yoga / Esportes e Lazer
+✓ Top 10 aspiradores automotivos / Automotivo
+✓ Top 10 carregadores veiculares / Automotivo
+✓ Top 10 multimidia automotiva / Automotivo
+✓ Top 10 câmeras de ré / Automotivo
+✓ Top 10 kits limpeza automotiva / Automotivo
+✓ Top 10 presentes para homem / Presentes
+✓ Top 10 presentes para mulher / Presentes
+✓ Top 10 presentes baratos criativos / Presentes
+✓ Top 10 kits presente masculino / Presentes
+✓ Top 10 ideias de presente tecnológico / Presentes
+✓ Top 10 travesseiros / Casa e Construção
+✓ Top 10 colchões solteiro / Casa e Construção
+✓ Top 10 ventiladores / Casa e Construção
+✓ Top 10 purificadores de água / Casa e Construção
+✓ Top 10 climatizadores / Casa e Construção
+✓ Top 10 notebooks custo beneficio / Informática
+✓ Top 10 monitores / Informática
+✓ Top 10 SSDs / Informática
+✓ Top 10 placas de video custo beneficio / Informática
+✓ Top 10 fones bluetooth / Eletrônicos
+✓ Top 10 caixas de som bluetooth / Eletrônicos
+✓ Top 10 smartwatches custo beneficio / Eletrônicos
+✓ Top 10 teclados mecânicos / Eletrônicos
+✓ Top 10 mouses gamer / Eletrônicos

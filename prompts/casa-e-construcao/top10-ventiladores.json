@@ -1,0 +1,282 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Ventiladores para Casa 2026",
+    "subtitle": "Escolha o ventilador perfeito para refrescar seu lar com eficiência e silêncio",
+    "intro": "Os ventiladores são essenciais para manter sua casa fresca durante os meses mais quentes. Neste guia, reunimos os 10 melhores ventiladores disponíveis no mercado brasileiro em 2026, considerando potência, eficiência energética, design e custo-benefício. Cada modelo foi selecionado para atender diferentes necessidades e orçamentos, desde opções econômicas até ventiladores premium com tecnologias avançadas de resfriamento silencioso.",
+    "conclusion": "Ao escolher um ventilador, considere o tamanho do ambiente, o nível de ruído desejado e seu orçamento. Os ventiladores listados aqui representam as melhores opções de qualidade e durabilidade no mercado brasileiro. Invista em um ventilador de boa qualidade para garantir conforto e bem-estar em sua casa durante todo o ano.",
+    "metaTitle": "Top 10 Melhores Ventiladores Brasil 2026",
+    "metaDesc": "Descubra os 10 melhores ventiladores para casa em 2026. Compare preços, marcas e recursos. Guia completo com análise de produtos.",
+    "categoryId": null,
+    "categoryName": "Casa e Construção"
+  },
+  "products": [
+    {
+      "name": "Arno Ultra Silence Force VD40",
+      "brand": "Arno",
+      "shortDesc": "Ventilador de mesa premium com tecnologia Silence Force para máxima silenciosidade.",
+      "longDesc": "O Arno Ultra Silence Force VD40 é o topo da linha quando se trata de ventiladores de mesa para quem busca máxima qualidade e silêncio. Com tecnologia Silence Force patenteada, oferece fluxo de ar excepcional mantendo níveis ultra-baixos de ruído, ideal para quartos e ambientes de trabalho. Sua construção robusta e durável garante anos de funcionamento confiável.",
+      "imageUrl": "",
+      "currentPrice": 349.90,
+      "oldPrice": 429.90,
+      "rating": 4.9,
+      "pros": [
+        "Extremamente silencioso",
+        "Fluxo de ar potente",
+        "Design elegante e moderno",
+        "Durabilidade premium"
+      ],
+      "cons": [
+        "Preço mais elevado",
+        "Menor portabilidade que modelos simples"
+      ],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Arno+Ultra+Silence+Force+VD40",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Arno+Ultra+Silence+Force+VD40",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Arno+Ultra+Silence+Force+VD40"
+    },
+    {
+      "name": "Britânia Maxx Force BVT450",
+      "brand": "Britânia",
+      "shortDesc": "Ventilador de coluna potente com motor turbo de 160W para ambientes grandes.",
+      "longDesc": "O Britânia Maxx Force BVT450 é o ventilador de coluna mais potente de 2026, equipado com motor de 160W e hélice de 6 pás que gera vento intenso mesmo em ambientes espaçosos. Com oscilação contínua e altura regulável, distribui o ar de forma uniforme. Perfeito para salas de estar e quartos grandes, oferecendo eficiência com baixo consumo energético.",
+      "imageUrl": "",
+      "currentPrice": 259.90,
+      "oldPrice": 329.90,
+      "rating": 4.8,
+      "pros": [
+        "Motor turbo muito potente",
+        "Excelente para ambientes grandes",
+        "Altura regulável",
+        "Ótimo custo-benefício"
+      ],
+      "cons": [
+        "Ocupa espaço no piso",
+        "Um pouco barulhento em velocidade máxima"
+      ],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Britania+Maxx+Force+BVT450",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Britania+Maxx+Force+BVT450",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Britania+Maxx+Force+BVT450"
+    },
+    {
+      "name": "Ventisol Turbo 6 Pás",
+      "brand": "Ventisol",
+      "shortDesc": "Ventilador de coluna com motor turbo redesenhado para máxima distribuição de ar.",
+      "longDesc": "O Ventisol Turbo 6 Pás é um ventilador de coluna robusto que combina potência e eficiência energética. Com motor turbo de alta performance e hélice de 6 pás redesenhada, gera vento intenso mantendo baixo nível de ruído. Oferece oscilação contínua, altura regulável e painel touch intuitivo, sendo uma excelente opção para quem busca bom desempenho sem comprometer o orçamento.",
+      "imageUrl": "",
+      "currentPrice": 189.90,
+      "oldPrice": 249.90,
+      "rating": 4.6,
+      "pros": [
+        "Preço acessível",
+        "Potência equilibrada",
+        "Painel touch moderno",
+        "Baixo ruído"
+      ],
+      "cons": [
+        "Construção um pouco menos robusta que Britânia",
+        "Peso moderado para transportar"
+      ],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Ventisol+Turbo+6+Pas",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Ventisol+Turbo+6+Pas",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Ventisol+Turbo+6+Pas"
+    },
+    {
+      "name": "Mondial VTX-40 Turbo",
+      "brand": "Mondial",
+      "shortDesc": "Ventilador de coluna econômico com controle remoto e painel touch.",
+      "longDesc": "O Mondial VTX-40 Turbo é uma excelente opção para quem prioriza economia sem sacrificar potência. Equipado com controle remoto e painel touch, oferece oscilação contínua e velocidades ajustáveis. Com design compacto, é ideal para apartamentos e ambientes pequenos a médios, proporcionando refrescância eficiente a um preço muito acessível.",
+      "imageUrl": "",
+      "currentPrice": 129.90,
+      "oldPrice": 179.90,
+      "rating": 4.3,
+      "pros": [
+        "Preço muito acessível",
+        "Controle remoto",
+        "Design compacto",
+        "Funciona bem em ambientes pequenos"
+      ],
+      "cons": [
+        "Menor potência que colunais maiores",
+        "Menos durável que marcas premium"
+      ],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Mondial+VTX-40+Turbo",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mondial+VTX-40+Turbo",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Mondial+VTX-40+Turbo"
+    },
+    {
+      "name": "Cadence Extreme VT360",
+      "brand": "Cadence",
+      "shortDesc": "Ventilador de mesa com velocidades variáveis e design compacto moderno.",
+      "longDesc": "O Cadence Extreme VT360 é um ventilador de mesa econômico e funcional que oferece ótimo desempenho para seu tamanho. Com 3 velocidades ajustáveis, oscilação automática e design compacto, é perfeito para mesas de trabalho, quartos e pequenos ambientes. Consome pouca energia e oferece a relação custo-benefício ideal para orçamentos reduzidos.",
+      "imageUrl": "",
+      "currentPrice": 89.90,
+      "oldPrice": 129.90,
+      "rating": 4.1,
+      "pros": [
+        "Preço muito econômico",
+        "Portátil e leve",
+        "3 velocidades",
+        "Consumo mínimo de energia"
+      ],
+      "cons": [
+        "Potência limitada",
+        "Material mais simples",
+        "Não tem controle remoto"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Cadence+Extreme+VT360",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Cadence+Extreme+VT360",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Cadence+Extreme+VT360"
+    },
+    {
+      "name": "Tron Ventilador de Teto Bivolt",
+      "brand": "Tron",
+      "shortDesc": "Ventilador de teto potente bivolt com lampada LED integrada.",
+      "longDesc": "O Tron Ventilador de Teto Bivolt é a solução perfeita para quem busca refrigeração eficiente com design integrado. Com controle remoto, 3 velocidades e luminária LED embutida, ele combina funcionalidade e economia de espaço. Ideal para ambientes maiores, oferece movimentação suave do ar e reduz a sensação de calor de forma eficiente.",
+      "imageUrl": "",
+      "currentPrice": 299.90,
+      "oldPrice": 379.90,
+      "rating": 4.7,
+      "pros": [
+        "LED integrado economiza espaço",
+        "Controle remoto",
+        "Ótimo para ambientes grandes",
+        "Design moderno e discreto"
+      ],
+      "cons": [
+        "Instalação profissional recomendada",
+        "Preço intermediário-alto"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Tron+Ventilador+de+Teto+Bivolt",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Tron+Ventilador+de+Teto+Bivolt",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Tron+Ventilador+de+Teto+Bivolt"
+    },
+    {
+      "name": "WAP Air Silence W130",
+      "brand": "WAP",
+      "shortDesc": "Ventilador de mesa silencioso com tecnologia anti-vibração.",
+      "longDesc": "O WAP Air Silence W130 é desenvolvido especificamente para ambientes sensíveis como dormitórios e escritórios. Com tecnologia anti-vibração e design acústico, reduz significativamente o nível de ruído sem comprometer a potência. Oferece 3 velocidades, oscilação automática e construção durável que garante anos de uso silencioso.",
+      "imageUrl": "",
+      "currentPrice": 199.90,
+      "oldPrice": 269.90,
+      "rating": 4.5,
+      "pros": [
+        "Muito silencioso",
+        "Anti-vibração",
+        "Design elegante",
+        "Ótimo para dormir"
+      ],
+      "cons": [
+        "Preço um pouco acima da média",
+        "Potência moderada"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=WAP+Air+Silence+W130",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+Air+Silence+W130",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=WAP+Air+Silence+W130"
+    },
+    {
+      "name": "Britânia Xtreme Breeze VT410",
+      "brand": "Britânia",
+      "shortDesc": "Ventilador de coluna com tecnologia Xtreme para máxima circulação de ar.",
+      "longDesc": "O Britânia Xtreme Breeze VT410 oferece a combinação ideal entre potência e eficiência. Com tecnologia Xtreme que amplifica a circulação de ar, 3 velocidades ajustáveis e oscilação contínua, cobre ambientes de tamanho médio a grande. Seu design moderno e silencioso o torna uma escolha versátil para qualquer cômodo da casa.",
+      "imageUrl": "",
+      "currentPrice": 219.90,
+      "oldPrice": 289.90,
+      "rating": 4.4,
+      "pros": [
+        "Tecnologia Xtreme eficiente",
+        "Potência equilibrada",
+        "Preço competitivo",
+        "Design moderno"
+      ],
+      "cons": [
+        "Oscilação não tão suave quanto premium",
+        "Manual em português básico"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Britania+Xtreme+Breeze+VT410",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Britania+Xtreme+Breeze+VT410",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Britania+Xtreme+Breeze+VT410"
+    },
+    {
+      "name": "Arno Xtreme Force Breeze VB40",
+      "brand": "Arno",
+      "shortDesc": "Ventilador de mesa com 1500 rpm e funcionamento ultra-silencioso.",
+      "longDesc": "O Arno Xtreme Force Breeze VB40 combina alta rotação de 1500 rpm com um nível de ruído impressionantemente baixo. Equipado com hélice otimizada e motor eficiente, gera um fluxo de ar poderoso mantendo a tranquilidade. Perfeito para ambientes onde silêncio e potência são prioridades, como dormitórios e salas de estar.",
+      "imageUrl": "",
+      "currentPrice": 279.90,
+      "oldPrice": 359.90,
+      "rating": 4.8,
+      "pros": [
+        "1500 rpm muito potente",
+        "Operação ultra-silenciosa",
+        "Hélice otimizada",
+        "Excelente relação ruído-potência"
+      ],
+      "cons": [
+        "Preço premium",
+        "Menor portabilidade que modelos básicos"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Arno+Xtreme+Force+Breeze+VB40",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Arno+Xtreme+Force+Breeze+VB40",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Arno+Xtreme+Force+Breeze+VB40"
+    },
+    {
+      "name": "Mondial VSP-30 Plus",
+      "brand": "Mondial",
+      "shortDesc": "Ventilador portátil super econômico com design compacto.",
+      "longDesc": "O Mondial VSP-30 Plus é a opção mais econômica do mercado para quem busca ventilação básica e portátil. Com design ultrassimples e peso leve, é perfeito para levar de um cômodo para outro. Apesar do preço acessível, oferece funcionalidade confiável e consumo mínimo de energia, sendo a escolha ideal para apartamentos alugados e uso temporário.",
+      "imageUrl": "",
+      "currentPrice": 69.90,
+      "oldPrice": 109.90,
+      "rating": 3.9,
+      "pros": [
+        "Preço imbatível",
+        "Muito portátil",
+        "Confiável",
+        "Baixo consumo energético"
+      ],
+      "cons": [
+        "Potência reduzida",
+        "Sem controles avançados",
+        "Menos durável"
+      ],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Mondial+VSP-30+Plus",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mondial+VSP-30+Plus",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Mondial+VSP-30+Plus"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual ventilador é mais silencioso?",
+      "answer": "O Arno Ultra Silence Force VD40 é o ventilador mais silencioso do mercado, graças à sua tecnologia Silence Force patenteada. Ele foi especificamente desenvolvido para ambientes onde o silêncio é essencial, como quartos e escritórios. O WAP Air Silence W130 também é uma excelente opção se você buscar bom custo-benefício com baixo ruído."
+    },
+    {
+      "question": "Qual ventilador consome menos energia?",
+      "answer": "Os ventiladores de mesa econômicos como Cadence Extreme VT360 e Mondial VSP-30 Plus consomem a menor quantidade de energia, ideais para reduzir sua conta de luz. Se você prefere um ventilador de coluna eficiente, o Ventisol Turbo 6 Pás oferece excelente relação entre potência e consumo energético. Todos os ventiladores listados aqui são mais econômicos que ar-condicionado."
+    },
+    {
+      "question": "Qual é o melhor ventilador para ambientes grandes?",
+      "answer": "O Britânia Maxx Force BVT450 é o mais recomendado para ambientes grandes, com seu motor turbo de 160W que gera vento intenso e uniforme. O Tron Ventilador de Teto Bivolt também é excelente para ambientes maiores, pois distribui o ar de forma mais eficiente com seu posicionamento no teto. Ambos oferecem cobertura superior comparado a ventiladores de mesa."
+    },
+    {
+      "question": "Qual ventilador oferece melhor custo-benefício?",
+      "answer": "O Ventisol Turbo 6 Pás é o melhor custo-benefício geral, oferecendo excelente potência, recursos como painel touch e oscilação contínua por um preço acessível. Se você quer opção ultra-econômica, o Mundial VTX-40 Turbo com controle remoto é imbatível em preço. Para quem não abre mão de qualidade premium, o Arno Xtreme Force oferece desempenho excepcional por preço justo."
+    },
+    {
+      "question": "Ventilador de coluna ou mesa, qual escolher?",
+      "answer": "Ventiladores de coluna são ideais para ambientes maiores e cobrem áreas mais amplas, com melhor distribuição de ar. Ventiladores de mesa são perfeitos para locais pequenos, são portáteis e economizam espaço. Considere o tamanho do seu ambiente: para salas grandes, opte por coluna; para quartos pequenos ou mesas de trabalho, prefira mesa."
+    },
+    {
+      "question": "Os ventiladores listados são bivolt?",
+      "answer": "A maioria dos ventiladores listados, como Arno, Britânia e Ventisol, vêm em versões bivolt (110V/220V). O Tron Ventilador de Teto é explicitamente bivolt. Recomendamos sempre verificar a especificação do produto ao comprar para garantir compatibilidade com sua tensão local."
+    }
+  ]
+}

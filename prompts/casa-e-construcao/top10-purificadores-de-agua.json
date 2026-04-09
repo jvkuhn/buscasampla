@@ -1,0 +1,196 @@
+{
+  "ranking": {
+    "title": "Top 10 Melhores Purificadores de Água para Sua Casa",
+    "subtitle": "Qualidade, Eficiência e Segurança na Água que Você Bebe",
+    "intro": "A água filtrada é essencial para a saúde da sua família. Selecionamos os 10 melhores purificadores de água disponíveis no mercado brasileiro em 2026, com tecnologias avançadas de filtragem, diferentes capacidades e preços para todos os orçamentos. Descubra qual é o ideal para sua casa.",
+    "conclusion": "Investir em um bom purificador de água é investimento na saúde de sua família. Os modelos selecionados oferecem diferentes tecnologias e capacidades para atender suas necessidades. Compare preços e características para escolher o melhor custo-benefício para seu lar.",
+    "metaTitle": "Top 10 Melhores Purificadores de Água 2026",
+    "metaDesc": "Descubra os 10 melhores purificadores de água do Brasil em 2026. Modelos com melhor custo-benefício, premium e econômicos.",
+    "categoryId": null,
+    "categoryName": "Casa e Construção"
+  },
+  "products": [
+    {
+      "name": "Electrolux Experience Pure 4x Digital PE12B",
+      "brand": "Electrolux",
+      "shortDesc": "Purificador compacto com tecnologia Pure 4x e painel digital touch para água gelada, fria e natural.",
+      "longDesc": "O Purificador Electrolux PE12B destaca-se pela sua inovadora tecnologia Pure 4x, que reduz em até 75% o cloro livre na água. Com painel digital touch intuitivo, oferece três opções de temperatura: gelada, fria e natural. Seu design compacto se adapta a qualquer cozinha, e o filtro tem duração de até 6 meses ou 3.000 litros de água filtrada.",
+      "imageUrl": "",
+      "currentPrice": 599.90,
+      "oldPrice": 750.00,
+      "rating": 4.5,
+      "pros": ["Tecnologia Pure 4x avançada", "Painel digital com fluxo controlável", "Muito compacto e elegante", "Entrega rápida em todo Brasil"],
+      "cons": ["Refil original é caro", "Barulho durante filtragem"],
+      "badge": "BEST_SELLER",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Electrolux+PE12B+purificador",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Electrolux+PE12B+purificador",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Electrolux+PE12B"
+    },
+    {
+      "name": "Hidrofiltros Facile C3",
+      "brand": "Hidrofiltros",
+      "shortDesc": "Purificador de água natural econômico, perfeito para quem busca custo-benefício.",
+      "longDesc": "O Hidrofiltros Facile C3 é a melhor opção para quem busca economia sem abrir mão da qualidade. Oferece filtragem eficiente de cloro e partículas, com design moderno disponível em branco e preto. Seu preço acessível (a partir de R$ 110) o torna ideal para lares que desejam começar com purificação básica de qualidade.",
+      "imageUrl": "",
+      "currentPrice": 134.90,
+      "oldPrice": 189.90,
+      "rating": 4.0,
+      "pros": ["Preço super acessível", "Filtro de longa duração", "Certificado pelo INMETRO", "Fácil manutenção"],
+      "cons": ["Apenas água natural", "Capacidade limitada"],
+      "badge": "CHEAPEST",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Hidrofiltros+Facile+C3",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Hidrofiltros+Facile+C3",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Hidrofiltros+Facile+C3"
+    },
+    {
+      "name": "Consul CPB34AS",
+      "brand": "Consul",
+      "shortDesc": "Purificador refrigerado com filtragem classe A e tecnologia antibactérias para água natural e gelada.",
+      "longDesc": "O Consul CPB34AS oferece filtragem classe A, considerada a melhor do mercado, retendo partículas até 60 vezes menores que um grão de areia. Sua eficiência bacteriológica retém 99% das bactérias, incluindo E. Coli. Funciona sem energia para água natural e oferece água gelada com tecnologia de refrigeração confiável da marca Consul.",
+      "imageUrl": "",
+      "currentPrice": 449.00,
+      "oldPrice": 599.00,
+      "rating": 4.3,
+      "pros": ["Filtragem classe A (melhor do mercado)", "Protção antibactérias certificada", "Funciona sem energia para água natural", "Marca consagrada"],
+      "cons": ["Refil é caro", "Maior consumo de energia"],
+      "badge": "BEST_VALUE",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Consul+CPB34AS+purificador",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Consul+CPB34AS+purificador",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Consul+CPB34AS"
+    },
+    {
+      "name": "IBBL FR600 Speciale",
+      "brand": "IBBL",
+      "shortDesc": "Purificador refrigerado de alta capacidade com compressor, oferecendo água natural e gelada premium.",
+      "longDesc": "O IBBL FR600 Speciale é um purificador refrigerado de alto desempenho, ideal para famílias grandes ou escritórios. Equipado com compressor eficiente, oferece água natural e gelada com qualidade superior. Sua capacidade de duas saídas de água proporciona praticidade e rapidez no abastecimento, garantindo água pura 24 horas por dia.",
+      "imageUrl": "",
+      "currentPrice": 633.07,
+      "oldPrice": 899.00,
+      "rating": 4.4,
+      "pros": ["Duas saídas de água simultâneas", "Compressor silencioso e durável", "Grande capacidade de filtragem", "Refil original disponível"],
+      "cons": ["Preço elevado", "Consome mais energia", "Ocupam mais espaço"],
+      "badge": "PREMIUM",
+      "amazonUrl": "https://www.amazon.com.br/s?k=IBBL+FR600+Speciale",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/IBBL+FR600+Speciale",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=IBBL+FR600+Speciale"
+    },
+    {
+      "name": "Britânia BPU01B",
+      "brand": "Britânia",
+      "shortDesc": "Purificador compacto com redutor de cloro, oferecendo água natural com excelente relação custo-benefício.",
+      "longDesc": "O Britânia BPU01B é um purificador de água natural e compacto, perfeito para apartamentos e cozinhas pequenas. Com sistema de filtro de carvão ativado, reduz em até 75% o cloro e elimina 99% das bactérias. Seu filtro dura até 6 meses ou 5.000 litros, garantindo longa durabilidade e baixo custo de manutenção.",
+      "imageUrl": "",
+      "currentPrice": 269.00,
+      "oldPrice": 395.00,
+      "rating": 4.1,
+      "pros": ["Design compacto e moderno", "Filtro de longa duração", "Reduz 75% do cloro", "Preço muito acessível"],
+      "cons": ["Apenas água natural", "Capacidade limitada"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Britania+BPU01B",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Britania+BPU01B",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Britania+BPU01B"
+    },
+    {
+      "name": "Electrolux PH41B",
+      "brand": "Electrolux",
+      "shortDesc": "Purificador premium com compressor, água quente, gelada e natural com painel digital avançado.",
+      "longDesc": "O Electrolux PH41B é o topo da linha em purificadores, oferecendo tecnologia premium com compressor silencioso e painel digital inteligente. Fornece água quente, natural e gelada em três níveis de temperatura. Ideal para quem deseja máximo conforto e tecnologia, com filtro indicador automático de troca e capacidade de 3,3 litros.",
+      "imageUrl": "",
+      "currentPrice": 1519.90,
+      "oldPrice": 1999.00,
+      "rating": 4.8,
+      "pros": ["Água quente incluída", "Painel digital inteligente", "Compressor silencioso", "Capacidade maior de armazenamento"],
+      "cons": ["Preço muito elevado", "Alto consumo de energia", "Ocupam muito espaço"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Electrolux+PH41B+purificador",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Electrolux+PH41B+purificador",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Electrolux+PH41B"
+    },
+    {
+      "name": "Consul CPB33",
+      "brand": "Consul",
+      "shortDesc": "Purificador refrigerado com painel sensível ao toque e três níveis de temperatura da água.",
+      "longDesc": "O Consul CPB33 oferece segurança na água com sistema de filtragem que retém partículas até 60 vezes menores que um grão de areia e diminui 99% de bactérias. Seu painel sensível ao toque permite selecionar entre três níveis de temperatura: gelada, natural e refrescante. Tecnologia Consul de confiança com design moderno e funcional.",
+      "imageUrl": "",
+      "currentPrice": 499.00,
+      "oldPrice": 689.00,
+      "rating": 4.2,
+      "pros": ["Painel sensível ao toque", "Três níveis de temperatura", "Filtragem eficiente", "Marca de confiança"],
+      "cons": ["Barulho do compressor", "Manutenção cara"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Consul+CPB33",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Consul+CPB33",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Consul+CPB33"
+    },
+    {
+      "name": "Latina Acquapura",
+      "brand": "Latina",
+      "shortDesc": "Purificador de qualidade com filtragem eficiente, oferecendo água natural pura para toda a família.",
+      "longDesc": "O Latina Acquapura é um purificador de confiança, com tecnologia de filtragem comprovada e eficiente. Oferece água natural filtrada com remoção de impurezas e cloro. Ideal para famílias que buscam qualidade e confiabilidade, com suporte técnico da marca Latina sempre disponível para seus clientes.",
+      "imageUrl": "",
+      "currentPrice": 289.00,
+      "oldPrice": 429.00,
+      "rating": 4.0,
+      "pros": ["Marca confiável", "Filtro de qualidade", "Fácil de instalar", "Bom suporte técnico"],
+      "cons": ["Apenas água natural", "Refil pode ser caro"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Latina+Acquapura",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Latina+Acquapura",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Latina+Acquapura"
+    },
+    {
+      "name": "Britânia BPDA01B",
+      "brand": "Britânia",
+      "shortDesc": "Purificador com redutor de cloro e carvão ativado, ideal para cozinhas pequenas e apartamentos.",
+      "longDesc": "O Britânia BPDA01B é um purificador compacto com sistema de filtro de carvão ativado de alta qualidade. Reduz em até 75% o cloro da água e elimina 99% das bactérias, garantindo água segura para toda a família. Filtro duradouro de até 6 meses ou 5.000 litros, com desconto especial em promoções frequentes.",
+      "imageUrl": "",
+      "currentPrice": 219.90,
+      "oldPrice": 279.90,
+      "rating": 4.0,
+      "pros": ["Preço muito competitivo", "Excelente custo-benefício", "Filtro durável", "Tamanho compacto"],
+      "cons": ["Apenas água natural", "Capacidade moderada"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Britania+BPDA01B",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Britania+BPDA01b",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Britania+BPDA01b"
+    },
+    {
+      "name": "Consul CPB34AF",
+      "brand": "Consul",
+      "shortDesc": "Purificador refrigerado com filtragem classe A e tecnologia bacteriológica avançada de eficiência máxima.",
+      "longDesc": "O Consul CPB34AF se destaca pela excelente eficiência bacteriológica com filtragem classe A, removendo impurezas, cloro e até 99% das bactérias. Oferece água natural e gelada com tecnologia refrigerada confiável. Seu painel permite seleção de temperatura e fluxo controlado, ideal para lares que valorizam qualidade e segurança.",
+      "imageUrl": "",
+      "currentPrice": 499.00,
+      "oldPrice": 699.00,
+      "rating": 4.3,
+      "pros": ["Filtragem classe A superior", "Água gelada e natural", "Painel intuitivo", "Refil original duradouro"],
+      "cons": ["Consumo moderado de energia", "Requer manutenção regular"],
+      "badge": null,
+      "amazonUrl": "https://www.amazon.com.br/s?k=Consul+CPB34AF",
+      "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Consul+CPB34AF",
+      "shopeeUrl": "https://shopee.com.br/search?keyword=Consul+CPB34AF"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual é a diferença entre purificador de água natural e refrigerado?",
+      "answer": "Purificadores de água natural apenas filtram a água, removendo impurezas e cloro, mantendo-a em temperatura ambiente. Já os purificadores refrigerados possuem compressor que resfria a água, oferecendo a opção de água gelada. Purificadores premium podem oferecer inclusive água quente. A escolha depende de suas necessidades e orçamento."
+    },
+    {
+      "question": "Com que frequência preciso trocar o filtro do purificador?",
+      "answer": "A maioria dos purificadores tem filtros que duram entre 3 a 6 meses, dependendo da qualidade da água e do consumo. Muitos modelos possuem indicador de troca que avisa quando é hora de substituir. É importante seguir as recomendações do fabricante para garantir máxima eficiência na filtragem e segurança da água."
+    },
+    {
+      "question": "Todos os purificadores de água elimina 99% de bactérias?",
+      "answer": "Nem todos. Purificadores básicos removem cloro e partículas, mas podem não eliminar todas as bactérias. Modelos com filtragem classe A e tecnologia bacteriológica certificada pelo INMETRO oferecem eliminação de até 99% de bactérias, incluindo E. Coli. Verificar as certificações é importante na hora de escolher seu purificador."
+    },
+    {
+      "question": "Vale a pena investir em um purificador premium com água quente?",
+      "answer": "Depende do seu uso. Se você consome bastante água quente para chás, cafés e outros usos, um purificador premium com essa função economiza tempo e energia do fogão. No entanto, para famílias que usam água quente ocasionalmente, um purificador refrigerado simples oferece melhor custo-benefício. Considere o consumo de energia na sua decisão."
+    },
+    {
+      "question": "Qual purificador recomenda para apartamentos pequenos?",
+      "answer": "Para apartamentos pequenos, recomendamos modelos compactos como Hidrofiltros Facile C3, Britânia BPU01B ou Electrolux PE12B. Esses purificadores ocupam pouco espaço na cozinha e oferecem excelente relação custo-benefício. Se preferir água gelada, o Consul CPB34 em versão menor também é ótima opção."
+    }
+  ]
+}
