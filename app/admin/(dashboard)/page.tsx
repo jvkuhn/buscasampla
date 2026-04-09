@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { db } from "@/lib/db";
 import { PageHeader } from "@/components/admin/PageHeader";
+import { CleanupButton } from "@/components/admin/CleanupButton";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = { title: "Dashboard — Admin" };
@@ -40,10 +41,10 @@ export default async function AdminDashboard() {
         <h2 className="text-sm font-semibold text-gray-900 mb-4">Ações rápidas</h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
+            { href: "/admin/rankings/novo-top10", label: "Importar Top 10" },
             { href: "/admin/rankings/novo", label: "Novo ranking" },
             { href: "/admin/produtos/novo", label: "Novo produto" },
             { href: "/admin/categorias/nova", label: "Nova categoria" },
-            { href: "/admin/banners/novo", label: "Novo banner" },
           ].map((a) => (
             <Link
               key={a.href}
@@ -53,6 +54,7 @@ export default async function AdminDashboard() {
               {a.label}
             </Link>
           ))}
+          <CleanupButton />
         </div>
       </div>
     </div>
