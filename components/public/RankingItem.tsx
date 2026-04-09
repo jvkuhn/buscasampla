@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { BADGE_LABELS, PLATFORM_DISPLAY } from "@/lib/constants";
+import { AffiliateLink } from "./AffiliateLink";
 
 const BADGE_COLORS: Record<string, string> = {
   BEST_VALUE: "bg-green-500 text-white",
@@ -149,32 +150,32 @@ export function RankingItem({ position, product }: Props) {
 
             {/* Botão principal */}
             {primaryLink && (
-              <a
+              <AffiliateLink
                 href={primaryLink.url}
-                target="_blank"
-                rel="noopener noreferrer sponsored nofollow"
+                platform={primaryLink.platform}
+                productName={product.name}
                 className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 active:bg-green-700 text-white font-bold py-3.5 px-6 rounded-xl text-base transition-colors shadow-sm"
               >
                 <span>🛒</span>
                 <span>Comprar agora</span>
                 <span className="text-green-200 mx-1">·</span>
                 <span className="font-medium">{PLATFORM_DISPLAY[primaryLink.platform] || primaryLink.platform}</span>
-              </a>
+              </AffiliateLink>
             )}
 
             {/* Links secundários */}
             {otherLinks.length > 0 && (
               <div className="flex flex-wrap gap-2 mt-2">
                 {otherLinks.map((link) => (
-                  <a
+                  <AffiliateLink
                     key={link.id}
                     href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer sponsored nofollow"
+                    platform={link.platform}
+                    productName={product.name}
                     className="flex-1 min-w-[120px] text-center text-sm font-medium text-gray-600 bg-gray-100 hover:bg-gray-200 py-2 px-3 rounded-lg transition-colors"
                   >
                     {PLATFORM_DISPLAY[link.platform] || link.platform} →
-                  </a>
+                  </AffiliateLink>
                 ))}
               </div>
             )}

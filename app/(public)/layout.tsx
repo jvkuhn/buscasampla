@@ -1,5 +1,6 @@
 import { PublicHeader } from "@/components/public/PublicHeader";
 import { PublicFooter } from "@/components/public/PublicFooter";
+import { GTMHead, GTMNoScript } from "@/components/public/GoogleTagManager";
 import { db } from "@/lib/db";
 import { unstable_cache } from "next/cache";
 
@@ -36,8 +37,12 @@ export default async function PublicLayout({ children }: { children: React.React
     getPages(),
   ]);
 
+  const gtmId = settings?.gtmId;
+
   return (
     <>
+      {gtmId && <GTMHead gtmId={gtmId} />}
+      {gtmId && <GTMNoScript gtmId={gtmId} />}
       <PublicHeader categories={categories} settings={settings} />
       <main className="flex-1">{children}</main>
       <PublicFooter settings={settings} pages={pages} />

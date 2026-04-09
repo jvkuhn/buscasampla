@@ -3,6 +3,7 @@ import Link from "next/link";
 import { db } from "@/lib/db";
 import { formatPrice } from "@/lib/utils";
 import { PLATFORM_DISPLAY } from "@/lib/constants";
+import { AffiliateLink } from "@/components/public/AffiliateLink";
 import type { Metadata } from "next";
 
 const PLATFORM_COLORS: Record<string, string> = {
@@ -167,10 +168,10 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
               {/* CTAs */}
               <div className="flex flex-col gap-2.5">
                 {primaryLink && (
-                  <a
+                  <AffiliateLink
                     href={primaryLink.url}
-                    target="_blank"
-                    rel="noopener noreferrer sponsored nofollow"
+                    platform={primaryLink.platform}
+                    productName={product.name}
                     className={`flex items-center justify-center gap-2 w-full font-bold py-4 px-6 rounded-xl text-lg text-white transition-colors shadow-md ${PLATFORM_COLORS[primaryLink.platform] ?? "bg-green-500 hover:bg-green-600"}`}
                   >
                     <span>🛒</span>
@@ -178,20 +179,20 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
                     <span className="opacity-70 font-normal text-sm">
                       · {PLATFORM_DISPLAY[primaryLink.platform] || primaryLink.platform}
                     </span>
-                  </a>
+                  </AffiliateLink>
                 )}
 
                 {otherLinks.map((link) => (
-                  <a
+                  <AffiliateLink
                     key={link.id}
                     href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer sponsored nofollow"
+                    platform={link.platform}
+                    productName={product.name}
                     className={`flex items-center justify-center gap-2 w-full font-semibold py-3 px-6 rounded-xl text-base transition-colors ${PLATFORM_COLORS[link.platform] ?? "bg-gray-100 hover:bg-gray-200 text-gray-800"}`}
                   >
                     Ver no {PLATFORM_DISPLAY[link.platform] || link.platform}
                     <span>→</span>
-                  </a>
+                  </AffiliateLink>
                 ))}
 
                 {product.affiliateLinks.length === 0 && (
@@ -255,14 +256,14 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
           <div className="mt-8 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl p-6 text-center text-white shadow-lg">
             <p className="font-bold text-lg mb-1">Gostou? Aproveite enquanto tem estoque!</p>
             <p className="text-green-100 text-sm mb-4">Preços podem mudar a qualquer momento.</p>
-            <a
+            <AffiliateLink
               href={primaryLink.url}
-              target="_blank"
-              rel="noopener noreferrer sponsored nofollow"
+              platform={primaryLink.platform}
+              productName={product.name}
               className="inline-flex items-center gap-2 bg-white text-green-700 font-extrabold py-3 px-8 rounded-full hover:bg-green-50 transition-colors text-lg shadow"
             >
               🛒 Comprar agora
-            </a>
+            </AffiliateLink>
           </div>
         )}
       </div>
