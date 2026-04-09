@@ -5,16 +5,10 @@ import { DeleteButton } from "@/components/admin/DeleteButton";
 import { ProductFilter } from "@/components/admin/ProductFilter";
 import { deleteProduct } from "@/lib/actions/products";
 import { formatPrice } from "@/lib/utils";
+import { BADGE_LABELS } from "@/lib/constants";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = { title: "Produtos — Admin" };
-
-const BADGE_LABELS: Record<string, string> = {
-  BEST_VALUE: "Custo-benefício",
-  BEST_SELLER: "Mais vendido",
-  PREMIUM: "Premium",
-  CHEAPEST: "Mais barato",
-};
 
 export default async function ProductsPage(props: {
   searchParams: Promise<{ categoria?: string }>;

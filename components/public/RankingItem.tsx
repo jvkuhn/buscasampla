@@ -1,26 +1,12 @@
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
-
-const BADGE_LABELS: Record<string, string> = {
-  BEST_VALUE: "Melhor custo-benefício",
-  BEST_SELLER: "Mais vendido",
-  PREMIUM: "Premium",
-  CHEAPEST: "Mais barato",
-};
+import { BADGE_LABELS, PLATFORM_DISPLAY } from "@/lib/constants";
 
 const BADGE_COLORS: Record<string, string> = {
   BEST_VALUE: "bg-green-500 text-white",
   BEST_SELLER: "bg-blue-500 text-white",
   PREMIUM: "bg-purple-500 text-white",
   CHEAPEST: "bg-yellow-400 text-yellow-900",
-};
-
-const PLATFORM_DISPLAY: Record<string, string> = {
-  amazon: "Amazon",
-  mercadolivre: "Mercado Livre",
-  shopee: "Shopee",
-  magalu: "Magalu",
-  americanas: "Americanas",
 };
 
 interface Props {

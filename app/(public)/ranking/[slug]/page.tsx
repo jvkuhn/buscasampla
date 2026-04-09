@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { db } from "@/lib/db";
 import { RankingItem } from "@/components/public/RankingItem";
 import type { Metadata } from "next";
@@ -113,13 +114,13 @@ export default async function RankingPage(props: PageProps<"/ranking/[slug]">) {
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 py-12">
           <nav className="text-xs text-gray-500 mb-4">
-            <a href="/" className="hover:text-blue-600">Início</a>
+            <Link href="/" className="hover:text-blue-600">Início</Link>
             {ranking.category && (
               <>
                 {" "}›{" "}
-                <a href={`/categorias/${ranking.category.slug}`} className="hover:text-blue-600">
+                <Link href={`/categorias/${ranking.category.slug}`} className="hover:text-blue-600">
                   {ranking.category.name}
-                </a>
+                </Link>
               </>
             )}
           </nav>

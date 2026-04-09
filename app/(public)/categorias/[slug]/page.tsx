@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { db } from "@/lib/db";
 import { RankingCard } from "@/components/public/RankingCard";
 import type { Metadata } from "next";
@@ -40,8 +41,8 @@ export default async function CategoryPage(props: PageProps<"/categorias/[slug]"
       <section className="bg-gradient-to-br from-blue-700 to-indigo-700 text-white">
         <div className="max-w-5xl mx-auto px-4 py-14 md:py-20">
           <nav className="text-xs text-blue-200 mb-5">
-            <a href="/" className="hover:text-white">Início</a>{" "}›{" "}
-            <a href="/categorias" className="hover:text-white">Categorias</a>{" "}›{" "}
+            <Link href="/" className="hover:text-white">Início</Link>{" "}›{" "}
+            <Link href="/categorias" className="hover:text-white">Categorias</Link>{" "}›{" "}
             <span className="text-white">{category.name}</span>
           </nav>
           <div className="inline-block bg-white/15 text-blue-100 text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">

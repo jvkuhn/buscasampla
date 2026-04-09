@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { db } from "@/lib/db";
 import { PageHeader } from "@/components/admin/PageHeader";
 import type { Metadata } from "next";
@@ -44,13 +45,13 @@ export default async function AdminDashboard() {
             { href: "/admin/categorias/nova", label: "Nova categoria" },
             { href: "/admin/banners/novo", label: "Novo banner" },
           ].map((a) => (
-            <a
+            <Link
               key={a.href}
               href={a.href}
               className="flex items-center justify-center py-3 px-4 rounded-lg border border-gray-200 text-sm text-gray-700 hover:bg-gray-50 hover:border-blue-400 transition-colors font-medium"
             >
               {a.label}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,15 +1,9 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { db } from "@/lib/db";
 import { formatPrice } from "@/lib/utils";
+import { PLATFORM_DISPLAY } from "@/lib/constants";
 import type { Metadata } from "next";
-
-const PLATFORM_DISPLAY: Record<string, string> = {
-  amazon: "Amazon",
-  mercadolivre: "Mercado Livre",
-  shopee: "Shopee",
-  magalu: "Magalu",
-  americanas: "Americanas",
-};
 
 const PLATFORM_COLORS: Record<string, string> = {
   amazon: "bg-orange-400 hover:bg-orange-500",
@@ -66,9 +60,6 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
     description: product.shortDesc || product.longDesc || undefined,
     image: product.imageUrl || undefined,
     brand: product.brand ? { "@type": "Brand", name: product.brand } : undefined,
-    aggregateRating: rating
-      ? { "@type": "AggregateRating", ratingValue: rating, ratingCount: 1 }
-      : undefined,
     offers: currentPrice
       ? {
           "@type": "Offer",
@@ -89,13 +80,13 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
       <div className="max-w-5xl mx-auto px-4 py-10">
         {/* Breadcrumb */}
         <nav className="text-xs text-gray-500 mb-6">
-          <a href="/" className="hover:text-blue-600">Início</a>
+          <Link href="/" className="hover:text-blue-600">Início</Link>
           {product.category && (
             <>
               {" "}›{" "}
-              <a href={`/categorias/${product.category.slug}`} className="hover:text-blue-600">
+              <Link href={`/categorias/${product.category.slug}`} className="hover:text-blue-600">
                 {product.category.name}
-              </a>
+              </Link>
             </>
           )}
           {" "}›{" "}<span className="text-gray-700">{product.name}</span>

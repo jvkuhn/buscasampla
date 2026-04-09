@@ -9,9 +9,10 @@ interface Props {
     socialFacebook: string | null;
     socialInstagram: string | null;
   } | null;
+  pages?: { title: string; slug: string }[];
 }
 
-export function PublicFooter({ settings }: Props) {
+export function PublicFooter({ settings, pages = [] }: Props) {
   const year = new Date().getFullYear();
   const siteName = settings?.siteName ?? "Top Rankings";
 
@@ -32,9 +33,11 @@ export function PublicFooter({ settings }: Props) {
 
           <nav className="flex gap-4 text-xs">
             <Link href="/categorias" className="hover:text-blue-600">Categorias</Link>
-            <Link href="/p/sobre" className="hover:text-blue-600">Sobre</Link>
-            <Link href="/p/contato" className="hover:text-blue-600">Contato</Link>
-            <Link href="/p/politica-de-privacidade" className="hover:text-blue-600">Privacidade</Link>
+            {pages.map((page) => (
+              <Link key={page.slug} href={`/p/${page.slug}`} className="hover:text-blue-600">
+                {page.title}
+              </Link>
+            ))}
           </nav>
         </div>
 
