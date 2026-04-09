@@ -14,8 +14,8 @@ type Product = {
   name: string;
   imageUrl: string | null;
   categoryId: string | null;
-  currentPrice: number | bigint | null;
-  oldPrice: number | bigint | null;
+  currentPrice: unknown;
+  oldPrice: unknown;
   affiliateLinks: AffiliateLink[];
   category: { name: string } | null;
 };
