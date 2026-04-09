@@ -70,7 +70,7 @@ export function RankingItemsManager({ rankingId, items: initial, products }: Pro
     startTransition(async () => {
       await reorderRankingItems(
         rankingId,
-        reordered.map((it) => ({ id: it.id, order: it.order }))
+        reordered.map((it) => it.id)
       );
     });
   }

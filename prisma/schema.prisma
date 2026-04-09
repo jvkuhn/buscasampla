@@ -1,4 +1,4 @@
-// Prisma 7 schema — provider "prisma-client", output to app/generated/prisma
+// Prisma 6 schema — provider "prisma-client", output to app/generated/prisma
 
 generator client {
   provider = "prisma-client-js"

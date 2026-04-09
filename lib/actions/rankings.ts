@@ -2,15 +2,10 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { auth } from "@/lib/auth";
+import { requireAdmin } from "@/lib/auth-guard";
 import { db } from "@/lib/db";
 import { rankingSchema, faqSchema } from "@/lib/validations";
 import { slugify } from "@/lib/utils";
-
-async function requireAdmin() {
-  const session = await auth();
-  if (!session?.user) redirect("/admin/login");
-}
 
 export async function createRanking(formData: FormData) {
   await requireAdmin();
@@ -85,16 +80,30 @@ export async function removeRankingItem(rankingItemId: string, rankingId: string
   revalidatePath(`/admin/rankings/${rankingId}`);
 }
 
-export async function reorderRankingItems(
-  rankingId: string,
-  items: Array<{ id: string; order: number }>
-) {
+export async function reorderRankingItems(rankingId: string, orderedIds: string[]) {
   await requireAdmin();
-  await Promise.all(
-    items.map((item) =>
-      db.rankingItem.update({ where: { id: item.id }, data: { order: item.order } })
-    )
-  );
+
+  await db.$transaction(async (tx) => {
+    // First pass: set all to negative temporary values to avoid unique conflicts
+    await Promise.all(
+      orderedIds.map((id, idx) =>
+        tx.rankingItem.update({
+          where: { id },
+          data: { order: -(idx + 1) },
+        })
+      )
+    );
+    // Second pass: set final positive values
+    await Promise.all(
+      orderedIds.map((id, idx) =>
+        tx.rankingItem.update({
+          where: { id },
+          data: { order: idx + 1 },
+        })
+      )
+    );
+  });
+
   revalidatePath(`/admin/rankings/${rankingId}`);
 }
 

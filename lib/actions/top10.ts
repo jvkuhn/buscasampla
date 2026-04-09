@@ -2,14 +2,9 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { auth } from "@/lib/auth";
+import { requireAdmin } from "@/lib/auth-guard";
 import { createTop10RankingData } from "@/lib/top10-core";
 import type { Top10Input } from "@/lib/validations";
-
-async function requireAdmin() {
-  const session = await auth();
-  if (!session?.user) redirect("/admin/login");
-}
 
 export async function createTop10Ranking(input: Top10Input) {
   await requireAdmin();
