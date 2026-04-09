@@ -1,12 +1,14 @@
 # Fila de geração de Top 10
-# Um tópico por linha. Linhas com # são ignoradas.
-# Tópicos processados recebem ✓ no início e não são re-processados.
+# Formato: Tópico / Categoria
+# Se a categoria não existir no site, será criada automaticamente.
+# Tópicos processados recebem ✓ no início.
 
-# Exemplos — remova o # para ativar:
-# Top 10 Aspiradores de Pó até R$500 em 2026
-# Top 10 Cafeteiras Expresso até R$800 em 2026
-# Top 10 Headsets Gamer até R$400 em 2026
-✓ Top 10 TELEVISOES
-✓ Top 10 cadeiras de escritorio
-Top 10 kits de churrasco
-Top 10 bicicleta ergometrica
+# Exemplos:
+# Top 10 Aspiradores de Pó até R$500 / Casa
+# Top 10 Cafeteiras Expresso até R$800 / Cozinha
+# Top 10 Headsets Gamer até R$400 / Games
+
+✓ Top 10 TELEVISOES / Eletrônicos
+✓ Top 10 cadeiras de escritorio / Escritório
+Top 10 kits de churrasco / Casa
+Top 10 bicicleta ergometrica / Esporte e Lazer

@@ -1,16 +1,26 @@
 // scripts/gerar-top10.ts
 import "dotenv/config";
 import { spawnSync } from "child_process";
-import { readFileSync, writeFileSync } from "fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { join } from "path";
 import { createTop10RankingData } from "../lib/top10-core";
 import { top10Schema } from "../lib/validations";
 import { slugify } from "../lib/utils";
+import { db } from "../lib/db";
 
 const ROOT = join(__dirname, "..");
 const FILA_PATH = join(__dirname, "fila-top10.txt");
 const PROMPTS_DIR = join(ROOT, "prompts");
 const TEMPLATE_PATH = join(PROMPTS_DIR, "gerar-top10.md");
+
+/** Parseia linha da fila: "Top 10 xyz / Categoria" → { topico, categoria } */
+function parseLine(line: string): { topico: string; categoria?: string } {
+  const parts = line.split("/").map((s) => s.trim());
+  if (parts.length >= 2) {
+    return { topico: parts[0], categoria: parts.slice(1).join("/").trim() };
+  }
+  return { topico: parts[0] };
+}
 
 function readFila(): string[] {
   return readFileSync(FILA_PATH, "utf8").split("\n");
@@ -26,7 +36,6 @@ function buildPrompt(topico: string): string {
     .replace(/\[TÓPICO\]/g, topico);
 }
 
-/** Extrai o bloco JSON de nível raiz da resposta do Claude */
 function extractJson(text: string): string {
   const start = text.indexOf("{");
   if (start === -1) throw new Error("Nenhum JSON encontrado na resposta");
@@ -42,17 +51,35 @@ function extractJson(text: string): string {
   return text.slice(start, end + 1);
 }
 
-/** Extrai a seção de links TXT que vem após o JSON */
-function extractLinksSection(text: string, jsonEndIdx: number): string {
-  const after = text.slice(jsonEndIdx + 1);
-  const idx = after.indexOf("LINKS MERCADO LIVRE");
-  if (idx === -1) return "";
-  const lineStart = after.lastIndexOf("\n", idx);
-  return after.slice(lineStart >= 0 ? lineStart + 1 : 0).trim();
+/** Busca ou cria categoria por nome */
+async function resolveCategory(name: string): Promise<string> {
+  const slug = slugify(name);
+  let category = await db.category.findUnique({ where: { slug } });
+  if (!category) {
+    category = await db.category.create({
+      data: { name: name.trim(), slug, status: "PUBLISHED" },
+    });
+    console.log(`  📁 Categoria criada: "${name}"`);
+  }
+  return category.id;
 }
 
-async function processTopic(topico: string): Promise<void> {
-  console.log(`\n🔄 Gerando: ${topico}`);
+/** Salva o JSON na pasta organizada: prompts/{categoria-slug}/top10-{slug}.json */
+function saveJson(data: unknown, rankingTitle: string, categoriaSlug?: string): string {
+  const dir = categoriaSlug
+    ? join(PROMPTS_DIR, categoriaSlug)
+    : PROMPTS_DIR;
+
+  if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+
+  const filename = `top10-${slugify(rankingTitle)}.json`;
+  const filepath = join(dir, filename);
+  writeFileSync(filepath, JSON.stringify(data, null, 2), "utf8");
+  return filepath.replace(ROOT + "\\", "").replace(ROOT + "/", "");
+}
+
+async function processTopic(topico: string, categoria?: string): Promise<void> {
+  console.log(`\n🔄 Gerando: ${topico}${categoria ? ` [${categoria}]` : ""}`);
 
   const prompt = buildPrompt(topico);
 
@@ -72,7 +99,6 @@ async function processTopic(topico: string): Promise<void> {
   }
 
   const output = result.stdout;
-
   let jsonStr: string;
   try {
     jsonStr = extractJson(output);
@@ -81,33 +107,29 @@ async function processTopic(topico: string): Promise<void> {
   }
 
   const rawData = JSON.parse(jsonStr);
+
+  // Resolve categoria e injeta no JSON
+  let categoryId: string | null = null;
+  const categoriaSlug = categoria ? slugify(categoria) : undefined;
+  if (categoria) {
+    categoryId = await resolveCategory(categoria);
+    rawData.ranking.categoryId = categoryId;
+    rawData.ranking.categoryName = categoria; // campo custom para o importador
+  }
+
   const parsed = top10Schema.safeParse(rawData);
   if (!parsed.success) {
     throw new Error("JSON inválido: " + JSON.stringify(parsed.error.flatten(), null, 2));
   }
 
+  // Salva JSON organizado em pasta
+  const savedPath = saveJson(rawData, rawData.ranking.title, categoriaSlug);
+  console.log(`  📄 JSON salvo em ${savedPath}`);
+
+  // Importa no banco como DRAFT
   console.log("  💾 Importando DRAFT no banco...");
   const ranking = await createTop10RankingData(parsed.data);
   console.log(`  ✅ Criado: "${ranking.title}" (id: ${ranking.id})`);
-
-  // Salva TXT de links do Mercado Livre
-  const jsonEndIdx = (() => {
-    const start = output.indexOf("{");
-    let depth = 0;
-    for (let i = start; i < output.length; i++) {
-      if (output[i] === "{") depth++;
-      else if (output[i] === "}") { depth--; if (depth === 0) return i; }
-    }
-    return output.length - 1;
-  })();
-
-  const linksSection = extractLinksSection(output, jsonEndIdx);
-  if (linksSection) {
-    const slug = slugify(ranking.title);
-    const linksPath = join(PROMPTS_DIR, `top10-${slug}-links.txt`);
-    writeFileSync(linksPath, linksSection, "utf8");
-    console.log(`  📄 Links salvos em prompts/top10-${slug}-links.txt`);
-  }
 }
 
 async function main() {
@@ -123,15 +145,16 @@ async function main() {
 
   console.log(`🚀 ${pendentes.length} tópico(s) a processar`);
 
-  for (const topico of pendentes) {
-    const topicoPuro = topico.trim();
+  for (const linha of pendentes) {
+    const linhaPura = linha.trim();
+    const { topico, categoria } = parseLine(linhaPura);
     try {
-      await processTopic(topicoPuro);
-      const idx = lines.findIndex((l) => l.trim() === topicoPuro);
-      if (idx !== -1) lines[idx] = `✓ ${topicoPuro}`;
+      await processTopic(topico, categoria);
+      const idx = lines.findIndex((l) => l.trim() === linhaPura);
+      if (idx !== -1) lines[idx] = `✓ ${linhaPura}`;
       writeFila(lines);
     } catch (err) {
-      console.error(`  ❌ Erro: "${topicoPuro}":`, err);
+      console.error(`  ❌ Erro: "${topico}":`, err);
       console.error("  ⏭️  Pulando para o próximo...\n");
     }
   }

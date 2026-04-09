@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { createTop10Ranking } from "@/lib/actions/top10";
+import { importTop10WithCategory } from "@/lib/actions/top10";
 import { top10Schema } from "@/lib/validations";
 
 interface Props {
@@ -14,12 +14,13 @@ type FileEntry = {
   status: "pending" | "importing" | "done" | "error";
   error?: string;
   rankingTitle?: string;
+  categoryName?: string;
 };
 
 export function Top10Form({ categories }: Props) {
   const [files, setFiles] = useState<FileEntry[]>([]);
   const [importing, startTransition] = useTransition();
-  const [categoryId, setCategoryId] = useState("");
+  const [defaultCategory, setDefaultCategory] = useState("");
 
   async function handleFiles(e: React.ChangeEvent<HTMLInputElement>) {
     const selected = e.target.files;
@@ -30,6 +31,13 @@ export function Top10Form({ categories }: Props) {
       try {
         const text = await file.text();
         const parsed = JSON.parse(text);
+
+        // Extrai categoryName antes de validar (campo custom, não no schema)
+        const categoryName = parsed.ranking?.categoryName || undefined;
+        if (parsed.ranking?.categoryName) {
+          delete parsed.ranking.categoryName;
+        }
+
         const validated = top10Schema.safeParse(parsed);
         if (!validated.success) {
           entries.push({
@@ -44,6 +52,7 @@ export function Top10Form({ categories }: Props) {
             data: parsed,
             status: "pending",
             rankingTitle: parsed.ranking?.title || file.name,
+            categoryName,
           });
         }
       } catch {
@@ -79,27 +88,32 @@ export function Top10Form({ categories }: Props) {
         try {
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           const payload = file.data as any;
-          if (categoryId) {
-            payload.ranking.categoryId = categoryId;
-          }
-          await createTop10Ranking(payload);
+
+          // Resolve categoria: do arquivo > dropdown > nenhuma
+          const catName =
+            file.categoryName ||
+            (defaultCategory
+              ? categories.find((c) => c.id === defaultCategory)?.name
+              : undefined);
+
+          await importTop10WithCategory(payload, catName);
+
           setFiles((prev) =>
             prev.map((f, idx) => (idx === i ? { ...f, status: "done" } : f))
           );
         } catch (err) {
-          if (err instanceof Error && err.message.includes("NEXT_REDIRECT")) {
-            setFiles((prev) =>
-              prev.map((f, idx) => (idx === i ? { ...f, status: "done" } : f))
-            );
-          } else {
-            setFiles((prev) =>
-              prev.map((f, idx) =>
-                idx === i
-                  ? { ...f, status: "error", error: err instanceof Error ? err.message : "Erro desconhecido" }
-                  : f
-              )
-            );
-          }
+          setFiles((prev) =>
+            prev.map((f, idx) =>
+              idx === i
+                ? {
+                    ...f,
+                    status: "error",
+                    error:
+                      err instanceof Error ? err.message : "Erro desconhecido",
+                  }
+                : f
+            )
+          );
         }
       }
     });
@@ -115,9 +129,14 @@ export function Top10Form({ categories }: Props) {
       <div className="bg-white rounded-xl border border-gray-200 p-6">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <h2 className="text-base font-semibold text-gray-900">Importar arquivos JSON</h2>
+            <h2 className="text-base font-semibold text-gray-900">
+              Importar arquivos JSON
+            </h2>
             <p className="text-xs text-gray-500 mt-1">
-              Selecione um ou mais arquivos .json gerados pelo Claude. Cada arquivo vira um ranking DRAFT.
+              Selecione um ou mais arquivos .json. Cada arquivo vira um ranking
+              DRAFT. Se o JSON tiver{" "}
+              <code className="bg-gray-100 px-1 rounded">categoryName</code>, a
+              categoria é criada automaticamente.
             </p>
           </div>
         </div>
@@ -125,16 +144,18 @@ export function Top10Form({ categories }: Props) {
         <div className="flex items-end gap-4">
           <div className="flex-1">
             <label className="block text-xs font-medium text-gray-700 mb-1">
-              Categoria (aplicada a todos)
+              Categoria padrão (quando o JSON não especifica)
             </label>
             <select
-              value={categoryId}
-              onChange={(e) => setCategoryId(e.target.value)}
+              value={defaultCategory}
+              onChange={(e) => setDefaultCategory(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
             >
               <option value="">— Nenhuma —</option>
               {categories.map((c) => (
-                <option key={c.id} value={c.id}>{c.name}</option>
+                <option key={c.id} value={c.id}>
+                  {c.name}
+                </option>
               ))}
             </select>
           </div>
@@ -193,9 +214,18 @@ export function Top10Form({ categories }: Props) {
           <table className="w-full text-sm">
             <thead className="bg-gray-50 border-b border-gray-200">
               <tr>
-                <th className="px-4 py-2 text-left font-medium text-gray-500">Arquivo</th>
-                <th className="px-4 py-2 text-left font-medium text-gray-500">Ranking</th>
-                <th className="px-4 py-2 text-center font-medium text-gray-500">Status</th>
+                <th className="px-4 py-2 text-left font-medium text-gray-500">
+                  Arquivo
+                </th>
+                <th className="px-4 py-2 text-left font-medium text-gray-500">
+                  Ranking
+                </th>
+                <th className="px-4 py-2 text-left font-medium text-gray-500">
+                  Categoria
+                </th>
+                <th className="px-4 py-2 text-center font-medium text-gray-500">
+                  Status
+                </th>
                 <th className="px-4 py-2 text-right font-medium text-gray-500 w-16"></th>
               </tr>
             </thead>
@@ -208,25 +238,34 @@ export function Top10Form({ categories }: Props) {
                   <td className="px-4 py-2.5 text-gray-900">
                     {file.rankingTitle || "—"}
                   </td>
+                  <td className="px-4 py-2.5">
+                    {file.categoryName ? (
+                      <span className="text-xs bg-purple-50 text-purple-700 px-2 py-0.5 rounded-full">
+                        {file.categoryName}
+                      </span>
+                    ) : (
+                      <span className="text-xs text-gray-400">padrão</span>
+                    )}
+                  </td>
                   <td className="px-4 py-2.5 text-center">
                     {file.status === "pending" && (
-                      <span className="inline-flex items-center gap-1 text-xs text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded-full">
+                      <span className="text-xs text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded-full">
                         Pendente
                       </span>
                     )}
                     {file.status === "importing" && (
-                      <span className="inline-flex items-center gap-1 text-xs text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full">
+                      <span className="text-xs text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full">
                         Importando...
                       </span>
                     )}
                     {file.status === "done" && (
-                      <span className="inline-flex items-center gap-1 text-xs text-green-700 bg-green-50 px-2 py-0.5 rounded-full">
+                      <span className="text-xs text-green-700 bg-green-50 px-2 py-0.5 rounded-full">
                         Importado
                       </span>
                     )}
                     {file.status === "error" && (
                       <span
-                        className="inline-flex items-center gap-1 text-xs text-red-700 bg-red-50 px-2 py-0.5 rounded-full"
+                        className="text-xs text-red-700 bg-red-50 px-2 py-0.5 rounded-full"
                         title={file.error}
                       >
                         Erro
@@ -266,10 +305,12 @@ export function Top10Form({ categories }: Props) {
       {files.length === 0 && (
         <div className="bg-gray-50 rounded-xl border border-dashed border-gray-300 p-12 text-center">
           <p className="text-gray-400 text-sm">
-            Nenhum arquivo selecionado. Clique em &quot;Selecionar arquivos&quot; para importar JSONs.
+            Nenhum arquivo selecionado. Clique em &quot;Selecionar
+            arquivos&quot; para importar JSONs.
           </p>
           <p className="text-gray-300 text-xs mt-2">
-            Os arquivos ficam na pasta <code>prompts/</code> do projeto.
+            Os arquivos ficam na pasta{" "}
+            <code>prompts/[categoria]/</code> do projeto.
           </p>
         </div>
       )}
