@@ -9,10 +9,18 @@ const BADGE_LABELS: Record<string, string> = {
 };
 
 const BADGE_COLORS: Record<string, string> = {
-  BEST_VALUE: "bg-green-100 text-green-700",
-  BEST_SELLER: "bg-blue-100 text-blue-700",
-  PREMIUM: "bg-purple-100 text-purple-700",
-  CHEAPEST: "bg-yellow-100 text-yellow-700",
+  BEST_VALUE: "bg-green-500 text-white",
+  BEST_SELLER: "bg-blue-500 text-white",
+  PREMIUM: "bg-purple-500 text-white",
+  CHEAPEST: "bg-yellow-400 text-yellow-900",
+};
+
+const PLATFORM_DISPLAY: Record<string, string> = {
+  amazon: "Amazon",
+  mercadolivre: "Mercado Livre",
+  shopee: "Shopee",
+  magalu: "Magalu",
+  americanas: "Americanas",
 };
 
 interface Props {
@@ -35,80 +43,97 @@ interface Props {
 
 export function RankingItem({ position, product }: Props) {
   const rating = product.rating != null ? Number(product.rating) : null;
+  const currentPrice = product.currentPrice != null ? Number(product.currentPrice) : null;
+  const oldPrice = product.oldPrice != null ? Number(product.oldPrice) : null;
+  const discountPct =
+    currentPrice && oldPrice && oldPrice > currentPrice
+      ? Math.round((1 - currentPrice / oldPrice) * 100)
+      : null;
+
+  const [primaryLink, ...otherLinks] = product.affiliateLinks;
 
   return (
     <article
       id={`item-${position}`}
-      className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 scroll-mt-24"
+      className="bg-white border border-gray-200 rounded-2xl overflow-hidden scroll-mt-24 shadow-sm hover:shadow-md transition-shadow"
     >
-      <div className="flex flex-col md:flex-row gap-6">
-        <div className="flex-shrink-0 flex md:flex-col items-center md:items-start gap-4">
-          <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 text-white flex items-center justify-center text-2xl font-bold shadow">
-            {position}
-          </div>
-          {product.badge && (
-            <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${BADGE_COLORS[product.badge]}`}>
-              {BADGE_LABELS[product.badge]}
-            </span>
-          )}
+      {/* Badge de posição e destaque */}
+      <div className="flex items-center gap-3 px-5 pt-4 pb-0">
+        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 text-white flex items-center justify-center text-lg font-extrabold shadow shrink-0">
+          {position}
         </div>
+        {product.badge && (
+          <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-bold ${BADGE_COLORS[product.badge]}`}>
+            {BADGE_LABELS[product.badge]}
+          </span>
+        )}
+      </div>
 
-        <div className="flex-shrink-0">
+      <div className="flex flex-col md:flex-row gap-5 p-5 pt-3">
+        {/* Imagem */}
+        <div className="flex-shrink-0 flex items-start justify-center md:justify-start">
           {product.imageUrl ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={product.imageUrl}
               alt={product.name}
-              className="w-40 h-40 object-contain rounded-lg bg-gray-50"
+              className="w-44 h-44 object-contain rounded-xl bg-gray-50 border border-gray-100"
             />
           ) : (
-            <div className="w-40 h-40 bg-gray-100 rounded-lg" />
+            <div className="w-44 h-44 bg-gray-100 rounded-xl flex items-center justify-center text-gray-300 text-4xl font-bold">
+              #{position}
+            </div>
           )}
         </div>
 
-        <div className="flex-1 min-w-0">
-          {product.brand && (
-            <p className="text-xs text-gray-500 uppercase tracking-wide">{product.brand}</p>
-          )}
-          <h3 className="text-xl font-bold text-gray-900 mt-1">
-            <Link href={`/produto/${product.slug}`} className="hover:text-blue-600">
-              {product.name}
-            </Link>
-          </h3>
+        {/* Conteúdo */}
+        <div className="flex-1 min-w-0 flex flex-col gap-3">
+          {/* Cabeçalho */}
+          <div>
+            {product.brand && (
+              <p className="text-xs text-gray-400 uppercase tracking-wider font-medium">{product.brand}</p>
+            )}
+            <h3 className="text-xl font-bold text-gray-900 leading-snug mt-0.5">
+              <Link href={`/produto/${product.slug}`} className="hover:text-blue-600 transition-colors">
+                {product.name}
+              </Link>
+            </h3>
+            {rating != null && (
+              <div className="flex items-center gap-1 mt-1.5">
+                {[1, 2, 3, 4, 5].map((s) => (
+                  <span key={s} className={s <= Math.round(rating) ? "text-amber-400" : "text-gray-200"}>★</span>
+                ))}
+                <span className="text-sm font-semibold text-gray-700 ml-1">{rating.toFixed(1)}</span>
+                <span className="text-xs text-gray-400">/ 5</span>
+              </div>
+            )}
+            {product.shortDesc && (
+              <p className="text-sm text-gray-600 mt-2 leading-relaxed">{product.shortDesc}</p>
+            )}
+          </div>
 
-          {rating != null && (
-            <div className="flex items-center gap-1 mt-2">
-              <span className="text-amber-500">★</span>
-              <span className="text-sm font-medium text-gray-700">{rating.toFixed(1)}</span>
-              <span className="text-xs text-gray-400">/ 5</span>
-            </div>
-          )}
-
-          {product.shortDesc && (
-            <p className="text-sm text-gray-600 mt-3">{product.shortDesc}</p>
-          )}
-
+          {/* Prós e contras */}
           {(product.pros.length > 0 || product.cons.length > 0) && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 text-sm">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
               {product.pros.length > 0 && (
-                <div>
-                  <p className="font-semibold text-green-700 text-xs uppercase mb-1">Prós</p>
+                <div className="bg-green-50 rounded-lg p-3">
+                  <p className="font-bold text-green-700 text-xs uppercase tracking-wide mb-1.5">Prós</p>
                   <ul className="space-y-1">
                     {product.pros.map((p, i) => (
-                      <li key={i} className="text-gray-600 flex gap-2">
-                        <span className="text-green-600">✓</span>{p}
+                      <li key={i} className="text-gray-700 flex gap-1.5 items-start">
+                        <span className="text-green-500 shrink-0 mt-0.5">✓</span>{p}
                       </li>
                     ))}
                   </ul>
                 </div>
               )}
               {product.cons.length > 0 && (
-                <div>
-                  <p className="font-semibold text-red-700 text-xs uppercase mb-1">Contras</p>
+                <div className="bg-red-50 rounded-lg p-3">
+                  <p className="font-bold text-red-700 text-xs uppercase tracking-wide mb-1.5">Contras</p>
                   <ul className="space-y-1">
                     {product.cons.map((c, i) => (
-                      <li key={i} className="text-gray-600 flex gap-2">
-                        <span className="text-red-600">✗</span>{c}
+                      <li key={i} className="text-gray-700 flex gap-1.5 items-start">
+                        <span className="text-red-400 shrink-0 mt-0.5">✗</span>{c}
                       </li>
                     ))}
                   </ul>
@@ -117,34 +142,64 @@ export function RankingItem({ position, product }: Props) {
             </div>
           )}
 
-          <div className="mt-5 flex flex-wrap items-end gap-4 border-t border-gray-100 pt-4">
-            <div>
-              {product.oldPrice != null && (
-                <p className="text-sm text-gray-400 line-through">
-                  {formatPrice(Number(product.oldPrice))}
-                </p>
-              )}
-              {product.currentPrice != null && (
-                <p className="text-2xl font-bold text-gray-900">
-                  {formatPrice(Number(product.currentPrice))}
-                </p>
-              )}
-            </div>
+          {/* Preço + CTAs */}
+          <div className="mt-auto pt-3 border-t border-gray-100">
+            {/* Preço */}
+            {currentPrice != null && (
+              <div className="flex items-baseline gap-2 mb-3">
+                <span className="text-3xl font-extrabold text-gray-900">
+                  {formatPrice(currentPrice)}
+                </span>
+                {oldPrice != null && (
+                  <span className="text-sm text-gray-400 line-through">{formatPrice(oldPrice)}</span>
+                )}
+                {discountPct && (
+                  <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
+                    -{discountPct}% OFF
+                  </span>
+                )}
+              </div>
+            )}
 
-            <div className="flex flex-wrap gap-2 ml-auto">
-              {product.affiliateLinks.map((link) => (
-                <a
-                  key={link.id}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer sponsored nofollow"
-                  className="inline-flex items-center gap-1 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
-                >
-                  {link.label || `Ver na ${link.platform}`}
-                  <span aria-hidden>→</span>
-                </a>
-              ))}
-            </div>
+            {/* Botão principal */}
+            {primaryLink && (
+              <a
+                href={primaryLink.url}
+                target="_blank"
+                rel="noopener noreferrer sponsored nofollow"
+                className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 active:bg-green-700 text-white font-bold py-3.5 px-6 rounded-xl text-base transition-colors shadow-sm"
+              >
+                <span>🛒</span>
+                <span>Comprar agora</span>
+                <span className="text-green-200 mx-1">·</span>
+                <span className="font-medium">{PLATFORM_DISPLAY[primaryLink.platform] || primaryLink.platform}</span>
+              </a>
+            )}
+
+            {/* Links secundários */}
+            {otherLinks.length > 0 && (
+              <div className="flex flex-wrap gap-2 mt-2">
+                {otherLinks.map((link) => (
+                  <a
+                    key={link.id}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored nofollow"
+                    className="flex-1 min-w-[120px] text-center text-sm font-medium text-gray-600 bg-gray-100 hover:bg-gray-200 py-2 px-3 rounded-lg transition-colors"
+                  >
+                    {PLATFORM_DISPLAY[link.platform] || link.platform} →
+                  </a>
+                ))}
+              </div>
+            )}
+
+            {/* Ver análise */}
+            <Link
+              href={`/produto/${product.slug}`}
+              className="block text-center text-sm text-gray-400 hover:text-blue-600 mt-2 transition-colors"
+            >
+              Ver análise completa →
+            </Link>
           </div>
         </div>
       </div>

@@ -3,26 +3,40 @@ import { db } from "@/lib/db";
 import { RankingCard } from "@/components/public/RankingCard";
 
 export default async function HomePage() {
-  const [rankings, categories, topBanner] = await Promise.all([
-    db.ranking.findMany({
+  const [categoriesWithRankings, uncategorizedRankings, topBanner] = await Promise.all([
+    db.category.findMany({
       where: { status: "PUBLISHED" },
+      orderBy: { order: "asc" },
+      include: {
+        rankings: {
+          where: { status: "PUBLISHED" },
+          orderBy: { updatedAt: "desc" },
+          take: 3,
+          include: {
+            category: { select: { name: true } },
+            _count: { select: { items: true } },
+          },
+        },
+      },
+    }),
+    db.ranking.findMany({
+      where: { status: "PUBLISHED", categoryId: null },
       orderBy: { updatedAt: "desc" },
-      take: 9,
+      take: 6,
       include: {
         category: { select: { name: true } },
         _count: { select: { items: true } },
       },
-    }),
-    db.category.findMany({
-      where: { status: "PUBLISHED" },
-      orderBy: { order: "asc" },
-      take: 12,
     }),
     db.banner.findFirst({
       where: { active: true, position: "home_top" },
       orderBy: { order: "asc" },
     }),
   ]);
+
+  const categoriesWithContent = categoriesWithRankings.filter((c) => c.rankings.length > 0);
+  const totalRankings = categoriesWithRankings.reduce((sum, c) => sum + c.rankings.length, 0)
+    + uncategorizedRankings.length;
 
   const siteJsonLd = {
     "@context": "https://schema.org",
@@ -37,17 +51,20 @@ export default async function HomePage() {
   };
 
   return (
-    <div>
+    <div className="bg-gray-50 min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
       />
+
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white">
-        <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
+      <section className="bg-gradient-to-br from-blue-700 via-blue-600 to-indigo-700 text-white">
+        <div className="max-w-5xl mx-auto px-4 py-16 md:py-24 text-center">
           {topBanner ? (
             <>
-              <h1 className="text-4xl md:text-5xl font-bold tracking-tight">{topBanner.title}</h1>
+              <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                {topBanner.title}
+              </h1>
               {topBanner.subtitle && (
                 <p className="mt-4 text-lg md:text-xl text-blue-100 max-w-2xl mx-auto">
                   {topBanner.subtitle}
@@ -56,7 +73,7 @@ export default async function HomePage() {
               {topBanner.linkUrl && (
                 <a
                   href={topBanner.linkUrl}
-                  className="inline-block mt-6 bg-white text-blue-700 font-semibold px-6 py-3 rounded-full hover:bg-blue-50"
+                  className="inline-block mt-6 bg-white text-blue-700 font-bold px-8 py-3 rounded-full hover:bg-blue-50 transition-colors shadow-lg"
                 >
                   {topBanner.linkLabel || "Saiba mais"}
                 </a>
@@ -64,53 +81,96 @@ export default async function HomePage() {
             </>
           ) : (
             <>
-              <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-                Os melhores produtos, comparados e ranqueados
+              <div className="inline-block bg-white/10 text-blue-100 text-sm font-medium px-4 py-1.5 rounded-full mb-5">
+                Comparativos imparciais · Atualizado em 2026
+              </div>
+              <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                Os melhores produtos,<br className="hidden md:block" /> comparados pra você
               </h1>
-              <p className="mt-4 text-lg md:text-xl text-blue-100 max-w-2xl mx-auto">
-                Listas Top 10 imparciais com prós, contras, preço e onde comprar.
+              <p className="mt-5 text-lg md:text-xl text-blue-100 max-w-2xl mx-auto">
+                Listas Top 10 com prós, contras, preços e onde comprar — tudo em um só lugar.
               </p>
+              {categoriesWithContent.length > 0 && (
+                <div className="mt-8 flex flex-wrap justify-center gap-3">
+                  {categoriesWithContent.slice(0, 5).map((c) => (
+                    <Link
+                      key={c.id}
+                      href={`/categorias/${c.slug}`}
+                      className="bg-white/15 hover:bg-white/25 text-white text-sm font-medium px-4 py-2 rounded-full transition-colors border border-white/20"
+                    >
+                      {c.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </>
           )}
         </div>
       </section>
 
-      {/* Categorias */}
-      {categories.length > 0 && (
-        <section className="max-w-6xl mx-auto px-4 py-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Navegue por categoria</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {categories.map((c) => (
-              <Link
-                key={c.id}
-                href={`/categorias/${c.slug}`}
-                className="bg-white border border-gray-200 rounded-lg px-4 py-3 text-center text-sm font-medium text-gray-700 hover:border-blue-500 hover:text-blue-600 transition-colors"
-              >
-                {c.name}
-              </Link>
+      {/* Seções por categoria */}
+      {categoriesWithContent.length > 0 ? (
+        <div className="max-w-6xl mx-auto px-4">
+          {categoriesWithContent.map((category, idx) => (
+            <section
+              key={category.id}
+              className={`py-12 ${idx > 0 ? "border-t border-gray-200" : "pt-14"}`}
+            >
+              <div className="flex items-start justify-between mb-6 gap-4">
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900">{category.name}</h2>
+                  {category.description && (
+                    <p className="text-sm text-gray-500 mt-1 max-w-xl">{category.description}</p>
+                  )}
+                </div>
+                <Link
+                  href={`/categorias/${category.slug}`}
+                  className="shrink-0 text-sm text-blue-600 hover:text-blue-800 font-semibold hover:underline mt-1"
+                >
+                  Ver todos →
+                </Link>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                {category.rankings.map((r) => (
+                  <RankingCard key={r.id} ranking={r} />
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      ) : totalRankings === 0 ? (
+        <div className="max-w-6xl mx-auto px-4 py-20 text-center text-gray-400">
+          Nenhum ranking publicado ainda.
+        </div>
+      ) : null}
+
+      {/* Rankings sem categoria */}
+      {uncategorizedRankings.length > 0 && (
+        <section className={`max-w-6xl mx-auto px-4 py-12 ${categoriesWithContent.length > 0 ? "border-t border-gray-200" : ""}`}>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Outros rankings</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {uncategorizedRankings.map((r) => (
+              <RankingCard key={r.id} ranking={r} />
             ))}
           </div>
         </section>
       )}
 
-      {/* Rankings em destaque */}
-      <section className="max-w-6xl mx-auto px-4 py-12">
-        <div className="flex items-end justify-between mb-6">
-          <h2 className="text-2xl font-bold text-gray-900">Rankings mais recentes</h2>
-        </div>
-
-        {rankings.length === 0 ? (
-          <div className="bg-gray-50 border border-dashed border-gray-300 rounded-xl p-12 text-center text-gray-500">
-            Nenhum ranking publicado ainda. Acesse o painel admin para criar o primeiro.
+      {/* CTA final */}
+      {categoriesWithContent.length > 0 && (
+        <section className="max-w-6xl mx-auto px-4 py-10 pb-16">
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 text-center text-white">
+            <h2 className="text-2xl font-bold">Explore por categoria</h2>
+            <p className="text-blue-100 mt-2">Eletrodomésticos, eletrônicos, cozinha e muito mais.</p>
+            <Link
+              href="/categorias"
+              className="inline-block mt-5 bg-white text-blue-700 font-bold px-6 py-2.5 rounded-full hover:bg-blue-50 transition-colors"
+            >
+              Ver todas as categorias
+            </Link>
           </div>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {rankings.map((r) => (
-              <RankingCard key={r.id} ranking={r} />
-            ))}
-          </div>
-        )}
-      </section>
+        </section>
+      )}
     </div>
   );
 }

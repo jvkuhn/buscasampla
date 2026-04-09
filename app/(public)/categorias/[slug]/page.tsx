@@ -10,7 +10,7 @@ export async function generateMetadata(
   const cat = await db.category.findUnique({ where: { slug } });
   if (!cat) return {};
   return {
-    title: cat.metaTitle || cat.name,
+    title: cat.metaTitle || `Top 10 de ${cat.name} — Os melhores de 2026`,
     description: cat.metaDesc || cat.description || undefined,
     alternates: { canonical: `/categorias/${cat.slug}` },
   };
@@ -35,29 +35,45 @@ export default async function CategoryPage(props: PageProps<"/categorias/[slug]"
   if (!category || category.status !== "PUBLISHED") notFound();
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      <nav className="text-xs text-gray-500 mb-4">
-        <a href="/" className="hover:text-blue-600">Início</a> ›{" "}
-        <a href="/categorias" className="hover:text-blue-600">Categorias</a> ›{" "}
-        <span className="text-gray-700">{category.name}</span>
-      </nav>
-
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-900">{category.name}</h1>
-      {category.description && (
-        <p className="text-gray-600 mt-3 max-w-2xl">{category.description}</p>
-      )}
-
-      <div className="mt-10">
-        <h2 className="text-xl font-semibold text-gray-900 mb-5">Rankings em {category.name}</h2>
-
-        {category.rankings.length === 0 ? (
-          <p className="text-gray-400">Nenhum ranking publicado nesta categoria.</p>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {category.rankings.map((r) => (
-              <RankingCard key={r.id} ranking={r} />
-            ))}
+    <div className="bg-gray-50 min-h-screen">
+      {/* Hero da categoria */}
+      <section className="bg-gradient-to-br from-blue-700 to-indigo-700 text-white">
+        <div className="max-w-5xl mx-auto px-4 py-14 md:py-20">
+          <nav className="text-xs text-blue-200 mb-5">
+            <a href="/" className="hover:text-white">Início</a>{" "}›{" "}
+            <a href="/categorias" className="hover:text-white">Categorias</a>{" "}›{" "}
+            <span className="text-white">{category.name}</span>
+          </nav>
+          <div className="inline-block bg-white/15 text-blue-100 text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
+            {category.rankings.length} {category.rankings.length === 1 ? "ranking" : "rankings"} disponíveis
           </div>
+          <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight">
+            Top 10 de {category.name}
+          </h1>
+          {category.description && (
+            <p className="mt-4 text-lg text-blue-100 max-w-2xl">{category.description}</p>
+          )}
+        </div>
+      </section>
+
+      {/* Conteúdo */}
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        {category.rankings.length === 0 ? (
+          <div className="text-center py-20 text-gray-400">
+            <p className="text-2xl font-bold mb-2">Em breve</p>
+            <p>Estamos preparando rankings para essa categoria.</p>
+          </div>
+        ) : (
+          <>
+            <h2 className="text-xl font-bold text-gray-800 mb-6">
+              Todos os rankings em <span className="text-blue-600">{category.name}</span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {category.rankings.map((r) => (
+                <RankingCard key={r.id} ranking={r} />
+              ))}
+            </div>
+          </>
         )}
       </div>
     </div>
