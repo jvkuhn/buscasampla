@@ -2,646 +2,277 @@
 
 import { useState, useTransition } from "react";
 import { createTop10Ranking } from "@/lib/actions/top10";
-import type { Top10Input } from "@/lib/validations";
+import { top10Schema } from "@/lib/validations";
 
 interface Props {
   categories: { id: string; name: string }[];
 }
 
-type ProductBlock = {
+type FileEntry = {
   name: string;
-  brand: string;
-  shortDesc: string;
-  longDesc: string;
-  imageUrl: string;
-  currentPrice: string;
-  oldPrice: string;
-  rating: string;
-  pros: string;
-  cons: string;
-  badge: string;
-  amazonUrl: string;
-  mercadoLivreUrl: string;
-  shopeeUrl: string;
+  data: unknown;
+  status: "pending" | "importing" | "done" | "error";
+  error?: string;
+  rankingTitle?: string;
 };
-
-const EMPTY_PRODUCT: ProductBlock = {
-  name: "", brand: "", shortDesc: "", longDesc: "", imageUrl: "",
-  currentPrice: "", oldPrice: "", rating: "", pros: "", cons: "",
-  badge: "", amazonUrl: "", mercadoLivreUrl: "", shopeeUrl: "",
-};
-
-const PRODUCT_COUNT = 10;
 
 export function Top10Form({ categories }: Props) {
-  const [pending, startTransition] = useTransition();
-  const [error, setError] = useState<string | null>(null);
-  const [showImport, setShowImport] = useState(false);
-  const [importText, setImportText] = useState("");
-  const [importError, setImportError] = useState<string | null>(null);
-
-  // Ranking
-  const [title, setTitle] = useState("");
-  const [subtitle, setSubtitle] = useState("");
-  const [intro, setIntro] = useState("");
-  const [conclusion, setConclusion] = useState("");
-  const [coverUrl, setCoverUrl] = useState("");
-  const [metaTitle, setMetaTitle] = useState("");
-  const [metaDesc, setMetaDesc] = useState("");
+  const [files, setFiles] = useState<FileEntry[]>([]);
+  const [importing, startTransition] = useTransition();
   const [categoryId, setCategoryId] = useState("");
 
-  // Produtos
-  const [products, setProducts] = useState<ProductBlock[]>(
-    Array.from({ length: PRODUCT_COUNT }, () => ({ ...EMPTY_PRODUCT }))
-  );
+  async function handleFiles(e: React.ChangeEvent<HTMLInputElement>) {
+    const selected = e.target.files;
+    if (!selected) return;
 
-  // FAQs dinâmicos
-  const [faqs, setFaqs] = useState<{ question: string; answer: string }[]>([]);
-
-  function updateProduct(idx: number, field: keyof ProductBlock, value: string) {
-    setProducts((prev) => {
-      const next = [...prev];
-      next[idx] = { ...next[idx], [field]: value };
-      return next;
-    });
-  }
-
-  function addFaq() {
-    setFaqs((prev) => [...prev, { question: "", answer: "" }]);
-  }
-  function removeFaq(idx: number) {
-    setFaqs((prev) => prev.filter((_, i) => i !== idx));
-  }
-  function updateFaq(idx: number, field: "question" | "answer", value: string) {
-    setFaqs((prev) => {
-      const next = [...prev];
-      next[idx] = { ...next[idx], [field]: value };
-      return next;
-    });
-  }
-
-  function handleImportJson() {
-    setImportError(null);
-    try {
-      const parsed = JSON.parse(importText);
-      if (!parsed.ranking || !Array.isArray(parsed.products)) {
-        throw new Error("JSON inválido: precisa ter 'ranking' e 'products' (array).");
+    const entries: FileEntry[] = [];
+    for (const file of Array.from(selected)) {
+      try {
+        const text = await file.text();
+        const parsed = JSON.parse(text);
+        const validated = top10Schema.safeParse(parsed);
+        if (!validated.success) {
+          entries.push({
+            name: file.name,
+            data: null,
+            status: "error",
+            error: "JSON inválido: " + validated.error.issues[0]?.message,
+          });
+        } else {
+          entries.push({
+            name: file.name,
+            data: parsed,
+            status: "pending",
+            rankingTitle: parsed.ranking?.title || file.name,
+          });
+        }
+      } catch {
+        entries.push({
+          name: file.name,
+          data: null,
+          status: "error",
+          error: "Arquivo não é um JSON válido",
+        });
       }
-      // Ranking
-      setTitle(parsed.ranking.title ?? "");
-      setSubtitle(parsed.ranking.subtitle ?? "");
-      setIntro(parsed.ranking.intro ?? "");
-      setConclusion(parsed.ranking.conclusion ?? "");
-      setCoverUrl(parsed.ranking.coverUrl ?? "");
-      setMetaTitle(parsed.ranking.metaTitle ?? "");
-      setMetaDesc(parsed.ranking.metaDesc ?? "");
-      setCategoryId(parsed.ranking.categoryId ?? "");
-
-      // Produtos — preenche os blocos existentes (até PRODUCT_COUNT)
-      const incoming = parsed.products as Partial<Top10Input["products"][number]>[];
-      const next = Array.from({ length: PRODUCT_COUNT }, (_, i) => {
-        const p = incoming[i];
-        if (!p) return { ...EMPTY_PRODUCT };
-        return {
-          name: p.name ?? "",
-          brand: p.brand ?? "",
-          shortDesc: p.shortDesc ?? "",
-          longDesc: p.longDesc ?? "",
-          imageUrl: p.imageUrl ?? "",
-          currentPrice: p.currentPrice != null ? String(p.currentPrice) : "",
-          oldPrice: p.oldPrice != null ? String(p.oldPrice) : "",
-          rating: p.rating != null ? String(p.rating) : "",
-          pros: Array.isArray(p.pros) ? p.pros.join("\n") : "",
-          cons: Array.isArray(p.cons) ? p.cons.join("\n") : "",
-          badge: p.badge ?? "",
-          amazonUrl: p.amazonUrl ?? "",
-          mercadoLivreUrl: p.mercadoLivreUrl ?? "",
-          shopeeUrl: p.shopeeUrl ?? "",
-        };
-      });
-      setProducts(next);
-
-      // FAQs
-      if (Array.isArray(parsed.faqs)) {
-        setFaqs(parsed.faqs.map((f: { question?: string; answer?: string }) => ({
-          question: f.question ?? "",
-          answer: f.answer ?? "",
-        })));
-      }
-
-      setShowImport(false);
-      setImportText("");
-    } catch (e) {
-      setImportError(e instanceof Error ? e.message : "JSON inválido");
     }
+    setFiles((prev) => [...prev, ...entries]);
+    e.target.value = "";
   }
 
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    setError(null);
+  function removeFile(idx: number) {
+    setFiles((prev) => prev.filter((_, i) => i !== idx));
+  }
 
-    // Filtra produtos vazios — só envia os que têm pelo menos nome
-    const filledProducts = products.filter((p) => p.name.trim().length >= 2);
-    if (filledProducts.length === 0) {
-      setError("Preencha pelo menos 1 produto (com nome).");
-      return;
-    }
-    if (title.trim().length < 3) {
-      setError("Título do ranking obrigatório.");
-      return;
-    }
-
-    const payload: Top10Input = {
-      ranking: {
-        title: title.trim(),
-        subtitle: subtitle.trim() || undefined,
-        intro: intro.trim() || undefined,
-        conclusion: conclusion.trim() || undefined,
-        coverUrl: coverUrl.trim() || undefined,
-        metaTitle: metaTitle.trim() || undefined,
-        metaDesc: metaDesc.trim() || undefined,
-        categoryId: categoryId || null,
-      },
-      products: filledProducts.map((p) => ({
-        name: p.name.trim(),
-        brand: p.brand.trim() || undefined,
-        shortDesc: p.shortDesc.trim() || undefined,
-        longDesc: p.longDesc.trim() || undefined,
-        imageUrl: p.imageUrl.trim() || undefined,
-        currentPrice: p.currentPrice ? Number(p.currentPrice) : null,
-        oldPrice: p.oldPrice ? Number(p.oldPrice) : null,
-        rating: p.rating ? Number(p.rating) : null,
-        pros: p.pros.split("\n").map((s) => s.trim()).filter(Boolean),
-        cons: p.cons.split("\n").map((s) => s.trim()).filter(Boolean),
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        badge: (p.badge || null) as any,
-        amazonUrl: p.amazonUrl.trim() || undefined,
-        mercadoLivreUrl: p.mercadoLivreUrl.trim() || undefined,
-        shopeeUrl: p.shopeeUrl.trim() || undefined,
-      })),
-      faqs: faqs
-        .filter((f) => f.question.trim() && f.answer.trim())
-        .map((f) => ({ question: f.question.trim(), answer: f.answer.trim() })),
-    };
+  function handleImportAll() {
+    const pending = files.filter((f) => f.status === "pending");
+    if (pending.length === 0) return;
 
     startTransition(async () => {
-      try {
-        await createTop10Ranking(payload);
-      } catch (err) {
-        // redirect() lança um erro especial NEXT_REDIRECT — só capturamos erros reais
-        if (err instanceof Error && !err.message.includes("NEXT_REDIRECT")) {
-          setError(err.message);
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        if (file.status !== "pending" || !file.data) continue;
+
+        setFiles((prev) =>
+          prev.map((f, idx) => (idx === i ? { ...f, status: "importing" } : f))
+        );
+
+        try {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          const payload = file.data as any;
+          if (categoryId) {
+            payload.ranking.categoryId = categoryId;
+          }
+          await createTop10Ranking(payload);
+          setFiles((prev) =>
+            prev.map((f, idx) => (idx === i ? { ...f, status: "done" } : f))
+          );
+        } catch (err) {
+          if (err instanceof Error && err.message.includes("NEXT_REDIRECT")) {
+            setFiles((prev) =>
+              prev.map((f, idx) => (idx === i ? { ...f, status: "done" } : f))
+            );
+          } else {
+            setFiles((prev) =>
+              prev.map((f, idx) =>
+                idx === i
+                  ? { ...f, status: "error", error: err instanceof Error ? err.message : "Erro desconhecido" }
+                  : f
+              )
+            );
+          }
         }
       }
     });
   }
 
+  const pendingCount = files.filter((f) => f.status === "pending").length;
+  const doneCount = files.filter((f) => f.status === "done").length;
+  const errorCount = files.filter((f) => f.status === "error").length;
+
   return (
-    <form onSubmit={handleSubmit} className="space-y-8">
-      {/* ─── Importar JSON ────────────────────────────────────────────────── */}
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
-        <div className="flex items-center justify-between">
+    <div className="space-y-6">
+      {/* Upload */}
+      <div className="bg-white rounded-xl border border-gray-200 p-6">
+        <div className="flex items-center justify-between mb-4">
           <div>
-            <p className="text-sm font-semibold text-purple-900">📋 Importar de JSON</p>
-            <p className="text-xs text-purple-700">
-              Cole um JSON gerado por IA ou planilha pra preencher tudo automaticamente.
+            <h2 className="text-base font-semibold text-gray-900">Importar arquivos JSON</h2>
+            <p className="text-xs text-gray-500 mt-1">
+              Selecione um ou mais arquivos .json gerados pelo Claude. Cada arquivo vira um ranking DRAFT.
             </p>
           </div>
-          <button
-            type="button"
-            onClick={() => setShowImport((v) => !v)}
-            className="text-xs px-3 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 font-medium"
-          >
-            {showImport ? "Fechar" : "Abrir importador"}
-          </button>
         </div>
 
-        {showImport && (
-          <div className="mt-4 space-y-3">
-            <textarea
-              value={importText}
-              onChange={(e) => setImportText(e.target.value)}
-              rows={10}
-              className="input font-mono text-xs"
-              placeholder='{"ranking": {"title": "..."}, "products": [...], "faqs": [...]}'
-            />
-            {importError && (
-              <p className="text-xs text-red-600">{importError}</p>
-            )}
-            <button
-              type="button"
-              onClick={handleImportJson}
-              disabled={!importText.trim()}
-              className="text-sm px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 font-medium disabled:opacity-50"
-            >
-              Preencher formulário
-            </button>
-          </div>
-        )}
-      </div>
-
-      {/* ─── Seção: Dados do Ranking ──────────────────────────────────────── */}
-      <section className="bg-white rounded-xl border border-gray-200 p-6 space-y-5">
-        <h2 className="text-base font-semibold text-gray-900 border-b pb-3">
-          1. Dados do ranking
-        </h2>
-
-        <Field label="Título do Top 10 *" hint="Ex: Top 10 Melhores Formas de Silicone">
-          <input
-            type="text"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            className="input"
-            required
-          />
-        </Field>
-
-        <Field label="Subtítulo">
-          <input
-            type="text"
-            value={subtitle}
-            onChange={(e) => setSubtitle(e.target.value)}
-            className="input"
-          />
-        </Field>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Field label="Categoria">
+        <div className="flex items-end gap-4">
+          <div className="flex-1">
+            <label className="block text-xs font-medium text-gray-700 mb-1">
+              Categoria (aplicada a todos)
+            </label>
             <select
               value={categoryId}
               onChange={(e) => setCategoryId(e.target.value)}
-              className="input"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
             >
               <option value="">— Nenhuma —</option>
               {categories.map((c) => (
                 <option key={c.id} value={c.id}>{c.name}</option>
               ))}
             </select>
-          </Field>
-
-          <Field label="URL da imagem de capa">
-            <input
-              type="url"
-              value={coverUrl}
-              onChange={(e) => setCoverUrl(e.target.value)}
-              className="input"
-              placeholder="https://..."
-            />
-          </Field>
-        </div>
-
-        <Field label="Introdução" hint="Texto que aparece no topo da página">
-          <textarea
-            rows={3}
-            value={intro}
-            onChange={(e) => setIntro(e.target.value)}
-            className="input"
-          />
-        </Field>
-
-        <Field label="Conclusão">
-          <textarea
-            rows={3}
-            value={conclusion}
-            onChange={(e) => setConclusion(e.target.value)}
-            className="input"
-          />
-        </Field>
-
-        <details className="border rounded-lg p-4">
-          <summary className="text-sm font-medium text-gray-700 cursor-pointer">SEO (opcional)</summary>
-          <div className="mt-4 space-y-3">
-            <Field label="Meta título">
-              <input
-                type="text"
-                maxLength={70}
-                value={metaTitle}
-                onChange={(e) => setMetaTitle(e.target.value)}
-                className="input"
-              />
-            </Field>
-            <Field label="Meta descrição">
-              <textarea
-                rows={2}
-                maxLength={160}
-                value={metaDesc}
-                onChange={(e) => setMetaDesc(e.target.value)}
-                className="input"
-              />
-            </Field>
           </div>
-        </details>
-      </section>
 
-      {/* ─── Seção: Produtos ──────────────────────────────────────────────── */}
-      <section className="space-y-4">
-        <h2 className="text-base font-semibold text-gray-900">
-          2. Produtos do Top 10{" "}
-          <span className="text-xs font-normal text-gray-500">
-            (preencha quantos quiser, no mínimo 1)
-          </span>
-        </h2>
-
-        {products.map((p, idx) => (
-          <ProductBlockCard
-            key={idx}
-            position={idx + 1}
-            data={p}
-            onChange={(field, value) => updateProduct(idx, field, value)}
-          />
-        ))}
-      </section>
-
-      {/* ─── Seção: FAQs ──────────────────────────────────────────────────── */}
-      <section className="bg-white rounded-xl border border-gray-200 p-6 space-y-4">
-        <div className="flex items-center justify-between border-b pb-3">
-          <h2 className="text-base font-semibold text-gray-900">3. Perguntas frequentes (opcional)</h2>
-          <button
-            type="button"
-            onClick={addFaq}
-            className="text-xs px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md font-medium"
-          >
-            + Adicionar pergunta
-          </button>
+          <label className="cursor-pointer bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors inline-flex items-center gap-2">
+            <span>Selecionar arquivos</span>
+            <input
+              type="file"
+              accept=".json"
+              multiple
+              onChange={handleFiles}
+              className="hidden"
+            />
+          </label>
         </div>
+      </div>
 
-        {faqs.length === 0 && (
-          <p className="text-sm text-gray-400 italic">Nenhuma pergunta adicionada.</p>
-        )}
-
-        {faqs.map((f, idx) => (
-          <div key={idx} className="border rounded-lg p-4 space-y-3 bg-gray-50">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-medium text-gray-500">FAQ #{idx + 1}</span>
+      {/* File list */}
+      {files.length > 0 && (
+        <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+          <div className="flex items-center justify-between px-4 py-3 bg-gray-50 border-b border-gray-200">
+            <div className="flex items-center gap-3">
+              <span className="text-sm font-medium text-gray-900">
+                {files.length} arquivo(s)
+              </span>
+              {doneCount > 0 && (
+                <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">
+                  {doneCount} importado(s)
+                </span>
+              )}
+              {errorCount > 0 && (
+                <span className="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded-full">
+                  {errorCount} erro(s)
+                </span>
+              )}
+            </div>
+            <div className="flex gap-2">
               <button
-                type="button"
-                onClick={() => removeFaq(idx)}
-                className="text-xs text-red-600 hover:text-red-800"
+                onClick={() => setFiles([])}
+                className="text-xs text-gray-500 hover:text-gray-700 px-3 py-1.5 rounded-md hover:bg-gray-100"
               >
-                Remover
+                Limpar lista
+              </button>
+              <button
+                onClick={handleImportAll}
+                disabled={pendingCount === 0 || importing}
+                className="bg-green-600 text-white px-4 py-1.5 rounded-lg text-sm font-medium hover:bg-green-700 disabled:opacity-50 transition-colors"
+              >
+                {importing
+                  ? "Importando..."
+                  : `Importar ${pendingCount} ranking(s)`}
               </button>
             </div>
-            <Field label="Pergunta">
-              <input
-                type="text"
-                value={f.question}
-                onChange={(e) => updateFaq(idx, "question", e.target.value)}
-                className="input"
-              />
-            </Field>
-            <Field label="Resposta">
-              <textarea
-                rows={2}
-                value={f.answer}
-                onChange={(e) => updateFaq(idx, "answer", e.target.value)}
-                className="input"
-              />
-            </Field>
           </div>
-        ))}
-      </section>
 
-      {/* ─── Erros e botões ───────────────────────────────────────────────── */}
-      {error && (
-        <div className="bg-red-50 border border-red-200 text-red-700 text-sm rounded-lg p-4">
-          {error}
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50 border-b border-gray-200">
+              <tr>
+                <th className="px-4 py-2 text-left font-medium text-gray-500">Arquivo</th>
+                <th className="px-4 py-2 text-left font-medium text-gray-500">Ranking</th>
+                <th className="px-4 py-2 text-center font-medium text-gray-500">Status</th>
+                <th className="px-4 py-2 text-right font-medium text-gray-500 w-16"></th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {files.map((file, idx) => (
+                <tr key={idx} className="hover:bg-gray-50">
+                  <td className="px-4 py-2.5 font-mono text-xs text-gray-600">
+                    {file.name}
+                  </td>
+                  <td className="px-4 py-2.5 text-gray-900">
+                    {file.rankingTitle || "—"}
+                  </td>
+                  <td className="px-4 py-2.5 text-center">
+                    {file.status === "pending" && (
+                      <span className="inline-flex items-center gap-1 text-xs text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded-full">
+                        Pendente
+                      </span>
+                    )}
+                    {file.status === "importing" && (
+                      <span className="inline-flex items-center gap-1 text-xs text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full">
+                        Importando...
+                      </span>
+                    )}
+                    {file.status === "done" && (
+                      <span className="inline-flex items-center gap-1 text-xs text-green-700 bg-green-50 px-2 py-0.5 rounded-full">
+                        Importado
+                      </span>
+                    )}
+                    {file.status === "error" && (
+                      <span
+                        className="inline-flex items-center gap-1 text-xs text-red-700 bg-red-50 px-2 py-0.5 rounded-full"
+                        title={file.error}
+                      >
+                        Erro
+                      </span>
+                    )}
+                  </td>
+                  <td className="px-4 py-2.5 text-right">
+                    {file.status !== "importing" && (
+                      <button
+                        onClick={() => removeFile(idx)}
+                        className="text-xs text-gray-400 hover:text-red-600"
+                      >
+                        Remover
+                      </button>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+          {files.some((f) => f.status === "error" && f.error) && (
+            <div className="px-4 py-3 bg-red-50 border-t border-red-100">
+              {files
+                .filter((f) => f.status === "error" && f.error)
+                .map((f, i) => (
+                  <p key={i} className="text-xs text-red-700">
+                    <strong>{f.name}:</strong> {f.error}
+                  </p>
+                ))}
+            </div>
+          )}
         </div>
       )}
 
-      <div className="flex gap-3 sticky bottom-4 bg-white p-4 border rounded-xl shadow-lg">
-        <button
-          type="submit"
-          disabled={pending}
-          className="bg-blue-600 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          {pending ? "Criando…" : "Criar Top 10 (rascunho)"}
-        </button>
-        <a
-          href="/admin/rankings"
-          className="px-6 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition-colors"
-        >
-          Cancelar
-        </a>
-        <span className="ml-auto self-center text-xs text-gray-500">
-          O ranking nasce como <strong>rascunho</strong>. Você publica depois, na tela de edição.
-        </span>
-      </div>
-
-      <style>{`
-        .input {
-          width: 100%;
-          padding: 0.5rem 0.75rem;
-          border: 1px solid #d1d5db;
-          border-radius: 0.5rem;
-          font-size: 0.875rem;
-          background: white;
-        }
-        .input:focus {
-          outline: none;
-          border-color: #3b82f6;
-          box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
-        }
-      `}</style>
-    </form>
-  );
-}
-
-// ─── Subcomponentes ──────────────────────────────────────────────────────────
-
-function Field({
-  label,
-  hint,
-  children,
-}: {
-  label: string;
-  hint?: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="space-y-1">
-      <label className="block text-xs font-medium text-gray-700">{label}</label>
-      {children}
-      {hint && <p className="text-xs text-gray-500">{hint}</p>}
+      {/* Empty state */}
+      {files.length === 0 && (
+        <div className="bg-gray-50 rounded-xl border border-dashed border-gray-300 p-12 text-center">
+          <p className="text-gray-400 text-sm">
+            Nenhum arquivo selecionado. Clique em &quot;Selecionar arquivos&quot; para importar JSONs.
+          </p>
+          <p className="text-gray-300 text-xs mt-2">
+            Os arquivos ficam na pasta <code>prompts/</code> do projeto.
+          </p>
+        </div>
+      )}
     </div>
-  );
-}
-
-function ProductBlockCard({
-  position,
-  data,
-  onChange,
-}: {
-  position: number;
-  data: ProductBlock;
-  onChange: (field: keyof ProductBlock, value: string) => void;
-}) {
-  return (
-    <details
-      className="bg-white rounded-xl border border-gray-200 overflow-hidden"
-      open={position <= 3}
-    >
-      <summary className="px-5 py-3 bg-gray-50 cursor-pointer flex items-center justify-between border-b">
-        <div className="flex items-center gap-3">
-          <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-blue-600 text-white text-xs font-bold">
-            {position}
-          </span>
-          <span className="text-sm font-medium text-gray-900">
-            {data.name || `Produto ${position}`}
-          </span>
-        </div>
-        <span className="text-xs text-gray-400">
-          {data.name ? "✓ preenchido" : "vazio"}
-        </span>
-      </summary>
-
-      <div className="p-5 space-y-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Field label="Nome do produto *">
-            <input
-              type="text"
-              value={data.name}
-              onChange={(e) => onChange("name", e.target.value)}
-              className="input"
-            />
-          </Field>
-          <Field label="Marca">
-            <input
-              type="text"
-              value={data.brand}
-              onChange={(e) => onChange("brand", e.target.value)}
-              className="input"
-            />
-          </Field>
-        </div>
-
-        <Field label="Descrição curta" hint="Uma frase resumindo o produto">
-          <input
-            type="text"
-            maxLength={300}
-            value={data.shortDesc}
-            onChange={(e) => onChange("shortDesc", e.target.value)}
-            className="input"
-          />
-        </Field>
-
-        <Field label="Descrição longa">
-          <textarea
-            rows={2}
-            value={data.longDesc}
-            onChange={(e) => onChange("longDesc", e.target.value)}
-            className="input"
-          />
-        </Field>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Field label="URL da imagem">
-            <input
-              type="url"
-              value={data.imageUrl}
-              onChange={(e) => onChange("imageUrl", e.target.value)}
-              className="input"
-              placeholder="https://..."
-            />
-          </Field>
-          <Field label="Selo">
-            <select
-              value={data.badge}
-              onChange={(e) => onChange("badge", e.target.value)}
-              className="input"
-            >
-              <option value="">— Nenhum —</option>
-              <option value="BEST_VALUE">Melhor custo-benefício</option>
-              <option value="BEST_SELLER">Mais vendido</option>
-              <option value="PREMIUM">Premium</option>
-              <option value="CHEAPEST">Mais barato</option>
-            </select>
-          </Field>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <Field label="Preço atual (R$)">
-            <input
-              type="number"
-              step="0.01"
-              value={data.currentPrice}
-              onChange={(e) => onChange("currentPrice", e.target.value)}
-              className="input"
-            />
-          </Field>
-          <Field label="Preço antigo (R$)">
-            <input
-              type="number"
-              step="0.01"
-              value={data.oldPrice}
-              onChange={(e) => onChange("oldPrice", e.target.value)}
-              className="input"
-            />
-          </Field>
-          <Field label="Nota (0 a 5)">
-            <input
-              type="number"
-              step="0.1"
-              min="0"
-              max="5"
-              value={data.rating}
-              onChange={(e) => onChange("rating", e.target.value)}
-              className="input"
-            />
-          </Field>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Field label="Prós" hint="Um por linha">
-            <textarea
-              rows={3}
-              value={data.pros}
-              onChange={(e) => onChange("pros", e.target.value)}
-              className="input"
-              placeholder="Ótimo desempenho&#10;Bateria duradoura"
-            />
-          </Field>
-          <Field label="Contras" hint="Um por linha">
-            <textarea
-              rows={3}
-              value={data.cons}
-              onChange={(e) => onChange("cons", e.target.value)}
-              className="input"
-              placeholder="Preço elevado"
-            />
-          </Field>
-        </div>
-
-        <div className="space-y-3 pt-2 border-t">
-          <p className="text-xs font-semibold text-gray-700 uppercase tracking-wide">Links de afiliado</p>
-          <Field label="Amazon">
-            <input
-              type="url"
-              value={data.amazonUrl}
-              onChange={(e) => onChange("amazonUrl", e.target.value)}
-              className="input"
-              placeholder="https://amazon.com.br/..."
-            />
-          </Field>
-          <Field label="Mercado Livre">
-            <input
-              type="url"
-              value={data.mercadoLivreUrl}
-              onChange={(e) => onChange("mercadoLivreUrl", e.target.value)}
-              className="input"
-              placeholder="https://mercadolivre.com.br/..."
-            />
-          </Field>
-          <Field label="Shopee">
-            <input
-              type="url"
-              value={data.shopeeUrl}
-              onChange={(e) => onChange("shopeeUrl", e.target.value)}
-              className="input"
-              placeholder="https://shopee.com.br/..."
-            />
-          </Field>
-        </div>
-      </div>
-    </details>
   );
 }

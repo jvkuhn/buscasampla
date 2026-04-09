@@ -1,9 +1,9 @@
 import { db } from "@/lib/db";
-import { PageHeader } from "@/components/admin/PageHeader";
 import { Top10Form } from "@/components/admin/Top10Form";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Novo Top 10 — Admin" };
+export const dynamic = "force-dynamic";
+export const metadata: Metadata = { title: "Importar Top 10 — Admin" };
 
 export default async function NewTop10Page() {
   const categories = await db.category.findMany({
@@ -14,10 +14,12 @@ export default async function NewTop10Page() {
 
   return (
     <div>
-      <PageHeader
-        title="Criar Top 10"
-        description="Cadastre o ranking inteiro (10 produtos + links de afiliado) em uma única tela."
-      />
+      <div className="mb-8">
+        <h1 className="text-2xl font-bold text-gray-900">Importar Top 10</h1>
+        <p className="text-sm text-gray-500 mt-1">
+          Selecione os arquivos JSON gerados e importe todos de uma vez como rascunho.
+        </p>
+      </div>
       <Top10Form categories={categories} />
     </div>
   );
