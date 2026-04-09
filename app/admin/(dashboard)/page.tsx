@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { db } from "@/lib/db";
 import { PageHeader } from "@/components/admin/PageHeader";
-import { CleanupButton } from "@/components/admin/CleanupButton";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = { title: "Dashboard — Admin" };
@@ -54,7 +54,6 @@ export default async function AdminDashboard() {
               {a.label}
             </Link>
           ))}
-          <CleanupButton />
         </div>
       </div>
     </div>
