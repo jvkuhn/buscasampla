@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "**.shopee.com.br" },
       { protocol: "https", hostname: "**.kabum.com.br" },
       { protocol: "https", hostname: "**.pichau.com.br" },
+      { protocol: "https", hostname: "**.public.blob.vercel-storage.com" },
     ],
     unoptimized: false,
   },

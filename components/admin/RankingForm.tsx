@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { slugify } from "@/lib/utils";
 import { InputField, TextareaField, SelectField } from "./FormField";
+import { ImageUpload } from "./ImageUpload";
 import { SubmitButton } from "./SubmitButton";
 
 interface Props {
@@ -62,11 +63,11 @@ export function RankingForm({ action, categories, defaultValues = {} }: Props) {
           defaultValue={defaultValues.conclusion ?? ""}
           rows={4}
         />
-        <InputField
-          label="URL da imagem de capa"
+        <ImageUpload
+          label="Imagem de capa"
           name="coverUrl"
-          type="url"
           defaultValue={defaultValues.coverUrl ?? ""}
+          hint="JPG, PNG ou WebP. Máximo 4.5MB."
         />
       </div>
 
@@ -99,11 +100,11 @@ export function RankingForm({ action, categories, defaultValues = {} }: Props) {
           rows={2}
           maxLength={200}
         />
-        <InputField
-          label="OG imagem (URL)"
+        <ImageUpload
+          label="OG imagem"
           name="ogImageUrl"
-          type="url"
           defaultValue={defaultValues.ogImageUrl ?? ""}
+          hint="Imagem para redes sociais. JPG, PNG ou WebP."
         />
       </div>
 
