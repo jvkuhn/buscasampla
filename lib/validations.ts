@@ -94,6 +94,11 @@ export const siteSettingsSchema = z.object({
   gtmId: z.string().optional(),
 });
 
+export const manualLinkSchema = z.object({
+  label: z.string().min(1),
+  url: z.url(),
+});
+
 // ─── Top 10 (criação em massa) ───────────────────────────────────────────────
 
 export const top10ProductSchema = z.object({

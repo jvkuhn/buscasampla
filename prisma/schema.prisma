@@ -192,6 +192,7 @@ model SiteSettings {
   socialFacebook  String?
   socialInstagram String?
   gtmId           String?
+  manualLinks     Json?
   updatedAt       DateTime @updatedAt
 }
 

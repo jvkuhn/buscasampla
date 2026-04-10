@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { requireAdmin } from "@/lib/auth-guard";
 import { db } from "@/lib/db";
-import { bannerSchema, sitePageSchema, siteSettingsSchema } from "@/lib/validations";
+import { bannerSchema, manualLinkSchema, sitePageSchema, siteSettingsSchema } from "@/lib/validations";
 import { slugify } from "@/lib/utils";
 
 // ─── Banners ─────────────────────────────────────────────────────────────────
@@ -110,4 +110,30 @@ export async function updateSiteSettings(formData: FormData) {
   revalidatePath("/admin/configuracoes");
   revalidatePath("/");
   redirect("/admin/configuracoes");
+}
+
+// ─── Links Manuais ────────────────────────────────────────────────────────────
+
+export async function updateManualLinks(formData: FormData) {
+  await requireAdmin();
+
+  const links: { label: string; url: string }[] = [];
+  for (let i = 0; i < 20; i++) {
+    const label = (formData.get(`label_${i}`) as string)?.trim();
+    const url = (formData.get(`url_${i}`) as string)?.trim();
+    if (label && url) {
+      const parsed = manualLinkSchema.safeParse({ label, url });
+      if (parsed.success) links.push(parsed.data);
+    }
+  }
+
+  await db.siteSettings.upsert({
+    where: { id: "default" },
+    update: { manualLinks: links },
+    create: { id: "default", manualLinks: links },
+  });
+
+  revalidatePath("/admin/linksmanuais");
+  revalidatePath("/linksdireto");
+  redirect("/admin/linksmanuais");
 }

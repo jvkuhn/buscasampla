@@ -13,6 +13,7 @@ const navItems = [
   { href: "/admin/categorias", label: "Categorias", icon: "🗂️" },
   { href: "/admin/banners", label: "Banners", icon: "🖼️" },
   { href: "/admin/paginas", label: "Páginas", icon: "📄" },
+  { href: "/admin/linksmanuais", label: "Links Manuais", icon: "🔗" },
   { href: "/admin/configuracoes", label: "Configurações", icon: "⚙️" },
 ];
 
