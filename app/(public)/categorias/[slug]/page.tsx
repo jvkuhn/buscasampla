@@ -28,6 +28,11 @@ export default async function CategoryPage(props: PageProps<"/categorias/[slug]"
         include: {
           category: { select: { name: true } },
           _count: { select: { items: true } },
+          items: {
+            where: { order: 1 },
+            take: 1,
+            select: { product: { select: { imageUrl: true } } },
+          },
         },
       },
     },

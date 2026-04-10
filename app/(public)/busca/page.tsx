@@ -23,6 +23,11 @@ export default async function SearchPage(props: PageProps<"/busca">) {
           include: {
             category: { select: { name: true } },
             _count: { select: { items: true } },
+            items: {
+              where: { order: 1 },
+              take: 1,
+              select: { product: { select: { imageUrl: true } } },
+            },
           },
         }),
         db.product.findMany({

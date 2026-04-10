@@ -17,6 +17,11 @@ export default async function HomePage() {
           include: {
             category: { select: { name: true } },
             _count: { select: { items: true } },
+            items: {
+              where: { order: 1 },
+              take: 1,
+              select: { product: { select: { imageUrl: true } } },
+            },
           },
         },
       },
@@ -28,6 +33,11 @@ export default async function HomePage() {
       include: {
         category: { select: { name: true } },
         _count: { select: { items: true } },
+        items: {
+          where: { order: 1 },
+          take: 1,
+          select: { product: { select: { imageUrl: true } } },
+        },
       },
     }),
     db.banner.findFirst({
