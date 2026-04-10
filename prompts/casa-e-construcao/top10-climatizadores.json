@@ -29,7 +29,7 @@
         "Reservatório pequeno para ambientes grandes",
         "Requer recargas frequentes em dias muito quentes"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Midea+AKAF2"
     },
     {
@@ -51,7 +51,7 @@
         "Capacidade do tanque limitada",
         "Nível de ruído um pouco elevado na velocidade máxima"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Britania+BCL05FI"
     },
     {
@@ -139,7 +139,7 @@
         "Menos funcionalidades que competitors",
         "Desempenho inferior em dias muito quentes"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Ventisol+CLI0601"
     },
     {

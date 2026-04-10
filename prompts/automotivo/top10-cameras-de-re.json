@@ -30,7 +30,7 @@
         "Sem guias dinâmicas de estacionamento",
         "Imagem em preto e branco à noite"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-tech-one"
     },
     {
@@ -99,7 +99,7 @@
         "Tela pode desenvolver brilho com o tempo",
         "Sem suporte para câmera frontal"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-roadstar"
     },
     {
@@ -145,7 +145,7 @@
         "Sem visão noturna avançada",
         "Ângulo de visão convencional"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/camera-re-positron"
     },
     {

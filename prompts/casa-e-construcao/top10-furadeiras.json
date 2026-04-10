@@ -30,7 +30,7 @@
         "Adequada mais para profissionais",
         "Ruído moderado durante operação"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Bosch+GSB+550+RE"
     },
     {
@@ -53,7 +53,7 @@
         "Bateria de menor capacidade",
         "Não recomendado para profissionais"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+BPF+12K3"
     },
     {
@@ -76,7 +76,7 @@
         "Peso considerável",
         "Com fio requer extensão longa"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Makita+HP1640"
     },
     {

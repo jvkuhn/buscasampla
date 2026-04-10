@@ -29,7 +29,7 @@
         "Tamanho um pouco grande para cozinhas pequenas",
         "Ruído moderado em velocidades máximas"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Oster+OLIQ610+Full"
     },
     {
@@ -51,7 +51,7 @@
         "Potência limitada a 900W",
         "Não recomendado para gelo"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Britania+Diamante+800"
     },
     {
@@ -73,7 +73,7 @@
         "Preço um pouco acima da média",
         "Ruído mais perceptível que modelos menores"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Philco+PLQ15A+Turbo"
     },
     {
@@ -117,7 +117,7 @@
         "Menos velocidades que modelos premium",
         "Acabamento mais simples"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mondial+Turbo+Glass+L-1400-GI"
     },
     {

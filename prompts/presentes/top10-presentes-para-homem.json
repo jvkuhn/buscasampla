@@ -29,7 +29,7 @@
         "Preço elevado em comparação com concorrentes",
         "Melhor compatibilidade com aparelhos Samsung"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Samsung+Galaxy+Watch+8"
     },
     {
@@ -51,7 +51,7 @@
         "Embalagem genérica da marca árabe",
         "Fragrância forte demais para alguns"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Club+Nuit+Intense+Man"
     },
     {
@@ -117,7 +117,7 @@
         "Couro requer cuidados e manutenção",
         "Modelos mais caros podem ser difíceis de encontrar"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Carteira+Couro+Legítimo"
     },
     {

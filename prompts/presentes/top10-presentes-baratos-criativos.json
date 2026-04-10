@@ -29,7 +29,7 @@
         "Sem cancelamento ativo de ruído",
         "App pode ser limitado"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Xiaomi+Redmi+Buds+6+Play"
     },
     {
@@ -51,7 +51,7 @@
         "Qualidade de som básica",
         "Pode consumir energia significativa"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/luminaria+bluetooth+despertador"
     },
     {
@@ -73,7 +73,7 @@
         "Qualidade de impressão varia por vendedor",
         "Raspadinha pode estragar com o tempo"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/mapa+scratch+off"
     },
     {

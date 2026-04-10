@@ -29,7 +29,7 @@
         "Peso de 106g acima da tendência ultraleve",
         "Preço elevado no mercado brasileiro"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Logitech+G502+X+Plus"
     },
     {
@@ -51,7 +51,7 @@
         "Design simples sem iluminação RGB",
         "Usa pilha AA em vez de bateria recarregável"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Logitech+G305+Lightspeed"
     },
     {
@@ -95,7 +95,7 @@
         "Sensor de 10.000 DPI limitado vs concorrência",
         "Switches com durabilidade menor (10M cliques)"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Redragon+Cobra+M711"
     },
     {

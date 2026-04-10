@@ -166,10 +166,12 @@ export function ProductForm({ action, categories, defaultValues = {} }: Props) {
           defaultValue={defaultValues.badge ?? ""}
           options={[
             { value: "", label: "— Nenhum —" },
-            { value: "BEST_VALUE", label: "Melhor custo-benefício" },
-            { value: "BEST_SELLER", label: "Mais vendido" },
+            { value: "MELHOR_ESCOLHA", label: "Melhor Escolha" },
+            { value: "CUSTO_BENEFICIO", label: "Melhor Custo-Benefício" },
+            { value: "MAIS_VENDIDO", label: "Mais Vendido" },
             { value: "PREMIUM", label: "Premium" },
-            { value: "CHEAPEST", label: "Mais barato" },
+            { value: "RECOMENDADO", label: "Recomendado" },
+            { value: "BOM_E_BARATO", label: "Bom e Barato" },
           ]}
         />
 

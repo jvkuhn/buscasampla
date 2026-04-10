@@ -30,7 +30,7 @@
         "Sem suporte a carregamento rápido",
         "Design simples sem recursos avançados"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Baseus+CCALL-ML01"
     },
     {
@@ -53,7 +53,7 @@
         "Apenas portas USB-A",
         "Sem recursos de carregamento rápido"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Geonav+ES24CH"
     },
     {
@@ -76,7 +76,7 @@
         "Sem suporte USB-C",
         "Duas portas USB-A apenas"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Anker+PowerDrive+2"
     },
     {

@@ -29,7 +29,7 @@
         "Reservatório pequeno de 500ml",
         "Requer bateria do carro"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Tramontina+42350070+aspirador+automotivo"
     },
     {
@@ -51,7 +51,7 @@
         "Reservatório pequeno de 420ml",
         "Necessita energia da bateria do carro"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+CAR+12V2+aspirador"
     },
     {
@@ -95,7 +95,7 @@
         "Potência modesta de 60W",
         "Capacidade pequena"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Multilaser+AU607+aspirador"
     },
     {

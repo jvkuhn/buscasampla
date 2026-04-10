@@ -29,7 +29,7 @@
         "Preço mais elevado que concorrentes",
         "Requer limpeza regular do filtro"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Electrolux+ECM30"
     },
     {
@@ -51,7 +51,7 @@
         "Não possui timer programável",
         "Sem controle de intensidade"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Philco+PH30+Thermo"
     },
     {
@@ -95,7 +95,7 @@
         "Sem funcionalidades digitais",
         "Apenas 220V"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mondial+Dolce+Arome"
     },
     {

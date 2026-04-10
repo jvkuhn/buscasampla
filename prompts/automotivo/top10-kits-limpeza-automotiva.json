@@ -29,7 +29,7 @@
         "Quantidade de produtos pode ser limitada para uso profissional",
         "Toalhas de microfibra podem ter qualidade variável"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kit+Completo+Limpeza+Automotiva+Vonixx"
     },
     {
@@ -51,7 +51,7 @@
         "Produtos com durabilidade limitada",
         "Não inclui cera ou protetor de pintura"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kit+Easytech+Limpeza+Automotiva"
     },
     {
@@ -161,7 +161,7 @@
         "Rendimento de alguns produtos pode ser limitado",
         "Marca menos conhecida que Vonixx"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kit+Finisher+Completo+Automotivo"
     },
     {

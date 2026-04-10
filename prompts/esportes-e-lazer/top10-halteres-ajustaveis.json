@@ -29,7 +29,7 @@
         "Peso máximo limitado a 24kg",
         "Requerem espaço para armazenamento horizontal"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/halter+ajustavel+AHEAD+SPORTS"
     },
     {
@@ -51,7 +51,7 @@
         "Limitado a 24kg por unidade",
         "Não inclui base de apoio"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/halter+ajustavel+OCCY"
     },
     {
@@ -161,7 +161,7 @@
         "Limite de 25kg total",
         "Requer mais espaço para armazenamento de peças"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/kit+halteres+YANGFIT"
     },
     {

@@ -29,7 +29,7 @@
         "8GB de VRAM pode limitar em texturas ultra em 1440p",
         "Barramento de 128 bits mais estreito"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Galax+RTX+4060+1-Click+OC"
     },
     {
@@ -51,7 +51,7 @@
         "Ray tracing inferior à concorrência NVIDIA",
         "Sem equivalente ao DLSS Frame Generation"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/ASRock+RX+7600+Challenger"
     },
     {
@@ -139,7 +139,7 @@
         "Arquitetura Ampere já é geração anterior",
         "Sem DLSS 3 Frame Generation"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Galax+RTX+3060+1-Click+OC+12GB"
     },
     {

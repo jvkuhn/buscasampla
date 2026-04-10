@@ -161,8 +161,6 @@ export default async function RankingPage(props: PageProps<"/ranking/[slug]">) {
               name: item.product.name,
               shortDesc: item.product.shortDesc,
               imageUrl: item.product.imageUrl,
-              currentPrice: item.product.currentPrice,
-              oldPrice: item.product.oldPrice,
               rating: item.product.rating,
               pros: item.product.pros,
               cons: item.product.cons,

@@ -29,7 +29,7 @@
         "Pressão menor comparada a modelos premium",
         "Não acompanha aplicador de detergente em alguns lotes"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+Ousada+Plus+2200"
     },
     {
@@ -51,7 +51,7 @@
         "Consumo de energia mais elevado",
         "Peso um pouco superior aos competidores"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+Combate+Turbo+2600"
     },
     {
@@ -185,7 +185,7 @@
         "Mangueira mais curta",
         "Não recomendado para uso intenso"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/WAP+Agil+1800"
     },
     {

@@ -29,7 +29,7 @@
         "Preço elevado para iniciantes",
         "Requer mais espaço em casa"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kikos+Max-KS5"
     },
     {
@@ -51,7 +51,7 @@
         "Maior espaço necessário",
         "Menos adequada para spinning intenso"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Dream+Fitness+Dream+Max+H"
     },
     {
@@ -117,7 +117,7 @@
         "Capacidade limitada a 100kg",
         "Menos recursos que modelos premium"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Polimet+Nitro+4300"
     },
     {

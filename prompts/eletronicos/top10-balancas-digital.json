@@ -29,7 +29,7 @@
         "Requer smartphone para visualizar todos os dados completos",
         "App em inglês/chinês com tradução parcial para português"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Xiaomi+Mi+Body+Composition+Scale+2"
     },
     {
@@ -73,7 +73,7 @@
         "Mede apenas peso, sem recursos de bioimpedância",
         "Capacidade limitada a 150 kg"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/G-Tech+BALGL10+balança+digital"
     },
     {
@@ -227,7 +227,7 @@
         "Marca pouco conhecida sem histórico consolidado no mercado",
         "Capacidade máxima de 140 kg, menor que a maioria dos concorrentes"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Davely+Fitness+balança+digital"
     }
   ],

@@ -29,7 +29,7 @@
         "Preço mais elevado que outras opções",
         "Pode ser pesada para iniciantes"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Onset+Fitness+Speed+Rope+3.0+Extreme"
     },
     {
@@ -51,7 +51,7 @@
         "Manopla um pouco curta para mãos maiores",
         "Requer mais cuidado com ajuste de comprimento"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Yangfit+Corda+Pular+Aluminio+Rolamento+Duplo"
     },
     {
@@ -163,7 +163,7 @@
         "Material PVC não oferece a performance de aço",
         "Desgaste mais rápido que modelos profissionais"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Vollo+Corda+Pular+PVC+Rolamento"
     },
     {

@@ -29,7 +29,7 @@
         "Tamanho pode ser volumoso para cozinhas pequenas",
         "Ruído moderado durante funcionamento"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Philips+Walita+NA130"
     },
     {
@@ -51,7 +51,7 @@
         "Capacidade limitada para famílias grandes",
         "Sem visor transparente"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mondial+AFN-40-FR"
     },
     {
@@ -95,7 +95,7 @@
         "Capacidade pequena para famílias numerosas",
         "Menos recursos que modelos premium"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Elgin+Prática+Fry"
     },
     {

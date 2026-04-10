@@ -29,7 +29,7 @@
         "Bateria dura apenas 1-2 dias com uso intenso",
         "Melhor experiência apenas com smartphones Samsung"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Samsung+Galaxy+Watch+6+40mm"
     },
     {
@@ -51,7 +51,7 @@
         "Ecossistema de apps limitado comparado ao Wear OS",
         "Notificações não permitem resposta em Android"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Amazfit+GTS+4"
     },
     {
@@ -95,7 +95,7 @@
         "Sem GPS integrado — depende do celular",
         "Tela pequena limita interações complexas"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Xiaomi+Smart+Band+8"
     },
     {

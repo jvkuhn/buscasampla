@@ -1,13 +1,14 @@
 import Link from "next/link";
-import { formatPrice } from "@/lib/utils";
 import { BADGE_LABELS, PLATFORM_DISPLAY } from "@/lib/constants";
 import { AffiliateLink } from "./AffiliateLink";
 
 const BADGE_COLORS: Record<string, string> = {
-  BEST_VALUE: "bg-green-500 text-white",
-  BEST_SELLER: "bg-blue-500 text-white",
+  MELHOR_ESCOLHA: "bg-green-500 text-white",
+  CUSTO_BENEFICIO: "bg-blue-500 text-white",
+  MAIS_VENDIDO: "bg-orange-500 text-white",
   PREMIUM: "bg-purple-500 text-white",
-  CHEAPEST: "bg-yellow-400 text-yellow-900",
+  RECOMENDADO: "bg-teal-500 text-white",
+  BOM_E_BARATO: "bg-yellow-400 text-yellow-900",
 };
 
 interface Props {
@@ -17,8 +18,6 @@ interface Props {
     name: string;
     shortDesc: string | null;
     imageUrl: string | null;
-    currentPrice: unknown;
-    oldPrice: unknown;
     rating: unknown;
     pros: string[];
     cons: string[];
@@ -30,12 +29,6 @@ interface Props {
 
 export function RankingItem({ position, product }: Props) {
   const rating = product.rating != null ? Number(product.rating) : null;
-  const currentPrice = product.currentPrice != null ? Number(product.currentPrice) : null;
-  const oldPrice = product.oldPrice != null ? Number(product.oldPrice) : null;
-  const discountPct =
-    currentPrice && oldPrice && oldPrice > currentPrice
-      ? Math.round((1 - currentPrice / oldPrice) * 100)
-      : null;
 
   const [primaryLink, ...otherLinks] = product.affiliateLinks;
 
@@ -131,23 +124,6 @@ export function RankingItem({ position, product }: Props) {
 
           {/* Preço + CTAs */}
           <div className="mt-auto pt-3 border-t border-gray-100">
-            {/* Preço */}
-            {currentPrice != null && (
-              <div className="flex items-baseline gap-2 mb-3">
-                <span className="text-3xl font-extrabold text-gray-900">
-                  {formatPrice(currentPrice)}
-                </span>
-                {oldPrice != null && (
-                  <span className="text-sm text-gray-400 line-through">{formatPrice(oldPrice)}</span>
-                )}
-                {discountPct && (
-                  <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
-                    -{discountPct}% OFF
-                  </span>
-                )}
-              </div>
-            )}
-
             {/* Botão principal */}
             {primaryLink && (
               <AffiliateLink

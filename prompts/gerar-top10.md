@@ -7,7 +7,7 @@ REGRAS:
 1. Pesquise produtos REAIS disponíveis no varejo brasileiro (Amazon BR, Mercado Livre, Magalu, Shopee) em 2026. Use web search se necessário.
 2. Não invente modelos. Se não tiver certeza do código exato, use só o nome comercial.
 3. Escreva intro, conclusão, prós, contras e FAQs em português natural, persuasivo, sem soar genérico.
-4. Atribua badges com critério: 1 BEST_SELLER (mais vendido), 1 BEST_VALUE (custo-benefício), 1 PREMIUM (top de linha), 1 CHEAPEST (mais barato). Os outros 6 deixe null.
+4. Atribua badges com critério: 1 MELHOR_ESCOLHA (destaque principal), 1 CUSTO_BENEFICIO (melhor custo-benefício), 1 MAIS_VENDIDO (mais vendido), 1 PREMIUM (top de linha), 1 RECOMENDADO (escolha sólida), 1 BOM_E_BARATO (opção econômica). Os outros 4 deixe null.
 5. Para o campo mercadoLivreUrl, gere URL de BUSCA com o nome do produto (ex: https://lista.mercadolivre.com.br/NOME+DO+PRODUTO). Não inclua campos amazonUrl ou shopeeUrl. Não invente links de afiliado.
 6. Para o campo imageUrl: faça uma web search de IMAGEM para cada produto (ex: "Electrolux MTO30 imagem produto") e extraia a URL mais relevante. Priorize URLs de: fabricante oficial > lojas (KaBuM, Pichau, BuscaPé) > sites de review. Não use Mercado Livre como fonte de imagem (bloqueia).
 7. Preços devem ser realistas e atuais (consulte se necessário).
@@ -48,7 +48,7 @@ FORMATO EXATO (siga a estrutura, não adicione nem remova campos):
       "rating": number entre 0 e 5,
       "pros": ["string", "string", "string", "string"],
       "cons": ["string", "string"],
-      "badge": "BEST_SELLER" | "BEST_VALUE" | "PREMIUM" | "CHEAPEST" | null,
+      "badge": "MELHOR_ESCOLHA" | "CUSTO_BENEFICIO" | "MAIS_VENDIDO" | "PREMIUM" | "RECOMENDADO" | "BOM_E_BARATO" | null,
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/..."
     }
   ],

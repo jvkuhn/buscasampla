@@ -1,8 +1,10 @@
 export const BADGE_LABELS: Record<string, string> = {
-  BEST_SELLER: "Mais vendido",
-  BEST_VALUE: "Melhor custo-benefício",
+  MELHOR_ESCOLHA: "Melhor Escolha",
+  CUSTO_BENEFICIO: "Melhor Custo-Benefício",
+  MAIS_VENDIDO: "Mais Vendido",
   PREMIUM: "Premium",
-  CHEAPEST: "Mais barato",
+  RECOMENDADO: "Recomendado",
+  BOM_E_BARATO: "Bom e Barato",
 };
 
 export const PLATFORM_DISPLAY: Record<string, string> = {

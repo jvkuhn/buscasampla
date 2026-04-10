@@ -55,7 +55,7 @@
         "Peso elevado",
         "Entrega pode demorar mais"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Castor+Premium+Amazon+Gel+solteiro"
     },
     {
@@ -79,7 +79,7 @@
         "Prazos de entrega variáveis",
         "Revestimento menos sofisticado"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Ortobom+ISO+100+D33+solteiro"
     },
     {
@@ -151,7 +151,7 @@
         "Sem tecnologias avançadas",
         "Revestimento básico"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/BF+Colchoes+D33+a+Vacuo+solteiro"
     },
     {

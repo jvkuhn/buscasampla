@@ -8,10 +8,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Tech Stack
 
-- **Framework**: Next.js 16.2.2 (App Router)
-- **Auth**: NextAuth v5 (beta.30) with credentials provider
+- **Framework**: Next.js 16.2.2 (App Router) with React 19
+- **Auth**: NextAuth v5 (beta.30) with credentials provider + `@auth/prisma-adapter`
 - **Database**: PostgreSQL via Prisma 6
-- **Styling**: Tailwind CSS 4 with postcss
+- **Styling**: Tailwind CSS 4 with postcss; `clsx` + `tailwind-merge` via `cn()` helper
 - **Validation**: Zod 4 for schemas
 
 ## Development Commands
@@ -23,6 +23,14 @@ npm start         # Start production server
 npm run seed      # Seed database from prisma/seed.ts
 npm run lint      # Run ESLint
 ```
+
+**Content generation scripts:**
+```bash
+npm run gerar-top10      # Generate Top 10 JSON data (tsx scripts/gerar-top10.ts)
+npm run importar-top10   # Import Top 10 JSON into database (tsx scripts/importar-top10.ts)
+```
+
+The `prompts/` directory contains JSON files organized by category (e.g., `prompts/cozinha/top10-air-fryer.json`) used as input for these scripts. The prompt template is in `prompts/gerar-top10.md`.
 
 **Database migrations:**
 ```bash
@@ -76,10 +84,12 @@ lib/
   auth.ts / auth.config.ts  — auth setup
   db.ts         — Prisma client singleton
   validations.ts — all Zod schemas and inferred TypeScript types
-  utils.ts      — slugify and other utilities
+  utils.ts      — slugify, cn, formatPrice, truncate
 prisma/
   schema.prisma — data model
   seed.ts       — seeds admin user, sample data, and initial SiteSettings
+scripts/        — gerar-top10.ts and importar-top10.ts for bulk content generation/import
+prompts/        — JSON data files for Top 10 content, organized by category
 ```
 
 ### Data Model (Prisma)
@@ -89,9 +99,13 @@ Key relationships:
 - **Product** → has many AffiliateLinks and RankingItems
 - **Ranking** → has many RankingItems (ordered) and FAQs
 - **RankingItem** — junction between Ranking and Product; enforces unique `(rankingId, productId)` and `(rankingId, order)`
-- **SiteSettings** — singleton row with `id = "default"`, stores global config including GTM ID
+- **SiteSettings** — singleton row with `id = "default"`, stores global config including GTM ID (`gtmId`)
 - **Status** enum: DRAFT / PUBLISHED (controls public visibility)
-- **Badge** enum: BEST_SELLER, BEST_VALUE, PREMIUM, CHEAPEST
+- **Badge** enum: MELHOR_ESCOLHA, CUSTO_BENEFICIO, MAIS_VENDIDO, PREMIUM, RECOMENDADO, BOM_E_BARATO
+
+### GTM / Analytics
+
+Google Tag Manager is configured via `SiteSettings.gtmId` in the admin Settings page. The GTM script is injected in the root layout. `Window.dataLayer` is typed in `types/gtm.d.ts`.
 
 ### Public Site
 
@@ -109,6 +123,12 @@ All under `/app/admin/`:
 - **Products** — full CRUD including affiliate links per product
 - **Categories, Banners, Pages, Settings** — standard CRUD
 
+### Bulk Import Pattern
+
+`lib/actions/top10.ts` contains two key functions:
+- `createTop10Ranking()` — creates a ranking with products and affiliate links in a single Prisma transaction
+- `importTop10WithCategory()` — same as above but **auto-creates the category** if it doesn't exist (used by the `importar-top10` script)
+
 ### Important Notes
 
 - **No test suite** exists in this project.
@@ -116,11 +136,13 @@ All under `/app/admin/`:
 - **Prisma 6**: Use `force-dynamic` export in routes that call `db` directly from Server Components.
 - **Slugs**: Auto-generated via `slugify()` from `lib/utils.ts` if not manually provided; stored on both Product and Ranking for URL routing.
 - **`NEXT_PUBLIC_SITE_URL`** is the canonical environment variable (not `NEXTAUTH_URL`).
+- **Security headers**: `next.config.ts` adds X-Frame-Options, X-Content-Type-Options, and Referrer-Policy headers.
+- **Remote image domains**: Configured in `next.config.ts` for Amazon, Mercado Livre, Shopee, KaBuM, Pichau.
 
 ## Key Files
 
 1. `prisma/schema.prisma` — canonical data model
 2. `lib/validations.ts` — all Zod schemas and TypeScript types (start here for any domain)
 3. `lib/auth.ts` + `lib/auth.config.ts` — auth setup (edge/non-edge split)
-4. `lib/actions/top10.ts` — most complex action (bulk creation transaction)
+4. `lib/actions/top10.ts` — most complex action (bulk creation transaction + auto-category)
 5. `app/admin/layout.tsx` — auth guard for all admin routes

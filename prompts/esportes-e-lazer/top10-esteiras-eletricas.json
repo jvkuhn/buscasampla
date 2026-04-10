@@ -29,7 +29,7 @@
         "Mais barulhenta que alguns modelos",
         "Requer bom espaço"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Movement+R5i"
     },
     {
@@ -51,7 +51,7 @@
         "Velocidade máxima limitada",
         "Não recomendada para corridas rápidas"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Dream+Fitness+DR+1600"
     },
     {
@@ -95,7 +95,7 @@
         "Funcionalidades básicas",
         "Nem sempre silenciosa"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Polimet+EP-1600"
     },
     {

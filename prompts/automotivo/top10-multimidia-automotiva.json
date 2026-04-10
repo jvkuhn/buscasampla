@@ -51,7 +51,7 @@
         "Bluetooth ocasionalmente instável em modelos antigos",
         "Aquecimento em uso prolongado"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Roadstar+RS-908BR"
     },
     {
@@ -73,7 +73,7 @@
         "Processador menos potente que modelos 9 polegadas",
         "Memória interna limitada para muitos apps"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Roadstar+RS-815BR"
     },
     {
@@ -183,7 +183,7 @@
         "Requer fonte de poder adequada",
         "Instalação profissional recomendada"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Taramps+DS800X4"
     },
     {

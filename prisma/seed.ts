@@ -103,7 +103,7 @@ async function main() {
       rating: 4.7,
       pros: ["Ótima ergonomia", "Sensor top"],
       cons: ["Cabo um pouco rígido"],
-      badge: "BEST_VALUE",
+      badge: "CUSTO_BENEFICIO",
       status: "PUBLISHED",
       categoryId: perifericos.id,
       affiliateLinks: {
@@ -125,7 +125,7 @@ async function main() {
       rating: 4.4,
       pros: ["Barato", "RGB bonito"],
       cons: ["Sensor mediano"],
-      badge: "CHEAPEST",
+      badge: "BOM_E_BARATO",
       status: "PUBLISHED",
       categoryId: perifericos.id,
       affiliateLinks: {

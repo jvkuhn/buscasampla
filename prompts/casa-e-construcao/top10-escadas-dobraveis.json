@@ -29,7 +29,7 @@
         "Requer espaço para armazenagem quando fechada",
         "Mais pesada em comparação com modelos menores"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Escada+Articulada+Botafogo+4x4+16+Degraus"
     },
     {
@@ -95,7 +95,7 @@
         "Altura menor que outros modelos",
         "Menos degraus que versões maiores"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Escada+Telescópica+Python+Fly+3.8+Metros"
     },
     {
@@ -139,7 +139,7 @@
         "Menos popular que marcas concorrentes",
         "Menos variações de tamanho disponíveis"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Escada+Articulada+Caraíba+4x4+16+Degraus"
     },
     {

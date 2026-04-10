@@ -29,7 +29,7 @@
         "Nem todas mulheres gostam de perfumes florais",
         "Frasco com tamanho padrão pode ser considerado pequeno"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Perfume+Floratta+Rose+Bouquet"
     },
     {
@@ -51,7 +51,7 @@
         "Tela pequena pode dificultar leitura",
         "Sem aplicativos nativos para muitos serviços"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Smartwatch+Samsung+Galaxy+Fit+3"
     },
     {
@@ -161,7 +161,7 @@
         "Duração menor que perfumes tradicionais",
         "Aroma pode não agradar quem prefere notas florais mais fortes"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Colônia+Feminina+Positiva+Natura"
     },
     {

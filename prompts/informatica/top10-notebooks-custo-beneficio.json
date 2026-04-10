@@ -29,7 +29,7 @@
         "Apenas 8GB de RAM sem expansão fácil em alguns modelos",
         "Placa de vídeo integrada não serve para jogos pesados"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Acer+Aspire+5+A515-57"
     },
     {
@@ -51,7 +51,7 @@
         "SSD de apenas 256GB pode ser limitante",
         "Tela com resolução HD, não Full HD"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Lenovo+IdeaPad+1i+82VY"
     },
     {
@@ -183,7 +183,7 @@
         "Processador Celeron limitado para multitarefa",
         "Apenas 4GB de RAM sem possibilidade de upgrade"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Positivo+Motion+C4500F"
     },
     {

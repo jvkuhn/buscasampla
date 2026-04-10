@@ -51,7 +51,7 @@
         "Ocupa espaço no piso",
         "Um pouco barulhento em velocidade máxima"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Britania+Maxx+Force+BVT450"
     },
     {
@@ -73,7 +73,7 @@
         "Construção um pouco menos robusta que Britânia",
         "Peso moderado para transportar"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Ventisol+Turbo+6+Pas"
     },
     {
@@ -95,7 +95,7 @@
         "Menor potência que colunais maiores",
         "Menos durável que marcas premium"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Mondial+VTX-40+Turbo"
     },
     {

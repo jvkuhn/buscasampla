@@ -32,7 +32,7 @@ export const productSchema = z.object({
   cons: z.array(z.string()).optional(),
   brand: z.string().optional(),
   specs: z.record(z.string(), z.string()).optional(),
-  badge: z.enum(["BEST_VALUE", "BEST_SELLER", "PREMIUM", "CHEAPEST"]).optional().nullable(),
+  badge: z.enum(["MELHOR_ESCOLHA", "CUSTO_BENEFICIO", "MAIS_VENDIDO", "PREMIUM", "RECOMENDADO", "BOM_E_BARATO"]).optional().nullable(),
   status: z.enum(["DRAFT", "PUBLISHED"]),
   categoryId: z.string().optional().nullable(),
 });
@@ -107,7 +107,7 @@ export const top10ProductSchema = z.object({
   rating: z.coerce.number().min(0).max(5).optional().nullable(),
   pros: z.array(z.string()).optional(),
   cons: z.array(z.string()).optional(),
-  badge: z.enum(["BEST_VALUE", "BEST_SELLER", "PREMIUM", "CHEAPEST"]).optional().nullable(),
+  badge: z.enum(["MELHOR_ESCOLHA", "CUSTO_BENEFICIO", "MAIS_VENDIDO", "PREMIUM", "RECOMENDADO", "BOM_E_BARATO"]).optional().nullable(),
   amazonUrl: z.string().url().optional().or(z.literal("")),
   mercadoLivreUrl: z.string().url().optional().or(z.literal("")),
   shopeeUrl: z.string().url().optional().or(z.literal("")),

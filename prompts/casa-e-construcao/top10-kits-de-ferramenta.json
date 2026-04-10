@@ -29,7 +29,7 @@
         "Não indicado para uso profissional intensivo",
         "Maleta pode apresentar desgaste nas travas com o tempo"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Kit+Ferramentas+Tramontina+65+Pecas+Maleta"
     },
     {
@@ -51,7 +51,7 @@
         "Acabamento visual inferior às marcas internacionais",
         "Maleta de plástico pode ser frágil para transporte intensivo"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Jogo+Ferramentas+Vonder+110+Pecas"
     },
     {
@@ -183,7 +183,7 @@
         "Não inclui soquetes nem bits",
         "Número reduzido de peças limita os tipos de reparo"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Tramontina+Kit+Ferramentas+11+Pecas+Basico"
     },
     {

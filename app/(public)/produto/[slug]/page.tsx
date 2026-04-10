@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { db } from "@/lib/db";
-import { formatPrice } from "@/lib/utils";
 import { PLATFORM_DISPLAY } from "@/lib/constants";
 import { AffiliateLink } from "@/components/public/AffiliateLink";
 import type { Metadata } from "next";
@@ -45,12 +44,6 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
   if (!product || product.status !== "PUBLISHED") notFound();
 
   const rating = product.rating != null ? Number(product.rating) : null;
-  const currentPrice = product.currentPrice != null ? Number(product.currentPrice) : null;
-  const oldPrice = product.oldPrice != null ? Number(product.oldPrice) : null;
-  const discountPct =
-    currentPrice && oldPrice && oldPrice > currentPrice
-      ? Math.round((1 - currentPrice / oldPrice) * 100)
-      : null;
 
   const [primaryLink, ...otherLinks] = product.affiliateLinks;
 
@@ -61,14 +54,6 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
     description: product.shortDesc || product.longDesc || undefined,
     image: product.imageUrl || undefined,
     brand: product.brand ? { "@type": "Brand", name: product.brand } : undefined,
-    offers: currentPrice
-      ? {
-          "@type": "Offer",
-          price: currentPrice,
-          priceCurrency: "BRL",
-          availability: "https://schema.org/InStock",
-        }
-      : undefined,
   };
 
   return (
@@ -135,35 +120,6 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
               {product.shortDesc && (
                 <p className="text-gray-600 leading-relaxed">{product.shortDesc}</p>
               )}
-
-              {/* Preço */}
-              <div className="bg-gray-50 rounded-xl p-4 border border-gray-100">
-                {oldPrice != null && (
-                  <p className="text-sm text-gray-400 line-through">{formatPrice(oldPrice)}</p>
-                )}
-                <div className="flex items-baseline gap-3 flex-wrap">
-                  {currentPrice != null ? (
-                    <span className="text-4xl font-extrabold text-gray-900">
-                      {formatPrice(currentPrice)}
-                    </span>
-                  ) : (
-                    <span className="text-gray-400 text-lg">Consulte o preço</span>
-                  )}
-                  {discountPct && (
-                    <span className="bg-red-500 text-white text-sm font-bold px-2.5 py-0.5 rounded-full">
-                      -{discountPct}% OFF
-                    </span>
-                  )}
-                </div>
-                {product.priceRange && (
-                  <p className="text-sm text-gray-500 mt-1">{product.priceRange}</p>
-                )}
-                {product.affiliateLinks.length > 1 && (
-                  <p className="text-xs text-gray-400 mt-2">
-                    Disponível em {product.affiliateLinks.length} lojas
-                  </p>
-                )}
-              </div>
 
               {/* CTAs */}
               <div className="flex flex-col gap-2.5">
@@ -255,7 +211,7 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
         {primaryLink && (
           <div className="mt-8 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl p-6 text-center text-white shadow-lg">
             <p className="font-bold text-lg mb-1">Gostou? Aproveite enquanto tem estoque!</p>
-            <p className="text-green-100 text-sm mb-4">Preços podem mudar a qualquer momento.</p>
+            <p className="text-green-100 text-sm mb-4">Clique e confira a oferta na loja parceira.</p>
             <AffiliateLink
               href={primaryLink.url}
               platform={primaryLink.platform}

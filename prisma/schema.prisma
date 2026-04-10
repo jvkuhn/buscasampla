@@ -73,10 +73,12 @@ model Product {
 }
 
 enum Badge {
-  BEST_VALUE
-  BEST_SELLER
+  MELHOR_ESCOLHA
+  CUSTO_BENEFICIO
+  MAIS_VENDIDO
   PREMIUM
-  CHEAPEST
+  RECOMENDADO
+  BOM_E_BARATO
 }
 
 // ─── Links de Afiliado ───────────────────────────────────────────────────────

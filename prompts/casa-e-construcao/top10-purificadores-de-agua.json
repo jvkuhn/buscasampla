@@ -29,7 +29,7 @@
         "Refil original é caro",
         "Barulho durante filtragem"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Electrolux+PE12B+purificador"
     },
     {
@@ -51,7 +51,7 @@
         "Apenas água natural",
         "Capacidade limitada"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Hidrofiltros+Facile+C3"
     },
     {
@@ -73,7 +73,7 @@
         "Refil é caro",
         "Maior consumo de energia"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Consul+CPB34AS+purificador"
     },
     {

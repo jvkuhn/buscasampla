@@ -51,7 +51,7 @@
         "Plataforma de plástico pode arranhar com o tempo",
         "Não possui conectividade ou funções avançadas"
       ],
-      "badge": "BEST_SELLER",
+      "badge": "MAIS_VENDIDO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/Ozeri+ZK14-S+balan%C3%A7a+cozinha+digital"
     },
     {
@@ -161,7 +161,7 @@
         "Preço um pouco acima dos modelos plásticos equivalentes",
         "Menor apelo visual em cozinhas com design colorido"
       ],
-      "badge": "BEST_VALUE",
+      "badge": "CUSTO_BENEFICIO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/RHINO+BAREC-5X+balan%C3%A7a+cozinha+inox"
     },
     {
@@ -227,7 +227,7 @@
         "Construção frágil, não suporta uso intenso",
         "Capacidade máxima de 500 g é bastante limitada"
       ],
-      "badge": "CHEAPEST",
+      "badge": "BOM_E_BARATO",
       "mercadoLivreUrl": "https://lista.mercadolivre.com.br/PEQRTN+balan%C3%A7a+mini+digital+cozinha"
     }
   ],
