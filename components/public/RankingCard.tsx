@@ -14,7 +14,7 @@ interface Props {
 
 export function RankingCard({ ranking }: Props) {
   const imageUrl =
-    ranking.coverUrl ?? ranking.items?.[0]?.product?.imageUrl ?? null;
+    ranking.coverUrl || ranking.items?.[0]?.product?.imageUrl || null;
 
   return (
     <Link
