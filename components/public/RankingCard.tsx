@@ -13,6 +13,7 @@ interface Props {
 }
 
 export function RankingCard({ ranking }: Props) {
+  const hasCover = !!ranking.coverUrl;
   const imageUrl =
     ranking.coverUrl || ranking.items?.[0]?.product?.imageUrl || null;
 
@@ -40,7 +41,9 @@ export function RankingCard({ ranking }: Props) {
           <img
             src={imageUrl}
             alt={ranking.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+            className={`w-full h-full group-hover:scale-105 transition-transform ${
+              hasCover ? "object-cover" : "object-contain p-4"
+            }`}
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-gray-300 text-4xl font-bold">
