@@ -14,8 +14,7 @@ type Product = {
   name: string;
   imageUrl: string | null;
   categoryId: string | null;
-  currentPrice: unknown;
-  oldPrice: unknown;
+  badge: string | null;
   affiliateLinks: AffiliateLink[];
   category: { name: string } | null;
 };
@@ -29,8 +28,7 @@ type FieldValues = {
   mercadoLivreUrl: string;
   imageUrl: string;
   categoryId: string;
-  currentPrice: string;
-  oldPrice: string;
+  badge: string;
 };
 
 function getRequiredCount(product: Product, fields: FieldValues | undefined): { filled: number; total: number } {
@@ -68,8 +66,7 @@ export function ConfigurarProdutosManager({
         mercadoLivreUrl: "",
         imageUrl: "",
         categoryId: "",
-        currentPrice: "",
-        oldPrice: "",
+        badge: "",
       };
       return {
         ...prev,
@@ -87,7 +84,7 @@ export function ConfigurarProdutosManager({
       if (!f) continue;
 
       const hasChanges =
-        f.mercadoLivreUrl || f.imageUrl || f.categoryId || f.currentPrice || f.oldPrice;
+        f.mercadoLivreUrl || f.imageUrl || f.categoryId || f.badge;
       if (!hasChanges) continue;
 
       payload.push({
@@ -95,8 +92,7 @@ export function ConfigurarProdutosManager({
         mercadoLivreUrl: f.mercadoLivreUrl || undefined,
         imageUrl: f.imageUrl || undefined,
         categoryId: f.categoryId || undefined,
-        currentPrice: f.currentPrice ? Number(f.currentPrice) : undefined,
-        oldPrice: f.oldPrice ? Number(f.oldPrice) : undefined,
+        badge: (f.badge || undefined) as ProductConfigItem["badge"],
       });
     }
 
@@ -150,8 +146,7 @@ export function ConfigurarProdutosManager({
               <th className="px-3 py-2 text-left font-medium text-gray-500">Categoria</th>
               <th className="px-3 py-2 text-left font-medium text-gray-500">Link ML</th>
               <th className="px-3 py-2 text-left font-medium text-gray-500">Imagem URL</th>
-              <th className="px-3 py-2 text-left font-medium text-gray-500 w-[100px]">Preço atual</th>
-              <th className="px-3 py-2 text-left font-medium text-gray-500 w-[100px]">Preço antigo</th>
+              <th className="px-3 py-2 text-left font-medium text-gray-500 w-[150px]">Selo</th>
               <th className="px-3 py-2 text-left font-medium text-gray-500 w-20">Status</th>
             </tr>
           </thead>
@@ -224,24 +219,19 @@ export function ConfigurarProdutosManager({
                     </div>
                   </td>
                   <td className="px-3 py-2">
-                    <input
-                      type="number"
-                      step="0.01"
-                      placeholder={product.currentPrice ? String(Number(product.currentPrice)) : "0.00"}
-                      value={f?.currentPrice ?? ""}
-                      onChange={(e) => setField(product.id, "currentPrice", e.target.value)}
-                      className="w-full text-xs border border-gray-300 rounded px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                    />
-                  </td>
-                  <td className="px-3 py-2">
-                    <input
-                      type="number"
-                      step="0.01"
-                      placeholder={product.oldPrice ? String(Number(product.oldPrice)) : "0.00"}
-                      value={f?.oldPrice ?? ""}
-                      onChange={(e) => setField(product.id, "oldPrice", e.target.value)}
-                      className="w-full text-xs border border-gray-300 rounded px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                    />
+                    <select
+                      value={f?.badge || product.badge || ""}
+                      onChange={(e) => setField(product.id, "badge", e.target.value)}
+                      className="w-full min-w-[140px] text-xs border border-gray-300 rounded px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    >
+                      <option value="">— Nenhum —</option>
+                      <option value="MELHOR_ESCOLHA">Melhor Escolha</option>
+                      <option value="CUSTO_BENEFICIO">Melhor Custo-Benefício</option>
+                      <option value="MAIS_VENDIDO">Mais Vendido</option>
+                      <option value="PREMIUM">Premium</option>
+                      <option value="RECOMENDADO">Recomendado</option>
+                      <option value="BOM_E_BARATO">Bom e Barato</option>
+                    </select>
                   </td>
                   <td className="px-3 py-2 text-center">
                     <div className="flex flex-col items-center gap-0.5">

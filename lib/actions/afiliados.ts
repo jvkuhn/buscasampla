@@ -12,8 +12,7 @@ const productConfigItemSchema = z.object({
   mercadoLivreUrl: urlOrEmpty,
   imageUrl: urlOrEmpty,
   categoryId: z.string().optional(),
-  currentPrice: z.number().positive().optional(),
-  oldPrice: z.number().positive().optional(),
+  badge: z.enum(["MELHOR_ESCOLHA", "CUSTO_BENEFICIO", "MAIS_VENDIDO", "PREMIUM", "RECOMENDADO", "BOM_E_BARATO"]).optional(),
 });
 
 const productConfigSchema = z.array(productConfigItemSchema);
@@ -45,14 +44,13 @@ export async function updateProductConfig(items: ProductConfigItem[]) {
   }
   const validItems = parsed.data;
 
-  for (const { productId, mercadoLivreUrl, imageUrl, categoryId, currentPrice, oldPrice } of validItems) {
+  for (const { productId, mercadoLivreUrl, imageUrl, categoryId, badge } of validItems) {
     if (mercadoLivreUrl) await upsertAffiliateLink(productId, "mercadolivre", mercadoLivreUrl, "Ver no Mercado Livre");
 
-    const productUpdate: { imageUrl?: string; categoryId?: string; currentPrice?: number; oldPrice?: number } = {};
+    const productUpdate: Record<string, string> = {};
     if (imageUrl) productUpdate.imageUrl = imageUrl;
     if (categoryId) productUpdate.categoryId = categoryId;
-    if (currentPrice) productUpdate.currentPrice = currentPrice;
-    if (oldPrice) productUpdate.oldPrice = oldPrice;
+    if (badge) productUpdate.badge = badge;
 
     if (Object.keys(productUpdate).length > 0) {
       await db.product.update({
