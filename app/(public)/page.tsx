@@ -2,6 +2,8 @@ import Link from "next/link";
 import { db } from "@/lib/db";
 import { RankingCard } from "@/components/public/RankingCard";
 
+export const dynamic = "force-dynamic";
+
 export default async function HomePage() {
   const [categoriesWithRankings, uncategorizedRankings, topBanner, settings] = await Promise.all([
     db.category.findMany({
