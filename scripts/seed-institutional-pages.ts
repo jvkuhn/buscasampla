@@ -9,6 +9,7 @@
  * e mudar o status para PUBLISHED antes de ativar Google Ads.
  */
 
+import "dotenv/config";
 import { PrismaClient } from "@prisma/client";
 
 const db = new PrismaClient();
