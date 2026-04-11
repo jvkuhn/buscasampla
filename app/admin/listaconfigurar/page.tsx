@@ -25,6 +25,11 @@ export default async function ListaConfigurarPage() {
     include: {
       affiliateLinks: true,
       category: { select: { name: true } },
+      rankingItems: {
+        select: {
+          ranking: { select: { id: true, title: true, slug: true } },
+        },
+      },
     },
     orderBy: { createdAt: "desc" },
   });

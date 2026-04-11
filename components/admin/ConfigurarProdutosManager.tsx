@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { updateProductConfig, type ProductConfigItem } from "@/lib/actions/afiliados";
+import { updateProductConfig, updateProductName, type ProductConfigItem } from "@/lib/actions/afiliados";
 
 type AffiliateLink = {
   id: string;
@@ -17,6 +17,9 @@ type Product = {
   badge: string | null;
   affiliateLinks: AffiliateLink[];
   category: { name: string } | null;
+  rankingItems: {
+    ranking: { id: string; title: string; slug: string };
+  }[];
 };
 
 type Category = {
@@ -59,6 +62,36 @@ export function ConfigurarProdutosManager({
   const [fields, setFields] = useState<Record<string, FieldValues>>({});
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [productNames, setProductNames] = useState<Record<string, string>>({});
+  const [editingName, setEditingName] = useState<string | null>(null);
+  const [nameDraft, setNameDraft] = useState("");
+  const [savingName, setSavingName] = useState(false);
+
+  function startEditName(productId: string, currentName: string) {
+    setEditingName(productId);
+    setNameDraft(currentName);
+  }
+
+  function cancelEditName() {
+    setEditingName(null);
+    setNameDraft("");
+  }
+
+  async function saveEditName(productId: string) {
+    const trimmed = nameDraft.trim();
+    if (!trimmed) return;
+    setSavingName(true);
+    try {
+      await updateProductName({ productId, name: trimmed });
+      setProductNames((prev) => ({ ...prev, [productId]: trimmed }));
+      setEditingName(null);
+      setNameDraft("");
+    } catch (err) {
+      alert("Erro ao salvar nome: " + err);
+    } finally {
+      setSavingName(false);
+    }
+  }
 
   function setField(productId: string, key: keyof FieldValues, value: string) {
     setFields((prev) => {
@@ -161,7 +194,74 @@ export function ConfigurarProdutosManager({
                 <tr key={product.id} className="hover:bg-gray-50">
                   <td className="px-3 py-2 text-gray-400 text-xs">{idx + 1}</td>
                   <td className="px-3 py-2 font-medium text-gray-900">
-                    <span className="block">{product.name}</span>
+                    {editingName === product.id ? (
+                      <div className="flex items-center gap-1">
+                        <input
+                          type="text"
+                          value={nameDraft}
+                          onChange={(e) => setNameDraft(e.target.value)}
+                          onKeyDown={(e) => {
+                            if (e.key === "Enter") saveEditName(product.id);
+                            if (e.key === "Escape") cancelEditName();
+                          }}
+                          autoFocus
+                          disabled={savingName}
+                          className="flex-1 min-w-0 text-sm border border-blue-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                        />
+                        <button
+                          onClick={() => saveEditName(product.id)}
+                          disabled={savingName || !nameDraft.trim()}
+                          className="text-green-600 hover:text-green-700 disabled:opacity-40 p-1"
+                          title="Salvar"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                          </svg>
+                        </button>
+                        <button
+                          onClick={cancelEditName}
+                          disabled={savingName}
+                          className="text-gray-500 hover:text-gray-700 disabled:opacity-40 p-1"
+                          title="Cancelar"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                          </svg>
+                        </button>
+                      </div>
+                    ) : (
+                      <div className="flex items-start gap-1.5 group">
+                        <span className="block flex-1">{productNames[product.id] ?? product.name}</span>
+                        <button
+                          onClick={() => startEditName(product.id, productNames[product.id] ?? product.name)}
+                          className="text-gray-400 hover:text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity p-0.5 flex-shrink-0 mt-0.5"
+                          title="Editar nome"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
+                          </svg>
+                        </button>
+                      </div>
+                    )}
+                    {product.rankingItems.length > 0 && (
+                      <span className="block text-[11px] text-gray-500 font-normal mt-0.5 leading-tight">
+                        {product.rankingItems.map((ri, i) => (
+                          <span key={ri.ranking.id}>
+                            {i > 0 && <span className="text-gray-300"> · </span>}
+                            <a
+                              href={`/ranking/${ri.ranking.slug}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:text-blue-600 hover:underline"
+                              title={ri.ranking.title}
+                            >
+                              {ri.ranking.title}
+                            </a>
+                          </span>
+                        ))}
+                      </span>
+                    )}
                   </td>
                   <td className="px-3 py-2">
                     <select
