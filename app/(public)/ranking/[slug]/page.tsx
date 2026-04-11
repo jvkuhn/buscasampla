@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { db } from "@/lib/db";
 import { RankingItem } from "@/components/public/RankingItem";
+import { AffiliateDisclosure } from "@/components/public/AffiliateDisclosure";
 import type { Metadata } from "next";
 
 export async function generateMetadata(
@@ -140,6 +141,11 @@ export default async function RankingPage(props: PageProps<"/ranking/[slug]">) {
           )}
         </div>
       </header>
+
+      {/* Disclosure de afiliado */}
+      <div className="max-w-4xl mx-auto px-4 pt-6">
+        <AffiliateDisclosure />
+      </div>
 
       {/* Introdução */}
       {ranking.intro && (

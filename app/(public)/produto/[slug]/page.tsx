@@ -3,6 +3,7 @@ import Link from "next/link";
 import { db } from "@/lib/db";
 import { PLATFORM_DISPLAY } from "@/lib/constants";
 import { AffiliateLink } from "@/components/public/AffiliateLink";
+import { AffiliateDisclosure } from "@/components/public/AffiliateDisclosure";
 import type { Metadata } from "next";
 
 const PLATFORM_COLORS: Record<string, string> = {
@@ -77,6 +78,11 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
           )}
           {" "}›{" "}<span className="text-gray-700">{product.name}</span>
         </nav>
+
+        {/* Disclosure de afiliado */}
+        <div className="mb-6">
+          <AffiliateDisclosure />
+        </div>
 
         {/* Card principal */}
         <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
