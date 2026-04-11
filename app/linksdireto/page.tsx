@@ -33,7 +33,7 @@ export default async function DirectLinksPage() {
               key={i}
               href={link.url}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer sponsored nofollow"
               className="block w-full text-center px-6 py-3 bg-white text-gray-900 font-semibold rounded-xl hover:bg-blue-50 hover:scale-[1.02] transition-all shadow-md"
             >
               {link.label}
