@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ManageCookiesButton } from "@/components/public/ManageCookiesButton";
 
 interface Props {
   settings: {
@@ -31,13 +32,14 @@ export function PublicFooter({ settings, pages = [] }: Props) {
             {settings?.footerText && <p className="text-xs mt-1">{settings.footerText}</p>}
           </div>
 
-          <nav className="flex gap-4 text-xs">
+          <nav className="flex flex-wrap gap-4 text-xs">
             <Link href="/categorias" className="hover:text-blue-600">Categorias</Link>
             {pages.map((page) => (
               <Link key={page.slug} href={`/p/${page.slug}`} className="hover:text-blue-600">
                 {page.title}
               </Link>
             ))}
+            <ManageCookiesButton />
           </nav>
         </div>
 
