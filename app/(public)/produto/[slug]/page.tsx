@@ -48,20 +48,87 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
 
   const [primaryLink, ...otherLinks] = product.affiliateLinks;
 
-  const jsonLd = {
+  // JSON-LD Product (sem preço — preço não é visível ao usuário, então não emitimos price
+  // para ficar em conformidade com as diretrizes do Google: structured data deve refletir
+  // o conteúdo visível da página).
+  const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
     description: product.shortDesc || product.longDesc || undefined,
     image: product.imageUrl || undefined,
+    sku: product.slug,
     brand: product.brand ? { "@type": "Brand", name: product.brand } : undefined,
+    category: product.category?.name,
+    aggregateRating:
+      rating != null
+        ? {
+            "@type": "AggregateRating",
+            ratingValue: rating.toFixed(1),
+            bestRating: "5",
+            worstRating: "1",
+            ratingCount: 1,
+          }
+        : undefined,
+    offers:
+      product.affiliateLinks.length > 0
+        ? product.affiliateLinks.length === 1
+          ? {
+              "@type": "Offer",
+              url: product.affiliateLinks[0].url,
+              availability: "https://schema.org/InStock",
+              priceCurrency: "BRL",
+              seller: { "@type": "Organization", name: product.affiliateLinks[0].platform },
+            }
+          : {
+              "@type": "AggregateOffer",
+              offerCount: product.affiliateLinks.length,
+              priceCurrency: "BRL",
+              availability: "https://schema.org/InStock",
+              offers: product.affiliateLinks.map((link) => ({
+                "@type": "Offer",
+                url: link.url,
+                availability: "https://schema.org/InStock",
+                priceCurrency: "BRL",
+                seller: { "@type": "Organization", name: link.platform },
+              })),
+            }
+        : undefined,
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Início", item: "/" },
+      ...(product.category
+        ? [
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: product.category.name,
+              item: `/categorias/${product.category.slug}`,
+            },
+          ]
+        : []),
+      {
+        "@type": "ListItem",
+        position: product.category ? 3 : 2,
+        name: product.name,
+        item: `/produto/${product.slug}`,
+      },
+    ],
   };
 
   return (
     <div className="bg-gray-50 min-h-screen">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       <div className="max-w-5xl mx-auto px-4 py-10">
