@@ -48,9 +48,9 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
 
   const [primaryLink, ...otherLinks] = product.affiliateLinks;
 
-  // JSON-LD Product (sem preço — preço não é visível ao usuário, então não emitimos price
-  // para ficar em conformidade com as diretrizes do Google: structured data deve refletir
-  // o conteúdo visível da página).
+  // JSON-LD Product SEM offers. Não temos preço visível ao usuário, e o Google Ads
+  // desoptimiza produtos com offers sem price. Mantemos só os campos livres de preço:
+  // name, description, image, sku, brand, category, aggregateRating.
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -69,30 +69,6 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
             worstRating: "1",
             ratingCount: 1,
           }
-        : undefined,
-    offers:
-      product.affiliateLinks.length > 0
-        ? product.affiliateLinks.length === 1
-          ? {
-              "@type": "Offer",
-              url: product.affiliateLinks[0].url,
-              availability: "https://schema.org/InStock",
-              priceCurrency: "BRL",
-              seller: { "@type": "Organization", name: product.affiliateLinks[0].platform },
-            }
-          : {
-              "@type": "AggregateOffer",
-              offerCount: product.affiliateLinks.length,
-              priceCurrency: "BRL",
-              availability: "https://schema.org/InStock",
-              offers: product.affiliateLinks.map((link) => ({
-                "@type": "Offer",
-                url: link.url,
-                availability: "https://schema.org/InStock",
-                priceCurrency: "BRL",
-                seller: { "@type": "Organization", name: link.platform },
-              })),
-            }
         : undefined,
   };
 
