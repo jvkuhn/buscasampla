@@ -166,11 +166,6 @@ export default async function RankingPage(props: PageProps<"/ranking/[slug]">) {
         </div>
       </header>
 
-      {/* Disclosure de afiliado */}
-      <div className="max-w-4xl mx-auto px-4 pt-6">
-        <AffiliateDisclosure />
-      </div>
-
       {/* Introdução */}
       {ranking.intro && (
         <div className="max-w-3xl mx-auto px-4 py-10">
@@ -232,6 +227,11 @@ export default async function RankingPage(props: PageProps<"/ranking/[slug]">) {
           </div>
         </div>
       )}
+
+      {/* Disclosure de afiliado (discreto, ao fim da pagina) */}
+      <div className="max-w-4xl mx-auto px-4 pb-10">
+        <AffiliateDisclosure />
+      </div>
     </article>
   );
 }

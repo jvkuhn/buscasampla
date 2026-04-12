@@ -4,12 +4,9 @@ export function AffiliateDisclosure() {
   return (
     <aside
       aria-label="Aviso de afiliado"
-      className="flex items-start gap-3 rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-xs text-gray-600"
+      className="text-xs text-gray-500 text-center py-4 border-t border-gray-100 mt-10"
     >
-      <span aria-hidden="true" className="shrink-0 text-base leading-none pt-0.5">
-        ℹ️
-      </span>
-      <p className="leading-relaxed">
+      <p className="leading-relaxed max-w-xl mx-auto">
         Alguns links desta página são de afiliados. Se você comprar por eles, podemos receber uma comissão — sem custo extra para você.{" "}
         <Link
           href="/p/politica-de-afiliados"

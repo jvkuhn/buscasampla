@@ -295,11 +295,6 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
           </Link>
         )}
 
-        {/* Disclosure de afiliado */}
-        <div className="mb-6">
-          <AffiliateDisclosure />
-        </div>
-
         {/* Card principal */}
         <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
           <div className="grid md:grid-cols-2 gap-0">
@@ -555,6 +550,9 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
             </AffiliateLink>
           </div>
         )}
+
+        {/* Disclosure de afiliado (discreto, ao fim da pagina) */}
+        <AffiliateDisclosure />
       </div>
     </div>
   );
