@@ -5,6 +5,7 @@ import { PLATFORM_DISPLAY } from "@/lib/constants";
 import { AffiliateLink } from "@/components/public/AffiliateLink";
 import { AffiliateDisclosure } from "@/components/public/AffiliateDisclosure";
 import type { Metadata } from "next";
+import type { Badge } from "@prisma/client";
 
 const PLATFORM_COLORS: Record<string, string> = {
   amazon: "bg-orange-400 hover:bg-orange-500",
@@ -12,6 +13,39 @@ const PLATFORM_COLORS: Record<string, string> = {
   shopee: "bg-orange-500 hover:bg-orange-600",
   magalu: "bg-blue-500 hover:bg-blue-600",
   americanas: "bg-red-500 hover:bg-red-600",
+};
+
+const BADGE_CONFIG: Record<Badge, { label: string; className: string; icon: string }> = {
+  MELHOR_ESCOLHA: {
+    label: "Melhor Escolha",
+    className: "bg-emerald-500 text-white",
+    icon: "🏆",
+  },
+  RECOMENDADO: {
+    label: "Recomendado",
+    className: "bg-blue-500 text-white",
+    icon: "⭐",
+  },
+  MAIS_VENDIDO: {
+    label: "Mais Vendido",
+    className: "bg-amber-400 text-amber-900",
+    icon: "🔥",
+  },
+  CUSTO_BENEFICIO: {
+    label: "Custo-Benefício",
+    className: "bg-purple-500 text-white",
+    icon: "💰",
+  },
+  PREMIUM: {
+    label: "Premium",
+    className: "bg-gradient-to-r from-yellow-400 to-amber-500 text-amber-900",
+    icon: "👑",
+  },
+  BOM_E_BARATO: {
+    label: "Bom e Barato",
+    className: "bg-orange-500 text-white",
+    icon: "💵",
+  },
 };
 
 export async function generateMetadata(
@@ -39,14 +73,54 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
     include: {
       category: true,
       affiliateLinks: { orderBy: { createdAt: "asc" } },
+      rankingItems: {
+        include: {
+          ranking: {
+            include: {
+              faqs: { orderBy: { order: "asc" } },
+              items: {
+                orderBy: { order: "asc" },
+                include: {
+                  product: {
+                    select: {
+                      id: true,
+                      slug: true,
+                      name: true,
+                      imageUrl: true,
+                      badge: true,
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
     },
   });
 
   if (!product || product.status !== "PUBLISHED") notFound();
 
   const rating = product.rating != null ? Number(product.rating) : null;
-
   const [primaryLink, ...otherLinks] = product.affiliateLinks;
+  const badgeInfo = product.badge ? BADGE_CONFIG[product.badge] : null;
+
+  // Ranking primário = o mais recentemente atualizado entre os rankings onde o produto aparece.
+  // Quase todos os produtos aparecem em apenas 1 ranking; esse é um tie-break seguro.
+  const primaryRankingItem =
+    product.rankingItems.length > 0
+      ? [...product.rankingItems].sort(
+          (a, b) => b.ranking.updatedAt.getTime() - a.ranking.updatedAt.getTime()
+        )[0]
+      : null;
+  const primaryRanking = primaryRankingItem?.ranking;
+  const positionInRanking = primaryRankingItem?.order;
+  const otherItemsInRanking =
+    primaryRanking?.items.filter((it) => it.product.id !== product.id) ?? [];
+  const rankingFaqs = primaryRanking?.faqs ?? [];
+
+  // Primeiros 3 prós para a seção "Por que recomendamos"
+  const topPros = product.pros.slice(0, 3);
 
   // JSON-LD Product SEM offers. Não temos preço visível ao usuário, e o Google Ads
   // desoptimiza produtos com offers sem price. Mantemos só os campos livres de preço:
@@ -96,6 +170,23 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
     ],
   };
 
+  // FAQPage JSON-LD herda as FAQs do ranking primário.
+  // Observação SEO: desde 2023 o Google só exibe rich results de FAQPage para sites
+  // autoritativos de governo/saúde. Emitimos mesmo assim porque ajuda interpretação
+  // de tópico e é low-cost insurance caso as regras mudem.
+  const faqJsonLd =
+    rankingFaqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: rankingFaqs.map((f) => ({
+            "@type": "Question",
+            name: f.question,
+            acceptedAnswer: { "@type": "Answer", text: f.answer },
+          })),
+        }
+      : null;
+
   return (
     <div className="bg-gray-50 min-h-screen">
       <script
@@ -106,10 +197,16 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
 
       <div className="max-w-5xl mx-auto px-4 py-10">
         {/* Breadcrumb */}
-        <nav className="text-xs text-gray-500 mb-6">
+        <nav className="text-xs text-gray-500 mb-4">
           <Link href="/" className="hover:text-blue-600">Início</Link>
           {product.category && (
             <>
@@ -122,6 +219,24 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
           {" "}›{" "}<span className="text-gray-700">{product.name}</span>
         </nav>
 
+        {/* Chip: posição no ranking */}
+        {primaryRanking && positionInRanking && (
+          <Link
+            href={`/ranking/${primaryRanking.slug}`}
+            className="inline-flex items-center gap-2 mb-6 bg-white border border-blue-200 hover:border-blue-400 rounded-full px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-50 transition-colors shadow-sm"
+          >
+            <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">
+              {positionInRanking}
+            </span>
+            <span>
+              Nº {positionInRanking} em{" "}
+              <span className="underline decoration-blue-200 underline-offset-2">
+                {primaryRanking.title}
+              </span>
+            </span>
+          </Link>
+        )}
+
         {/* Disclosure de afiliado */}
         <div className="mb-6">
           <AffiliateDisclosure />
@@ -131,7 +246,15 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
         <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
           <div className="grid md:grid-cols-2 gap-0">
             {/* Imagem */}
-            <div className="bg-gray-50 flex items-center justify-center p-8 min-h-72 border-b md:border-b-0 md:border-r border-gray-100">
+            <div className="bg-gray-50 flex items-center justify-center p-8 min-h-72 border-b md:border-b-0 md:border-r border-gray-100 relative">
+              {badgeInfo && (
+                <div
+                  className={`absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-extrabold shadow-md ${badgeInfo.className}`}
+                >
+                  <span>{badgeInfo.icon}</span>
+                  <span className="uppercase tracking-wide">{badgeInfo.label}</span>
+                </div>
+              )}
               {product.imageUrl ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
@@ -212,6 +335,25 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
           </div>
         </div>
 
+        {/* Por que recomendamos */}
+        {topPros.length > 0 && (
+          <div className="mt-6 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-7">
+            <h2 className="text-lg font-bold text-blue-900 mb-4 flex items-center gap-2">
+              <span>💡</span> Por que recomendamos este produto
+            </h2>
+            <ul className="space-y-3">
+              {topPros.map((p, i) => (
+                <li key={i} className="flex gap-3 items-start text-gray-800">
+                  <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
+                    {i + 1}
+                  </span>
+                  <span className="leading-relaxed">{p}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {/* Prós e Contras */}
         {(product.pros.length > 0 || product.cons.length > 0) && (
           <div className="grid md:grid-cols-2 gap-4 mt-6">
@@ -252,6 +394,90 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Sobre este produto</h2>
             <div className="prose prose-gray max-w-none whitespace-pre-wrap text-gray-700 leading-relaxed text-sm">
               {product.longDesc}
+            </div>
+          </div>
+        )}
+
+        {/* Outros do ranking */}
+        {otherItemsInRanking.length > 0 && primaryRanking && (
+          <div className="mt-10">
+            <div className="flex items-end justify-between gap-4 mb-5">
+              <h2 className="text-xl font-bold text-gray-900">
+                Compare com outros da lista
+              </h2>
+              <Link
+                href={`/ranking/${primaryRanking.slug}`}
+                className="shrink-0 text-sm text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+              >
+                Ver ranking completo →
+              </Link>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {otherItemsInRanking.map((it) => {
+                const otherBadge = it.product.badge ? BADGE_CONFIG[it.product.badge] : null;
+                return (
+                  <Link
+                    key={it.id}
+                    href={`/produto/${it.product.slug}`}
+                    className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-blue-400 hover:shadow-md transition-all"
+                  >
+                    <div className="bg-gray-50 aspect-square flex items-center justify-center p-4 relative">
+                      <span className="absolute top-2 left-2 bg-gray-900/80 text-white text-[10px] font-bold rounded-full w-6 h-6 flex items-center justify-center">
+                        {it.order}
+                      </span>
+                      {otherBadge && (
+                        <span
+                          className={`absolute top-2 right-2 rounded-full px-1.5 py-0.5 text-[9px] font-bold ${otherBadge.className}`}
+                          title={otherBadge.label}
+                        >
+                          {otherBadge.icon}
+                        </span>
+                      )}
+                      {it.product.imageUrl ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          src={it.product.imageUrl}
+                          alt={it.product.name}
+                          className="max-h-32 max-w-full object-contain group-hover:scale-105 transition-transform"
+                        />
+                      ) : (
+                        <div className="w-full h-24 bg-gray-100 rounded" />
+                      )}
+                    </div>
+                    <div className="p-3">
+                      <p className="text-xs font-semibold text-gray-800 line-clamp-2 group-hover:text-blue-700">
+                        {it.product.name}
+                      </p>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+        {/* FAQs do ranking */}
+        {rankingFaqs.length > 0 && primaryRanking && (
+          <div className="mt-10">
+            <div className="flex items-end justify-between gap-4 mb-5">
+              <h2 className="text-xl font-bold text-gray-900">Perguntas frequentes</h2>
+              <span className="text-xs text-gray-400">
+                da lista {primaryRanking.title}
+              </span>
+            </div>
+            <div className="space-y-3">
+              {rankingFaqs.map((f) => (
+                <details
+                  key={f.id}
+                  className="bg-white border border-gray-200 rounded-xl p-5 group"
+                >
+                  <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center gap-4">
+                    <span>{f.question}</span>
+                    <span className="text-gray-400 group-open:rotate-45 transition-transform shrink-0">+</span>
+                  </summary>
+                  <p className="mt-3 text-gray-600 whitespace-pre-wrap">{f.answer}</p>
+                </details>
+              ))}
             </div>
           </div>
         )}
