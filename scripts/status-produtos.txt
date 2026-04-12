@@ -1,0 +1,448 @@
+# Status dos produtos — snapshot em 2026-04-12 00:50 UTC
+# Gerado por: npx tsx scripts/gerar-status-produtos.ts
+# Flags: [IPBRDL] = Imagem Preco Badge Rating Desc Links
+# _ = campo ausente.  Produto completo quando todas as 6 letras presentes.
+
+# ─── Produtos ───
+[IPBRDL] Anker PowerDrive 2 (anker-powerdrive-2) — Automotivo — MAIS_VENDIDO
+[IPBRDL] Baseus CCALL-ML01 Grain (baseus-ccall-ml01-grain) — Automotivo — PREMIUM
+[IPBRDL] Black+Decker APB12000 Sem Fio Premium (blackdecker-apb12000-sem-fio-premium) — Automotivo — PREMIUM
+[IPBRDL] Black+Decker APB3600 Sem Fio (blackdecker-apb3600-sem-fio) — Automotivo — BOM_E_BARATO
+[IPBRDL] Black+Decker APS1200 120W (blackdecker-aps1200-120w) — Automotivo — BOM_E_BARATO
+[IPBRDL] Central Multimídia Aiwa AWS-CA-DD-01 (central-multimidia-aiwa-aws-ca-dd-01) — Automotivo — BOM_E_BARATO
+[IPBRDL] Central Multimídia Multilaser GP348 (central-multimidia-multilaser-gp348) — Automotivo — BOM_E_BARATO
+[IPBRDL] Central Multimídia Pioneer DMH-Z5380TV (central-multimidia-pioneer-dmh-z5380tv) — Automotivo — PREMIUM
+[IPBRDL] Central Multimídia Positron SP8920 NAV (central-multimidia-positron-sp8920-nav) — Automotivo — PREMIUM
+[IPBRDL] Central Multimídia Roadstar RS-815BR Prime (central-multimidia-roadstar-rs-815br-prime) — Automotivo — MAIS_VENDIDO
+[IPBRDL] Central Multimídia Roadstar RS-908BR Prime (central-multimidia-roadstar-rs-908br-prime) — Automotivo — RECOMENDADO
+[IPBRDL] Câmera de Ré Roadstar RS180 BR Plus (camera-de-re-roadstar-rs180-br-plus) — Automotivo — BOM_E_BARATO
+[IPBRDL] Electrolux A20 Smart 1200W (electrolux-a20-smart-1200w) — Automotivo — BOM_E_BARATO
+[IPBRDL] Faaftech FT-CAM-TL Tartaruga (faaftech-ft-cam-tl-tartaruga) — Automotivo — RECOMENDADO
+[IPBRDL] Geonav ES24CH (geonav-es24ch) — Automotivo — RECOMENDADO
+[IPBRDL] Hrebos Premium RoadCharge (hrebos-premium-roadcharge) — Automotivo — PREMIUM
+[IPBRDL] Hrebos Turbo HS-308 (hrebos-turbo-hs-308) — Automotivo — BOM_E_BARATO
+[IPBRDL] Intelbras IC5 Câmera Veicular (intelbras-ic5-camera-veicular) — Automotivo — BOM_E_BARATO
+[IPBRDL] Kaidi KD-302 Turbo (kaidi-kd-302-turbo) — Automotivo — CUSTO_BENEFICIO
+[IPBRDL] Kit Completo Limpeza Automotiva Vonixx Proteção Premium (kit-completo-limpeza-automotiva-vonixx-protecao-premium) — Automotivo — CUSTO_BENEFICIO
+[IPBRDL] Kit Limpeza Automotiva Alcance Econômico (kit-limpeza-automotiva-alcance-economico) — Automotivo — CUSTO_BENEFICIO
+[IPBRDL] Kit Limpeza Automotiva Easytech Básico (kit-limpeza-automotiva-easytech-basico) — Automotivo — RECOMENDADO
+[IPBRDL] Kit Limpeza Automotiva Finisher Completo (kit-limpeza-automotiva-finisher-completo) — Automotivo — BOM_E_BARATO
+[IPBRDL] Kit Limpeza Automotiva Lincoln Profissional LL1 (kit-limpeza-automotiva-lincoln-profissional-ll1) — Automotivo — BOM_E_BARATO
+[IPBRDL] Kit Limpeza Automotiva Mothers Premium (kit-limpeza-automotiva-mothers-premium) — Automotivo — BOM_E_BARATO
+[IPBRDL] Kit Limpeza Automotiva WD-40 Specialist (kit-limpeza-automotiva-wd-40-specialist) — Automotivo — BOM_E_BARATO
+[IPBRDL] Kit Meguiar's Cuidados para Carro Novo (kit-meguiars-cuidados-para-carro-novo) — Automotivo — PREMIUM
+[IPBRDL] Kit Vonixx Limpeza Pesada e Proteção Completa (kit-vonixx-limpeza-pesada-e-protecao-completa) — Automotivo — BOM_E_BARATO
+[IPBRDL] Knup KP-S103 Retrovisor Dual (knup-kp-s103-retrovisor-dual) — Automotivo — PREMIUM
+[IPBRDL] Kärcher WD2 Car 1300W (karcher-wd2-car-1300w) — Automotivo — PREMIUM
+[IPBRDL] Leadership Borboleta com LED (leadership-borboleta-com-led) — Automotivo — MAIS_VENDIDO
+[IPBRDL] Luxcar TurboLux 120W (luxcar-turbolux-120w) — Automotivo — BOM_E_BARATO
+[IPBRDL] Multilaser AU012 Universal (multilaser-au012-universal) — Automotivo — CUSTO_BENEFICIO
+[IPBRDL] Multilaser AU607 60W (multilaser-au607-60w) — Automotivo — CUSTO_BENEFICIO
+[IPBRDL] Módulo Amplificador Taramps DS800X4 (modulo-amplificador-taramps-ds800x4) — Automotivo — BOM_E_BARATO
+[IPBRDL] Perfect Pro Carro De Limpeza Com Porta E Tampa Profissional (perfect-pro-carro-de-limpeza-com-porta-e-tampa-profissional) — Automotivo — PREMIUM
+[IPBRDL] Pioneer Vrec-100CH Dashcam (pioneer-vrec-100ch-dashcam) — Automotivo — PREMIUM
+[IPBRDL] Positron AC300 (positron-ac300) — Automotivo — BOM_E_BARATO
+[IPBRDL] Roadstar RS-107 3U BR (roadstar-rs-107-3u-br) — Automotivo — BOM_E_BARATO
+[IPBRDL] Roadstar RS-109 2U BR (roadstar-rs-109-2u-br) — Automotivo — BOM_E_BARATO
+[IPBRDL] Roadstar RS501BR Espelho com Tela (roadstar-rs501br-espelho-com-tela) — Automotivo — BOM_E_BARATO
+[IPBRDL] Som Automotivo Pioneer MVH-S218BT (som-automotivo-pioneer-mvh-s218bt) — Automotivo — BOM_E_BARATO
+[IPBRDL] Som Automotivo Seven 006 Similar Pioneer Mvh S218bt (som-automotivo-seven-006-similar-pioneer-mvh-s218bt) — Automotivo — CUSTO_BENEFICIO
+[IPBRDL] Tech One Mini Tartaruga Ajustável (tech-one-mini-tartaruga-ajustavel) — Automotivo — MELHOR_ESCOLHA
+[IPBRDL] Tech One Tartaruga com Sensor de Curva (tech-one-tartaruga-com-sensor-de-curva) — Automotivo — BOM_E_BARATO
+[IPBRDL] Tramontina 42345060 60W (tramontina-42345060-60w) — Automotivo — BOM_E_BARATO
+[IPBRDL] Tramontina 42350070 70W (tramontina-42350070-70w) — Automotivo — MELHOR_ESCOLHA
+[IPBRDL] Ugreen Carregador Veicular 65W (ugreen-carregador-veicular-65w) — Automotivo — PREMIUM
+[IPBRDL] WAP CAR 12V2 180W (wap-car-12v2-180w) — Automotivo — RECOMENDADO
+[IPBRDL] i2GO Turbo Power 18W (i2go-turbo-power-18w) — Automotivo — BOM_E_BARATO
+[IPBRDL] Amvox ACL 9022 (amvox-acl-9022) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Arno Ultra Silence Force VD40 (arno-ultra-silence-force-vd40) — Casa e Construção — PREMIUM
+[IPBRDL] Arno Xtreme Force Breeze VB40 (arno-xtreme-force-breeze-vb40) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Arqplast MegaBox Plástica Grande (arqplast-megabox-plastica-grande) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] BF Colchões D33 a Vácuo (bf-colchoes-d33-a-vacuo) — Casa e Construção — CUSTO_BENEFICIO
+[IPBRDL] Black+Decker BCD704C1 (blackdecker-bcd704c1) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Black+Decker BEPW1800T (blackdecker-bepw1800t) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Black+Decker Kit Ferramentas Manuais 100 Peças (blackdecker-kit-ferramentas-manuais-100-pecas) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Bosch 1600A012XJ Tool Box Sistema (bosch-1600a012xj-tool-box-sistema) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Bosch GSB 16 RE (bosch-gsb-16-re) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Bosch GSB 550 RE (bosch-gsb-550-re) — Casa e Construção — MELHOR_ESCOLHA
+[IPBRDL] Bosch GSR 1000 Smart 12V (bosch-gsr-1000-smart-12v) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Bosch GSR 120-LI (bosch-gsr-120-li) — Casa e Construção — MAIS_VENDIDO
+[IPBRDL] Bosch X-Line Kit de Ferramentas 103 Peças (bosch-x-line-kit-de-ferramentas-103-pecas) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Britânia BCL05FI (britania-bcl05fi) — Casa e Construção — RECOMENDADO
+[IPBRDL] Britânia BPDA01B (britania-bpda01b) — Casa e Construção — CUSTO_BENEFICIO
+[IPBRDL] Britânia BPU01B (britania-bpu01b) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Britânia Maxx Force BVT450 (britania-maxx-force-bvt450) — Casa e Construção — RECOMENDADO
+[IPBRDL] Britânia Xtreme Breeze VT410 (britania-xtreme-breeze-vt410) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Cadence Extreme VT360 (cadence-extreme-vt360) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Castor Premium Amazon Gel (castor-premium-amazon-gel) — Casa e Construção — RECOMENDADO
+[IPBRDL] Colchão Solteiro Espuma D33 88x188x14 (colchao-solteiro-espuma-d33-88x188x14) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Consul CPB33 (consul-cpb33) — Casa e Construção — PREMIUM
+[IPBRDL] Consul CPB34AF (consul-cpb34af) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Consul CPB34AS (consul-cpb34as) — Casa e Construção — MAIS_VENDIDO
+[IPBRDL] DeWalt DCD771C2 (dewalt-dcd771c2) — Casa e Construção — PREMIUM
+[IPBRDL] DeWalt DW508S (dewalt-dw508s) — Casa e Construção — PREMIUM
+[IPBRDL] DeWalt TSTAK Modular 6 Caixas (dewalt-tstak-modular-6-caixas) — Casa e Construção — PREMIUM
+[IPBRDL] Electrolux Experience Pure 4x Digital PE12B (electrolux-experience-pure-4x-digital-pe12b) — Casa e Construção — MELHOR_ESCOLHA
+[IPBRDL] Electrolux Power Wash Eco EWS30 (electrolux-power-wash-eco-ews30) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Elgin FCE 7.5L (elgin-fce-75l) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Elgin Smart 3.5L (elgin-smart-35l) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Emma Original (emma-original) — Casa e Construção — PREMIUM
+[IPBRDL] Escada Articulada Botafogo 4x4 com 16 Degraus (escada-articulada-botafogo-4x4-com-16-degraus) — Casa e Construção — MELHOR_ESCOLHA
+[IPBRDL] Escada Articulada Caraíba 4x4 com 16 Degraus (escada-articulada-caraiba-4x4-com-16-degraus) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Escada Articulada GardenLife 4x4 com 16 Degraus (escada-articulada-gardenlife-4x4-com-16-degraus) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Escada Articulada Real Escadas 4x4 com 16 Degraus (escada-articulada-real-escadas-4x4-com-16-degraus) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Escada Articulada Worker 4x3 com 12 Degraus (escada-articulada-worker-4x3-com-12-degraus) — Casa e Construção — CUSTO_BENEFICIO
+[IPBRDL] Escada Multifuncional Mor 4x4 com Plataforma (escada-multifuncional-mor-4x4-com-plataforma) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Escada Telescópica Charbs 5,6 Metros (escada-telescopica-charbs-56-metros) — Casa e Construção — RECOMENDADO
+[IPBRDL] Escada Telescópica EspaçoFix 3,8 Metros com 13 Degraus (escada-telescopica-espacofix-38-metros-com-13-degraus) — Casa e Construção — PREMIUM
+[IPBRDL] Escada Telescópica Evolux Dupla 18 Degraus (escada-telescopica-evolux-dupla-18-degraus) — Casa e Construção — PREMIUM
+[IPBRDL] Escada Telescópica Python Fly 3,8 Metros (escada-telescopica-python-fly-38-metros) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Gedore Red Kit Ferramentas Profissional 50 Peças (gedore-red-kit-ferramentas-profissional-50-pecas) — Casa e Construção — PREMIUM
+[IPBRDL] Gedore Red com 64 Ferramentas (gedore-red-com-64-ferramentas) — Casa e Construção — PREMIUM
+[IPBRDL] Herval Lofty Molas Ensacadas (herval-lofty-molas-ensacadas) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Hidrofiltros Facile C3 (hidrofiltros-facile-c3) — Casa e Construção — RECOMENDADO
+[IPBRDL] Honulolo Parafusadeira 12V (honulolo-parafusadeira-12v) — Casa e Construção — CUSTO_BENEFICIO
+[IPBRDL] IBBL FR600 Speciale (ibbl-fr600-speciale) — Casa e Construção — PREMIUM
+[IPBRDL] Intech Machine DB16 (intech-machine-db16) — Casa e Construção — PREMIUM
+[IPBRDL] Jogo de Ferramentas Vonder 110 Peças com Maleta (jogo-de-ferramentas-vonder-110-pecas-com-maleta) — Casa e Construção — RECOMENDADO
+[IPBRDL] Kit Churrasco Brinox Precision 3 Peças Branco (kit-churrasco-brinox-precision-3-pecas-branco) — Casa e Construção — MAIS_VENDIDO
+[IPBRDL] Kit Churrasco Completo 10 Peças com Bolsa Chaleur Brasil (kit-churrasco-completo-10-pecas-com-bolsa-chaleur-brasil) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Kit Churrasco Fixxar Advantage 10 Peças com Bolsa Nylon (kit-churrasco-fixxar-advantage-10-pecas-com-bolsa-nylon) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Kit Churrasco Madeirado Premium T2X 8 Peças Antiaderente (kit-churrasco-madeirado-premium-t2x-8-pecas-antiaderente) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Kit Churrasco Mundial Profissional Inox 3 Peças — Faca, Garfo e Pegador (kit-churrasco-mundial-profissional-inox-3-pecas-faca-garfo-e-pegador) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Kit Churrasco Personalizável com Caixa Kraft 2 Peças (kit-churrasco-personalizavel-com-caixa-kraft-2-pecas) — Casa e Construção — CUSTO_BENEFICIO
+[IPBRDL] Kit Churrasco Tramontina 3 Peças Inox com Suporte de Parede (kit-churrasco-tramontina-3-pecas-inox-com-suporte-de-parede) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Kit Churrasco Tramontina Polywood 15 Peças Castanho (kit-churrasco-tramontina-polywood-15-pecas-castanho) — Casa e Construção — PREMIUM
+[IPBRDL] Kit Churrasco WOODBULL com Caixa de Presente MDF (kit-churrasco-woodbull-com-caixa-de-presente-mdf) — Casa e Construção — PREMIUM
+[IPBRDL] Kit de Ferramentas Tramontina 65 Peças com Maleta (kit-de-ferramentas-tramontina-65-pecas-com-maleta) — Casa e Construção — MELHOR_ESCOLHA
+[IPBRDL] Kit para Churrasco Tramontina Natural 15 Peças (kit-para-churrasco-tramontina-natural-15-pecas) — Casa e Construção — MELHOR_ESCOLHA
+[IPBRDL] Kobalt 24V (kobalt-24v) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Kärcher K5 (karcher-k5) — Casa e Construção — PREMIUM
+[IPBRDL] Lavor Fast Extra 135 (lavor-fast-extra-135) — Casa e Construção — PREMIUM
+[IPBRDL] Luuna Blue Firme (luuna-blue-firme) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Makita DHP482Z (makita-dhp482z) — Casa e Construção — PREMIUM
+[IPBRDL] Makita HP1640 (makita-hp1640) — Casa e Construção — MAIS_VENDIDO
+[IPBRDL] Makita HW101 (makita-hw101) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Makita Kit Ferramentas Manuais 72 Peças (makita-kit-ferramentas-manuais-72-pecas) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Midea AKAF2 (midea-akaf2) — Casa e Construção — MELHOR_ESCOLHA
+[IPBRDL] Midea AKAP1 (midea-akap1) — Casa e Construção — PREMIUM
+[IPBRDL] Minaspuma Cappuccine II (minaspuma-cappuccine-ii) — Casa e Construção — PREMIUM
+[IPBRDL] Mondial FI-09 (mondial-fi-09) — Casa e Construção — CUSTO_BENEFICIO
+[IPBRDL] Mondial VSP-30 Plus (mondial-vsp-30-plus) — Casa e Construção — CUSTO_BENEFICIO
+[IPBRDL] Mondial VTX-40 Turbo (mondial-vtx-40-turbo) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Ortobom ISO 100 D33 (ortobom-iso-100-d33) — Casa e Construção — MAIS_VENDIDO
+[IPBRDL] Parafusadeira Drywall Skil 6520 preta e vermelha (parafusadeira-drywall-skil-6520-preta-e-vermelha) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Plumatex Viena Plus (plumatex-viena-plus) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Probel Maximus Plus (probel-maximus-plus) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Purificador De Água Latina Pa355 Branco (purificador-de-agua-latina-pa355-branco) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Purificador de Água Quente 800ml Gelada 2,4L Fria e Natural Motor Compressor controle de temperatura reservatório de 3,3L (purificador-de-agua-quente-800ml-gelada-24l-fria-e-natural-motor-compressor-controle-de-temperatura-reservatorio-de-33l) — Casa e Construção — PREMIUM
+[IPBRDL] Sixxis SX060 Prime (sixxis-sx060-prime) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Sixxis SX200 Prime (sixxis-sx200-prime) — Casa e Construção — PREMIUM
+[IPBRDL] Sparta Kit 129 Peças com Maleta (sparta-kit-129-pecas-com-maleta) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Sparta Kit de Ferramentas 40 Peças (sparta-kit-de-ferramentas-40-pecas) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Stanley FatMax Kit de Ferramentas 94 Peças (stanley-fatmax-kit-de-ferramentas-94-pecas) — Casa e Construção — PREMIUM
+[IPBRDL] Stanley STST33027 Contractor (stanley-stst33027-contractor) — Casa e Construção — RECOMENDADO
+[IPBRDL] Tramontina Kit Ferramentas 11 Peças Básico (tramontina-kit-ferramentas-11-pecas-basico) — Casa e Construção — CUSTO_BENEFICIO
+[IPBRDL] Tramontina Master 1800W (tramontina-master-1800w) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Tramontina Master 5 Gavetas (tramontina-master-5-gavetas) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Tramontina Pro Sanfonada 7 Gavetas (tramontina-pro-sanfonada-7-gavetas) — Casa e Construção — MELHOR_ESCOLHA
+[IPBRDL] Travesseiro Ajustável - I Wanna Sleep - Snow® Cor Branco (travesseiro-ajustavel-i-wanna-sleep-snow-cor-branco) — Casa e Construção — PREMIUM
+[IPBRDL] Travesseiro Buddemeyer Toque de Pluma (travesseiro-buddemeyer-toque-de-pluma) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Travesseiro Camesa Confortável Fibra Siliconada (travesseiro-camesa-confortavel-fibra-siliconada) — Casa e Construção — CUSTO_BENEFICIO
+[IPBRDL] Travesseiro Castor Visco Soft Hot Cold (travesseiro-castor-visco-soft-hot-cold) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Travesseiro Dunlopillo Latex Natural Infinity (travesseiro-dunlopillo-latex-natural-infinity) — Casa e Construção — PREMIUM
+[IPBRDL] Travesseiro Duoflex NASA Gel Alto (travesseiro-duoflex-nasa-gel-alto) — Casa e Construção — RECOMENDADO
+[IPBRDL] Travesseiro Fibrasca Favos de Mel Massageador (travesseiro-fibrasca-favos-de-mel-massageador) — Casa e Construção — MAIS_VENDIDO
+[IPBRDL] Travesseiro Ortobom Viscopur Gel Refrescante (travesseiro-ortobom-viscopur-gel-refrescante) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Travesseiro Plumax Espuma Viscoelástica Premium (travesseiro-plumax-espuma-viscoelastica-premium) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Travesseiro RelaxMedic Dr Coluna com Gel (travesseiro-relaxmedic-dr-coluna-com-gel) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Tron Ventilador de Teto Bivolt (tron-ventilador-de-teto-bivolt) — Casa e Construção — PREMIUM
+[IPBRDL] Ventisol CLI0601 (ventisol-cli0601) — Casa e Construção — CUSTO_BENEFICIO
+[IPBRDL] Ventisol Turbo 6 Pás (ventisol-turbo-6-pas) — Casa e Construção — MAIS_VENDIDO
+[IPBRDL] Vonder PFV 238 (vonder-pfv-238) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Vonder PFV012 (vonder-pfv012) — Casa e Construção — RECOMENDADO
+[IPBRDL] Vonder PFV112QR (vonder-pfv112qr) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Vonder PFV20 de Impacto (vonder-pfv20-de-impacto) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] Vonder Plástica com 1 Bandeja (vonder-plastica-com-1-bandeja) — Casa e Construção — CUSTO_BENEFICIO
+[IPBRDL] Vonder Plástica com 3 Bandejas (vonder-plastica-com-3-bandejas) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] WAP Air Fresh 4 em 1 (wap-air-fresh-4-em-1) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] WAP Air Silence W130 (wap-air-silence-w130) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] WAP BPF 12K3 (wap-bpf-12k3) — Casa e Construção — RECOMENDADO
+[IPBRDL] WAP BPF 12K3 (wap-bpf-12k3-1pnu) — Casa e Construção — MELHOR_ESCOLHA
+[IPBRDL] WAP Combate Turbo 2600 (wap-combate-turbo-2600) — Casa e Construção — RECOMENDADO
+[IPBRDL] WAP Eco Smart 2200 (wap-eco-smart-2200) — Casa e Construção — BOM_E_BARATO
+[IPBRDL] WAP Kit de Ferramentas MKF132 – 132 Peças (wap-kit-de-ferramentas-mkf132-132-pecas) — Casa e Construção — CUSTO_BENEFICIO
+[IPBRDL] WAP Ousada Plus 2200 (wap-ousada-plus-2200) — Casa e Construção — MAIS_VENDIDO
+[IPBRDL] WAP Ágil 1800 (wap-agil-1800) — Casa e Construção — CUSTO_BENEFICIO
+[IPBRDL] Air Fryer Fritadeira Sem Óleo Elétrica Electrolux 6,5l Family Cesto Removível Com Timer 1700w De Potência Eaf50 Grafite Efficient Por Rita Lobo (air-fryer-fritadeira-sem-oleo-eletrica-electrolux-65l-family-cesto-removivel-com-timer-1700w-de-potencia-eaf50-grafite-efficient-por-rita-lobo) — Cozinha — BOM_E_BARATO
+[IPBRDL] Arno Flavor XL 32 Xícaras (arno-flavor-xl-32-xicaras) — Cozinha — BOM_E_BARATO
+[IPBRDL] Arno Powermax LN65 (arno-powermax-ln65) — Cozinha — BOM_E_BARATO
+[IPBRDL] Black+Decker BC500 Balança de Cozinha Compacta Inox (blackdecker-bc500-balanca-de-cozinha-compacta-inox) — Cozinha — MAIS_VENDIDO
+[IPBRDL] Black+Decker CM350G Premium Inox (blackdecker-cm350g-premium-inox) — Cozinha — PREMIUM
+[IPBRDL] Black+Decker Smartboost (blackdecker-smartboost) — Cozinha — CUSTO_BENEFICIO
+[IPBRDL] Brinox Ceramic Life Select 6 Peças (brinox-ceramic-life-select-6-pecas) — Cozinha — BOM_E_BARATO
+[IPBRDL] Brinox Ceramic Life Smart Plus 8 Peças (brinox-ceramic-life-smart-plus-8-pecas) — Cozinha — RECOMENDADO
+[IPBRDL] Britânia Brew Express Pro (britania-brew-express-pro) — Cozinha — CUSTO_BENEFICIO
+[IPBRDL] Britânia Diamante 800 (britania-diamante-800) — Cozinha — RECOMENDADO
+[IPBRDL] Ceraflame Duo Smart 5 Peças (ceraflame-duo-smart-5-pecas) — Cozinha — PREMIUM
+[IPBRDL] Commerce Brasil Balança Digital de Precisão 0,1 g (commerce-brasil-balanca-digital-de-precisao-01-g) — Cozinha — BOM_E_BARATO
+[IPBRDL] Electrolux ECM25 Experience Digital (electrolux-ecm25-experience-digital) — Cozinha — MAIS_VENDIDO
+[IPBRDL] Electrolux ECM30 Experience Programável (electrolux-ecm30-experience-programavel) — Cozinha — MELHOR_ESCOLHA
+[IPBRDL] Electrolux ELQ1400 (electrolux-elq1400) — Cozinha — BOM_E_BARATO
+[IPBRDL] Euro Home BAL7825 Balança Digital Pró 5 kg (euro-home-bal7825-balanca-digital-pro-5-kg) — Cozinha — BOM_E_BARATO
+[IPBRDL] Fritadeira Air Fryer Forno Elétrico Digital Oven Fry 12 Litros Elgin Cor Preto (fritadeira-air-fryer-forno-eletrico-digital-oven-fry-12-litros-elgin-cor-preto) — Cozinha — CUSTO_BENEFICIO
+[IPBRDL] GlobalMix SF-400 Balança Digital de Cozinha 10 kg (globalmix-sf-400-balanca-digital-de-cozinha-10-kg) — Cozinha — BOM_E_BARATO
+[IPBRDL] Gourmet Mix GX8002 Balança Digital de Precisão 10 kg (gourmet-mix-gx8002-balanca-digital-de-precisao-10-kg) — Cozinha — BOM_E_BARATO
+[IPBRDL] Jogo De Panelas Mta Titanium 5 Peças Antiaderente Indução (jogo-de-panelas-mta-titanium-5-pecas-antiaderente-inducao) — Cozinha — CUSTO_BENEFICIO
+[IPBRDL] Jogo Panela Electrolux Inox 5 Peças Design Com Fundo Triplo (jogo-panela-electrolux-inox-5-pecas-design-com-fundo-triplo) — Cozinha — BOM_E_BARATO
+[IPBRDL] Jogo de Panelas Brinox Ceramic Life Smart Plus 8 Peças (jogo-de-panelas-brinox-ceramic-life-smart-plus-8-pecas) — Cozinha — PREMIUM
+[IPBRDL] Jogo de Panelas Ceraflame Antiaderente 5 Peças (jogo-de-panelas-ceraflame-antiaderente-5-pecas) — Cozinha — BOM_E_BARATO
+[IPBRDL] Jogo de Panelas Le Creuset Antiaderente 5 Peças (jogo-de-panelas-le-creuset-antiaderente-5-pecas) — Cozinha — PREMIUM
+[IPBRDL] Jogo de Panelas Rochedo Antiaderente 4 Peças (jogo-de-panelas-rochedo-antiaderente-4-pecas) — Cozinha — BOM_E_BARATO
+[IPBRDL] Jogo de Panelas Tramontina Mônaco Preto 5 Peças (jogo-de-panelas-tramontina-monaco-preto-5-pecas) — Cozinha — MAIS_VENDIDO
+[IPBRDL] Jogo de Panelas Tramontina Paris 7 Peças (jogo-de-panelas-tramontina-paris-7-pecas) — Cozinha — MELHOR_ESCOLHA
+[IPBRDL] KitchenAid Balança Digital de Alta Precisão Plataforma Dupla KQ909 (kitchenaid-balanca-digital-de-alta-precisao-plataforma-dupla-kq909) — Cozinha — PREMIUM
+[IPBRDL] Mimo Style Pratic Cook 10 Peças (mimo-style-pratic-cook-10-pecas) — Cozinha — CUSTO_BENEFICIO
+[IPBRDL] Mondial AFN-40-FR (mondial-afn-40-fr) — Cozinha — RECOMENDADO
+[IPBRDL] Mondial AFO-12L-FD (mondial-afo-12l-fd) — Cozinha — PREMIUM
+[IPBRDL] Mondial Dolce Arome Thermo C-33 (mondial-dolce-arome-thermo-c-33) — Cozinha — BOM_E_BARATO
+[IPBRDL] Mondial Mega Family AFN-80 (mondial-mega-family-afn-80) — Cozinha — BOM_E_BARATO
+[IPBRDL] Mondial Turbo Glass L-1400-GI (mondial-turbo-glass-l-1400-gi) — Cozinha — BOM_E_BARATO
+[IPBRDL] Ninja BN701BZA (ninja-bn701bza) — Cozinha — PREMIUM
+[IPBRDL] Oikos Terrara Bege 8 Peças (oikos-terrara-bege-8-pecas) — Cozinha — BOM_E_BARATO
+[IPBRDL] Oster Air Fryer Digital 6.5L (oster-air-fryer-digital-65l) — Cozinha — BOM_E_BARATO
+[IPBRDL] Oster Day Light OCAF500 (oster-day-light-ocaf500) — Cozinha — BOM_E_BARATO
+[IPBRDL] Oster OLIQ610 Full (oster-oliq610-full) — Cozinha — MELHOR_ESCOLHA
+[IPBRDL] Oxford Linea Ipê em Cerâmica 4 Peças (oxford-linea-ipe-em-ceramica-4-pecas) — Cozinha — BOM_E_BARATO
+[IPBRDL] Ozeri ZK14-S Pronto Balança Digital Multifuncional (ozeri-zk14-s-pronto-balanca-digital-multifuncional) — Cozinha — RECOMENDADO
+[IPBRDL] PEQRTN Balança de Cozinha Mini Digital Portátil (peqrtn-balanca-de-cozinha-mini-digital-portatil) — Cozinha — CUSTO_BENEFICIO
+[IPBRDL] Panela Antiaderente Brinox Ceramic 24 cm (panela-antiaderente-brinox-ceramic-24-cm) — Cozinha — BOM_E_BARATO
+[IPBRDL] Panela Tramontina Turim 16 cm Antiaderente (panela-tramontina-turim-16-cm-antiaderente) — Cozinha — RECOMENDADO
+[IPBRDL] Panelux Magnific Grafite 5 Peças (panelux-magnific-grafite-5-pecas) — Cozinha — BOM_E_BARATO
+[IPBRDL] Philco Air Fryer PH-AF5 (philco-air-fryer-ph-af5) — Cozinha — BOM_E_BARATO
+[IPBRDL] Philco PCF40B Inox 40 Xícaras (philco-pcf40b-inox-40-xicaras) — Cozinha — BOM_E_BARATO
+[IPBRDL] Philco PH30 Thermo (philco-ph30-thermo) — Cozinha — RECOMENDADO
+[IPBRDL] Philco PLQ1350 Pro (philco-plq1350-pro) — Cozinha — BOM_E_BARATO
+[IPBRDL] Philco PLQ15A Turbo (philco-plq15a-turbo) — Cozinha — MAIS_VENDIDO
+[IPBRDL] Philips Walita NA130 (philips-walita-na130) — Cozinha — MELHOR_ESCOLHA
+[IPBRDL] Philips Walita Série 5000 RI2244 (philips-walita-serie-5000-ri2244) — Cozinha — PREMIUM
+[IPBRDL] RHINO BAREC-5X Balança de Cozinha Digital Inox (rhino-barec-5x-balanca-de-cozinha-digital-inox) — Cozinha — PREMIUM
+[IPBRDL] RelaxMedic Balança de Cozinha Digital X6 (relaxmedic-balanca-de-cozinha-digital-x6) — Cozinha — BOM_E_BARATO
+[IPBRDL] Tramontina Mônaco Induction 5 Peças (tramontina-monaco-induction-5-pecas) — Cozinha — PREMIUM
+[IPBRDL] Tramontina Solar Inox 6 Peças (tramontina-solar-inox-6-pecas) — Cozinha — MELHOR_ESCOLHA
+[IPBRDL] Tramontina Turim em Alumínio 5 Peças (tramontina-turim-em-aluminio-5-pecas) — Cozinha — BOM_E_BARATO
+[IPBRDL] WAP FW009548 (wap-fw009548) — Cozinha — PREMIUM
+[IPBRDL] WAP Family (wap-family) — Cozinha — BOM_E_BARATO
+[IPBRDL] Walita Café Control Digital (walita-cafe-control-digital) — Cozinha — PREMIUM
+[IPBRDL] Akko 3098B Plus (akko-3098b-plus) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Amazfit Bip 5 (amazfit-bip-5) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Amazfit GTS 4 (amazfit-gts-4) — Eletrônicos — RECOMENDADO
+[IPBRDL] Amazfit T-Rex Ultra (amazfit-t-rex-ultra) — Eletrônicos — PREMIUM
+[IPBRDL] Apple AirPods Pro 2 (USB-C) (apple-airpods-pro-2-usb-c) — Eletrônicos — PREMIUM
+[IPBRDL] Apple Watch SE 3 GPS • Caixa meia-noite de alumínio – 40 mm • Pulseira esportiva meia-noite – P/M (apple-watch-se-3-gps-caixa-meia-noite-de-aluminio-40-mm-pulseira-esportiva-meia-noite-pm) — Eletrônicos — PREMIUM
+[IPBRDL] Black+Decker BK60 (blackdecker-bk60) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Corsair K70 RGB Pro (corsair-k70-rgb-pro) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Davely Fitness Balança Digital (davely-fitness-balanca-digital) — Eletrônicos — CUSTO_BENEFICIO
+[IPBRDL] Edifier W820NB Plus (edifier-w820nb-plus) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Edifier X3 (edifier-x3) — Eletrônicos — RECOMENDADO
+[IPBRDL] G-Tech BALGL10 (g-tech-balgl10) — Eletrônicos — MAIS_VENDIDO
+[IPBRDL] Harman Kardon Onyx Studio 8 (harman-kardon-onyx-studio-8) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Haylou RS5 (haylou-rs5) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Haylou W1 (haylou-w1) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] HyperX Alloy Origins Core (hyperx-alloy-origins-core) — Eletrônicos — MAIS_VENDIDO
+[IPBRDL] HyperX Pulsefire Haste 2 (hyperx-pulsefire-haste-2) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] JBL Boombox 3 (jbl-boombox-3) — Eletrônicos — PREMIUM
+[IPBRDL] JBL Charge 6 (jbl-charge-6) — Eletrônicos — RECOMENDADO
+[IPBRDL] JBL Clip 5 (jbl-clip-5) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] JBL Flip 6 (jbl-flip-6) — Eletrônicos — MELHOR_ESCOLHA
+[IPBRDL] JBL Go 4 (jbl-go-4) — Eletrônicos — MAIS_VENDIDO
+[IPBRDL] JBL Live Pro 2 TWS (jbl-live-pro-2-tws) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] JBL Tune 520BT (jbl-tune-520bt) — Eletrônicos — MELHOR_ESCOLHA
+[IPBRDL] JBL Tune Buds (jbl-tune-buds) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Logitech G Pro Mechanical Gaming (logitech-g-pro-mechanical-gaming) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Logitech G Pro X Superlight 2 (logitech-g-pro-x-superlight-2) — Eletrônicos — PREMIUM
+[IPBRDL] Logitech G305 Lightspeed (logitech-g305-lightspeed) — Eletrônicos — RECOMENDADO
+[IPBRDL] Logitech G502 X Plus (logitech-g502-x-plus) — Eletrônicos — MELHOR_ESCOLHA
+[IPBRDL] Marshall Emberton II (marshall-emberton-ii) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Marshall Stanmore III (marshall-stanmore-iii) — Eletrônicos — PREMIUM
+[IPBRDL] Mondial Smart BL-05 (mondial-smart-bl-05) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Mouse Gamer X11 Attack Shark Tri Mode 22000dpi Paw3311 Dock Cor Preto (mouse-gamer-x11-attack-shark-tri-mode-22000dpi-paw3311-dock-cor-preto) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Multilaser BioHealth HC059 (multilaser-biohealth-hc059) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Multilaser Saúde HC411 (multilaser-saude-hc411) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Omron HBF-222T (omron-hbf-222t) — Eletrônicos — PREMIUM
+[IPBRDL] QCY T13 ANC 2 (qcy-t13-anc-2) — Eletrônicos — CUSTO_BENEFICIO
+[IPBRDL] Razer Basilisk V3 (razer-basilisk-v3) — Eletrônicos — PREMIUM
+[IPBRDL] Razer BlackWidow V4 (razer-blackwidow-v4) — Eletrônicos — PREMIUM
+[IPBRDL] Razer Huntsman Mini (razer-huntsman-mini) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Razer Viper V3 Pro (razer-viper-v3-pro) — Eletrônicos — PREMIUM
+[IPBRDL] Redragon Cobra M711 (redragon-cobra-m711) — Eletrônicos — CUSTO_BENEFICIO
+[IPBRDL] Redragon Kumara K552 RGB (redragon-kumara-k552-rgb) — Eletrônicos — MELHOR_ESCOLHA
+[IPBRDL] Redragon Lakshmi K606 (redragon-lakshmi-k606) — Eletrônicos — CUSTO_BENEFICIO
+[IPBRDL] Redragon Storm Elite M988 (redragon-storm-elite-m988) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Relaxmedic BodyScan Pro (relaxmedic-bodyscan-pro) — Eletrônicos — PREMIUM
+[IPBRDL] Relaxmedic BodyScan Vision (relaxmedic-bodyscan-vision) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Samsung Galaxy Buds FE (samsung-galaxy-buds-fe) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Samsung Galaxy Watch7 Smartwatch 40mm Bt Galaxy Ai Caixa Creme Pulseira Creme Bisel Creme Desenho da pulseira N/A (samsung-galaxy-watch7-smartwatch-40mm-bt-galaxy-ai-caixa-creme-pulseira-creme-bisel-creme-desenho-da-pulseira-na) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Samsung Galaxy Watch8 Smartwatch 40mm Lte, Galaxy Ai (samsung-galaxy-watch8-smartwatch-40mm-lte-galaxy-ai) — Eletrônicos — MELHOR_ESCOLHA
+[IPBRDL] Smartwatch Huawei Watch Gt 5 46mm Azul Tela Amoled Gnss (smartwatch-huawei-watch-gt-5-46mm-azul-tela-amoled-gnss) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Smartwatch Xiaomi Redmi Watch 5 Active Tela Lcd 2.00 Preto (smartwatch-xiaomi-redmi-watch-5-active-tela-lcd-200-preto) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Sony SRS-XB100 (sony-srs-xb100) — Eletrônicos — CUSTO_BENEFICIO
+[IPBRDL] Sony WH-1000XM5 (sony-wh-1000xm5) — Eletrônicos — PREMIUM
+[IPBRDL] SteelSeries Apex Pro TKL (2023) (steelseries-apex-pro-tkl-2023) — Eletrônicos — PREMIUM
+[IPBRDL] SteelSeries Rival 3 (steelseries-rival-3) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Teclado Mecânico Akko 3061S Preto 60% ABNT2 Switch Orange RGB USB-C (teclado-mecanico-akko-3061s-preto-60-abnt2-switch-orange-rgb-usb-c) — Eletrônicos — RECOMENDADO
+[IPBRDL] UE Wonderboom 4 (ue-wonderboom-4) — Eletrônicos — BOM_E_BARATO
+[IPBRDL] Xiaomi Mi Body Composition Scale 2 (xiaomi-mi-body-composition-scale-2) — Eletrônicos — MELHOR_ESCOLHA
+[IPBRDL] Xiaomi Smart Band 8 (xiaomi-smart-band-8) — Eletrônicos — CUSTO_BENEFICIO
+[IPBRDL] Acte Sports Corda de Pular Crossfit Profissional T79 (acte-sports-corda-de-pular-crossfit-profissional-t79) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Acte Sports E16 (acte-sports-e16) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Acte Sports E26 (acte-sports-e26) — Esportes e Lazer — PREMIUM
+[IPBRDL] Acte Sports E42 (acte-sports-e42) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Athletic Advanced 220V (athletic-advanced-220v) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Corda de Pular Destroy Extra-Pesada 1.5kg (corda-de-pular-destroy-extra-pesada-15kg) — Esportes e Lazer — PREMIUM
+[IPBRDL] Dream Fitness DR 1600 (dream-fitness-dr-1600) — Esportes e Lazer — RECOMENDADO
+[IPBRDL] Dream Fitness Dream Energy H (dream-fitness-dream-energy-h) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Dream Fitness Dream Max H (dream-fitness-dream-max-h) — Esportes e Lazer — RECOMENDADO
+[IPBRDL] Evox RTX800 (evox-rtx800) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Gallant Elite X (gallant-elite-x) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Halter Ajustável AHEAD SPORTS 2.5-24kg (halter-ajustavel-ahead-sports-25-24kg) — Esportes e Lazer — MELHOR_ESCOLHA
+[IPBRDL] Halter Ajustável EBUY Sports 2.5-24kg (halter-ajustavel-ebuy-sports-25-24kg) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Halter Ajustável GALLANT Elite Pro 5-40kg (halter-ajustavel-gallant-elite-pro-5-40kg) — Esportes e Lazer — PREMIUM
+[IPBRDL] Halter Ajustável MedPoint 2.5-24kg (halter-ajustavel-medpoint-25-24kg) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Halter Ajustável OCCY 2.5-24kg (halter-ajustavel-occy-25-24kg) — Esportes e Lazer — RECOMENDADO
+[IPBRDL] Halter Ajustável Pegada 3.5-19kg (halter-ajustavel-pegada-35-19kg) — Esportes e Lazer — CUSTO_BENEFICIO
+[IPBRDL] Halter Ajustável Powerblock Elite 5-25kg (halter-ajustavel-powerblock-elite-5-25kg) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Halter Ajustável Snode 2.5-24kg (halter-ajustavel-snode-25-24kg) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Halter Ajustável UPLIFT 2.5-24kg com Base (halter-ajustavel-uplift-25-24kg-com-base) — Esportes e Lazer — PREMIUM
+[IPBRDL] Kikos E500I (kikos-e500i) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Kikos E600i (kikos-e600i) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Kikos Max-KS5 (kikos-max-ks5) — Esportes e Lazer — MELHOR_ESCOLHA
+[IPBRDL] Kit Halteres Ajustáveis YANGFIT 25kg (kit-halteres-ajustaveis-yangfit-25kg) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Movement H2 (movement-h2) — Esportes e Lazer — PREMIUM
+[IPBRDL] Movement R5i (movement-r5i) — Esportes e Lazer — MELHOR_ESCOLHA
+[IPBRDL] Onset Fitness Speed Rope 3.0 Black/Green (onset-fitness-speed-rope-30-blackgreen) — Esportes e Lazer — PREMIUM
+[IPBRDL] Onset Fitness Speed Rope 3.0 Extreme (onset-fitness-speed-rope-30-extreme) — Esportes e Lazer — MELHOR_ESCOLHA
+[IPBRDL] PodiumFit S200 (podiumfit-s200) — Esportes e Lazer — MAIS_VENDIDO
+[IPBRDL] Polimet BP-770 (polimet-bp-770) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Polimet EP-1600 (polimet-ep-1600) — Esportes e Lazer — CUSTO_BENEFICIO
+[IPBRDL] Polimet Nitro 4300 (polimet-nitro-4300) — Esportes e Lazer — CUSTO_BENEFICIO
+[IPBRDL] ProForm Premier 500 (proform-premier-500) — Esportes e Lazer — PREMIUM
+[IPBRDL] Pulsar Sports Corda de Pular Speed Rope Profissional (pulsar-sports-corda-de-pular-speed-rope-profissional) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Speedo TR5 (speedo-tr5) — Esportes e Lazer — PREMIUM
+[IPBRDL] Tapete Yoga Arimo Balance TPE 6mm (tapete-yoga-arimo-balance-tpe-6mm) — Esportes e Lazer — MELHOR_ESCOLHA
+[IPBRDL] Tapete Yoga Bodhi Ecopro Travel 1.3mm Borracha Natural (tapete-yoga-bodhi-ecopro-travel-13mm-borracha-natural) — Esportes e Lazer — PREMIUM
+[IPBRDL] Tapete Yoga Bravus Sport NBR 8mm Premium (tapete-yoga-bravus-sport-nbr-8mm-premium) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Tapete Yoga Lups Sports EVA Econômico 4mm (tapete-yoga-lups-sports-eva-economico-4mm) — Esportes e Lazer — CUSTO_BENEFICIO
+[IPBRDL] Tapete Yoga Muvin Basics EVA 5mm (tapete-yoga-muvin-basics-eva-5mm) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Tapete Yoga Odin Fit Mat NBR Texturizado 10mm (tapete-yoga-odin-fit-mat-nbr-texturizado-10mm) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Tapete Yoga Rubber Fit TPE 6mm Biodegradável (tapete-yoga-rubber-fit-tpe-6mm-biodegradavel) — Esportes e Lazer — PREMIUM
+[IPBRDL] Tapete Yoga Yangfit TPE 6mm Com Bolsa (tapete-yoga-yangfit-tpe-6mm-com-bolsa) — Esportes e Lazer — MAIS_VENDIDO
+[IPBRDL] Tapete Yoga Yogateria Bodhi Asana PVC Ecológico 4.5mm (tapete-yoga-yogateria-bodhi-asana-pvc-ecologico-45mm) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Tapete Yoga Zenhood One TPE Eco 6mm (tapete-yoga-zenhood-one-tpe-eco-6mm) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Turbo Fitness Corda de Pular Profissional Speed (turbo-fitness-corda-de-pular-profissional-speed) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] Vollo Corda de Pular Crossfit de Aço com Rolamento (vollo-corda-de-pular-crossfit-de-aco-com-rolamento) — Esportes e Lazer — MAIS_VENDIDO
+[IPBRDL] Vollo Corda de Pular PVC com Rolamento (vollo-corda-de-pular-pvc-com-rolamento) — Esportes e Lazer — CUSTO_BENEFICIO
+[IPBRDL] Yangfit Corda de Pular Profissional Alumínio com Rolamento Duplo (yangfit-corda-de-pular-profissional-aluminio-com-rolamento-duplo) — Esportes e Lazer — RECOMENDADO
+[IPBRDL] Yangfit Corda de Pular Speed Rope em PVC com Rolamento (yangfit-corda-de-pular-speed-rope-em-pvc-com-rolamento) — Esportes e Lazer — BOM_E_BARATO
+[IPBRDL] AOC 22B1H 21.5" (aoc-22b1h-215) — Informática — CUSTO_BENEFICIO
+[IPBRDL] AOC 27G2SE 27" 165Hz (aoc-27g2se-27-165hz) — Informática — MAIS_VENDIDO
+[IPBRDL] ASRock AMD Radeon RX 7600 Challenger 8GB (asrock-amd-radeon-rx-7600-challenger-8gb) — Informática — RECOMENDADO
+[IPBRDL] ASUS Dual AMD Radeon RX 6600 8GB (asus-dual-amd-radeon-rx-6600-8gb) — Informática — CUSTO_BENEFICIO
+[IPBRDL] ASUS ProArt PA278QV 27" QHD (asus-proart-pa278qv-27-qhd) — Informática — PREMIUM
+[IPBRDL] ASUS VivoBook 15 X1502 (asus-vivobook-15-x1502) — Informática — BOM_E_BARATO
+[IPBRDL] Acer Aspire 5 A515-57 (acer-aspire-5-a515-57) — Informática — MELHOR_ESCOLHA
+[IPBRDL] Acer Aspire Lite A515-45 (acer-aspire-lite-a515-45) — Informática — BOM_E_BARATO
+[IPBRDL] Acer Nitro 5 AN515-58 (acer-nitro-5-an515-58) — Informática — PREMIUM
+[IPBRDL] Adata SU650 480GB (adata-su650-480gb) — Informática — CUSTO_BENEFICIO
+[IPBRDL] Corsair MP600 CORE XT 1TB (corsair-mp600-core-xt-1tb) — Informática — PREMIUM
+[IPBRDL] Crucial BX500 1TB (crucial-bx500-1tb) — Informática — BOM_E_BARATO
+[IPBRDL] Crucial T500 2TB (crucial-t500-2tb) — Informática — PREMIUM
+[IPBRDL] Dell Inspiron 15 i15-i120K (dell-inspiron-15-i15-i120k) — Informática — PREMIUM
+[IPBRDL] Dell P2422H 24" IPS (dell-p2422h-24-ips) — Informática — BOM_E_BARATO
+[IPBRDL] Gpu Geforce Rtx 5060 Twin X2 Oc White 8gb 128bits Gddr7 (gpu-geforce-rtx-5060-twin-x2-oc-white-8gb-128bits-gddr7) — Informática — BOM_E_BARATO
+[IPBRDL] Kingston A400 240GB (kingston-a400-240gb) — Informática — BOM_E_BARATO
+[IPBRDL] Kingston NV2 500GB (kingston-nv2-500gb) — Informática — RECOMENDADO
+[IPBRDL] LG 24MP400-B 24" (lg-24mp400-b-24) — Informática — MELHOR_ESCOLHA
+[IPBRDL] LG 27UL500 27" 4K (lg-27ul500-27-4k) — Informática — PREMIUM
+[IPBRDL] LG UltraGear 27GP750-B 27" 240Hz (lg-ultragear-27gp750-b-27-240hz) — Informática — BOM_E_BARATO
+[IPBRDL] LG UltraWide 29WQ500 29" (lg-ultrawide-29wq500-29) — Informática — BOM_E_BARATO
+[IPBRDL] Lenovo IdeaPad 1i 82VY (lenovo-ideapad-1i-82vy) — Informática — RECOMENDADO
+[IPBRDL] Lenovo IdeaPad 3i 82MD (lenovo-ideapad-3i-82md) — Informática — BOM_E_BARATO
+[IPBRDL] Notebook 14 Positivo Motion Celeron Ssd 128gb 4gb Windows 10 (notebook-14-positivo-motion-celeron-ssd-128gb-4gb-windows-10) — Informática — CUSTO_BENEFICIO
+[IPBRDL] Notebook Samsung Galaxy Book Go, Windows 11 Home, Snapdragon® 7c, 4gb, 128gb Ufs, 14'' Full Hd Led, 1.38kg Com Copilot Integrado (notebook-samsung-galaxy-book-go-windows-11-home-snapdragon-7c-4gb-128gb-ufs-14-full-hd-led-138kg-com-copilot-integrado) — Informática — BOM_E_BARATO
+[IPBRDL] Placa De Video Powercolor Radeon Rx 9060 Xt Reaper, 16gb. (placa-de-video-powercolor-radeon-rx-9060-xt-reaper-16gb) — Informática — BOM_E_BARATO
+[IPBRDL] Placa De Vídeo Asrock Amd Radeon Rx 9070 Xt Taichi Oc 16gb (placa-de-video-asrock-amd-radeon-rx-9070-xt-taichi-oc-16gb-8c2oe) — Informática — BOM_E_BARATO
+[IPBRDL] Placa De Vídeo Asrock Amd Radeon Rx 9070 Xt Taichi Oc 16gb (placa-de-video-asrock-amd-radeon-rx-9070-xt-taichi-oc-16gb) — Informática — PREMIUM
+[IPBRDL] Placa De Vídeo Pcyes Geforce Gtx 1650 Gddr6 4gb (placa-de-video-pcyes-geforce-gtx-1650-gddr6-4gb) — Informática — BOM_E_BARATO
+[IPBRDL] Placa de Vídeo Galax RTX 5070 12GB GDDR7 6144 Núcleos 2K (placa-de-video-galax-rtx-5070-12gb-gddr7-6144-nucleos-2k) — Informática — PREMIUM
+[IPBRDL] Placa de vídeo AMD ASRock Challenger Radeon RX 6600 Series RX 6600 8GB (placa-de-video-amd-asrock-challenger-radeon-rx-6600-series-rx-6600-8gb) — Informática — BOM_E_BARATO
+[IPBRDL] Rtx 5060 Windforce Max Oc 8gb Gddr7 (rtx-5060-windforce-max-oc-8gb-gddr7) — Informática — MELHOR_ESCOLHA
+[IPBRDL] Samsung 990 EVO 1TB (samsung-990-evo-1tb) — Informática — MELHOR_ESCOLHA
+[IPBRDL] Samsung Galaxy Book3 NP550 (samsung-galaxy-book3-np550) — Informática — MAIS_VENDIDO
+[IPBRDL] Samsung Odyssey G5 27" 165Hz (samsung-odyssey-g5-27-165hz) — Informática — MAIS_VENDIDO
+[IPBRDL] Samsung T350 24" LF24T350 (samsung-t350-24-lf24t350) — Informática — RECOMENDADO
+[IPBRDL] SanDisk Plus 1TB (sandisk-plus-1tb) — Informática — BOM_E_BARATO
+[IPBRDL] WD Black SN850X 1TB (wd-black-sn850x-1tb) — Informática — BOM_E_BARATO
+[IPBRDL] WD Green 1TB (wd-green-1tb) — Informática — BOM_E_BARATO
+[IPBRDL] Almofada de Pelúcia Decorativa Formato Animal (almofada-de-pelucia-decorativa-formato-animal) — Presentes — BOM_E_BARATO
+[IPBRDL] Bolsa Tiracolo Feminina de Couro (bolsa-tiracolo-feminina-de-couro) — Presentes — RECOMENDADO
+[IPBRDL] Caneca Personalizada Com Sua Foto Arte Frase Ou Logo (caneca-personalizada-com-sua-foto-arte-frase-ou-logo) — Presentes — PREMIUM
+[IPBRDL] Caneta Personalizada com Adesivo (caneta-personalizada-com-adesivo) — Presentes — BOM_E_BARATO
+[IPBRDL] Caneta Stylus Universal para Tablet (caneta-stylus-universal-para-tablet) — Presentes — BOM_E_BARATO
+[IPBRDL] Capa para Celular Fidget Toy Pop It (capa-para-celular-fidget-toy-pop-it) — Presentes — BOM_E_BARATO
+[IPBRDL] Carregador Rápido USB-C 65W GaN (carregador-rapido-usb-c-65w-gan) — Presentes — BOM_E_BARATO
+[IPBRDL] Carteira de Couro Legítimo Premium (carteira-de-couro-legitimo-premium) — Presentes — CUSTO_BENEFICIO
+[IPBRDL] Cartão Personalizado Mapa das Estrelas (cartao-personalizado-mapa-das-estrelas) — Presentes — CUSTO_BENEFICIO
+[IPBRDL] Chinelo Slide Havaianas Brasil (chinelo-slide-havaianas-brasil) — Presentes — MAIS_VENDIDO
+[IPBRDL] Cinto de Couro Masculino 100% Legítimo (cinto-de-couro-masculino-100-legitimo) — Presentes — CUSTO_BENEFICIO
+[IPBRDL] Colar com Pingente Delicado de Ouro (colar-com-pingente-delicado-de-ouro) — Presentes — MELHOR_ESCOLHA
+[IPBRDL] Colônia Feminina Positiva (colonia-feminina-positiva) — Presentes — BOM_E_BARATO
+[IPBRDL] Câmera de Segurança WiFi Intelbras IM4 (camera-de-seguranca-wifi-intelbras-im4) — Presentes — BOM_E_BARATO
+[IPBRDL] Echo Dot 5ª Geração (echo-dot-5-geracao) — Presentes — PREMIUM
+[IPBRDL] Fone Bluetooth JBL Sense Pro (fone-bluetooth-jbl-sense-pro) — Presentes — PREMIUM
+[IPBRDL] Fone Bluetooth Xiaomi Redmi Buds 6 Play (fone-bluetooth-xiaomi-redmi-buds-6-play) — Presentes — MELHOR_ESCOLHA
+[IPBRDL] Fone de Ouvido Sem Fio Beats Solo Pro (fone-de-ouvido-sem-fio-beats-solo-pro) — Presentes — PREMIUM
+[IPBRDL] Fone de Ouvido TWS com Power Bank (fone-de-ouvido-tws-com-power-bank) — Presentes — RECOMENDADO
+[IPBRDL] Gimbal Estabilizador Hohem iSteady X (gimbal-estabilizador-hohem-isteady-x) — Presentes — BOM_E_BARATO
+[IPBRDL] Jaqueta Corta Vento Nylon Impermeável (jaqueta-corta-vento-nylon-impermeavel) — Presentes — BOM_E_BARATO
+[IPBRDL] Kit Acessórios Masculino Relógio + Carteira (kit-acessorios-masculino-relogio-carteira) — Presentes — BOM_E_BARATO
+[IPBRDL] Kit Calvin Klein Be Fragrância Masculina (kit-calvin-klein-be-fragrancia-masculina) — Presentes — BOM_E_BARATO
+[IPBRDL] Kit Churrasco com Faca e Garfo Trinchante (kit-churrasco-com-faca-e-garfo-trinchante) — Presentes — MELHOR_ESCOLHA
+[IPBRDL] Kit Coffret Dior Sauvage Eau de Toilette (kit-coffret-dior-sauvage-eau-de-toilette) — Presentes — PREMIUM
+[IPBRDL] Kit Cuidados Pessoais Masculino Completo (kit-cuidados-pessoais-masculino-completo) — Presentes — BOM_E_BARATO
+[IPBRDL] Kit Eudora H Colônia 2 Itens (kit-eudora-h-colonia-2-itens) — Presentes — CUSTO_BENEFICIO
+[IPBRDL] Kit Grooming Premium Barba e Cabelo (kit-grooming-premium-barba-e-cabelo) — Presentes — PREMIUM
+[IPBRDL] Kit Maquiagem Premium Huda Beauty (kit-maquiagem-premium-huda-beauty) — Presentes — CUSTO_BENEFICIO
+[IPBRDL] Kit Natura Homem Barba Completo (kit-natura-homem-barba-completo) — Presentes — RECOMENDADO
+[IPBRDL] Kit Presente Club 6 Viagem 3 Itens (kit-presente-club-6-viagem-3-itens) — Presentes — BOM_E_BARATO
+[IPBRDL] Kit Presente Egeo O Boticário (kit-presente-egeo-o-boticario) — Presentes — BOM_E_BARATO
+[IPBRDL] Kit Presente Malbec O Boticário (kit-presente-malbec-o-boticario) — Presentes — MAIS_VENDIDO
+[IPBRDL] Kit Spa Completo para Casa (kit-spa-completo-para-casa) — Presentes — MELHOR_ESCOLHA
+[IPBRDL] Luminária LED RGB com Bluetooth e Despertador (luminaria-led-rgb-com-bluetooth-e-despertador) — Presentes — RECOMENDADO
+[IPBRDL] Lâmpada Inteligente WiFi Positivo (lampada-inteligente-wifi-positivo) — Presentes — CUSTO_BENEFICIO
+[IPBRDL] Mapa Scratch Off Mundi (mapa-scratch-off-mundi) — Presentes — MAIS_VENDIDO
+[IPBRDL] Microfone de Lapela Sem Fio (microfone-de-lapela-sem-fio) — Presentes — BOM_E_BARATO
+[IPBRDL] Mini Projetor Portátil Magcubic HY300 (mini-projetor-portatil-magcubic-hy300) — Presentes — MAIS_VENDIDO
+[IPBRDL] Mochila Masculina Anti-Furto Premium (mochila-masculina-anti-furto-premium) — Presentes — BOM_E_BARATO
+[IPBRDL] Perfume Club de Nuit Intense Man (perfume-club-de-nuit-intense-man) — Presentes — RECOMENDADO
+[IPBRDL] Perfume Floratta Rose Bouquet (perfume-floratta-rose-bouquet) — Presentes — BOM_E_BARATO
+[IPBRDL] Relógio Feminino Elegante (relogio-feminino-elegante) — Presentes — PREMIUM
+[IPBRDL] Relógio Fossil Heritage (relogio-fossil-heritage) — Presentes — PREMIUM
+[IPBRDL] Ring Light com Espelho para Selfie (ring-light-com-espelho-para-selfie) — Presentes — PREMIUM
+[IPBRDL] Robô Aspirador Inteligente Xiaomi S40C (robo-aspirador-inteligente-xiaomi-s40c) — Presentes — PREMIUM
+[IPBRDL] Scarpin Feminino Confortável (scarpin-feminino-confortavel) — Presentes — PREMIUM
+[IPBRDL] Smartwatch AMOLED Amazfit Bip 6 (smartwatch-amoled-amazfit-bip-6) — Presentes — MELHOR_ESCOLHA
+[IPBRDL] Smartwatch Samsung Galaxy Fit 3 (smartwatch-samsung-galaxy-fit-3) — Presentes — CUSTO_BENEFICIO
+[IPBRDL] Smartwatch Samsung Galaxy Watch 8 (smartwatch-samsung-galaxy-watch-8) — Presentes — PREMIUM
+
+# ─── Resumo ───
+# Total: 430
+# Publicados: 430
+# Completos (6/6 flags): 430 (100.0%)
+# Sem imagem: 0
+# Sem preço: 0
+# Sem badge: 0
+# Sem rating: 0
+# Sem descrição: 0
+# Sem link de afiliado: 0
+
