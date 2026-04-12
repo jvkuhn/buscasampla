@@ -196,6 +196,20 @@ model SiteSettings {
   updatedAt       DateTime @updatedAt
 }
 
+// ─── Log de Cliques (Analytics) ──────────────────────────────────────────────
+
+model ClickLog {
+  id          String   @id @default(cuid())
+  productId   String?
+  productName String
+  platform    String   // "amazon", "mercadolivre", "shopee", etc.
+  url         String
+  createdAt   DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([productId])
+}
+
 enum Status {
   DRAFT
   PUBLISHED

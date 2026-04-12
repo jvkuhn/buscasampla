@@ -183,6 +183,7 @@ export default async function RankingPage(props: PageProps<"/ranking/[slug]">) {
             key={item.id}
             position={item.order}
             product={{
+              id: item.product.id,
               slug: item.product.slug,
               name: item.product.name,
               shortDesc: item.product.shortDesc,

@@ -2,6 +2,7 @@ import { PublicHeader } from "@/components/public/PublicHeader";
 import { PublicFooter } from "@/components/public/PublicFooter";
 import { GTMGate } from "@/components/public/GTMGate";
 import { GTMNoScriptGate } from "@/components/public/GTMNoScriptGate";
+import { GoogleAnalyticsGate } from "@/components/public/GoogleAnalyticsGate";
 import { CookieBanner } from "@/components/public/CookieBanner";
 import { db } from "@/lib/db";
 import { unstable_cache } from "next/cache";
@@ -45,6 +46,7 @@ export default async function PublicLayout({ children }: { children: React.React
     <>
       {gtmId && <GTMGate gtmId={gtmId} />}
       {gtmId && <GTMNoScriptGate gtmId={gtmId} />}
+      <GoogleAnalyticsGate />
       <PublicHeader categories={categories} settings={settings} />
       <main className="flex-1">{children}</main>
       <PublicFooter settings={settings} pages={pages} />

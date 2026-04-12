@@ -354,6 +354,7 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
                     href={primaryLink.url}
                     platform={primaryLink.platform}
                     productName={product.name}
+                    productId={product.id}
                     className={`flex items-center justify-center gap-2 w-full font-bold py-4 px-6 rounded-xl text-lg text-white transition-colors shadow-md ${PLATFORM_COLORS[primaryLink.platform] ?? "bg-green-500 hover:bg-green-600"}`}
                   >
                     <span>🛒</span>
@@ -370,6 +371,7 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
                     href={link.url}
                     platform={link.platform}
                     productName={product.name}
+                    productId={product.id}
                     className={`flex items-center justify-center gap-2 w-full font-semibold py-3 px-6 rounded-xl text-base transition-colors ${PLATFORM_COLORS[link.platform] ?? "bg-gray-100 hover:bg-gray-200 text-gray-800"}`}
                   >
                     Ver no {PLATFORM_DISPLAY[link.platform] || link.platform}
@@ -545,6 +547,7 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
               href={primaryLink.url}
               platform={primaryLink.platform}
               productName={product.name}
+              productId={product.id}
               className="inline-flex items-center gap-2 bg-white text-green-700 font-extrabold py-3 px-8 rounded-full hover:bg-green-50 transition-colors text-lg shadow"
             >
               🛒 Comprar agora

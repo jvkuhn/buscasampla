@@ -14,6 +14,7 @@ const BADGE_COLORS: Record<string, string> = {
 interface Props {
   position: number;
   product: {
+    id: string;
     slug: string;
     name: string;
     shortDesc: string | null;
@@ -130,6 +131,7 @@ export function RankingItem({ position, product }: Props) {
                 href={primaryLink.url}
                 platform={primaryLink.platform}
                 productName={product.name}
+                productId={product.id}
                 className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 active:bg-green-700 text-white font-bold py-3.5 px-6 rounded-xl text-base transition-colors shadow-sm"
               >
                 <span>🛒</span>
@@ -148,6 +150,7 @@ export function RankingItem({ position, product }: Props) {
                     href={link.url}
                     platform={link.platform}
                     productName={product.name}
+                    productId={product.id}
                     className="flex-1 min-w-[120px] text-center text-sm font-medium text-gray-600 bg-gray-100 hover:bg-gray-200 py-2 px-3 rounded-lg transition-colors"
                   >
                     {PLATFORM_DISPLAY[link.platform] || link.platform} →
