@@ -29,3 +29,20 @@ export function formatPrice(price: number | string | null | undefined): string {
 export function truncate(str: string, length: number): string {
   return str.length > length ? str.slice(0, length) + "…" : str;
 }
+
+/**
+ * Serializa um objeto JSON-LD para uso dentro de <script type="application/ld+json">.
+ *
+ * JSON.stringify() não escapa `<`, `>` ou `&`, então uma string tipo `</script>` dentro
+ * do payload escapa do contexto do <script> e permite XSS. Esta função escapa esses
+ * caracteres usando os unicode escapes que JSON aceita, mantendo o JSON válido e seguro
+ * pra incorporar em HTML.
+ */
+export function safeJsonLd(obj: unknown): string {
+  return JSON.stringify(obj)
+    .replace(/</g, "\\u003c")
+    .replace(/>/g, "\\u003e")
+    .replace(/&/g, "\\u0026")
+    .replace(/\u2028/g, "\\u2028")
+    .replace(/\u2029/g, "\\u2029");
+}

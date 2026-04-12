@@ -16,7 +16,10 @@ export async function createCategory(formData: FormData) {
     order: raw.order ?? 0,
     status: raw.status ?? "DRAFT",
   });
-  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
+  if (!parsed.success) {
+    console.error("[categories] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
+  }
 
   const slug = parsed.data.slug || slugify(parsed.data.name);
 
@@ -38,7 +41,10 @@ export async function updateCategory(id: string, formData: FormData) {
     order: raw.order ?? 0,
     status: raw.status ?? "DRAFT",
   });
-  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
+  if (!parsed.success) {
+    console.error("[categories] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
+  }
 
   await db.category.update({ where: { id }, data: parsed.data });
 

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { db } from "@/lib/db";
 import { RankingCard } from "@/components/public/RankingCard";
+import { safeJsonLd } from "@/lib/utils";
 import type { Metadata } from "next";
 
 export async function generateMetadata(
@@ -106,15 +107,15 @@ export default async function CategoryPage(props: PageProps<"/categorias/[slug]"
     <div className="bg-gray-50 min-h-screen">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(collectionJsonLd) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumbJsonLd) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(rankingsListJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(rankingsListJsonLd) }}
       />
 
       {/* Hero da categoria */}

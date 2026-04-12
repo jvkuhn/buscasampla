@@ -31,7 +31,10 @@ export async function createProduct(formData: FormData) {
     oldPrice: raw.oldPrice || null,
     rating: raw.rating || null,
   });
-  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
+  if (!parsed.success) {
+    console.error("[products] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
+  }
 
   const slug = parsed.data.slug || slugify(parsed.data.name);
 
@@ -58,7 +61,10 @@ export async function updateProduct(id: string, formData: FormData) {
     oldPrice: raw.oldPrice || null,
     rating: raw.rating || null,
   });
-  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
+  if (!parsed.success) {
+    console.error("[products] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
+  }
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   await db.product.update({ where: { id }, data: parsed.data as any });
@@ -81,7 +87,10 @@ export async function upsertAffiliateLink(
   await requireAdmin();
 
   const parsed = affiliateLinkSchema.safeParse(data);
-  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
+  if (!parsed.success) {
+    console.error("[products] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
+  }
 
   if (data.id) {
     await db.affiliateLink.update({

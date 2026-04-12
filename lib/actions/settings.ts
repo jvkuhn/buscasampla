@@ -18,7 +18,10 @@ export async function createBanner(formData: FormData) {
     active: raw.active === "true" || raw.active === "on",
     order: raw.order ?? 0,
   });
-  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
+  if (!parsed.success) {
+    console.error("[settings] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
+  }
 
   await db.banner.create({ data: parsed.data });
   revalidatePath("/admin/banners");
@@ -35,7 +38,10 @@ export async function updateBanner(id: string, formData: FormData) {
     active: raw.active === "true" || raw.active === "on",
     order: raw.order ?? 0,
   });
-  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
+  if (!parsed.success) {
+    console.error("[settings] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
+  }
 
   await db.banner.update({ where: { id }, data: parsed.data });
   revalidatePath("/admin/banners");
@@ -61,7 +67,10 @@ export async function createSitePage(formData: FormData) {
     slug: raw.slug || slugify(raw.title as string),
     status: raw.status ?? "DRAFT",
   });
-  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
+  if (!parsed.success) {
+    console.error("[settings] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
+  }
 
   await db.sitePage.create({ data: parsed.data });
   revalidatePath("/admin/paginas");
@@ -76,7 +85,10 @@ export async function updateSitePage(id: string, formData: FormData) {
     ...raw,
     status: raw.status ?? "DRAFT",
   });
-  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
+  if (!parsed.success) {
+    console.error("[settings] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
+  }
 
   await db.sitePage.update({ where: { id }, data: parsed.data });
   revalidatePath("/admin/paginas");
@@ -98,7 +110,8 @@ export async function updateSiteSettings(formData: FormData) {
   const raw = Object.fromEntries(formData);
   const parsed = siteSettingsSchema.safeParse(raw);
   if (!parsed.success) {
-    throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
+    console.error("[settings] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
   }
 
   await db.siteSettings.upsert({

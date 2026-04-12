@@ -3,6 +3,7 @@ import Link from "next/link";
 import { db } from "@/lib/db";
 import { RankingItem } from "@/components/public/RankingItem";
 import { AffiliateDisclosure } from "@/components/public/AffiliateDisclosure";
+import { safeJsonLd } from "@/lib/utils";
 import type { Metadata } from "next";
 
 export async function generateMetadata(
@@ -122,16 +123,16 @@ export default async function RankingPage(props: PageProps<"/ranking/[slug]">) {
     <article className="bg-gray-50">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumbJsonLd) }}
       />
       {faqJsonLd && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: safeJsonLd(faqJsonLd) }}
         />
       )}
 

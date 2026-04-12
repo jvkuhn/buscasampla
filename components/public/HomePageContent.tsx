@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { db } from "@/lib/db";
 import { RankingCard } from "@/components/public/RankingCard";
+import { safeJsonLd } from "@/lib/utils";
 
 export default async function HomePageContent() {
   const [categoriesWithRankings, uncategorizedRankings, topBanner, settings] = await Promise.all([
@@ -65,7 +66,7 @@ export default async function HomePageContent() {
     <div className="bg-gray-50 min-h-screen">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(siteJsonLd) }}
       />
 
       {/* Hero */}

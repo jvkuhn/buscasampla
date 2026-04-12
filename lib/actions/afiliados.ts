@@ -41,7 +41,8 @@ export async function updateProductConfig(items: ProductConfigItem[]) {
 
   const parsed = productConfigSchema.safeParse(items);
   if (!parsed.success) {
-    throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten()));
+    console.error("[afiliados] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
   }
   const validItems = parsed.data;
 
@@ -98,7 +99,8 @@ export async function updateProductName(input: { productId: string; name: string
 
   const parsed = updateProductNameSchema.safeParse(input);
   if (!parsed.success) {
-    throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten()));
+    console.error("[afiliados] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
   }
 
   const { productId, name } = parsed.data;

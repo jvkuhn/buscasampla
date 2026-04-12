@@ -16,7 +16,10 @@ export async function createRanking(formData: FormData) {
     status: raw.status ?? "DRAFT",
     categoryId: raw.categoryId || null,
   });
-  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
+  if (!parsed.success) {
+    console.error("[rankings] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
+  }
 
   const slug = parsed.data.slug || slugify(parsed.data.title);
 
@@ -36,7 +39,10 @@ export async function updateRanking(id: string, formData: FormData) {
     status: raw.status ?? "DRAFT",
     categoryId: raw.categoryId || null,
   });
-  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
+  if (!parsed.success) {
+    console.error("[rankings] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
+  }
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   await db.ranking.update({ where: { id }, data: parsed.data as any });
@@ -112,7 +118,10 @@ export async function createFAQ(rankingId: string, formData: FormData) {
 
   const raw = Object.fromEntries(formData);
   const parsed = faqSchema.safeParse({ ...raw, rankingId });
-  if (!parsed.success) throw new Error("Dados inválidos: " + JSON.stringify(parsed.error.flatten().fieldErrors));
+  if (!parsed.success) {
+    console.error("[rankings] validation error:", parsed.error.flatten().fieldErrors);
+    throw new Error("Dados inválidos. Verifique os campos e tente novamente.");
+  }
 
   await db.fAQ.create({ data: parsed.data });
   revalidatePath(`/admin/rankings/${rankingId}`);

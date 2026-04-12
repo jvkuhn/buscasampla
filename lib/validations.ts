@@ -91,7 +91,13 @@ export const siteSettingsSchema = z.object({
   socialTwitter: z.string().optional(),
   socialFacebook: z.string().optional(),
   socialInstagram: z.string().optional(),
-  gtmId: z.string().optional(),
+  // Formato: GTM-XXXXXXX. Validado estritamente pra evitar injecao no template
+  // JS do GoogleTagManager.tsx (${gtmId} interpolado em string JS inline).
+  gtmId: z
+    .string()
+    .regex(/^GTM-[A-Z0-9]+$/, "ID do GTM deve estar no formato GTM-XXXXXXX")
+    .optional()
+    .or(z.literal("")),
 });
 
 export const manualLinkSchema = z.object({
