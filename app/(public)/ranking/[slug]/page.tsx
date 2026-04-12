@@ -47,19 +47,43 @@ export default async function RankingPage(props: PageProps<"/ranking/[slug]">) {
 
   if (!ranking || ranking.status !== "PUBLISHED") notFound();
 
-  // JSON-LD ItemList
+  // JSON-LD ItemList com Product schema completo nested em cada item.
+  // Isso faz o Google entender que o ranking é uma coleção de produtos reais,
+  // não só uma lista de links — melhora eligibilidade pra rich results de listas.
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: ranking.title,
     description: ranking.metaDesc || ranking.subtitle || undefined,
-    itemListElement: ranking.items.map((it) => ({
-      "@type": "ListItem",
-      position: it.order,
-      name: it.product.name,
-      url: `/produto/${it.product.slug}`,
-      image: it.product.imageUrl || undefined,
-    })),
+    numberOfItems: ranking.items.length,
+    itemListElement: ranking.items.map((it) => {
+      const itemRating = it.product.rating != null ? Number(it.product.rating) : null;
+      return {
+        "@type": "ListItem",
+        position: it.order,
+        item: {
+          "@type": "Product",
+          name: it.product.name,
+          url: `/produto/${it.product.slug}`,
+          image: it.product.imageUrl || undefined,
+          sku: it.product.slug,
+          brand: it.product.brand
+            ? { "@type": "Brand", name: it.product.brand }
+            : undefined,
+          description: it.product.shortDesc || undefined,
+          aggregateRating:
+            itemRating != null
+              ? {
+                  "@type": "AggregateRating",
+                  ratingValue: itemRating.toFixed(1),
+                  bestRating: "5",
+                  worstRating: "1",
+                  ratingCount: 1,
+                }
+              : undefined,
+        },
+      };
+    }),
   };
 
   const breadcrumbJsonLd = {

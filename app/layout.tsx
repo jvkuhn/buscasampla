@@ -16,7 +16,26 @@ export const metadata: Metadata = {
   description:
     "Comparativos e rankings dos melhores produtos em todas as categorias. Encontre o produto ideal com avaliações detalhadas e links de compra.",
   metadataBase: new URL(siteUrl),
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    siteName: "BuscasAmpla",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@buscasampla",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

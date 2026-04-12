@@ -10,10 +10,27 @@ export async function generateMetadata(
   const { slug } = await props.params;
   const cat = await db.category.findUnique({ where: { slug } });
   if (!cat) return {};
+  const title = cat.metaTitle || `Top 10 de ${cat.name} — Os melhores de 2026`;
+  const description =
+    cat.metaDesc ||
+    cat.description ||
+    `Rankings com os melhores produtos de ${cat.name}. Comparativos atualizados, prós, contras e onde comprar.`;
   return {
-    title: cat.metaTitle || `Top 10 de ${cat.name} — Os melhores de 2026`,
-    description: cat.metaDesc || cat.description || undefined,
+    title,
+    description,
     alternates: { canonical: `/categorias/${cat.slug}` },
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      images: cat.imageUrl ? [cat.imageUrl] : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: cat.imageUrl ? [cat.imageUrl] : undefined,
+    },
   };
 }
 
@@ -40,8 +57,66 @@ export default async function CategoryPage(props: PageProps<"/categorias/[slug]"
 
   if (!category || category.status !== "PUBLISHED") notFound();
 
+  // JSON-LD: CollectionPage + BreadcrumbList + ItemList de rankings.
+  // Sinaliza ao Google que essa página agrega múltiplos rankings (coleção).
+  const collectionJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `Top 10 de ${category.name}`,
+    description: category.description || undefined,
+    url: `/categorias/${category.slug}`,
+    about: { "@type": "Thing", name: category.name },
+    hasPart: category.rankings.map((r) => ({
+      "@type": "ItemList",
+      name: r.title,
+      url: `/ranking/${r.slug}`,
+      numberOfItems: r._count.items,
+    })),
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Início", item: "/" },
+      { "@type": "ListItem", position: 2, name: "Categorias", item: "/categorias" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: category.name,
+        item: `/categorias/${category.slug}`,
+      },
+    ],
+  };
+
+  const rankingsListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Rankings de ${category.name}`,
+    numberOfItems: category.rankings.length,
+    itemListElement: category.rankings.map((r, idx) => ({
+      "@type": "ListItem",
+      position: idx + 1,
+      url: `/ranking/${r.slug}`,
+      name: r.title,
+    })),
+  };
+
   return (
     <div className="bg-gray-50 min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(rankingsListJsonLd) }}
+      />
+
       {/* Hero da categoria */}
       <section className="bg-gradient-to-br from-blue-700 to-indigo-700 text-white">
         <div className="max-w-5xl mx-auto px-4 py-14 md:py-20">

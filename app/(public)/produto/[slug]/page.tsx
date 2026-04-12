@@ -52,15 +52,39 @@ export async function generateMetadata(
   props: PageProps<"/produto/[slug]">
 ): Promise<Metadata> {
   const { slug } = await props.params;
-  const p = await db.product.findUnique({ where: { slug } });
+  const p = await db.product.findUnique({
+    where: { slug },
+    include: { category: { select: { name: true } } },
+  });
   if (!p) return {};
+
+  const titleParts = [p.name];
+  if (p.brand && !p.name.toLowerCase().includes(p.brand.toLowerCase())) {
+    titleParts.unshift(p.brand);
+  }
+  const title = `${titleParts.join(" ")} — Avaliação e Onde Comprar`;
+
+  const descParts: string[] = [];
+  if (p.shortDesc) descParts.push(p.shortDesc);
+  if (p.category?.name) descParts.push(`Categoria: ${p.category.name}.`);
+  if (p.rating != null) descParts.push(`Avaliação ${Number(p.rating).toFixed(1)}/5.`);
+  descParts.push("Veja prós, contras e onde comprar.");
+  const description = descParts.join(" ").slice(0, 160);
+
   return {
-    title: p.name,
-    description: p.shortDesc || undefined,
+    title,
+    description,
     alternates: { canonical: `/produto/${p.slug}` },
     openGraph: {
       title: p.name,
-      description: p.shortDesc || undefined,
+      description,
+      type: "article",
+      images: p.imageUrl ? [{ url: p.imageUrl, alt: p.name }] : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: p.name,
+      description,
       images: p.imageUrl ? [p.imageUrl] : undefined,
     },
   };
@@ -122,9 +146,21 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
   // Primeiros 3 prós para a seção "Por que recomendamos"
   const topPros = product.pros.slice(0, 3);
 
+  // Review body sintético a partir dos campos editoriais disponíveis.
+  // Usado dentro do Product JSON-LD como "review" — enriquece sinalização para o Google.
+  const reviewBodyParts: string[] = [];
+  if (product.shortDesc) reviewBodyParts.push(product.shortDesc);
+  if (product.pros.length > 0) {
+    reviewBodyParts.push("Pontos positivos: " + product.pros.slice(0, 3).join("; ") + ".");
+  }
+  if (product.cons.length > 0) {
+    reviewBodyParts.push("Pontos a considerar: " + product.cons.slice(0, 2).join("; ") + ".");
+  }
+  const reviewBody = reviewBodyParts.join(" ");
+
   // JSON-LD Product SEM offers. Não temos preço visível ao usuário, e o Google Ads
-  // desoptimiza produtos com offers sem price. Mantemos só os campos livres de preço:
-  // name, description, image, sku, brand, category, aggregateRating.
+  // desoptimiza produtos com offers sem price. Mantemos campos livres de preço:
+  // name, description, image, sku, brand, category, aggregateRating, review.
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -142,6 +178,28 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
             bestRating: "5",
             worstRating: "1",
             ratingCount: 1,
+          }
+        : undefined,
+    review:
+      rating != null && reviewBody
+        ? {
+            "@type": "Review",
+            author: { "@type": "Organization", name: "BuscasAmpla Editorial" },
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: rating.toFixed(1),
+              bestRating: "5",
+              worstRating: "1",
+            },
+            reviewBody,
+            ...(primaryRankingItem
+              ? {
+                  itemReviewed: {
+                    "@type": "Product",
+                    name: product.name,
+                  },
+                }
+              : {}),
           }
         : undefined,
   };
