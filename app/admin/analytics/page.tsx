@@ -17,12 +17,6 @@ export const metadata: Metadata = { title: "Analytics — Admin" };
 
 export const dynamic = "force-dynamic";
 
-const PAGE_TYPE_LABELS: Record<string, { label: string; color: string }> = {
-  RANKING: { label: "Ranking", color: "bg-blue-100 text-blue-700" },
-  PRODUCT: { label: "Produto", color: "bg-green-100 text-green-700" },
-  CATEGORY: { label: "Categoria", color: "bg-purple-100 text-purple-700" },
-};
-
 const DEVICE_LABELS: Record<string, string> = {
   DESKTOP: "Desktop",
   MOBILE: "Mobile",
@@ -63,8 +57,15 @@ export default async function AnalyticsPage() {
     ...dailyStats.map((d) => d.views + d.clicks),
     1
   );
-  const maxPageViews = topPages[0]?.views || 1;
   const maxReferrerCount = topReferrers[0]?.count || 1;
+
+  // Separar por tipo de página
+  const rankingPages = topPages.filter((p) => p.pageType === "RANKING");
+  const productPages = topPages.filter((p) => p.pageType === "PRODUCT");
+  const categoryPages = topPages.filter((p) => p.pageType === "CATEGORY");
+  const maxRankingViews = rankingPages[0]?.views || 1;
+  const maxProductViews = productPages[0]?.views || 1;
+  const maxCategoryViews = categoryPages[0]?.views || 1;
 
   const overviewCards = [
     { label: "Views (30d)", value: viewCounts.month, color: "text-blue-600" },
@@ -161,19 +162,22 @@ export default async function AnalyticsPage() {
         </div>
       )}
 
-      {/* Top paginas */}
-      {topPages.length > 0 && (
+      {/* Top Rankings */}
+      {rankingPages.length > 0 && (
         <div className="bg-white rounded-xl border border-gray-200 p-6 mb-8">
-          <h2 className="text-sm font-semibold text-gray-900 mb-4">
-            Top Páginas (últimos 30 dias) — {topPages.length} páginas
+          <h2 className="text-sm font-semibold text-gray-900 mb-1">
+            Top Rankings (últimos 30 dias)
           </h2>
+          <p className="text-xs text-gray-500 mb-4">
+            {rankingPages.length} rankings com views — cliques = soma dos
+            produtos do ranking
+          </p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-gray-200 text-left">
                   <th className="pb-2 text-gray-500 font-medium">#</th>
-                  <th className="pb-2 text-gray-500 font-medium">Página</th>
-                  <th className="pb-2 text-gray-500 font-medium">Tipo</th>
+                  <th className="pb-2 text-gray-500 font-medium">Ranking</th>
                   <th className="pb-2 text-gray-500 font-medium text-right">
                     Views
                   </th>
@@ -190,64 +194,198 @@ export default async function AnalyticsPage() {
                 </tr>
               </thead>
               <tbody>
-                {topPages.map((page, i) => {
-                  const typeConfig = PAGE_TYPE_LABELS[page.pageType] || {
-                    label: page.pageType,
-                    color: "bg-gray-100 text-gray-700",
-                  };
-                  const pageHref =
-                    page.pageType === "RANKING"
-                      ? `/ranking/${page.slug}`
-                      : page.pageType === "PRODUCT"
-                        ? `/produto/${page.slug}`
-                        : `/categorias/${page.slug}`;
-                  return (
-                    <tr
-                      key={`${page.pageType}-${page.slug}`}
-                      className="border-b border-gray-50 hover:bg-gray-50"
-                    >
-                      <td className="py-2 text-gray-400">{i + 1}</td>
-                      <td className="py-2 text-gray-900 font-medium max-w-xs truncate">
-                        <Link
-                          href={pageHref}
-                          className="hover:text-blue-600 hover:underline"
-                          target="_blank"
-                        >
-                          {page.slug}
-                        </Link>
-                      </td>
-                      <td className="py-2">
-                        <span
-                          className={`text-xs font-semibold px-2 py-0.5 rounded-full ${typeConfig.color}`}
-                        >
-                          {typeConfig.label}
-                        </span>
-                      </td>
-                      <td className="py-2 text-right font-bold text-gray-900">
-                        {page.views}
-                      </td>
-                      <td className="py-2 text-right text-gray-600">
-                        {page.uniqueVisitors}
-                      </td>
-                      <td className="py-2 text-right text-green-600 font-medium">
-                        {page.clicks}
-                      </td>
-                      <td className="py-2 text-right text-amber-600 font-medium">
-                        {page.conversionRate.toFixed(1)}%
-                      </td>
-                      <td className="py-2 pl-3">
-                        <div className="bg-gray-100 rounded-full h-4 overflow-hidden">
-                          <div
-                            className="bg-blue-500 h-4 rounded-full"
-                            style={{
-                              width: `${(page.views / maxPageViews) * 100}%`,
-                            }}
-                          />
-                        </div>
-                      </td>
-                    </tr>
-                  );
-                })}
+                {rankingPages.map((page, i) => (
+                  <tr
+                    key={page.slug}
+                    className="border-b border-gray-50 hover:bg-gray-50"
+                  >
+                    <td className="py-2 text-gray-400">{i + 1}</td>
+                    <td className="py-2 text-gray-900 font-medium max-w-xs truncate">
+                      <Link
+                        href={`/ranking/${page.slug}`}
+                        className="hover:text-blue-600 hover:underline"
+                        target="_blank"
+                      >
+                        {page.slug}
+                      </Link>
+                    </td>
+                    <td className="py-2 text-right font-bold text-gray-900">
+                      {page.views}
+                    </td>
+                    <td className="py-2 text-right text-gray-600">
+                      {page.uniqueVisitors}
+                    </td>
+                    <td className="py-2 text-right text-green-600 font-medium">
+                      {page.clicks}
+                    </td>
+                    <td className="py-2 text-right text-amber-600 font-medium">
+                      {page.conversionRate.toFixed(1)}%
+                    </td>
+                    <td className="py-2 pl-3">
+                      <div className="bg-gray-100 rounded-full h-4 overflow-hidden">
+                        <div
+                          className="bg-blue-500 h-4 rounded-full"
+                          style={{
+                            width: `${(page.views / maxRankingViews) * 100}%`,
+                          }}
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+
+      {/* Top Produtos */}
+      {productPages.length > 0 && (
+        <div className="bg-white rounded-xl border border-gray-200 p-6 mb-8">
+          <h2 className="text-sm font-semibold text-gray-900 mb-1">
+            Top Produtos (últimos 30 dias)
+          </h2>
+          <p className="text-xs text-gray-500 mb-4">
+            {productPages.length} produtos com views — cliques = links de
+            afiliado do produto
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-gray-200 text-left">
+                  <th className="pb-2 text-gray-500 font-medium">#</th>
+                  <th className="pb-2 text-gray-500 font-medium">Produto</th>
+                  <th className="pb-2 text-gray-500 font-medium text-right">
+                    Views
+                  </th>
+                  <th className="pb-2 text-gray-500 font-medium text-right">
+                    Únicos
+                  </th>
+                  <th className="pb-2 text-gray-500 font-medium text-right">
+                    Cliques
+                  </th>
+                  <th className="pb-2 text-gray-500 font-medium text-right">
+                    Conv. %
+                  </th>
+                  <th className="pb-2 text-gray-500 font-medium w-36"></th>
+                </tr>
+              </thead>
+              <tbody>
+                {productPages.map((page, i) => (
+                  <tr
+                    key={page.slug}
+                    className="border-b border-gray-50 hover:bg-gray-50"
+                  >
+                    <td className="py-2 text-gray-400">{i + 1}</td>
+                    <td className="py-2 text-gray-900 font-medium max-w-xs truncate">
+                      <Link
+                        href={`/produto/${page.slug}`}
+                        className="hover:text-blue-600 hover:underline"
+                        target="_blank"
+                      >
+                        {page.slug}
+                      </Link>
+                    </td>
+                    <td className="py-2 text-right font-bold text-gray-900">
+                      {page.views}
+                    </td>
+                    <td className="py-2 text-right text-gray-600">
+                      {page.uniqueVisitors}
+                    </td>
+                    <td className="py-2 text-right text-green-600 font-medium">
+                      {page.clicks}
+                    </td>
+                    <td className="py-2 text-right text-amber-600 font-medium">
+                      {page.conversionRate.toFixed(1)}%
+                    </td>
+                    <td className="py-2 pl-3">
+                      <div className="bg-gray-100 rounded-full h-4 overflow-hidden">
+                        <div
+                          className="bg-green-500 h-4 rounded-full"
+                          style={{
+                            width: `${(page.views / maxProductViews) * 100}%`,
+                          }}
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+
+      {/* Top Categorias */}
+      {categoryPages.length > 0 && (
+        <div className="bg-white rounded-xl border border-gray-200 p-6 mb-8">
+          <h2 className="text-sm font-semibold text-gray-900 mb-1">
+            Top Categorias (últimos 30 dias)
+          </h2>
+          <p className="text-xs text-gray-500 mb-4">
+            {categoryPages.length} categorias com views
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-gray-200 text-left">
+                  <th className="pb-2 text-gray-500 font-medium">#</th>
+                  <th className="pb-2 text-gray-500 font-medium">Categoria</th>
+                  <th className="pb-2 text-gray-500 font-medium text-right">
+                    Views
+                  </th>
+                  <th className="pb-2 text-gray-500 font-medium text-right">
+                    Únicos
+                  </th>
+                  <th className="pb-2 text-gray-500 font-medium text-right">
+                    Cliques
+                  </th>
+                  <th className="pb-2 text-gray-500 font-medium text-right">
+                    Conv. %
+                  </th>
+                  <th className="pb-2 text-gray-500 font-medium w-36"></th>
+                </tr>
+              </thead>
+              <tbody>
+                {categoryPages.map((page, i) => (
+                  <tr
+                    key={page.slug}
+                    className="border-b border-gray-50 hover:bg-gray-50"
+                  >
+                    <td className="py-2 text-gray-400">{i + 1}</td>
+                    <td className="py-2 text-gray-900 font-medium max-w-xs truncate">
+                      <Link
+                        href={`/categorias/${page.slug}`}
+                        className="hover:text-blue-600 hover:underline"
+                        target="_blank"
+                      >
+                        {page.slug}
+                      </Link>
+                    </td>
+                    <td className="py-2 text-right font-bold text-gray-900">
+                      {page.views}
+                    </td>
+                    <td className="py-2 text-right text-gray-600">
+                      {page.uniqueVisitors}
+                    </td>
+                    <td className="py-2 text-right text-green-600 font-medium">
+                      {page.clicks}
+                    </td>
+                    <td className="py-2 text-right text-amber-600 font-medium">
+                      {page.conversionRate.toFixed(1)}%
+                    </td>
+                    <td className="py-2 pl-3">
+                      <div className="bg-gray-100 rounded-full h-4 overflow-hidden">
+                        <div
+                          className="bg-purple-500 h-4 rounded-full"
+                          style={{
+                            width: `${(page.views / maxCategoryViews) * 100}%`,
+                          }}
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
