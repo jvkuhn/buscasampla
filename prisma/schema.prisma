@@ -214,3 +214,35 @@ enum Status {
   DRAFT
   PUBLISHED
 }
+
+// ─── Page Views (Analytics) ─────────────────────────────────────────────────
+
+enum PageType {
+  RANKING
+  PRODUCT
+  CATEGORY
+}
+
+enum DeviceType {
+  DESKTOP
+  MOBILE
+  TABLET
+}
+
+model PageView {
+  id          String     @id @default(cuid())
+  path        String     @db.VarChar(500)
+  pageType    PageType
+  slug        String     @db.VarChar(200)
+  visitorId   String     @db.VarChar(36)
+  referrer    String?    @db.VarChar(2000)
+  utmSource   String?    @db.VarChar(200)
+  utmMedium   String?    @db.VarChar(200)
+  utmCampaign String?    @db.VarChar(200)
+  deviceType  DeviceType @default(DESKTOP)
+  createdAt   DateTime   @default(now())
+
+  @@index([createdAt])
+  @@index([slug, pageType])
+  @@index([visitorId])
+}

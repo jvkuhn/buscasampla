@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { db } from "@/lib/db";
+import { getOverallConversion } from "@/lib/analytics";
 import { PageHeader } from "@/components/admin/PageHeader";
 import { PLATFORM_DISPLAY } from "@/lib/constants";
 
@@ -26,6 +27,10 @@ export default async function AdminDashboard() {
     clicks30d,
     clicksByProduct,
     clicksByDay,
+    viewsToday,
+    views7d,
+    views30d,
+    conversion30d,
   ] = await Promise.all([
     db.ranking.count(),
     db.product.count(),
@@ -48,6 +53,10 @@ export default async function AdminDashboard() {
       GROUP BY DATE("createdAt")
       ORDER BY day DESC
     `,
+    db.pageView.count({ where: { createdAt: { gte: startOfToday } } }),
+    db.pageView.count({ where: { createdAt: { gte: start7d } } }),
+    db.pageView.count({ where: { createdAt: { gte: start30d } } }),
+    getOverallConversion(start30d),
   ]);
 
   // Agrupa cliques por produto (somando plataformas)
@@ -82,6 +91,12 @@ export default async function AdminDashboard() {
     { label: "Categorias", value: categories, color: "purple" },
   ];
 
+  const viewStats = [
+    { label: "Views hoje", value: viewsToday },
+    { label: "Últimos 7 dias", value: views7d },
+    { label: "Últimos 30 dias", value: views30d },
+  ];
+
   const clickStats = [
     { label: "Cliques hoje", value: clicksToday },
     { label: "Últimos 7 dias", value: clicks7d },
@@ -105,15 +120,35 @@ export default async function AdminDashboard() {
         ))}
       </div>
 
+      {/* Cards de page views */}
+      <h2 className="text-lg font-bold text-gray-900 mb-4">Page Views</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+        {viewStats.map((s) => (
+          <div key={s.label} className="bg-white rounded-xl border border-gray-200 p-6">
+            <p className="text-sm text-gray-500">{s.label}</p>
+            <p className="text-3xl font-bold text-blue-600 mt-1">{s.value}</p>
+          </div>
+        ))}
+      </div>
+
       {/* Cards de cliques */}
       <h2 className="text-lg font-bold text-gray-900 mb-4">Cliques em Links de Afiliado</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-8">
         {clickStats.map((s) => (
           <div key={s.label} className="bg-white rounded-xl border border-gray-200 p-6">
             <p className="text-sm text-gray-500">{s.label}</p>
             <p className="text-3xl font-bold text-green-600 mt-1">{s.value}</p>
           </div>
         ))}
+        <div className="bg-white rounded-xl border border-gray-200 p-6">
+          <p className="text-sm text-gray-500">Conversão (30d)</p>
+          <p className="text-3xl font-bold text-amber-600 mt-1">
+            {conversion30d.rate.toFixed(1)}%
+          </p>
+          <p className="text-xs text-gray-400 mt-1">
+            {conversion30d.clicks} cliques / {conversion30d.views} views
+          </p>
+        </div>
       </div>
 
       {/* Cliques por dia — últimos 30 dias */}
@@ -196,6 +231,16 @@ export default async function AdminDashboard() {
           <p>Nenhum clique registrado ainda. Os dados aparecem aqui assim que visitantes clicarem nos links de afiliado.</p>
         </div>
       )}
+
+      {/* Link para analytics completo */}
+      <div className="mb-8 text-right">
+        <Link
+          href="/admin/analytics"
+          className="text-sm text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+        >
+          Ver analytics completo →
+        </Link>
+      </div>
 
       {/* Ações rápidas */}
       <div className="bg-white rounded-xl border border-gray-200 p-6">

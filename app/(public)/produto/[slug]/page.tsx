@@ -4,6 +4,7 @@ import { db } from "@/lib/db";
 import { PLATFORM_DISPLAY } from "@/lib/constants";
 import { AffiliateLink } from "@/components/public/AffiliateLink";
 import { AffiliateDisclosure } from "@/components/public/AffiliateDisclosure";
+import { PageViewTracker } from "@/components/public/PageViewTracker";
 import { safeJsonLd } from "@/lib/utils";
 import type { Metadata } from "next";
 import type { Badge } from "@prisma/client";
@@ -248,6 +249,7 @@ export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
 
   return (
     <div className="bg-gray-50 min-h-screen">
+      <PageViewTracker pageType="PRODUCT" slug={slug} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: safeJsonLd(productJsonLd) }}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { db } from "@/lib/db";
 import { RankingItem } from "@/components/public/RankingItem";
 import { AffiliateDisclosure } from "@/components/public/AffiliateDisclosure";
+import { PageViewTracker } from "@/components/public/PageViewTracker";
 import { safeJsonLd } from "@/lib/utils";
 import type { Metadata } from "next";
 
@@ -121,6 +122,7 @@ export default async function RankingPage(props: PageProps<"/ranking/[slug]">) {
 
   return (
     <article className="bg-gray-50">
+      <PageViewTracker pageType="RANKING" slug={slug} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }}

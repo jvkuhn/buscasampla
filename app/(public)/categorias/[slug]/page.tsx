@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { db } from "@/lib/db";
 import { RankingCard } from "@/components/public/RankingCard";
+import { PageViewTracker } from "@/components/public/PageViewTracker";
 import { safeJsonLd } from "@/lib/utils";
 import type { Metadata } from "next";
 
@@ -105,6 +106,7 @@ export default async function CategoryPage(props: PageProps<"/categorias/[slug]"
 
   return (
     <div className="bg-gray-50 min-h-screen">
+      <PageViewTracker pageType="CATEGORY" slug={slug} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: safeJsonLd(collectionJsonLd) }}
