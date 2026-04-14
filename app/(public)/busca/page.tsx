@@ -44,6 +44,20 @@ export default async function SearchPage(props: PageProps<"/busca">) {
       ])
     : [[], []];
 
+  if (q && q.length <= 200) {
+    try {
+      await db.searchLog.create({
+        data: {
+          query: q,
+          rankingsFound: rankings.length,
+          productsFound: products.length,
+        },
+      });
+    } catch {
+      // fire-and-forget: não quebra a página se o log falhar
+    }
+  }
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold text-gray-900">Busca</h1>

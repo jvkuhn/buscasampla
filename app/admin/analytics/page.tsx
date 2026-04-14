@@ -91,6 +91,7 @@ export default async function AnalyticsPage() {
       <PageHeader
         title="Analytics"
         description="Page views, conversão, referrers e campanhas"
+        action={{ href: "/admin/analytics/buscas", label: "🔍 Log de Buscas" }}
       />
 
       {/* Visao geral */}

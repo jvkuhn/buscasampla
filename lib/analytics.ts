@@ -346,3 +346,55 @@ export async function getOverallConversion(
     rate: views > 0 ? (clicks / views) * 100 : 0,
   };
 }
+
+// ─── Search Logs ─────────────────────────────────────────────────────────────
+
+interface SearchLogRow {
+  id: string;
+  query: string;
+  rankingsFound: number;
+  productsFound: number;
+  createdAt: Date;
+}
+
+interface SearchLogsResult {
+  rows: SearchLogRow[];
+  total: number;
+  page: number;
+  pageSize: number;
+  totalPages: number;
+}
+
+export async function getSearchLogs(params: {
+  page?: number;
+  onlyNoResults?: boolean;
+  query?: string;
+}): Promise<SearchLogsResult> {
+  const pageSize = 50;
+  const page = Math.max(1, params.page || 1);
+
+  const where = {
+    ...(params.onlyNoResults ? { rankingsFound: 0 } : {}),
+    ...(params.query
+      ? { query: { contains: params.query, mode: "insensitive" as const } }
+      : {}),
+  };
+
+  const [rows, total] = await Promise.all([
+    db.searchLog.findMany({
+      where,
+      orderBy: { createdAt: "desc" },
+      take: pageSize,
+      skip: (page - 1) * pageSize,
+    }),
+    db.searchLog.count({ where }),
+  ]);
+
+  return {
+    rows,
+    total,
+    page,
+    pageSize,
+    totalPages: Math.max(1, Math.ceil(total / pageSize)),
+  };
+}

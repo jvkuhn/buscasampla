@@ -246,3 +246,14 @@ model PageView {
   @@index([slug, pageType])
   @@index([visitorId])
 }
+
+model SearchLog {
+  id            String   @id @default(cuid())
+  query         String   @db.VarChar(200)
+  rankingsFound Int
+  productsFound Int
+  createdAt     DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([query])
+}
