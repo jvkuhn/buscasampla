@@ -25,7 +25,9 @@ export async function createBanner(formData: FormData) {
 
   await db.banner.create({ data: parsed.data });
   revalidatePath("/admin/banners");
-  revalidatePath("/");
+  // "layout": header/rodape aparecem em todas as paginas estaticas, entao
+  // revalidar so "/" deixaria as outras com o dado antigo ate o proximo deploy.
+  revalidatePath("/", "layout");
   redirect("/admin/banners");
 }
 
@@ -45,7 +47,9 @@ export async function updateBanner(id: string, formData: FormData) {
 
   await db.banner.update({ where: { id }, data: parsed.data });
   revalidatePath("/admin/banners");
-  revalidatePath("/");
+  // "layout": header/rodape aparecem em todas as paginas estaticas, entao
+  // revalidar so "/" deixaria as outras com o dado antigo ate o proximo deploy.
+  revalidatePath("/", "layout");
   redirect("/admin/banners");
 }
 
@@ -53,7 +57,9 @@ export async function deleteBanner(id: string) {
   await requireAdmin();
   await db.banner.delete({ where: { id } });
   revalidatePath("/admin/banners");
-  revalidatePath("/");
+  // "layout": header/rodape aparecem em todas as paginas estaticas, entao
+  // revalidar so "/" deixaria as outras com o dado antigo ate o proximo deploy.
+  revalidatePath("/", "layout");
 }
 
 // ─── Páginas ─────────────────────────────────────────────────────────────────
@@ -121,7 +127,9 @@ export async function updateSiteSettings(formData: FormData) {
   });
 
   revalidatePath("/admin/configuracoes");
-  revalidatePath("/");
+  // "layout": header/rodape aparecem em todas as paginas estaticas, entao
+  // revalidar so "/" deixaria as outras com o dado antigo ate o proximo deploy.
+  revalidatePath("/", "layout");
   redirect("/admin/configuracoes");
 }
 

@@ -14,14 +14,24 @@ import type { Metadata } from "next";
 // ISR longo porque isto e o destino do trafego pago: sem cache, cada clique de
 // anuncio seria uma consulta ao Neon. A troca de link revalida na hora pela
 // server action, entao a validade alta nao atrasa nada na pratica.
-export const revalidate = 3600;
-// generateStaticParams vazio + dynamicParams: sem isto o Next 16 mantem a rota
-// dinamica e o `revalidate` acima nao vale nada. Com a lista vazia, nada e
-// gerado no build (seriam milhares de queries) e cada pagina e renderizada uma
-// unica vez, no primeiro acesso, ficando em cache dali em diante.
+// revalidate false = a pagina so e regerada quando uma server action chama
+// revalidatePath. Com janela de tempo (5m/1h) cada passagem de crawler pelas
+// ~5.9k URLs disparava uma regeneracao, e o Neon nunca chegava a suspender —
+// era o problema original. Como todo mutation no admin ja revalida o caminho
+// afetado, tempo aqui so geraria trabalho sem ninguem ter mudado nada.
+export const revalidate = false;
+// Os slugs precisam ser gerados de verdade: com a lista vazia, o Next registra
+// a rota sem revalidate no prerender-manifest e a Vercel serve tudo com
+// no-store — foi o que aconteceu no primeiro deploy. Pre-renderizando, cada
+// pagina vira HTML estatico no CDN e o crawler para de tocar o Neon.
+// dynamicParams mantem conteudo novo acessivel antes do proximo build.
 export const dynamicParams = true;
 export async function generateStaticParams() {
-  return [];
+  const grupos = await db.whatsAppGroup.findMany({
+    where: { active: true },
+    select: { slug: true },
+  });
+  return grupos.map(({ slug }) => ({ slug }));
 }
 
 async function buscarGrupo(slug: string) {

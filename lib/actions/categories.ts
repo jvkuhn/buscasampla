@@ -28,7 +28,9 @@ export async function createCategory(formData: FormData) {
   });
 
   revalidatePath("/admin/categorias");
-  revalidatePath("/");
+  // "layout": header/rodape aparecem em todas as paginas estaticas, entao
+  // revalidar so "/" deixaria as outras com o dado antigo ate o proximo deploy.
+  revalidatePath("/", "layout");
   redirect("/admin/categorias");
 }
 
@@ -57,5 +59,7 @@ export async function deleteCategory(id: string) {
   await requireAdmin();
   await db.category.delete({ where: { id } });
   revalidatePath("/admin/categorias");
-  revalidatePath("/");
+  // "layout": header/rodape aparecem em todas as paginas estaticas, entao
+  // revalidar so "/" deixaria as outras com o dado antigo ate o proximo deploy.
+  revalidatePath("/", "layout");
 }

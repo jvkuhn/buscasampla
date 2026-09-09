@@ -8,6 +8,8 @@ import { CookieBanner } from "@/components/public/CookieBanner";
 import { db } from "@/lib/db";
 import { unstable_cache } from "next/cache";
 
+// revalidate false pelo mesmo motivo das paginas: o menor revalidate do tree
+// define o da rota, entao 300 aqui anulava o cache de todas elas.
 const getCategories = unstable_cache(
   () => db.category.findMany({
     where: { status: "PUBLISHED" },
@@ -15,13 +17,13 @@ const getCategories = unstable_cache(
     select: { id: true, name: true, slug: true },
   }),
   ["public-categories"],
-  { revalidate: 300 }
+  { revalidate: false }
 );
 
 const getSettings = unstable_cache(
   () => db.siteSettings.findFirst({ where: { id: "default" } }),
   ["site-settings"],
-  { revalidate: 300 }
+  { revalidate: false }
 );
 
 const getPages = unstable_cache(
@@ -31,7 +33,7 @@ const getPages = unstable_cache(
     orderBy: { title: "asc" },
   }),
   ["public-pages"],
-  { revalidate: 300 }
+  { revalidate: false }
 );
 
 export default async function PublicLayout({ children }: { children: React.ReactNode }) {

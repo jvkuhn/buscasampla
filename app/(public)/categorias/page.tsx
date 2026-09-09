@@ -5,7 +5,12 @@ import type { Metadata } from "next";
 // ISR: ~5.9k URLs publicas indexadas. Sem cache, cada crawl de bot renderiza
 // no servidor e acorda o Neon, estourando as compute hours do plano. Edicoes no
 // admin continuam aparecendo na hora via revalidatePath nas server actions.
-export const revalidate = 3600;
+// revalidate false = a pagina so e regerada quando uma server action chama
+// revalidatePath. Com janela de tempo (5m/1h) cada passagem de crawler pelas
+// ~5.9k URLs disparava uma regeneracao, e o Neon nunca chegava a suspender —
+// era o problema original. Como todo mutation no admin ja revalida o caminho
+// afetado, tempo aqui so geraria trabalho sem ninguem ter mudado nada.
+export const revalidate = false;
 
 export const metadata: Metadata = {
   title: "Todas as categorias",
