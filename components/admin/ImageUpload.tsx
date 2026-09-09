@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import { cn } from "@/lib/utils";
+import { resizeForUpload } from "@/lib/resize-image";
 
 interface ImageUploadProps {
   label: string;
@@ -25,7 +26,7 @@ export function ImageUpload({ label, name, defaultValue = "", hint }: ImageUploa
 
     try {
       const formData = new FormData();
-      formData.append("file", file);
+      formData.append("file", await resizeForUpload(file));
 
       const res = await fetch("/api/upload", { method: "POST", body: formData });
       const data = await res.json();

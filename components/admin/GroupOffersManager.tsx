@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { resizeForUpload } from "@/lib/resize-image";
 
 export interface GroupOffer {
   url: string;
@@ -34,7 +35,7 @@ export function GroupOffersManager({ name, defaultValue }: { name: string; defau
     for (const file of files) {
       try {
         const fd = new FormData();
-        fd.append("file", file);
+        fd.append("file", await resizeForUpload(file));
         const res = await fetch("/api/upload", { method: "POST", body: fd });
         const data = await res.json();
         if (!res.ok) {

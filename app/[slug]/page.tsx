@@ -71,29 +71,45 @@ export default async function GroupPage(props: PageProps<"/[slug]">) {
         className="pointer-events-none absolute left-1/2 top-0 h-[520px] w-[820px] -translate-x-1/2 rounded-full bg-[#c9743a] opacity-[0.13] blur-[120px]"
       />
 
+      {/* No xl a mesma lista deixa de ser faixa e vira cards espalhados atras do
+          conteudo. Feito em CSS, e nao renderizando dois blocos, porque cada
+          next/image emite um srcset longo — duplicar custava HTML a toa. */}
+      <style>{`
+        @media (min-width: 1280px) {
+          .ofertas {
+            /* Escapa da largura da coluna: sem os 100vw os cards ficariam
+               dentro do max-w do <main> e cairiam em cima do texto. */
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100vw;
+            height: 100%;
+            transform: translateX(-50%);
+            margin: 0;
+            pointer-events: none;
+          }
+          .ofertas-faixa {
+            display: block;
+            overflow: visible;
+            padding: 0;
+          }
+          .ofertas-faixa > * {
+            position: absolute;
+            opacity: 0.7;
+          }
+          .ofertas-faixa > *:nth-child(1) { left: 3%;  top: 8%;  transform: rotate(-6deg); }
+          .ofertas-faixa > *:nth-child(2) { right: 3%; top: 10%; transform: rotate(6deg); }
+          .ofertas-faixa > *:nth-child(3) { left: 7%;  top: 42%; transform: rotate(3deg); }
+          .ofertas-faixa > *:nth-child(4) { right: 7%; top: 44%; transform: rotate(-3deg); }
+          .ofertas-faixa > *:nth-child(5) { left: 4%;  top: 74%; transform: rotate(-3deg); }
+          .ofertas-faixa > *:nth-child(6) { right: 4%; top: 76%; transform: rotate(3deg); }
+          .ofertas-faixa > *:nth-child(n+7) { display: none; }
+        }
+      `}</style>
+
       <p className="relative border-b border-[#2a221b] bg-[#1a1510] py-2 text-center text-xs font-semibold tracking-wide text-[#ffc94d]">
         🔥 Ofertas novas todo dia
       </p>
-
-      {/* Cards espalhados atras do conteudo. Apenas em telas largas, onde ha
-          espaco morto nas laterais; no celular eles aparecem como faixa. */}
-      <div aria-hidden className="pointer-events-none absolute inset-0 hidden xl:block">
-        {ofertas.slice(0, 6).map((o, i) => {
-          const pos = [
-            "left-[3%] top-[8%] -rotate-6",
-            "left-[7%] top-[42%] rotate-3",
-            "left-[4%] top-[74%] -rotate-3",
-            "right-[3%] top-[10%] rotate-6",
-            "right-[7%] top-[44%] -rotate-3",
-            "right-[4%] top-[76%] rotate-3",
-          ][i];
-          return (
-            <div key={o.url} className={`absolute ${pos} opacity-70`}>
-              <OfferCard offer={o} />
-            </div>
-          );
-        })}
-      </div>
 
       <main className="relative mx-auto flex min-h-screen max-w-lg flex-col items-center px-5 py-10 xl:max-w-2xl xl:justify-center xl:py-16">
         {/* Logo antes do titulo: quem chega de anuncio precisa reconhecer de quem
@@ -135,17 +151,18 @@ export default async function GroupPage(props: PageProps<"/[slug]">) {
           <span className="font-semibold text-[#25d366]">100% grátis</span> · entra e sai quando quiser
         </p>
 
-        {/* No celular os cards viram faixa deslizante em vez de sumirem: e de
-            onde vem quase todo o trafego de anuncio, e sao eles que provam que
-            o grupo entrega oferta de verdade. */}
+        {/* Uma lista so para as duas formas. Antes eram dois blocos — um para
+            celular, outro absoluto para desktop — e cada next/image emite um
+            srcset longo, entao duplicar custava dezenas de KB de HTML numa
+            pagina de anuncio. No xl o CSS abaixo reposiciona estes mesmos nos. */}
         {ofertas.length > 0 && (
-          <div className="mt-9 w-screen xl:hidden">
-            <p className="mb-3 px-5 text-center text-[11px] font-semibold uppercase tracking-widest text-[#7d7268]">
+          <div className="ofertas mt-9 w-screen xl:mt-0">
+            <p className="mb-3 px-5 text-center text-[11px] font-semibold uppercase tracking-widest text-[#7d7268] xl:hidden">
               Achados recentes
             </p>
-            <div className="flex gap-3 overflow-x-auto px-5 pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-              {ofertas.map((o) => (
-                <OfferCard key={o.url} offer={o} />
+            <div className="ofertas-faixa flex gap-3 overflow-x-auto px-5 pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              {ofertas.map((o, i) => (
+                <OfferCard key={o.url} offer={o} priority={i < 2} />
               ))}
             </div>
           </div>
