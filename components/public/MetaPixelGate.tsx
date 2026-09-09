@@ -2,7 +2,7 @@
 
 import Script from "next/script";
 import { useCookieConsent } from "@/lib/cookie-consent";
-import { pixelSnippet } from "@/components/public/MetaPixel";
+import { pixelSnippet } from "@/lib/pixel-snippet";
 
 /**
  * Meta Pixel gateado por consentimento, igual ao GTMGate (LGPD Art. 7º + 8º).

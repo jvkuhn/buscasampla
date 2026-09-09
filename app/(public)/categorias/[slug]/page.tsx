@@ -22,9 +22,18 @@ export const revalidate = false;
 // dynamicParams mantem conteudo novo acessivel antes do proximo build.
 export const dynamicParams = true;
 export async function generateStaticParams() {
+  // Lista minima de proposito. Verificado: basta a rota ter ALGUMAS paginas no
+  // prerender-manifest para que os slugs de fora sejam gerados no primeiro
+  // acesso e fiquem com s-maxage=31536000 — cacheados para sempre, igual aos
+  // daqui. O bug do no-store era a lista VAZIA, nao a lista curta.
+  //
+  // Pre-renderizar tudo levou o deploy de 30s para 5 minutos, e o custo se
+  // repetia a cada deploy. Sob demanda, cada pagina custa uma consulta uma
+  // unica vez na vida, e so se alguem realmente abrir.
   const categorias = await db.category.findMany({
     where: { status: "PUBLISHED" },
     select: { slug: true },
+    take: 5,
   });
   return categorias.map(({ slug }) => ({ slug }));
 }

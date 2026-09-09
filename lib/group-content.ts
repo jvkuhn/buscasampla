@@ -1,5 +1,13 @@
 import type { WhatsAppGroup } from "@prisma/client";
-import type { Offer } from "@/components/public/OfferCard";
+
+/** Oferta exibida na landing: imagem obrigatoria, resto opcional. */
+export interface Offer {
+  url: string;
+  title?: string;
+  oldPrice?: string;
+  newPrice?: string;
+}
+
 
 export interface Benefit {
   title: string;

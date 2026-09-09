@@ -26,19 +26,19 @@ export const revalidate = false;
 // dynamicParams mantem conteudo novo acessivel antes do proximo build.
 export const dynamicParams = true;
 export async function generateStaticParams() {
-  // Lista curta de proposito. Verificado localmente: com a rota tendo ALGUMAS
-  // paginas no manifesto, os slugs de fora sao gerados no primeiro acesso e
-  // ficam com s-maxage=31536000 — cacheados pra sempre, igual aos daqui. O bug
-  // do no-store era a lista VAZIA, nao a lista pequena.
+  // Lista minima de proposito. Verificado: basta a rota ter ALGUMAS paginas no
+  // prerender-manifest para que os slugs de fora sejam gerados no primeiro
+  // acesso e fiquem com s-maxage=31536000 — cacheados para sempre, igual aos
+  // daqui. O bug do no-store era a lista VAZIA, nao a lista curta.
   //
-  // Pre-renderizar os 5.370 fazia o build da Vercel passar de 18 minutos e
-  // repetir ~12 mil consultas ao Neon A CADA DEPLOY. Sob demanda, cada pagina
-  // custa uma consulta uma unica vez, e so se alguem realmente abrir.
+  // Pre-renderizar tudo levou o deploy de 30s para 5 minutos, e o custo se
+  // repetia a cada deploy. Sob demanda, cada pagina custa uma consulta uma
+  // unica vez na vida, e so se alguem realmente abrir.
   const produtos = await db.product.findMany({
     where: { status: "PUBLISHED" },
     select: { slug: true },
     orderBy: { updatedAt: "desc" },
-    take: 100,
+    take: 5,
   });
   return produtos.map(({ slug }) => ({ slug }));
 }
