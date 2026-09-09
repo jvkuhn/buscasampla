@@ -10,7 +10,8 @@
     "seed": "tsx prisma/seed.ts",
     "gerar-top10": "tsx scripts/gerar-top10.ts",
     "importar-top10": "tsx scripts/importar-top10.ts",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "aquecer-imagens": "tsx scripts/aquecer-imagens.ts"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.11.1",
