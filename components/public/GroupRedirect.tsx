@@ -27,9 +27,12 @@ export function GroupRedirect({ slug, inviteUrl }: Props) {
       utm_campaign: new URLSearchParams(window.location.search).get("utm_campaign"),
     });
 
-    // 250ms dao tempo do GTM despachar o evento antes da navegacao. Sem isso o
-    // browser cancela a requisicao do pixel e o clique some do relatorio.
-    const t = setTimeout(() => window.location.replace(inviteUrl), 250);
+    // 700ms: o fbq enfileira o evento na hora, mas o connect.facebook.net ainda
+    // precisa carregar e disparar o beacon. Com 250ms a navegacao cancelava a
+    // requisicao no meio e a conversao sumia do relatorio. E o tempo comprado
+    // aqui vale mais que a fracao de gente que desiste — sem o evento, a
+    // campanha nao tem o que otimizar.
+    const t = setTimeout(() => window.location.replace(inviteUrl), 700);
     return () => clearTimeout(t);
   }, [slug, inviteUrl]);
 

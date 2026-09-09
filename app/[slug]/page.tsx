@@ -1,9 +1,7 @@
 import { notFound } from "next/navigation";
 import { db } from "@/lib/db";
 import { GroupRedirect } from "@/components/public/GroupRedirect";
-import { GTMGate } from "@/components/public/GTMGate";
-import { MetaPixelGate } from "@/components/public/MetaPixelGate";
-import { CookieBanner } from "@/components/public/CookieBanner";
+import { MetaPixel } from "@/components/public/MetaPixel";
 import { unstable_cache } from "next/cache";
 import type { Metadata } from "next";
 
@@ -39,16 +37,19 @@ async function buscarGrupo(slug: string) {
 }
 
 // Esta rota vive fora do grupo (public), entao nao herda aquele layout e
-// precisa carregar o GTM e o pixel por conta propria — sem isto o evento de
-// clique do anuncio nao chega em lugar nenhum.
+// precisa carregar o pixel por conta propria — sem isto o evento de clique do
+// anuncio nao chega em lugar nenhum.
 const getTracking = unstable_cache(
   () =>
     db.siteSettings.findFirst({
       where: { id: "default" },
-      select: { gtmId: true, metaPixelId: true },
+      select: { metaPixelId: true },
     }),
   ["group-tracking"],
-  { revalidate: 300 }
+  // false pelo mesmo motivo do revalidate da pagina: 300 aqui virava o teto da
+  // rota inteira. updateSettings revalida com escopo "layout", que alcanca esta
+  // rota, entao trocar o Pixel ID no admin continua propagando na hora.
+  { revalidate: false }
 );
 
 export async function generateMetadata(props: PageProps<"/[slug]">): Promise<Metadata> {
@@ -88,9 +89,8 @@ export default async function GroupPage(props: PageProps<"/[slug]">) {
           Clique aqui se não abrir automaticamente
         </a>
 
-        {tracking?.gtmId && <GTMGate gtmId={tracking.gtmId} />}
-        {tracking?.metaPixelId && <MetaPixelGate pixelId={tracking.metaPixelId} />}
-        <CookieBanner />
+        {/* lead: a entrada no grupo e a conversao que a campanha otimiza. */}
+        {tracking?.metaPixelId && <MetaPixel pixelId={tracking.metaPixelId} lead />}
         <GroupRedirect slug={grupo.slug} inviteUrl={grupo.inviteUrl} />
       </div>
     </main>
