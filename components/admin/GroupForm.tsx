@@ -4,6 +4,7 @@ import { useState } from "react";
 import { slugify } from "@/lib/utils";
 import { InputField, TextareaField } from "./FormField";
 import { GroupOffersManager, type GroupOffer } from "./GroupOffersManager";
+import { ImageUpload } from "./ImageUpload";
 import { SubmitButton } from "./SubmitButton";
 
 interface Props {
@@ -18,6 +19,7 @@ interface Props {
     subheadline?: string;
     ctaText?: string;
     benefits?: string;
+    logoUrl?: string;
     memberCount?: number | null;
     offers?: GroupOffer[];
   };
@@ -112,6 +114,13 @@ export function GroupForm({ action, defaultValues = {} }: Props) {
           defaultValue={defaultValues.subheadline ?? ""}
           rows={2}
           placeholder="Entre no grupo e receba os melhores preços antes de todo mundo."
+        />
+
+        <ImageUpload
+          label="Logo do grupo"
+          name="logoUrl"
+          defaultValue={defaultValues.logoUrl ?? ""}
+          hint="Aparece acima do título. Use PNG com fundo transparente — imagem com fundo próprio vira um retângulo colado na página."
         />
 
         <InputField

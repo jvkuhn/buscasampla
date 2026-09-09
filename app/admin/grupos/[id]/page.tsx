@@ -37,6 +37,7 @@ export default async function EditGroupPage(props: PageProps<"/admin/grupos/[id]
           headline: grupo.headline ?? "",
           subheadline: grupo.subheadline ?? "",
           ctaText: grupo.ctaText ?? "",
+          logoUrl: grupo.logoUrl ?? "",
           benefits,
           memberCount: grupo.memberCount,
           offers: Array.isArray(grupo.offers) ? (grupo.offers as unknown as GroupOffer[]) : [],

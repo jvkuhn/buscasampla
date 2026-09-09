@@ -41,7 +41,7 @@ function parseGrupo(formData: FormData) {
     const primeiro = Object.values(parsed.error.flatten().fieldErrors).flat()[0];
     throw new Error(primeiro ?? "Dados inválidos. Verifique os campos e tente novamente.");
   }
-  const { benefits, memberCount, offers, ...resto } = parsed.data;
+  const { benefits, memberCount, offers, logoUrl, ...resto } = parsed.data;
 
   return {
     ...resto,
@@ -57,6 +57,7 @@ function parseGrupo(formData: FormData) {
             return { title: titulo.trim(), description: desc.join("|").trim() };
           })
       : undefined,
+    logoUrl: logoUrl || null,
     memberCount: memberCount === "" || memberCount === undefined ? null : memberCount,
     // Itens invalidos sao descartados em silencio em vez de rejeitar o form
     // inteiro: perder o texto todo por causa de um upload que falhou seria pior.

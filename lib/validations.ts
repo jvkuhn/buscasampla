@@ -174,6 +174,7 @@ export const whatsappGroupSchema = z.object({
   headline: z.string().max(120).optional().or(z.literal("")),
   subheadline: z.string().max(240).optional().or(z.literal("")),
   ctaText: z.string().max(60).optional().or(z.literal("")),
+  logoUrl: z.string().url().optional().or(z.literal("")),
   // Uma linha por beneficio, no formato "Titulo | Descricao". Textarea em vez de
   // editor de lista porque sao 4 itens que mudam quase nunca.
   benefits: z.string().max(2000).optional().or(z.literal("")),

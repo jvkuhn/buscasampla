@@ -275,6 +275,9 @@ model WhatsAppGroup {
   headline    String? @db.VarChar(120)
   subheadline String? @db.VarChar(240)
   ctaText     String? @db.VarChar(60)
+  // Logo do grupo, acima do titulo. Da rosto a pagina: quem clica no anuncio
+  // precisa reconhecer de quem e o grupo antes de entrar.
+  logoUrl     String? @db.VarChar(500)
   benefits    Json?
 
   // Numero de membros. Fica escondido enquanto for nulo — prova social inventada

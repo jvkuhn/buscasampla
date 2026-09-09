@@ -1,4 +1,5 @@
 import { cache } from "react";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { unstable_cache } from "next/cache";
 import { db } from "@/lib/db";
@@ -95,6 +96,20 @@ export default async function GroupPage(props: PageProps<"/[slug]">) {
       </div>
 
       <main className="relative mx-auto flex min-h-screen max-w-lg flex-col items-center px-5 py-10 xl:max-w-2xl xl:justify-center xl:py-16">
+        {/* Logo antes do titulo: quem chega de anuncio precisa reconhecer de quem
+            e o grupo antes de decidir entrar. priority porque e o primeiro
+            elemento visivel — carregar depois deixa a pagina pulando. */}
+        {grupo.logoUrl && (
+          <Image
+            src={grupo.logoUrl}
+            alt={grupo.name}
+            width={320}
+            height={110}
+            priority
+            className="mb-6 h-auto w-[220px] rounded-xl object-contain sm:w-[260px] xl:w-[300px]"
+          />
+        )}
+
         <h1 className="text-balance text-center text-[30px] font-black leading-[1.1] tracking-tight sm:text-4xl xl:text-[52px] xl:leading-[1.05]">
           {headline}
         </h1>
