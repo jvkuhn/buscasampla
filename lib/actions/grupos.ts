@@ -28,7 +28,25 @@ function parseGrupo(formData: FormData) {
     const primeiro = Object.values(parsed.error.flatten().fieldErrors).flat()[0];
     throw new Error(primeiro ?? "Dados inválidos. Verifique os campos e tente novamente.");
   }
-  return parsed.data;
+  const { benefits, memberCount, categoryId, ...resto } = parsed.data;
+
+  return {
+    ...resto,
+    // Json no banco: cada linha "Titulo | Descricao" vira um item. Linha sem "|"
+    // vira so titulo, pra nao obrigar a descricao.
+    benefits: benefits
+      ? benefits
+          .split(/\r?\n/)
+          .map((l) => l.trim())
+          .filter(Boolean)
+          .map((l) => {
+            const [titulo, ...desc] = l.split("|");
+            return { title: titulo.trim(), description: desc.join("|").trim() };
+          })
+      : undefined,
+    memberCount: memberCount === "" || memberCount === undefined ? null : memberCount,
+    categoryId: categoryId || null,
+  };
 }
 
 export async function createGroup(formData: FormData) {

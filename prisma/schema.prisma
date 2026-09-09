@@ -29,19 +29,20 @@ enum Role {
 // ─── Taxonomia ───────────────────────────────────────────────────────────────
 
 model Category {
-  id          String    @id @default(cuid())
-  name        String
-  slug        String    @unique
-  description String?
-  imageUrl    String?
-  metaTitle   String?
-  metaDesc    String?
-  status      Status    @default(PUBLISHED)
-  order       Int       @default(0)
-  rankings    Ranking[]
-  products    Product[]
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
+  id             String          @id @default(cuid())
+  name           String
+  slug           String          @unique
+  description    String?
+  imageUrl       String?
+  metaTitle      String?
+  metaDesc       String?
+  status         Status          @default(PUBLISHED)
+  order          Int             @default(0)
+  rankings       Ranking[]
+  products       Product[]
+  whatsappGroups WhatsAppGroup[]
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
 }
 
 // ─── Produto ─────────────────────────────────────────────────────────────────
@@ -263,14 +264,31 @@ model SearchLog {
 // O link fica no banco (e nao hardcoded) porque grupo do WhatsApp lota em 1024
 // membros: quando enchia, era preciso deploy pra trocar. Aqui troca pelo admin.
 model WhatsAppGroup {
-  id          String   @id @default(cuid())
-  slug        String   @unique @db.VarChar(60)
-  name        String   @db.VarChar(120)
-  inviteUrl   String   @db.VarChar(500)
-  description String?  @db.VarChar(300)
-  active      Boolean  @default(true)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id          String  @id @default(cuid())
+  slug        String  @unique @db.VarChar(60)
+  name        String  @db.VarChar(120)
+  inviteUrl   String  @db.VarChar(500)
+  description String? @db.VarChar(300)
+  active      Boolean @default(true)
+
+  // Conteudo da landing. Tudo opcional: vazio cai num texto padrao montado a
+  // partir do nome do grupo, entao um grupo recem-criado ja tem pagina usavel.
+  headline    String? @db.VarChar(120)
+  subheadline String? @db.VarChar(240)
+  ctaText     String? @db.VarChar(60)
+  benefits    Json?
+
+  // Numero de membros. Fica escondido enquanto for nulo — prova social inventada
+  // e a primeira coisa que faz a pagina perder credibilidade.
+  memberCount Int?
+
+  // De qual categoria vem os produtos mostrados como prova. Sem categoria, a
+  // pagina cai em produtos com maior desconto do catalogo inteiro.
+  categoryId String?
+  category   Category? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@index([active])
 }

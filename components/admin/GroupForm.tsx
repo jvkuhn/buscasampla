@@ -2,23 +2,30 @@
 
 import { useState } from "react";
 import { slugify } from "@/lib/utils";
-import { InputField, TextareaField } from "./FormField";
+import { InputField, TextareaField, SelectField } from "./FormField";
 import { SubmitButton } from "./SubmitButton";
 
 interface Props {
   action: (formData: FormData) => void | Promise<void>;
+  categories: { id: string; name: string }[];
   defaultValues?: {
     slug?: string;
     name?: string;
     inviteUrl?: string;
     description?: string;
     active?: boolean;
+    headline?: string;
+    subheadline?: string;
+    ctaText?: string;
+    benefits?: string;
+    memberCount?: number | null;
+    categoryId?: string | null;
   };
 }
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "";
 
-export function GroupForm({ action, defaultValues = {} }: Props) {
+export function GroupForm({ action, categories, defaultValues = {} }: Props) {
   const [name, setName] = useState(defaultValues.name ?? "");
   const [slug, setSlug] = useState(defaultValues.slug ?? "");
   const [slugManual, setSlugManual] = useState(!!defaultValues.slug);
@@ -82,6 +89,70 @@ export function GroupForm({ action, defaultValues = {} }: Props) {
             (desmarcado, a página responde 404 — use quando pausar a campanha)
           </span>
         </label>
+      </div>
+
+
+      <div className="bg-white rounded-xl border border-gray-200 p-6 space-y-5">
+        <h2 className="text-sm font-semibold text-gray-900 border-b pb-3">Página de entrada</h2>
+        <p className="text-xs text-gray-500 -mt-2">
+          Tudo aqui é opcional. Em branco, a página usa um texto padrão montado a partir do nome do grupo.
+        </p>
+
+        <InputField
+          label="Título principal"
+          name="headline"
+          defaultValue={defaultValues.headline ?? ""}
+          placeholder="Ofertas de fitness todo dia no seu WhatsApp"
+          hint="A primeira coisa que a pessoa lê. Fale do que ela recebe, não do grupo."
+        />
+
+        <TextareaField
+          label="Subtítulo"
+          name="subheadline"
+          defaultValue={defaultValues.subheadline ?? ""}
+          rows={2}
+          placeholder="Entre no grupo e receba os melhores preços antes de todo mundo."
+        />
+
+        <InputField
+          label="Texto do botão"
+          name="ctaText"
+          defaultValue={defaultValues.ctaText ?? ""}
+          placeholder="ENTRAR NO GRUPO GRÁTIS"
+        />
+
+        <TextareaField
+          label="Benefícios"
+          name="benefits"
+          defaultValue={defaultValues.benefits ?? ""}
+          rows={5}
+          placeholder={"Ofertas todo dia | Achadinhos direto no seu WhatsApp\nCupons da comunidade | Códigos que só quem está no grupo recebe"}
+          hint="Um por linha, no formato Título | Descrição. Em branco, usa quatro benefícios padrão."
+        />
+
+        <div className="space-y-1">
+          <SelectField
+            label="Categoria dos produtos"
+            name="categoryId"
+            defaultValue={defaultValues.categoryId ?? ""}
+            options={[
+              { value: "", label: "Todas as categorias" },
+              ...categories.map((c) => ({ value: c.id, label: c.name })),
+            ]}
+          />
+          <p className="text-xs text-gray-500">
+            Define quais produtos aparecem como prova na página. Sem categoria, usa o catálogo inteiro.
+          </p>
+        </div>
+
+        <InputField
+          label="Número de membros"
+          name="memberCount"
+          type="number"
+          min={0}
+          defaultValue={defaultValues.memberCount ?? ""}
+          hint="Só preencha com o número real. Em branco, a página não mostra contagem nenhuma."
+        />
       </div>
 
       <SubmitButton />

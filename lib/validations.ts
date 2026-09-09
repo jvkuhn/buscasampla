@@ -171,6 +171,17 @@ export const whatsappGroupSchema = z.object({
     ),
   description: z.string().max(300).optional().or(z.literal("")),
   active: z.coerce.boolean(),
+  headline: z.string().max(120).optional().or(z.literal("")),
+  subheadline: z.string().max(240).optional().or(z.literal("")),
+  ctaText: z.string().max(60).optional().or(z.literal("")),
+  // Uma linha por beneficio, no formato "Titulo | Descricao". Textarea em vez de
+  // editor de lista porque sao 4 itens que mudam quase nunca.
+  benefits: z.string().max(2000).optional().or(z.literal("")),
+  // Vazio = escondido na pagina. Nunca inventar numero de membro.
+  memberCount: z
+    .union([z.coerce.number().int().min(0).max(10_000_000), z.literal("")])
+    .optional(),
+  categoryId: z.string().optional().or(z.literal("")),
 });
 
 export type CategoryInput = z.infer<typeof categorySchema>;
