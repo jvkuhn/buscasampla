@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { db } from "@/lib/db";
@@ -25,9 +26,19 @@ export const revalidate = false;
 // dynamicParams mantem conteudo novo acessivel antes do proximo build.
 export const dynamicParams = true;
 export async function generateStaticParams() {
+  // Lista curta de proposito. Verificado localmente: com a rota tendo ALGUMAS
+  // paginas no manifesto, os slugs de fora sao gerados no primeiro acesso e
+  // ficam com s-maxage=31536000 — cacheados pra sempre, igual aos daqui. O bug
+  // do no-store era a lista VAZIA, nao a lista pequena.
+  //
+  // Pre-renderizar os 5.370 fazia o build da Vercel passar de 18 minutos e
+  // repetir ~12 mil consultas ao Neon A CADA DEPLOY. Sob demanda, cada pagina
+  // custa uma consulta uma unica vez, e so se alguem realmente abrir.
   const produtos = await db.product.findMany({
     where: { status: "PUBLISHED" },
     select: { slug: true },
+    orderBy: { updatedAt: "desc" },
+    take: 100,
   });
   return produtos.map(({ slug }) => ({ slug }));
 }
@@ -73,14 +84,48 @@ const BADGE_CONFIG: Record<Badge, { label: string; className: string; icon: stri
   },
 };
 
+// cache() do React: generateMetadata e a pagina rodam no mesmo request e antes
+// faziam dois findUnique separados. Com o banco em sa-east-1 e o build da
+// Vercel nos EUA, cada ida custa ~130ms — dobrar isso por pagina foi parte do
+// build de 18 minutos. Agora e uma ida so, reaproveitada pelos dois.
+const getProduct = cache((slug: string) =>
+  db.product.findUnique({
+    where: { slug },
+    include: {
+      category: true,
+      affiliateLinks: { orderBy: { createdAt: "asc" } },
+      rankingItems: {
+        include: {
+          ranking: {
+            include: {
+              faqs: { orderBy: { order: "asc" } },
+              items: {
+                orderBy: { order: "asc" },
+                include: {
+                  product: {
+                    select: {
+                      id: true,
+                      slug: true,
+                      name: true,
+                      imageUrl: true,
+                      badge: true,
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+  })
+);
+
 export async function generateMetadata(
   props: PageProps<"/produto/[slug]">
 ): Promise<Metadata> {
   const { slug } = await props.params;
-  const p = await db.product.findUnique({
-    where: { slug },
-    include: { category: { select: { name: true } } },
-  });
+  const p = await getProduct(slug);
   if (!p) return {};
 
   const titleParts = [p.name];
@@ -117,36 +162,7 @@ export async function generateMetadata(
 
 export default async function ProductPage(props: PageProps<"/produto/[slug]">) {
   const { slug } = await props.params;
-  const product = await db.product.findUnique({
-    where: { slug },
-    include: {
-      category: true,
-      affiliateLinks: { orderBy: { createdAt: "asc" } },
-      rankingItems: {
-        include: {
-          ranking: {
-            include: {
-              faqs: { orderBy: { order: "asc" } },
-              items: {
-                orderBy: { order: "asc" },
-                include: {
-                  product: {
-                    select: {
-                      id: true,
-                      slug: true,
-                      name: true,
-                      imageUrl: true,
-                      badge: true,
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
-    },
-  });
+  const product = await getProduct(slug);
 
   if (!product || product.status !== "PUBLISHED") notFound();
 
