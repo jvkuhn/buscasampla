@@ -4,8 +4,8 @@ import { unstable_cache } from "next/cache";
 import { db } from "@/lib/db";
 import { MetaPixel } from "@/components/public/MetaPixel";
 import { GroupCTA } from "@/components/public/GroupCTA";
-import { OfferCard, type Offer } from "@/components/public/OfferCard";
-import { groupContent, formatMembers } from "@/lib/group-content";
+import { OfferCard } from "@/components/public/OfferCard";
+import { groupContent, groupOffers, formatMembers } from "@/lib/group-content";
 import type { Metadata } from "next";
 
 // Rota curinga na raiz, pra o anuncio apontar pra buscasampla.com.br/fitness.
@@ -28,29 +28,6 @@ export async function generateStaticParams() {
 const getGroup = cache((slug: string) =>
   db.whatsAppGroup.findFirst({ where: { slug, active: true } })
 );
-
-// Produtos da categoria do grupo, com desconto real. Sao a prova de que o grupo
-// entrega — mostrados antes da pessoa decidir entrar.
-const getOffers = cache(async (categoryId: string | null): Promise<Offer[]> => {
-  const produtos = await db.product.findMany({
-    where: {
-      status: "PUBLISHED",
-      imageUrl: { not: null },
-      currentPrice: { not: null },
-      oldPrice: { not: null },
-      ...(categoryId ? { categoryId } : {}),
-    },
-    select: { id: true, name: true, imageUrl: true, currentPrice: true, oldPrice: true },
-    orderBy: { updatedAt: "desc" },
-    take: 8,
-  });
-
-  return produtos.map((p) => ({
-    ...p,
-    currentPrice: p.currentPrice?.toString() ?? null,
-    oldPrice: p.oldPrice?.toString() ?? null,
-  }));
-});
 
 // Esta rota vive fora do grupo (public), entao nao herda aquele layout e carrega
 // o pixel por conta propria. revalidate false pelo mesmo motivo da pagina: um
@@ -81,7 +58,8 @@ export default async function GroupPage(props: PageProps<"/[slug]">) {
   const grupo = await getGroup(slug);
   if (!grupo) notFound();
 
-  const [ofertas, pixel] = await Promise.all([getOffers(grupo.categoryId), getPixel()]);
+  const pixel = await getPixel();
+  const ofertas = groupOffers(grupo);
   const { headline, subheadline, ctaText, benefits } = groupContent(grupo);
 
   return (
@@ -109,36 +87,36 @@ export default async function GroupPage(props: PageProps<"/[slug]">) {
             "right-[4%] top-[76%] rotate-3",
           ][i];
           return (
-            <div key={o.id} className={`absolute ${pos} opacity-70`}>
+            <div key={o.url} className={`absolute ${pos} opacity-70`}>
               <OfferCard offer={o} />
             </div>
           );
         })}
       </div>
 
-      <main className="relative mx-auto flex min-h-screen max-w-lg flex-col items-center px-5 py-10">
-        <h1 className="text-balance text-center text-[28px] font-black leading-[1.12] tracking-tight sm:text-4xl">
+      <main className="relative mx-auto flex min-h-screen max-w-lg flex-col items-center px-5 py-10 xl:max-w-2xl xl:justify-center xl:py-16">
+        <h1 className="text-balance text-center text-[30px] font-black leading-[1.1] tracking-tight sm:text-4xl xl:text-[52px] xl:leading-[1.05]">
           {headline}
         </h1>
 
-        <p className="mt-3 text-center text-sm leading-relaxed text-[#a2968a] sm:text-base">
+        <p className="mt-4 max-w-xl text-center text-sm leading-relaxed text-[#a2968a] sm:text-base xl:text-lg">
           {subheadline}
         </p>
 
         {/* So aparece com numero preenchido no admin. Prova social inventada e a
             primeira coisa que derruba a credibilidade da pagina. */}
         {grupo.memberCount != null && grupo.memberCount > 0 && (
-          <p className="mt-4 rounded-full border border-[#2f2620] bg-[#1c1611] px-4 py-1.5 text-xs text-[#cdc2b6]">
+          <p className="mt-5 rounded-full border border-[#2f2620] bg-[#1c1611] px-5 py-2 text-xs text-[#cdc2b6] xl:text-sm">
             <strong className="text-[#f5efe8]">+{formatMembers(grupo.memberCount)} pessoas</strong>{" "}
             já economizando no grupo
           </p>
         )}
 
-        <div className="mt-7 w-full">
+        <div className="mt-8 w-full xl:max-w-md">
           <GroupCTA slug={grupo.slug} inviteUrl={grupo.inviteUrl} label={ctaText} />
         </div>
 
-        <p className="mt-3 text-xs text-[#a2968a]">
+        <p className="mt-4 text-xs text-[#a2968a] xl:text-sm">
           <span className="font-semibold text-[#25d366]">100% grátis</span> · entra e sai quando quiser
         </p>
 
@@ -152,32 +130,32 @@ export default async function GroupPage(props: PageProps<"/[slug]">) {
             </p>
             <div className="flex gap-3 overflow-x-auto px-5 pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               {ofertas.map((o) => (
-                <OfferCard key={o.id} offer={o} />
+                <OfferCard key={o.url} offer={o} />
               ))}
             </div>
           </div>
         )}
 
-        <section className="mt-10 w-full">
-          <h2 className="mb-3 text-center text-[11px] font-bold uppercase tracking-widest text-[#c9743a]">
+        <section className="mt-12 w-full xl:max-w-xl">
+          <h2 className="mb-4 text-center text-[11px] font-bold uppercase tracking-widest text-[#c9743a] xl:text-xs">
             No grupo você recebe
           </h2>
           <ul className="space-y-2.5">
             {benefits.map((b) => (
               <li
                 key={b.title}
-                className="rounded-xl border border-[#2a221b] bg-[#1a1510] px-4 py-3.5"
+                className="rounded-xl border border-[#2a221b] bg-[#1a1510] px-5 py-4 xl:px-6 xl:py-5"
               >
-                <p className="text-sm font-bold">{b.title}</p>
+                <p className="text-sm font-bold xl:text-base">{b.title}</p>
                 {b.description && (
-                  <p className="mt-0.5 text-xs leading-relaxed text-[#a2968a]">{b.description}</p>
+                  <p className="mt-1 text-xs leading-relaxed text-[#a2968a] xl:text-sm">{b.description}</p>
                 )}
               </li>
             ))}
           </ul>
         </section>
 
-        <p className="mt-8 text-center text-xs text-[#7d7268]">
+        <p className="mt-10 text-center text-xs text-[#7d7268]">
           🔒 Você entra pelo WhatsApp. Não pedimos cadastro, e-mail nem pagamento.
         </p>
 

@@ -4,16 +4,14 @@ import { PageHeader } from "@/components/admin/PageHeader";
 import { GroupForm } from "@/components/admin/GroupForm";
 import { updateGroup } from "@/lib/actions/grupos";
 import type { Benefit } from "@/lib/group-content";
+import type { GroupOffer } from "@/components/admin/GroupOffersManager";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = { title: "Editar grupo — Admin" };
 
 export default async function EditGroupPage(props: PageProps<"/admin/grupos/[id]">) {
   const { id } = await props.params;
-  const [grupo, categories] = await Promise.all([
-    db.whatsAppGroup.findUnique({ where: { id } }),
-    db.category.findMany({ orderBy: { name: "asc" }, select: { id: true, name: true } }),
-  ]);
+  const grupo = await db.whatsAppGroup.findUnique({ where: { id } });
   if (!grupo) notFound();
 
   // Volta do Json pro formato "Titulo | Descricao" que o textarea edita.
@@ -30,7 +28,6 @@ export default async function EditGroupPage(props: PageProps<"/admin/grupos/[id]
       <PageHeader title={`Editar: ${grupo.name}`} />
       <GroupForm
         action={action}
-        categories={categories}
         defaultValues={{
           slug: grupo.slug,
           name: grupo.name,
@@ -42,7 +39,7 @@ export default async function EditGroupPage(props: PageProps<"/admin/grupos/[id]
           ctaText: grupo.ctaText ?? "",
           benefits,
           memberCount: grupo.memberCount,
-          categoryId: grupo.categoryId,
+          offers: Array.isArray(grupo.offers) ? (grupo.offers as unknown as GroupOffer[]) : [],
         }}
       />
     </div>

@@ -30,12 +30,12 @@ export function GroupCTA({ slug, inviteUrl, label }: Props) {
       target="_blank"
       rel="noopener noreferrer"
       onClick={handleClick}
-      className="group block w-full rounded-2xl bg-[#25d366] px-6 py-4 text-center shadow-[0_0_40px_-8px_rgba(37,211,102,0.7)] transition hover:bg-[#22c35e] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#25d366] motion-safe:hover:scale-[1.02]"
+      className="group block w-full rounded-2xl bg-[#25d366] px-6 py-4 text-center xl:py-5 shadow-[0_0_40px_-8px_rgba(37,211,102,0.7)] transition hover:bg-[#22c35e] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#25d366] motion-safe:hover:scale-[1.02]"
     >
-      <span className="block text-base font-extrabold tracking-wide text-[#06371a] sm:text-lg">
+      <span className="block text-base font-extrabold tracking-wide text-[#06371a] sm:text-lg xl:text-xl">
         {label}
       </span>
-      <span className="mt-0.5 block text-xs font-medium text-[#0a5228]">
+      <span className="mt-0.5 block text-xs font-medium text-[#0a5228] xl:text-sm">
         Receba as ofertas todo dia
       </span>
     </a>

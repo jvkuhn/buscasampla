@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import { slugify } from "@/lib/utils";
-import { InputField, TextareaField, SelectField } from "./FormField";
+import { InputField, TextareaField } from "./FormField";
+import { GroupOffersManager, type GroupOffer } from "./GroupOffersManager";
 import { SubmitButton } from "./SubmitButton";
 
 interface Props {
   action: (formData: FormData) => void | Promise<void>;
-  categories: { id: string; name: string }[];
   defaultValues?: {
     slug?: string;
     name?: string;
@@ -19,13 +19,13 @@ interface Props {
     ctaText?: string;
     benefits?: string;
     memberCount?: number | null;
-    categoryId?: string | null;
+    offers?: GroupOffer[];
   };
 }
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "";
 
-export function GroupForm({ action, categories, defaultValues = {} }: Props) {
+export function GroupForm({ action, defaultValues = {} }: Props) {
   const [name, setName] = useState(defaultValues.name ?? "");
   const [slug, setSlug] = useState(defaultValues.slug ?? "");
   const [slugManual, setSlugManual] = useState(!!defaultValues.slug);
@@ -131,18 +131,8 @@ export function GroupForm({ action, categories, defaultValues = {} }: Props) {
         />
 
         <div className="space-y-1">
-          <SelectField
-            label="Categoria dos produtos"
-            name="categoryId"
-            defaultValue={defaultValues.categoryId ?? ""}
-            options={[
-              { value: "", label: "Todas as categorias" },
-              ...categories.map((c) => ({ value: c.id, label: c.name })),
-            ]}
-          />
-          <p className="text-xs text-gray-500">
-            Define quais produtos aparecem como prova na página. Sem categoria, usa o catálogo inteiro.
-          </p>
+          <label className="block text-sm font-medium text-gray-700">Ofertas da página</label>
+          <GroupOffersManager name="offers" defaultValue={defaultValues.offers ?? []} />
         </div>
 
         <InputField

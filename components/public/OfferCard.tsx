@@ -1,58 +1,66 @@
 import Image from "next/image";
-import { formatPrice } from "@/lib/utils";
 
 export interface Offer {
-  id: string;
-  name: string;
-  imageUrl: string | null;
-  currentPrice: string | null;
-  oldPrice: string | null;
+  url: string;
+  title?: string;
+  oldPrice?: string;
+  newPrice?: string;
+}
+
+function toNumber(v?: string) {
+  if (!v) return null;
+  const n = Number(v.replace(/[^\d,.-]/g, "").replace(/\./g, "").replace(",", "."));
+  return Number.isFinite(n) && n > 0 ? n : null;
+}
+
+function brl(v: string) {
+  const n = toNumber(v);
+  return n == null ? v : n.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 }
 
 /**
- * Card de oferta usado como prova social na landing do grupo.
+ * Card de oferta da landing do grupo.
  *
- * Sao produtos reais do catalogo, com o de/por real — nao print montado. E o
- * que a pessoa vai receber se entrar, mostrado antes de ela decidir.
+ * Imagens enviadas pelo dono do grupo — e o que ele posta la dentro, mostrado
+ * antes da pessoa decidir entrar. Titulo e precos sao opcionais: sem eles o card
+ * fica so com a foto, que ja funciona como prova.
  */
-export function OfferCard({ offer }: { offer: Offer }) {
-  const desconto =
-    offer.oldPrice && offer.currentPrice
-      ? Math.round((1 - Number(offer.currentPrice) / Number(offer.oldPrice)) * 100)
-      : null;
+export function OfferCard({ offer, priority = false }: { offer: Offer; priority?: boolean }) {
+  const de = toNumber(offer.oldPrice);
+  const por = toNumber(offer.newPrice);
+  const desconto = de && por && de > por ? Math.round((1 - por / de) * 100) : null;
 
   return (
-    <div className="w-[150px] shrink-0 overflow-hidden rounded-xl border border-[#31281f] bg-[#1c1611] shadow-lg">
+    <div className="w-[164px] shrink-0 overflow-hidden rounded-2xl border border-[#31281f] bg-[#1c1611] shadow-xl xl:w-[192px]">
       <div className="relative aspect-square bg-white">
-        {offer.imageUrl && (
-          <Image
-            src={offer.imageUrl}
-            alt=""
-            fill
-            sizes="150px"
-            className="object-contain p-2"
-          />
-        )}
-        {desconto != null && desconto > 0 && (
-          <span className="absolute left-1.5 top-1.5 rounded-md bg-[#e5484d] px-1.5 py-0.5 text-[10px] font-bold text-white">
+        <Image
+          src={offer.url}
+          alt={offer.title ?? ""}
+          fill
+          sizes="(min-width: 1280px) 192px, 164px"
+          priority={priority}
+          className="object-contain p-2"
+        />
+        {desconto != null && (
+          <span className="absolute left-2 top-2 rounded-md bg-[#e5484d] px-1.5 py-0.5 text-[11px] font-bold text-white">
             -{desconto}%
           </span>
         )}
       </div>
 
-      <div className="p-2.5">
-        <p className="line-clamp-2 text-[11px] leading-snug text-[#cdc2b6]">{offer.name}</p>
-        {offer.oldPrice && (
-          <p className="mt-1 text-[10px] text-[#7d7268] line-through">
-            {formatPrice(offer.oldPrice)}
-          </p>
-        )}
-        {offer.currentPrice && (
-          <p className="text-sm font-extrabold text-[#ffc94d]">
-            {formatPrice(offer.currentPrice)}
-          </p>
-        )}
-      </div>
+      {(offer.title || offer.newPrice) && (
+        <div className="p-3">
+          {offer.title && (
+            <p className="line-clamp-2 text-xs leading-snug text-[#cdc2b6]">{offer.title}</p>
+          )}
+          {offer.oldPrice && (
+            <p className="mt-1 text-[11px] text-[#7d7268] line-through">{brl(offer.oldPrice)}</p>
+          )}
+          {offer.newPrice && (
+            <p className="text-base font-extrabold text-[#ffc94d]">{brl(offer.newPrice)}</p>
+          )}
+        </div>
+      )}
     </div>
   );
 }

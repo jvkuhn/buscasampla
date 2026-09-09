@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { requireAdmin } from "@/lib/auth-guard";
 import { db } from "@/lib/db";
-import { whatsappGroupSchema } from "@/lib/validations";
+import { whatsappGroupSchema, groupOfferSchema } from "@/lib/validations";
 
 // A pagina publica /<slug> e cacheada (ISR) pra nao consultar o Neon a cada
 // clique de anuncio. Sem revalidar aqui, trocar o link do grupo lotado so
@@ -17,6 +17,19 @@ function revalidarGrupo(slug: string) {
 
 // Checkbox ausente no FormData significa desmarcado; z.coerce.boolean() veria
 // a string "false" como true, entao a normalizacao acontece antes do parse.
+function safeOffers(json: string) {
+  try {
+    const bruto = JSON.parse(json);
+    if (!Array.isArray(bruto)) return [];
+    return bruto
+      .map((o) => groupOfferSchema.safeParse(o))
+      .filter((r) => r.success)
+      .map((r) => r.data);
+  } catch {
+    return [];
+  }
+}
+
 function parseGrupo(formData: FormData) {
   const raw = Object.fromEntries(formData);
   const parsed = whatsappGroupSchema.safeParse({
@@ -28,7 +41,7 @@ function parseGrupo(formData: FormData) {
     const primeiro = Object.values(parsed.error.flatten().fieldErrors).flat()[0];
     throw new Error(primeiro ?? "Dados inválidos. Verifique os campos e tente novamente.");
   }
-  const { benefits, memberCount, categoryId, ...resto } = parsed.data;
+  const { benefits, memberCount, offers, ...resto } = parsed.data;
 
   return {
     ...resto,
@@ -45,7 +58,9 @@ function parseGrupo(formData: FormData) {
           })
       : undefined,
     memberCount: memberCount === "" || memberCount === undefined ? null : memberCount,
-    categoryId: categoryId || null,
+    // Itens invalidos sao descartados em silencio em vez de rejeitar o form
+    // inteiro: perder o texto todo por causa de um upload que falhou seria pior.
+    offers: offers ? safeOffers(offers) : undefined,
   };
 }
 

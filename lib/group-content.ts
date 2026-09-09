@@ -1,4 +1,5 @@
 import type { WhatsAppGroup } from "@prisma/client";
+import type { Offer } from "@/components/public/OfferCard";
 
 export interface Benefit {
   title: string;
@@ -39,4 +40,10 @@ export function formatMembers(n: number): string {
   if (n < 1000) return String(n);
   const mil = n / 1000;
   return `${mil >= 10 ? Math.round(mil) : mil.toFixed(1).replace(".0", "").replace(".", ",")} mil`;
+}
+
+/** Ofertas salvas no grupo, ja filtradas contra item quebrado. */
+export function groupOffers(grupo: WhatsAppGroup): Offer[] {
+  if (!Array.isArray(grupo.offers)) return [];
+  return (grupo.offers as unknown as Offer[]).filter((o) => o?.url);
 }

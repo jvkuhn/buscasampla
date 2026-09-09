@@ -40,7 +40,6 @@ model Category {
   order          Int             @default(0)
   rankings       Ranking[]
   products       Product[]
-  whatsappGroups WhatsAppGroup[]
   createdAt      DateTime        @default(now())
   updatedAt      DateTime        @updatedAt
 }
@@ -282,10 +281,10 @@ model WhatsAppGroup {
   // e a primeira coisa que faz a pagina perder credibilidade.
   memberCount Int?
 
-  // De qual categoria vem os produtos mostrados como prova. Sem categoria, a
-  // pagina cai em produtos com maior desconto do catalogo inteiro.
-  categoryId String?
-  category   Category? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  // Ofertas mostradas na landing: [{ url, title, oldPrice, newPrice }].
+  // Sao imagens enviadas pelo dono do grupo, nao produtos do catalogo do site —
+  // o dominio e compartilhado, mas os dois negocios sao separados.
+  offers      Json?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

@@ -181,7 +181,16 @@ export const whatsappGroupSchema = z.object({
   memberCount: z
     .union([z.coerce.number().int().min(0).max(10_000_000), z.literal("")])
     .optional(),
-  categoryId: z.string().optional().or(z.literal("")),
+  // JSON serializado pelo GroupOffersManager. Validado item a item pra uma
+  // imagem quebrada nao derrubar a renderizacao da landing inteira.
+  offers: z.string().max(20000).optional().or(z.literal("")),
+});
+
+export const groupOfferSchema = z.object({
+  url: z.string().url(),
+  title: z.string().max(120).optional().or(z.literal("")),
+  oldPrice: z.string().max(20).optional().or(z.literal("")),
+  newPrice: z.string().max(20).optional().or(z.literal("")),
 });
 
 export type CategoryInput = z.infer<typeof categorySchema>;
