@@ -1,5 +1,6 @@
 import { db } from "@/lib/db";
 import { PageHeader } from "@/components/admin/PageHeader";
+import { CleanupButton } from "@/components/admin/CleanupButton";
 import { InputField, TextareaField } from "@/components/admin/FormField";
 import { updateSiteSettings } from "@/lib/actions/settings";
 import type { Metadata } from "next";
@@ -98,6 +99,28 @@ export default async function SettingsPage() {
           </button>
         </div>
       </form>
+
+      <div className="max-w-2xl mt-10 bg-white rounded-xl border border-red-200 p-6">
+        <h2 className="text-sm font-semibold text-red-700 border-b border-red-100 pb-3">
+          Zona de risco
+        </h2>
+        <p className="mt-4 text-sm text-gray-700">
+          Apagar rankings e produtos
+        </p>
+        <p className="mt-1 text-xs text-gray-500">
+          Remove todos os rankings, produtos, FAQs e links de afiliado. As páginas
+          correspondentes passam a responder 404, inclusive as já indexadas no Google e as
+          usadas como sitelink no Google Ads. Categorias, páginas, grupos de WhatsApp e
+          configurações são preservados.
+        </p>
+        <p className="mt-1 text-xs text-gray-500">
+          Não há como desfazer pelo painel — só restaurando um backup gerado com{" "}
+          <code className="font-mono">npm run backup-catalogo</code>.
+        </p>
+        <div className="mt-4">
+          <CleanupButton />
+        </div>
+      </div>
     </div>
   );
 }
