@@ -2,6 +2,11 @@ import Link from "next/link";
 import { db } from "@/lib/db";
 import type { Metadata } from "next";
 
+// ISR: ~5.9k URLs publicas indexadas. Sem cache, cada crawl de bot renderiza
+// no servidor e acorda o Neon, estourando as compute hours do plano. Edicoes no
+// admin continuam aparecendo na hora via revalidatePath nas server actions.
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "Todas as categorias",
   description: "Navegue por todas as categorias de produtos comparados e ranqueados.",

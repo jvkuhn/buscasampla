@@ -80,6 +80,13 @@ export default async function SettingsPage() {
             defaultValue={settings?.gtmId ?? ""}
             placeholder="GTM-XXXXXX"
           />
+          <InputField
+            label="Meta Pixel ID"
+            name="metaPixelId"
+            defaultValue={settings?.metaPixelId ?? ""}
+            placeholder="123456789012345"
+            hint="Gerenciador de Eventos → Fontes de dados. Deixe vazio para não carregar o pixel."
+          />
         </div>
 
         <div className="flex gap-3">

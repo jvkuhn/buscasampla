@@ -12,13 +12,13 @@ datasource db {
 // ─── Autenticação ────────────────────────────────────────────────────────────
 
 model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String    @unique
-  password      String
-  role          Role      @default(ADMIN)
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
+  id        String   @id @default(cuid())
+  name      String?
+  email     String   @unique
+  password  String
+  role      Role     @default(ADMIN)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 enum Role {
@@ -47,29 +47,29 @@ model Category {
 // ─── Produto ─────────────────────────────────────────────────────────────────
 
 model Product {
-  id              String          @id @default(cuid())
-  name            String
-  slug            String          @unique
-  shortDesc       String?
-  longDesc        String?         @db.Text
-  imageUrl        String?
-  gallery         String[]        @default([])
-  currentPrice    Decimal?        @db.Decimal(10, 2)
-  oldPrice        Decimal?        @db.Decimal(10, 2)
-  priceRange      String?
-  rating          Decimal?        @db.Decimal(3, 1)
-  pros            String[]        @default([])
-  cons            String[]        @default([])
-  brand           String?
-  specs           Json?
-  badge           Badge?
-  status          Status          @default(DRAFT)
-  categoryId      String?
-  category        Category?       @relation(fields: [categoryId], references: [id], onDelete: SetNull)
-  affiliateLinks  AffiliateLink[]
-  rankingItems    RankingItem[]
-  createdAt       DateTime        @default(now())
-  updatedAt       DateTime        @updatedAt
+  id             String          @id @default(cuid())
+  name           String
+  slug           String          @unique
+  shortDesc      String?
+  longDesc       String?         @db.Text
+  imageUrl       String?
+  gallery        String[]        @default([])
+  currentPrice   Decimal?        @db.Decimal(10, 2)
+  oldPrice       Decimal?        @db.Decimal(10, 2)
+  priceRange     String?
+  rating         Decimal?        @db.Decimal(3, 1)
+  pros           String[]        @default([])
+  cons           String[]        @default([])
+  brand          String?
+  specs          Json?
+  badge          Badge?
+  status         Status          @default(DRAFT)
+  categoryId     String?
+  category       Category?       @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  affiliateLinks AffiliateLink[]
+  rankingItems   RankingItem[]
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
 }
 
 enum Badge {
@@ -84,51 +84,51 @@ enum Badge {
 // ─── Links de Afiliado ───────────────────────────────────────────────────────
 
 model AffiliateLink {
-  id        String    @id @default(cuid())
-  platform  String    // "amazon", "mercadolivre", "shopee", etc.
+  id        String   @id @default(cuid())
+  platform  String // "amazon", "mercadolivre", "shopee", etc.
   url       String
   label     String?
   productId String
-  product   Product   @relation(fields: [productId], references: [id], onDelete: Cascade)
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 // ─── Ranking ─────────────────────────────────────────────────────────────────
 
 model Ranking {
-  id          String        @id @default(cuid())
-  title       String
-  slug        String        @unique
-  subtitle    String?
-  intro       String?       @db.Text
-  conclusion  String?       @db.Text
-  coverUrl    String?
-  metaTitle   String?
-  metaDesc    String?
-  ogTitle     String?
-  ogDesc      String?
-  ogImageUrl  String?
-  status      Status        @default(DRAFT)
-  categoryId  String?
-  category    Category?     @relation(fields: [categoryId], references: [id], onDelete: SetNull)
-  items       RankingItem[]
-  faqs        FAQ[]
-  createdAt   DateTime      @default(now())
-  updatedAt   DateTime      @updatedAt
+  id         String        @id @default(cuid())
+  title      String
+  slug       String        @unique
+  subtitle   String?
+  intro      String?       @db.Text
+  conclusion String?       @db.Text
+  coverUrl   String?
+  metaTitle  String?
+  metaDesc   String?
+  ogTitle    String?
+  ogDesc     String?
+  ogImageUrl String?
+  status     Status        @default(DRAFT)
+  categoryId String?
+  category   Category?     @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  items      RankingItem[]
+  faqs       FAQ[]
+  createdAt  DateTime      @default(now())
+  updatedAt  DateTime      @updatedAt
 }
 
 model RankingItem {
-  id         String   @id @default(cuid())
-  rankingId  String
-  ranking    Ranking  @relation(fields: [rankingId], references: [id], onDelete: Cascade)
-  productId  String
-  product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
-  order      Int
-  highlight  Boolean  @default(false)
-  note       String?
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+  id        String   @id @default(cuid())
+  rankingId String
+  ranking   Ranking  @relation(fields: [rankingId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  order     Int
+  highlight Boolean  @default(false)
+  note      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@unique([rankingId, productId])
   @@unique([rankingId, order])
@@ -192,6 +192,7 @@ model SiteSettings {
   socialFacebook  String?
   socialInstagram String?
   gtmId           String?
+  metaPixelId     String?
   manualLinks     Json?
   updatedAt       DateTime @updatedAt
 }
@@ -202,7 +203,7 @@ model ClickLog {
   id          String   @id @default(cuid())
   productId   String?
   productName String
-  platform    String   // "amazon", "mercadolivre", "shopee", etc.
+  platform    String // "amazon", "mercadolivre", "shopee", etc.
   url         String
   createdAt   DateTime @default(now())
 
@@ -256,4 +257,20 @@ model SearchLog {
 
   @@index([createdAt])
   @@index([query])
+}
+
+// Grupo de WhatsApp por nicho, com pagina de redirect propria em /<slug>.
+// O link fica no banco (e nao hardcoded) porque grupo do WhatsApp lota em 1024
+// membros: quando enchia, era preciso deploy pra trocar. Aqui troca pelo admin.
+model WhatsAppGroup {
+  id          String   @id @default(cuid())
+  slug        String   @unique @db.VarChar(60)
+  name        String   @db.VarChar(120)
+  inviteUrl   String   @db.VarChar(500)
+  description String?  @db.VarChar(300)
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([active])
 }

@@ -3,6 +3,16 @@ import { db } from "@/lib/db";
 import { marked } from "marked";
 import type { Metadata } from "next";
 
+export const revalidate = 3600;
+// generateStaticParams vazio + dynamicParams: sem isto o Next 16 mantem a rota
+// dinamica e o `revalidate` acima nao vale nada. Com a lista vazia, nada e
+// gerado no build (seriam milhares de queries) e cada pagina e renderizada uma
+// unica vez, no primeiro acesso, ficando em cache dali em diante.
+export const dynamicParams = true;
+export async function generateStaticParams() {
+  return [];
+}
+
 export async function generateMetadata(
   props: PageProps<"/p/[slug]">
 ): Promise<Metadata> {

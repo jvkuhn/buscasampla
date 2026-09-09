@@ -6,6 +6,19 @@ import { PageViewTracker } from "@/components/public/PageViewTracker";
 import { safeJsonLd } from "@/lib/utils";
 import type { Metadata } from "next";
 
+// ISR: ~5.9k URLs publicas indexadas. Sem cache, cada crawl de bot renderiza
+// no servidor e acorda o Neon, estourando as compute hours do plano. Edicoes no
+// admin continuam aparecendo na hora via revalidatePath nas server actions.
+export const revalidate = 3600;
+// generateStaticParams vazio + dynamicParams: sem isto o Next 16 mantem a rota
+// dinamica e o `revalidate` acima nao vale nada. Com a lista vazia, nada e
+// gerado no build (seriam milhares de queries) e cada pagina e renderizada uma
+// unica vez, no primeiro acesso, ficando em cache dali em diante.
+export const dynamicParams = true;
+export async function generateStaticParams() {
+  return [];
+}
+
 export async function generateMetadata(
   props: PageProps<"/categorias/[slug]">
 ): Promise<Metadata> {

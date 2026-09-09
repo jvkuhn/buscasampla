@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 import { db } from "@/lib/db";
 
-export const dynamic = "force-dynamic";
+// Sitemap e puxado direto por crawler. Sem cache, cada puxada acordava o banco.
+export const revalidate = 3600;
 
 function getBaseUrl() {
   return (

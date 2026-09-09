@@ -3,6 +3,7 @@ import { PublicFooter } from "@/components/public/PublicFooter";
 import { GTMGate } from "@/components/public/GTMGate";
 import { GTMNoScriptGate } from "@/components/public/GTMNoScriptGate";
 import { GoogleAnalyticsGate } from "@/components/public/GoogleAnalyticsGate";
+import { MetaPixelGate } from "@/components/public/MetaPixelGate";
 import { CookieBanner } from "@/components/public/CookieBanner";
 import { db } from "@/lib/db";
 import { unstable_cache } from "next/cache";
@@ -41,11 +42,13 @@ export default async function PublicLayout({ children }: { children: React.React
   ]);
 
   const gtmId = settings?.gtmId;
+  const metaPixelId = settings?.metaPixelId;
 
   return (
     <>
       {gtmId && <GTMGate gtmId={gtmId} />}
       {gtmId && <GTMNoScriptGate gtmId={gtmId} />}
+      {metaPixelId && <MetaPixelGate pixelId={metaPixelId} />}
       <GoogleAnalyticsGate />
       <PublicHeader categories={categories} settings={settings} />
       <main className="flex-1">{children}</main>

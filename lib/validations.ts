@@ -98,6 +98,13 @@ export const siteSettingsSchema = z.object({
     .regex(/^GTM-[A-Z0-9]+$/, "ID do GTM deve estar no formato GTM-XXXXXXX")
     .optional()
     .or(z.literal("")),
+  // So digitos, pelo mesmo motivo do gtmId: o valor entra interpolado no script
+  // inline do pixel. Um id do Meta e numerico (15-16 digitos).
+  metaPixelId: z
+    .string()
+    .regex(/^[0-9]{10,20}$/, "ID do Pixel deve conter apenas números")
+    .optional()
+    .or(z.literal("")),
 });
 
 export const manualLinkSchema = z.object({
@@ -147,6 +154,25 @@ export const top10Schema = z.object({
 export type Top10Input = z.infer<typeof top10Schema>;
 export type Top10ProductInput = z.infer<typeof top10ProductSchema>;
 
+// Grupo de WhatsApp. O regex do inviteUrl e proposital: colar por engano o link
+// de um perfil (wa.me) em vez do convite do grupo derruba a campanha inteira,
+// e o erro so aparece quando alguem clica no anuncio.
+export const whatsappGroupSchema = z.object({
+  slug: z
+    .string()
+    .min(2)
+    .regex(/^[a-z0-9-]+$/, "Slug inválido (use letras minúsculas, números e hífens)"),
+  name: z.string().min(2, "Nome muito curto").max(120),
+  inviteUrl: z
+    .string()
+    .regex(
+      /^https:\/\/chat\.whatsapp\.com\/[A-Za-z0-9]{10,}$/,
+      "Use o link de convite do grupo (https://chat.whatsapp.com/...)"
+    ),
+  description: z.string().max(300).optional().or(z.literal("")),
+  active: z.coerce.boolean(),
+});
+
 export type CategoryInput = z.infer<typeof categorySchema>;
 export type ProductInput = z.infer<typeof productSchema>;
 export type RankingInput = z.infer<typeof rankingSchema>;
@@ -154,3 +180,4 @@ export type FAQInput = z.infer<typeof faqSchema>;
 export type BannerInput = z.infer<typeof bannerSchema>;
 export type SitePageInput = z.infer<typeof sitePageSchema>;
 export type SiteSettingsInput = z.infer<typeof siteSettingsSchema>;
+export type WhatsAppGroupInput = z.infer<typeof whatsappGroupSchema>;
